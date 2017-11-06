@@ -1,0 +1,1364 @@
+<Goal>
+  <Highlights>
+    <League>Eredivisie</League>
+    <StartDate>February 6, 2016</StartDate>
+    <StartTime>• 18:45</StartTime>
+    <Stadium>• AFAS Stadion</Stadium>
+    <City>Alkmaar</City>
+    <Referee>B. Nijhuis</Referee>
+    <Attendees>15006</Attendees>
+    <FullTime>FT</FullTime>
+    <ExtraInformation></ExtraInformation>
+    <FullTimeScore>1-0</FullTimeScore>
+    <Home>
+      <Team>AZ</Team>
+      <GoalScorersList>
+        <Goal GoalId="1" Minute="62" PlayerLink="http://www.goal.com/en/people/netherlands/99841/vincent-janssen" OwnGoal="n">V. Janssen</Goal>
+      </GoalScorersList>
+      <FinalGoals>1</FinalGoals>
+    </Home>
+    <Away>
+      <Team>Vitesse</Team>
+      <GoalScorersList/>
+      <FinalGoals>0</FinalGoals>
+    </Away>
+  </Highlights>
+  <Events>
+    <AssistList>
+      <Assist AssistId="1" Minute="62">Joris van Overeem</Assist>
+    </AssistList>
+    <GoalList>
+      <Goal GoalId="1" Minute="62">Vincent Janssen</Goal>
+    </GoalList>
+    <MissedPenaltyList/>
+    <PenaltyGoalList/>
+    <RedCardList/>
+    <YellowCardList>
+      <YellowCard YellowCardId="1" Minute="35">Kevin Diks</YellowCard>
+      <YellowCard YellowCardId="2" Minute="63">Guram Kashia</YellowCard>
+      <YellowCard YellowCardId="3" Minute="82">Alireza Jahanbakhsh</YellowCard>
+      <YellowCard YellowCardId="4" Minute="90">Thom Haye</YellowCard>
+    </YellowCardList>
+    <YellowRedList/>
+    <OwnGoalList/>
+    <SubstitutionList>
+      <Substitution SubstitutionId="1" Minute="61" SubOut="Isaih Brown" SubIn="Denys Oliynyk"/>
+      <Substitution SubstitutionId="2" Minute="74" SubOut="Kevin Diks" SubIn="Nathan"/>
+      <Substitution SubstitutionId="3" Minute="74" SubOut="Joris van Overeem" SubIn="C. Ortiz"/>
+      <Substitution SubstitutionId="4" Minute="76" SubOut="Dabney Souza" SubIn="Thom Haye"/>
+    </SubstitutionList>
+  </Events>
+  <LastGame>
+    <Home>
+      <LastGameLeague>KNVB Beker</LastGameLeague>
+      <DateLastGame>February 02, 2016</DateLastGame>
+      <OpponentLastGame>Hardenberg Heemse Combinatie</OpponentLastGame>
+      <ResultLastGame CurrentTeamGoals="1" OpponentGoals="0">1-0</ResultLastGame>
+      <HomeAwayLastGame>home</HomeAwayLastGame>
+      <WinDrawLostLastGame>won</WinDrawLostLastGame>
+      <GoneFromLineUpList>
+        <Player PlayerId="1">J. van Overeem</Player>
+        <Player PlayerId="2">T. Ouwejan</Player>
+      </GoneFromLineUpList>
+      <NewInLineUpList>
+        <Player PlayerId="1">R. Brežančić</Player>
+        <Player PlayerId="2">C. Ortiz</Player>
+      </NewInLineUpList>
+    </Home>
+    <Away>
+      <LastGameLeague>Eredivisie</LastGameLeague>
+      <DateLastGame>January 30, 2016</DateLastGame>
+      <OpponentLastGame>SBV Excelsior</OpponentLastGame>
+      <ResultLastGame CurrentTeamGoals="0" OpponentGoals="0">0-0</ResultLastGame>
+      <HomeAwayLastGame>home</HomeAwayLastGame>
+      <WinDrawLostLastGame>draw</WinDrawLostLastGame>
+      <GoneFromLineUpList>
+        <Player PlayerId="1">G. Kashia</Player>
+        <Player PlayerId="2">L. Baker</Player>
+      </GoneFromLineUpList>
+      <NewInLineUpList>
+        <Player PlayerId="1">R. Ibarra</Player>
+        <Player PlayerId="2">D. Solanke</Player>
+      </NewInLineUpList>
+    </Away>
+  </LastGame>
+  <Lineups>
+    <Home>
+      <Goalkeepers>
+        <Goalkeeper GoalkeeperId="1">
+          <Name>Sergio Rochet</Name>
+          <Fullname>Sergio Rochet Álvarez</Fullname>
+          <Nickname></Nickname>
+          <BirthDate>March 23, 1993</BirthDate>
+          <BirthPlace City="Nueva Palmira" Country="Uruguay"/>
+          <Height>1.90</Height>
+          <Weight></Weight>
+          <WikiPosition>Goalkeeper</WikiPosition>
+          <GoalComPosition>GK C home</GoalComPosition>
+          <GoalComPlayerNumber>1</GoalComPlayerNumber>
+          <GoalComShownName>S. Rochet</GoalComShownName>
+          <GoalComWebsite>http://www.goal.com/en/people/spain/91485/s-rochet</GoalComWebsite>
+          <YouthClubs>
+            <YouthClub YouthClubId="1" Years="">Danubio</YouthClub>
+          </YouthClubs>
+          <SeniorClubs>
+            <SeniorClub SeniorClubId="1" Years="2012-2014" Caps="0" Goals="0">Danubio</SeniorClub>
+            <SeniorClub SeniorClubId="2" Years="2014-" Caps="51" Goals="0">AZ</SeniorClub>
+          </SeniorClubs>
+          <NationalTeams>
+            <NationalTeam NationalTeamId="1" Years="" Caps="" Goals="">Uruguay U20</NationalTeam>
+          </NationalTeams>
+          <CurrentTeam>AZ</CurrentTeam>
+          <CurrentNumber>1</CurrentNumber>
+        </Goalkeeper>
+      </Goalkeepers>
+      <Defenders>
+        <Defender DefenderId="1">
+          <Name></Name>
+          <Fullname></Fullname>
+          <Nickname></Nickname>
+          <BirthDate></BirthDate>
+          <BirthPlace City="" Country=""/>
+          <Height></Height>
+          <Weight></Weight>
+          <WikiPosition></WikiPosition>
+          <GoalComPosition>D1 R home</GoalComPosition>
+          <GoalComPlayerNumber>32</GoalComPlayerNumber>
+          <GoalComShownName>L. Opdam</GoalComShownName>
+          <GoalComWebsite></GoalComWebsite>
+          <YouthClubs/>
+          <SeniorClubs/>
+          <NationalTeams/>
+          <CurrentTeam></CurrentTeam>
+          <CurrentNumber></CurrentNumber>
+        </Defender>
+        <Defender DefenderId="2">
+          <Name>Ron Vlaar</Name>
+          <Fullname>Ron Peter Vlaar</Fullname>
+          <Nickname></Nickname>
+          <BirthDate>February 16, 1985</BirthDate>
+          <BirthPlace City="Hensbroek" Country="Netherlands"/>
+          <Height>1.89</Height>
+          <Weight>79 Kg.</Weight>
+          <WikiPosition>Centre back</WikiPosition>
+          <GoalComPosition>D1 CR home</GoalComPosition>
+          <GoalComPlayerNumber>12</GoalComPlayerNumber>
+          <GoalComShownName>R. Vlaar</GoalComShownName>
+          <GoalComWebsite>http://www.goal.com/en/people/netherlands/9525/ron-vlaar</GoalComWebsite>
+          <YouthClubs>
+            <YouthClub YouthClubId="1" Years="1991-1995">Apollo '68</YouthClub>
+            <YouthClub YouthClubId="2" Years="1995-1996">SVW '27</YouthClub>
+            <YouthClub YouthClubId="3" Years="1996-2004">AZ</YouthClub>
+          </YouthClubs>
+          <SeniorClubs>
+            <SeniorClub SeniorClubId="1" Years="2004-2006" Caps="10" Goals="0">AZ</SeniorClub>
+            <SeniorClub SeniorClubId="2" Years="2006-2012" Caps="132" Goals="8">Feyenoord</SeniorClub>
+            <SeniorClub SeniorClubId="3" Years="2012-2015" Caps="79" Goals="2">Aston Villa</SeniorClub>
+            <SeniorClub SeniorClubId="4" Years="2015-" Caps="29" Goals="1">AZ</SeniorClub>
+          </SeniorClubs>
+          <NationalTeams>
+            <NationalTeam NationalTeamId="1" Years="2004" Caps="4" Goals="0">Netherlands U19</NationalTeam>
+            <NationalTeam NationalTeamId="2" Years="2005-2007" Caps="15" Goals="0">Netherlands U21</NationalTeam>
+            <NationalTeam NationalTeamId="3" Years="2005-" Caps="32" Goals="1">Netherlands</NationalTeam>
+          </NationalTeams>
+          <CurrentTeam>AZ</CurrentTeam>
+          <CurrentNumber>4</CurrentNumber>
+        </Defender>
+        <Defender DefenderId="3">
+          <Name>Stijn Wuytens</Name>
+          <Fullname></Fullname>
+          <Nickname></Nickname>
+          <BirthDate>October 08, 1989</BirthDate>
+          <BirthPlace City="Eksel" Country="Belgium"/>
+          <Height>1.83</Height>
+          <Weight>74 Kg.</Weight>
+          <WikiPosition>Central midfielder</WikiPosition>
+          <GoalComPosition>D1 CL home</GoalComPosition>
+          <GoalComPlayerNumber>30</GoalComPlayerNumber>
+          <GoalComShownName>S. Wuytens</GoalComShownName>
+          <GoalComWebsite>http://www.goal.com/en/people/belgium/23633/stijn-wuytens</GoalComWebsite>
+          <YouthClubs>
+            <YouthClub YouthClubId="1" Years="{{0|0000}}-2001">Genk</YouthClub>
+            <YouthClub YouthClubId="2" Years="2001-2008">PSV</YouthClub>
+          </YouthClubs>
+          <SeniorClubs>
+            <SeniorClub SeniorClubId="1" Years="2008-2012" Caps="27" Goals="1">PSV</SeniorClub>
+            <SeniorClub SeniorClubId="2" Years="2009" Caps="13" Goals="0">→ De Graafschap (loan)</SeniorClub>
+            <SeniorClub SeniorClubId="3" Years="2012-2013" Caps="12" Goals="2">Beerschot</SeniorClub>
+            <SeniorClub SeniorClubId="4" Years="2013-2016" Caps="62" Goals="4">Willem II</SeniorClub>
+            <SeniorClub SeniorClubId="5" Years="2016-" Caps="34" Goals="1">AZ</SeniorClub>
+          </SeniorClubs>
+          <NationalTeams>
+            <NationalTeam NationalTeamId="1" Years="2007-2008" Caps="10" Goals="4">Belgium U19</NationalTeam>
+            <NationalTeam NationalTeamId="2" Years="2008-2009" Caps="5" Goals="0">Belgium U21</NationalTeam>
+          </NationalTeams>
+          <CurrentTeam>AZ</CurrentTeam>
+          <CurrentNumber>30</CurrentNumber>
+        </Defender>
+        <Defender DefenderId="4">
+          <Name>Thomas Ouwejan</Name>
+          <Fullname>Thomas Ouwejan</Fullname>
+          <Nickname></Nickname>
+          <BirthDate>June 24, 1996</BirthDate>
+          <BirthPlace City="Alkmaar" Country="Netherlands"/>
+          <Height></Height>
+          <Weight></Weight>
+          <WikiPosition>Midfielder</WikiPosition>
+          <GoalComPosition>D1 L home</GoalComPosition>
+          <GoalComPlayerNumber>38</GoalComPlayerNumber>
+          <GoalComShownName>T. Ouwejan</GoalComShownName>
+          <GoalComWebsite>http://www.goal.com/en/people/netherlands/216992/thomas-ouwejan</GoalComWebsite>
+          <YouthClubs>
+            <YouthClub YouthClubId="1" Years="">AZ</YouthClub>
+          </YouthClubs>
+          <SeniorClubs>
+            <SeniorClub SeniorClubId="1" Years="2015-" Caps="7" Goals="0">AZ</SeniorClub>
+          </SeniorClubs>
+          <NationalTeams>
+            <NationalTeam NationalTeamId="1" Years="2012-2013" Caps="5" Goals="0">Netherlands U17</NationalTeam>
+            <NationalTeam NationalTeamId="2" Years="2015" Caps="3" Goals="0">Netherlands U19</NationalTeam>
+            <NationalTeam NationalTeamId="3" Years="2015-" Caps="8" Goals="0">Netherlands U20</NationalTeam>
+            <NationalTeam NationalTeamId="4" Years="2016-" Caps="1" Goals="0">Netherlands U21</NationalTeam>
+          </NationalTeams>
+          <CurrentTeam>AZ</CurrentTeam>
+          <CurrentNumber>22</CurrentNumber>
+        </Defender>
+      </Defenders>
+      <Midfielders>
+        <Midfielder MidfielderId="1">
+          <Name>Ben Rienstra</Name>
+          <Fullname>Ben Rienstra</Fullname>
+          <Nickname></Nickname>
+          <BirthDate>June 05, 1990</BirthDate>
+          <BirthPlace City="Alkmaar" Country="Netherlands"/>
+          <Height>1.82</Height>
+          <Weight>76 Kg.</Weight>
+          <WikiPosition>Defensive midfielder</WikiPosition>
+          <GoalComPosition>M CR home</GoalComPosition>
+          <GoalComPlayerNumber>17</GoalComPlayerNumber>
+          <GoalComShownName>B. Rienstra</GoalComShownName>
+          <GoalComWebsite>http://www.goal.com/en/people/netherlands/40816/ben-rienstra</GoalComWebsite>
+          <YouthClubs>
+            <YouthClub YouthClubId="1" Years="">Meervogels '31</YouthClub>
+            <YouthClub YouthClubId="2" Years="">ADO '20</YouthClub>
+            <YouthClub YouthClubId="3" Years="">Ajax</YouthClub>
+            <YouthClub YouthClubId="4" Years="">AZ</YouthClub>
+          </YouthClubs>
+          <SeniorClubs>
+            <SeniorClub SeniorClubId="1" Years="2010-2014" Caps="108" Goals="2">Heracles Almelo</SeniorClub>
+            <SeniorClub SeniorClubId="2" Years="2014-2015" Caps="37" Goals="6">PEC Zwolle</SeniorClub>
+            <SeniorClub SeniorClubId="3" Years="2015-" Caps="45" Goals="1">AZ</SeniorClub>
+          </SeniorClubs>
+          <NationalTeams/>
+          <CurrentTeam>AZ</CurrentTeam>
+          <CurrentNumber>6</CurrentNumber>
+        </Midfielder>
+        <Midfielder MidfielderId="2">
+          <Name>Markus Henriksen</Name>
+          <Fullname>Markus Henriksen</Fullname>
+          <Nickname></Nickname>
+          <BirthDate>July 25, 1992</BirthDate>
+          <BirthPlace City="Trondheim" Country="Norway"/>
+          <Height>1.87</Height>
+          <Weight></Weight>
+          <WikiPosition>Attacking midfielder</WikiPosition>
+          <GoalComPosition>M C home</GoalComPosition>
+          <GoalComPlayerNumber>10</GoalComPlayerNumber>
+          <GoalComShownName>M. Henriksen</GoalComShownName>
+          <GoalComWebsite>http://www.goal.com/en/people/norway/40893/marcus-henriksen</GoalComWebsite>
+          <YouthClubs>
+            <YouthClub YouthClubId="1" Years="">Trond IL</YouthClub>
+            <YouthClub YouthClubId="2" Years="">Rosenborg</YouthClub>
+          </YouthClubs>
+          <SeniorClubs>
+            <SeniorClub SeniorClubId="1" Years="2009-2012" Caps="78" Goals="11">Rosenborg</SeniorClub>
+            <SeniorClub SeniorClubId="2" Years="2012-2017" Caps="108" Goals="26">AZ Alkmaar</SeniorClub>
+            <SeniorClub SeniorClubId="3" Years="2016-2017" Caps="11" Goals="0">→ Hull City (loan)</SeniorClub>
+            <SeniorClub SeniorClubId="4" Years="2017-" Caps="4" Goals="0">Hull City</SeniorClub>
+          </SeniorClubs>
+          <NationalTeams>
+            <NationalTeam NationalTeamId="1" Years="2007" Caps="4" Goals="1">Norway U15</NationalTeam>
+            <NationalTeam NationalTeamId="2" Years="2008" Caps="13" Goals="4">Norway U16</NationalTeam>
+            <NationalTeam NationalTeamId="3" Years="2009" Caps="10" Goals="0">Norway U17</NationalTeam>
+            <NationalTeam NationalTeamId="4" Years="2009-2010" Caps="6" Goals="2">Norway U18</NationalTeam>
+            <NationalTeam NationalTeamId="5" Years="2010-2011" Caps="9" Goals="1">Norway U19</NationalTeam>
+            <NationalTeam NationalTeamId="6" Years="2010-2013" Caps="10" Goals="2">Norway U21</NationalTeam>
+            <NationalTeam NationalTeamId="7" Years="2011" Caps="2" Goals="0">Norway U23</NationalTeam>
+            <NationalTeam NationalTeamId="8" Years="2010-" Caps="30" Goals="2">Norway</NationalTeam>
+          </NationalTeams>
+          <CurrentTeam>Hull City</CurrentTeam>
+          <CurrentNumber>22</CurrentNumber>
+        </Midfielder>
+        <Midfielder MidfielderId="3">
+          <Name>Joris van Overeem</Name>
+          <Fullname>Joris van Overeem</Fullname>
+          <Nickname></Nickname>
+          <BirthDate>June 01, 1994</BirthDate>
+          <BirthPlace City="Amsterdam" Country="Netherlands"/>
+          <Height>1.81</Height>
+          <Weight></Weight>
+          <WikiPosition>Midfielder</WikiPosition>
+          <GoalComPosition>M CL home</GoalComPosition>
+          <GoalComPlayerNumber>8</GoalComPlayerNumber>
+          <GoalComShownName>J. van Overeem</GoalComShownName>
+          <GoalComWebsite>http://www.goal.com/en/people/netherlands/55308/joris-van-overeem</GoalComWebsite>
+          <YouthClubs>
+            <YouthClub YouthClubId="1" Years="1999-2006">FC Abcoude</YouthClub>
+            <YouthClub YouthClubId="2" Years="2006-2013">AZ</YouthClub>
+          </YouthClubs>
+          <SeniorClubs>
+            <SeniorClub SeniorClubId="1" Years="2013-" Caps="46" Goals="4">AZ</SeniorClub>
+            <SeniorClub SeniorClubId="2" Years="2014-2015" Caps="34" Goals="2">→ FC Dordrecht (loan)</SeniorClub>
+          </SeniorClubs>
+          <NationalTeams>
+            <NationalTeam NationalTeamId="1" Years="2009-2010" Caps="6" Goals="0">Netherlands U16</NationalTeam>
+            <NationalTeam NationalTeamId="2" Years="2010-2011" Caps="8" Goals="0">Netherlands U17</NationalTeam>
+            <NationalTeam NationalTeamId="3" Years="2011-2012" Caps="2" Goals="0">Netherlands U18</NationalTeam>
+            <NationalTeam NationalTeamId="4" Years="2013" Caps="2" Goals="0">Netherlands U19</NationalTeam>
+            <NationalTeam NationalTeamId="5" Years="2013-2014" Caps="3" Goals="0">Netherlands U20</NationalTeam>
+            <NationalTeam NationalTeamId="6" Years="2014-" Caps="11" Goals="0">Netherlands U21</NationalTeam>
+          </NationalTeams>
+          <CurrentTeam>AZ</CurrentTeam>
+          <CurrentNumber>8</CurrentNumber>
+        </Midfielder>
+      </Midfielders>
+      <Attackers>
+        <Attacker AttackerId="1">
+          <Name>Alireza Jahanbakhsh</Name>
+          <Fullname>Alireza Jahanbakhsh Jirandeh</Fullname>
+          <Nickname></Nickname>
+          <BirthDate>August 11, 1993</BirthDate>
+          <BirthPlace City="Jirandeh, Gilan" Country="Iran"/>
+          <Height>1.80</Height>
+          <Weight></Weight>
+          <WikiPosition>Winger, Attacking midfielder</WikiPosition>
+          <GoalComPosition>A CR home</GoalComPosition>
+          <GoalComPlayerNumber>9</GoalComPlayerNumber>
+          <GoalComShownName>A. Jahanbakhsh</GoalComShownName>
+          <GoalComWebsite>http://www.goal.com/en/people/iran/81713/alireza-jahanbakhsh</GoalComWebsite>
+          <YouthClubs>
+            <YouthClub YouthClubId="1" Years="2005-2007">Payam Alborz Qazvin</YouthClub>
+            <YouthClub YouthClubId="2" Years="2007-2008">Persian Qazvin</YouthClub>
+            <YouthClub YouthClubId="3" Years="2008-2010">Damash Gilan</YouthClub>
+          </YouthClubs>
+          <SeniorClubs>
+            <SeniorClub SeniorClubId="1" Years="2010-2011" Caps="12" Goals="0">Damash Tehran</SeniorClub>
+            <SeniorClub SeniorClubId="2" Years="2011-2013" Caps="42" Goals="10">Damash Gilan</SeniorClub>
+            <SeniorClub SeniorClubId="3" Years="2013-2015" Caps="55" Goals="17">NEC</SeniorClub>
+            <SeniorClub SeniorClubId="4" Years="2015-" Caps="50" Goals="11">AZ</SeniorClub>
+          </SeniorClubs>
+          <NationalTeams>
+            <NationalTeam NationalTeamId="1" Years="2010-2013" Caps="17" Goals="11">Iran U20</NationalTeam>
+            <NationalTeam NationalTeamId="2" Years="2011-2016" Caps="6" Goals="1">Iran U23</NationalTeam>
+            <NationalTeam NationalTeamId="3" Years="2013-" Caps="28" Goals="3">Iran</NationalTeam>
+          </NationalTeams>
+          <CurrentTeam>AZ</CurrentTeam>
+          <CurrentNumber>7</CurrentNumber>
+        </Attacker>
+        <Attacker AttackerId="2">
+          <Name>Vincent Janssen</Name>
+          <Fullname>Vincent Petrus Anna Sebastiaan Janssen</Fullname>
+          <Nickname></Nickname>
+          <BirthDate>June 15, 1994</BirthDate>
+          <BirthPlace City="Heesch" Country="Netherlands"/>
+          <Height>1.83</Height>
+          <Weight></Weight>
+          <WikiPosition>Striker</WikiPosition>
+          <GoalComPosition>A C home</GoalComPosition>
+          <GoalComPlayerNumber>18</GoalComPlayerNumber>
+          <GoalComShownName>V. Janssen</GoalComShownName>
+          <GoalComWebsite>http://www.goal.com/en/people/netherlands/99841/vincent-janssen</GoalComWebsite>
+          <YouthClubs>
+            <YouthClub YouthClubId="1" Years="2000-2002">SV TOP</YouthClub>
+            <YouthClub YouthClubId="2" Years="2002-2006">Oss</YouthClub>
+            <YouthClub YouthClubId="3" Years="2006-2009">NEC</YouthClub>
+            <YouthClub YouthClubId="4" Years="2009-2013">Feyenoord</YouthClub>
+          </YouthClubs>
+          <SeniorClubs>
+            <SeniorClub SeniorClubId="1" Years="2013-2015" Caps="69" Goals="29">Almere City</SeniorClub>
+            <SeniorClub SeniorClubId="2" Years="2015-2016" Caps="34" Goals="27">AZ</SeniorClub>
+            <SeniorClub SeniorClubId="3" Years="2016-" Caps="24" Goals="2">Tottenham Hotspur</SeniorClub>
+          </SeniorClubs>
+          <NationalTeams>
+            <NationalTeam NationalTeamId="1" Years="2008-2009" Caps="4" Goals="2">Netherlands U15</NationalTeam>
+            <NationalTeam NationalTeamId="2" Years="2009" Caps="6" Goals="1">Netherlands U16</NationalTeam>
+            <NationalTeam NationalTeamId="3" Years="2011" Caps="1" Goals="0">Netherlands U18</NationalTeam>
+            <NationalTeam NationalTeamId="4" Years="2014" Caps="2" Goals="2">Netherlands U20</NationalTeam>
+            <NationalTeam NationalTeamId="5" Years="2014-2015" Caps="10" Goals="8">Netherlands U21</NationalTeam>
+            <NationalTeam NationalTeamId="6" Years="2016-" Caps="9" Goals="4">Netherlands</NationalTeam>
+          </NationalTeams>
+          <CurrentTeam>Tottenham Hotspur</CurrentTeam>
+          <CurrentNumber>9</CurrentNumber>
+        </Attacker>
+        <Attacker AttackerId="3">
+          <Name>Dabney Souza</Name>
+          <Fullname></Fullname>
+          <Nickname></Nickname>
+          <BirthDate>July 21, 1996</BirthDate>
+          <BirthPlace City="" Country=""/>
+          <Height></Height>
+          <Weight></Weight>
+          <WikiPosition>Forward</WikiPosition>
+          <GoalComPosition>A CL home</GoalComPosition>
+          <GoalComPlayerNumber>19</GoalComPlayerNumber>
+          <GoalComShownName>D. dos Santos</GoalComShownName>
+          <GoalComWebsite>http://www.goal.com/en/people/netherlands/103351/dabney-souza</GoalComWebsite>
+          <YouthClubs/>
+          <SeniorClubs/>
+          <NationalTeams/>
+          <CurrentTeam></CurrentTeam>
+          <CurrentNumber></CurrentNumber>
+        </Attacker>
+      </Attackers>
+    </Home>
+    <Away>
+      <Goalkeepers>
+        <Goalkeeper GoalkeeperId="1">
+          <Name>Eloy Room</Name>
+          <Fullname>Eloy Victor Room</Fullname>
+          <Nickname></Nickname>
+          <BirthDate>February 06, 1989</BirthDate>
+          <BirthPlace City="Nijmegen" Country="Netherlands"/>
+          <Height>1.90</Height>
+          <Weight>81 Kg.</Weight>
+          <WikiPosition>Goalkeeper</WikiPosition>
+          <GoalComPosition>GK C away</GoalComPosition>
+          <GoalComPlayerNumber>1</GoalComPlayerNumber>
+          <GoalComShownName>E. Room</GoalComShownName>
+          <GoalComWebsite>http://www.goal.com/en/people/netherlands/23645/eloy-room</GoalComWebsite>
+          <YouthClubs>
+            <YouthClub YouthClubId="1" Years="">SCE</YouthClub>
+            <YouthClub YouthClubId="2" Years="">N.E.C.</YouthClub>
+            <YouthClub YouthClubId="3" Years="{{0|0000}}-2002">Union</YouthClub>
+            <YouthClub YouthClubId="4" Years="2002-2008">Vitesse</YouthClub>
+          </YouthClubs>
+          <SeniorClubs>
+            <SeniorClub SeniorClubId="1" Years="2008-" Caps="131" Goals="0">Vitesse</SeniorClub>
+            <SeniorClub SeniorClubId="2" Years="2013-2014" Caps="20" Goals="0">→ Go Ahead Eagles (loan)</SeniorClub>
+          </SeniorClubs>
+          <NationalTeams>
+            <NationalTeam NationalTeamId="1" Years="" Caps="1" Goals="0">Netherlands U20</NationalTeam>
+            <NationalTeam NationalTeamId="2" Years="2015-" Caps="11" Goals="0">Curaçao</NationalTeam>
+          </NationalTeams>
+          <CurrentTeam>Vitesse</CurrentTeam>
+          <CurrentNumber>1</CurrentNumber>
+        </Goalkeeper>
+      </Goalkeepers>
+      <Defenders>
+        <Defender DefenderId="1">
+          <Name>Guram Kashia</Name>
+          <Fullname></Fullname>
+          <Nickname></Nickname>
+          <BirthDate>July 04, 1987</BirthDate>
+          <BirthPlace City="Tbilisi" Country="Georgia"/>
+          <Height>1.85</Height>
+          <Weight></Weight>
+          <WikiPosition>Centre back</WikiPosition>
+          <GoalComPosition>D1 CR away</GoalComPosition>
+          <GoalComPlayerNumber>37</GoalComPlayerNumber>
+          <GoalComShownName>G. Kashia</GoalComShownName>
+          <GoalComWebsite>http://www.goal.com/en/people/georgia/30005/guram-kashia</GoalComWebsite>
+          <YouthClubs>
+            <YouthClub YouthClubId="1" Years="2003-2006">Dinamo Tbilisi</YouthClub>
+          </YouthClubs>
+          <SeniorClubs>
+            <SeniorClub SeniorClubId="1" Years="2006-2010" Caps="91" Goals="12">Dinamo Tbilisi</SeniorClub>
+            <SeniorClub SeniorClubId="2" Years="2010-" Caps="211" Goals="17">Vitesse</SeniorClub>
+          </SeniorClubs>
+          <NationalTeams>
+            <NationalTeam NationalTeamId="1" Years="2007-2009" Caps="10" Goals="2">Georgia U21</NationalTeam>
+            <NationalTeam NationalTeamId="2" Years="2009-" Caps="52" Goals="1">Georgia</NationalTeam>
+          </NationalTeams>
+          <CurrentTeam>Vitesse</CurrentTeam>
+          <CurrentNumber>37</CurrentNumber>
+        </Defender>
+        <Defender DefenderId="2">
+          <Name>Maikel van der Werff</Name>
+          <Fullname></Fullname>
+          <Nickname></Nickname>
+          <BirthDate>April 22, 1989</BirthDate>
+          <BirthPlace City="" Country=""/>
+          <Height></Height>
+          <Weight></Weight>
+          <WikiPosition>Defender</WikiPosition>
+          <GoalComPosition>D1 C away</GoalComPosition>
+          <GoalComPlayerNumber>3</GoalComPlayerNumber>
+          <GoalComShownName>M. van der Werff</GoalComShownName>
+          <GoalComWebsite>http://www.goal.com/en/people/netherlands/23688/maikel-van-der-werff</GoalComWebsite>
+          <YouthClubs/>
+          <SeniorClubs/>
+          <NationalTeams/>
+          <CurrentTeam></CurrentTeam>
+          <CurrentNumber></CurrentNumber>
+        </Defender>
+        <Defender DefenderId="3">
+          <Name>Arnold Kruiswijk</Name>
+          <Fullname>Arnold Kruiswijk</Fullname>
+          <Nickname></Nickname>
+          <BirthDate>November 02, 1984</BirthDate>
+          <BirthPlace City="Groningen" Country="Netherlands"/>
+          <Height>1.82</Height>
+          <Weight>71 Kg.</Weight>
+          <WikiPosition>Left back</WikiPosition>
+          <GoalComPosition>D1 CL away</GoalComPosition>
+          <GoalComPlayerNumber>6</GoalComPlayerNumber>
+          <GoalComShownName>A. Kruiswijk</GoalComShownName>
+          <GoalComWebsite>http://www.goal.com/en/people/netherlands/4262/arnold-kruiswijk</GoalComWebsite>
+          <YouthClubs>
+            <YouthClub YouthClubId="1" Years="">VV Appingedam</YouthClub>
+            <YouthClub YouthClubId="2" Years="{{0|0000}}-2001">Groningen</YouthClub>
+          </YouthClubs>
+          <SeniorClubs>
+            <SeniorClub SeniorClubId="1" Years="2001-2008" Caps="149" Goals="0">Groningen</SeniorClub>
+            <SeniorClub SeniorClubId="2" Years="2008-2010" Caps="17" Goals="0">Anderlecht</SeniorClub>
+            <SeniorClub SeniorClubId="3" Years="2010" Caps="17" Goals="0">→ Roda JC (loan)</SeniorClub>
+            <SeniorClub SeniorClubId="4" Years="2010-2014" Caps="81" Goals="0">Heerenveen</SeniorClub>
+            <SeniorClub SeniorClubId="5" Years="2014-" Caps="63" Goals="1">Vitesse</SeniorClub>
+          </SeniorClubs>
+          <NationalTeams>
+            <NationalTeam NationalTeamId="1" Years="2003-2007" Caps="25" Goals="0">Netherlands U21</NationalTeam>
+          </NationalTeams>
+          <CurrentTeam>Vitesse</CurrentTeam>
+          <CurrentNumber>6</CurrentNumber>
+        </Defender>
+        <Defender DefenderId="4">
+          <Name>Kevin Diks</Name>
+          <Fullname>Kevin Diks</Fullname>
+          <Nickname></Nickname>
+          <BirthDate>October 06, 1996</BirthDate>
+          <BirthPlace City="Apeldoorn" Country="Netherlands"/>
+          <Height>1.82</Height>
+          <Weight></Weight>
+          <WikiPosition>Right back</WikiPosition>
+          <GoalComPosition>D2 R away</GoalComPosition>
+          <GoalComPlayerNumber>17</GoalComPlayerNumber>
+          <GoalComShownName>K. Diks</GoalComShownName>
+          <GoalComWebsite>http://www.goal.com/en/people/netherlands/162342/kevin-diks</GoalComWebsite>
+          <YouthClubs>
+            <YouthClub YouthClubId="1" Years="2002-2004">VIOS Vaassen</YouthClub>
+            <YouthClub YouthClubId="2" Years="2004-2005">AGOVV</YouthClub>
+            <YouthClub YouthClubId="3" Years="2005-2014">Vitesse</YouthClub>
+          </YouthClubs>
+          <SeniorClubs>
+            <SeniorClub SeniorClubId="1" Years="2014-2016" Caps="52" Goals="2">Vitesse</SeniorClub>
+            <SeniorClub SeniorClubId="2" Years="2016-" Caps="2" Goals="0">Fiorentina</SeniorClub>
+            <SeniorClub SeniorClubId="3" Years="2017-" Caps="9" Goals="0">→ Vitesse (loan)</SeniorClub>
+          </SeniorClubs>
+          <NationalTeams>
+            <NationalTeam NationalTeamId="1" Years="2014-2015" Caps="4" Goals="0">Netherlands U19</NationalTeam>
+            <NationalTeam NationalTeamId="2" Years="2015-" Caps="5" Goals="0">Netherlands U20</NationalTeam>
+            <NationalTeam NationalTeamId="3" Years="2016-" Caps="2" Goals="0">Netherlands U21</NationalTeam>
+          </NationalTeams>
+          <CurrentTeam>Vitesse(on loan from Fiorentina)</CurrentTeam>
+          <CurrentNumber>17</CurrentNumber>
+        </Defender>
+        <Defender DefenderId="5">
+          <Name>Kosuke Ota</Name>
+          <Fullname>Kosuke Ota</Fullname>
+          <Nickname></Nickname>
+          <BirthDate>October 26, 1982</BirthDate>
+          <BirthPlace City="Saitama" Country="Japan"/>
+          <Height>1.75</Height>
+          <Weight>74 Kg.</Weight>
+          <WikiPosition>Defender</WikiPosition>
+          <GoalComPosition>D2 L away</GoalComPosition>
+          <GoalComPlayerNumber>8</GoalComPlayerNumber>
+          <GoalComShownName>K. Ota</GoalComShownName>
+          <GoalComWebsite>http://www.goal.com/en/people/japan/37916/kosuke-ota</GoalComWebsite>
+          <YouthClubs/>
+          <SeniorClubs>
+            <SeniorClub SeniorClubId="1" Years="2005" Caps="14" Goals="4">Saitama S.C.</SeniorClub>
+            <SeniorClub SeniorClubId="2" Years="2006" Caps="0" Goals="0">Thespa Kusatsu (reserve team)</SeniorClub>
+            <SeniorClub SeniorClubId="3" Years="2007-2009" Caps="97" Goals="18">Yokogawa Musashino</SeniorClub>
+            <SeniorClub SeniorClubId="4" Years="2010-2013" Caps="115" Goals="11">Machida Zelvia</SeniorClub>
+            <SeniorClub SeniorClubId="5" Years="2014-" Caps="72" Goals="10">Zweigen Kanazawa</SeniorClub>
+          </SeniorClubs>
+          <NationalTeams/>
+          <CurrentTeam>Zweigen Kanazawa</CurrentTeam>
+          <CurrentNumber>5</CurrentNumber>
+        </Defender>
+      </Defenders>
+      <Midfielders>
+        <Midfielder MidfielderId="1">
+          <Name>Sheran Yeini</Name>
+          <Fullname>Sheran Yeini</Fullname>
+          <Nickname></Nickname>
+          <BirthDate>December 08, 1986</BirthDate>
+          <BirthPlace City="Tel Aviv" Country="Israel"/>
+          <Height>1.77</Height>
+          <Weight></Weight>
+          <WikiPosition>Defensive Midfielder/Right Back/Left Back</WikiPosition>
+          <GoalComPosition>M CR away</GoalComPosition>
+          <GoalComPlayerNumber>21</GoalComPlayerNumber>
+          <GoalComShownName>S. Yeini</GoalComShownName>
+          <GoalComWebsite>http://www.goal.com/en/people/israel/41950/sherran-yeini</GoalComWebsite>
+          <YouthClubs>
+            <YouthClub YouthClubId="1" Years="1993-2004">Maccabi Tel Aviv</YouthClub>
+          </YouthClubs>
+          <SeniorClubs>
+            <SeniorClub SeniorClubId="1" Years="2004-2015" Caps="236" Goals="14">Maccabi Tel Aviv</SeniorClub>
+            <SeniorClub SeniorClubId="2" Years="2015-2017" Caps="36" Goals="1">Vitesse</SeniorClub>
+            <SeniorClub SeniorClubId="3" Years="2017-" Caps="5" Goals="0">Maccabi Tel Aviv</SeniorClub>
+          </SeniorClubs>
+          <NationalTeams>
+            <NationalTeam NationalTeamId="1" Years="2007-2008" Caps="11" Goals="0">Israel U21</NationalTeam>
+            <NationalTeam NationalTeamId="2" Years="2013-" Caps="18" Goals="0">Israel</NationalTeam>
+          </NationalTeams>
+          <CurrentTeam>Maccabi Tel Aviv</CurrentTeam>
+          <CurrentNumber>13</CurrentNumber>
+        </Midfielder>
+        <Midfielder MidfielderId="2">
+          <Name>Lewis Baker</Name>
+          <Fullname>Lewis Renard Baker</Fullname>
+          <Nickname></Nickname>
+          <BirthDate>April 25, 1995</BirthDate>
+          <BirthPlace City="Luton" Country="England"/>
+          <Height>1.83</Height>
+          <Weight></Weight>
+          <WikiPosition>Midfielder</WikiPosition>
+          <GoalComPosition>M C away</GoalComPosition>
+          <GoalComPlayerNumber>34</GoalComPlayerNumber>
+          <GoalComShownName>L. Baker</GoalComShownName>
+          <GoalComWebsite>http://www.goal.com/en/people/england/100243/lewis-baker</GoalComWebsite>
+          <YouthClubs>
+            <YouthClub YouthClubId="1" Years="2004-2005">Luton Town</YouthClub>
+            <YouthClub YouthClubId="2" Years="2005-2014">Chelsea</YouthClub>
+          </YouthClubs>
+          <SeniorClubs>
+            <SeniorClub SeniorClubId="1" Years="2014-" Caps="0" Goals="0">Chelsea</SeniorClub>
+            <SeniorClub SeniorClubId="2" Years="2015" Caps="4" Goals="0">→ Sheffield Wednesday (loan)</SeniorClub>
+            <SeniorClub SeniorClubId="3" Years="2015" Caps="12" Goals="3">→ Milton Keynes Dons (loan)</SeniorClub>
+            <SeniorClub SeniorClubId="4" Years="2015-" Caps="62" Goals="14">→ Vitesse (loan)</SeniorClub>
+          </SeniorClubs>
+          <NationalTeams>
+            <NationalTeam NationalTeamId="1" Years="2011" Caps="7" Goals="1">England U17</NationalTeam>
+            <NationalTeam NationalTeamId="2" Years="2013-2014" Caps="14" Goals="9">England U19</NationalTeam>
+            <NationalTeam NationalTeamId="3" Years="2014-2015" Caps="7" Goals="1">England U20</NationalTeam>
+            <NationalTeam NationalTeamId="4" Years="2015-" Caps="13" Goals="7">England U21</NationalTeam>
+          </NationalTeams>
+          <CurrentTeam>Vitesse(on loan from Chelsea)</CurrentTeam>
+          <CurrentNumber>34</CurrentNumber>
+        </Midfielder>
+        <Midfielder MidfielderId="3">
+          <Name>Marvelous Nakamba</Name>
+          <Fullname>Marvelous Nakamba</Fullname>
+          <Nickname></Nickname>
+          <BirthDate>January 19, 1994</BirthDate>
+          <BirthPlace City="Hwange" Country="Zimbabwe"/>
+          <Height>1.77</Height>
+          <Weight></Weight>
+          <WikiPosition>Midfielder</WikiPosition>
+          <GoalComPosition>M CL away</GoalComPosition>
+          <GoalComPlayerNumber>18</GoalComPlayerNumber>
+          <GoalComShownName>M. Nakamba</GoalComShownName>
+          <GoalComWebsite>http://www.goal.com/en/people/france/107508/marvelous-nakamba</GoalComWebsite>
+          <YouthClubs>
+            <YouthClub YouthClubId="1" Years="{{0|0000}}-2010">Highlanders</YouthClub>
+          </YouthClubs>
+          <SeniorClubs>
+            <SeniorClub SeniorClubId="1" Years="2010-2012" Caps="" Goals="">Bantu Rovers</SeniorClub>
+            <SeniorClub SeniorClubId="2" Years="2012-2014" Caps="32" Goals="1">Nancy II</SeniorClub>
+            <SeniorClub SeniorClubId="3" Years="2014" Caps="2" Goals="0">Nancy</SeniorClub>
+            <SeniorClub SeniorClubId="4" Years="2014-" Caps="67" Goals="2">Vitesse</SeniorClub>
+          </SeniorClubs>
+          <NationalTeams>
+            <NationalTeam NationalTeamId="1" Years="2012" Caps="" Goals="">Zimbabwe U20</NationalTeam>
+            <NationalTeam NationalTeamId="2" Years="2015-" Caps="6" Goals="0">Zimbabwe</NationalTeam>
+          </NationalTeams>
+          <CurrentTeam>Vitesse</CurrentTeam>
+          <CurrentNumber>18</CurrentNumber>
+        </Midfielder>
+      </Midfielders>
+      <Attackers>
+        <Attacker AttackerId="1">
+          <Name>Valeri Qazaishvili</Name>
+          <Fullname>Valeri Qazaishvili</Fullname>
+          <Nickname></Nickname>
+          <BirthDate>January 29, 1993</BirthDate>
+          <BirthPlace City="Ozurgeti" Country="Georgia"/>
+          <Height>1.74</Height>
+          <Weight></Weight>
+          <WikiPosition>Attacking Midfielder</WikiPosition>
+          <GoalComPosition>A CR away</GoalComPosition>
+          <GoalComPlayerNumber>10</GoalComPlayerNumber>
+          <GoalComShownName>V. Kazaishvili</GoalComShownName>
+          <GoalComWebsite>http://www.goal.com/en/people/georgia/263252/valeri-qazaishvili</GoalComWebsite>
+          <YouthClubs>
+            <YouthClub YouthClubId="1" Years="{{0|0000}}-2010">Saburtalo Tbilisi</YouthClub>
+          </YouthClubs>
+          <SeniorClubs>
+            <SeniorClub SeniorClubId="1" Years="2010-2011" Caps="0" Goals="0">Saburtalo Tbilisi</SeniorClub>
+            <SeniorClub SeniorClubId="2" Years="2010-2011" Caps="9" Goals="1">→ Metalurgi Rustavi (loan)</SeniorClub>
+            <SeniorClub SeniorClubId="3" Years="2011" Caps="0" Goals="0">→ Sioni (loan)</SeniorClub>
+            <SeniorClub SeniorClubId="4" Years="2011-" Caps="104" Goals="25">Vitesse</SeniorClub>
+            <SeniorClub SeniorClubId="5" Years="2016-" Caps="10" Goals="0">→ Legia Warsaw (loan)</SeniorClub>
+          </SeniorClubs>
+          <NationalTeams>
+            <NationalTeam NationalTeamId="1" Years="2009-2010" Caps="6" Goals="3">Georgia U17</NationalTeam>
+            <NationalTeam NationalTeamId="2" Years="2010-2011" Caps="6" Goals="2">Georgia U19</NationalTeam>
+            <NationalTeam NationalTeamId="3" Years="2011-2013" Caps="11" Goals="4">Georgia U21</NationalTeam>
+            <NationalTeam NationalTeamId="4" Years="2014-" Caps="22" Goals="4">Georgia</NationalTeam>
+          </NationalTeams>
+          <CurrentTeam>Legia Warsaw(on loan from Vitesse till 30th June 2017)</CurrentTeam>
+          <CurrentNumber>9</CurrentNumber>
+        </Attacker>
+        <Attacker AttackerId="2">
+          <Name>Isaih Brown</Name>
+          <Fullname></Fullname>
+          <Nickname></Nickname>
+          <BirthDate>January 07, 1987</BirthDate>
+          <BirthPlace City="" Country=""/>
+          <Height></Height>
+          <Weight></Weight>
+          <WikiPosition>Forward</WikiPosition>
+          <GoalComPosition>A CL away</GoalComPosition>
+          <GoalComPlayerNumber>7</GoalComPlayerNumber>
+          <GoalComShownName>I. Brown</GoalComShownName>
+          <GoalComWebsite>http://www.goal.com/en/people/england/91675/isaih-brown</GoalComWebsite>
+          <YouthClubs/>
+          <SeniorClubs/>
+          <NationalTeams/>
+          <CurrentTeam></CurrentTeam>
+          <CurrentNumber></CurrentNumber>
+        </Attacker>
+      </Attackers>
+    </Away>
+  </Lineups>
+  <Substitutes>
+    <Home>
+      <Substitute SubstituteId="1">
+        <Name>Gino Coutinho</Name>
+        <Fullname></Fullname>
+        <Nickname></Nickname>
+        <BirthDate>August 05, 1982</BirthDate>
+        <BirthPlace City="Amsterdam" Country=""/>
+        <Height>180 cm.</Height>
+        <Weight>78 Kg.</Weight>
+        <WikiPosition>Goalkeeper</WikiPosition>
+        <GoalComPosition></GoalComPosition>
+        <GoalComPlayerNumber>16</GoalComPlayerNumber>
+        <GoalComShownName>G. Coutinho</GoalComShownName>
+        <GoalComWebsite>http://www.goal.com/en/people/netherlands/4180/gino-coutinho</GoalComWebsite>
+        <YouthClubs/>
+        <SeniorClubs/>
+        <NationalTeams/>
+        <CurrentTeam></CurrentTeam>
+        <CurrentNumber>1</CurrentNumber>
+      </Substitute>
+      <Substitute SubstituteId="2">
+        <Name>Derrick Luckassen</Name>
+        <Fullname>Derrick Luckassen</Fullname>
+        <Nickname></Nickname>
+        <BirthDate>July 03, 1995</BirthDate>
+        <BirthPlace City="Amsterdam" Country="Netherlands"/>
+        <Height>1.86</Height>
+        <Weight></Weight>
+        <WikiPosition>Defender</WikiPosition>
+        <GoalComPosition></GoalComPosition>
+        <GoalComPlayerNumber>23</GoalComPlayerNumber>
+        <GoalComShownName>D. Luckassen</GoalComShownName>
+        <GoalComWebsite>http://www.goal.com/en/people/netherlands/121132/derrick-luckassen</GoalComWebsite>
+        <YouthClubs>
+          <YouthClub YouthClubId="1" Years="{{0|0000}}-2014">AZ</YouthClub>
+        </YouthClubs>
+        <SeniorClubs>
+          <SeniorClub SeniorClubId="1" Years="2014-" Caps="54" Goals="4">AZ</SeniorClub>
+        </SeniorClubs>
+        <NationalTeams>
+          <NationalTeam NationalTeamId="1" Years="2008" Caps="2" Goals="0">Netherlands U18</NationalTeam>
+          <NationalTeam NationalTeamId="2" Years="2013-2014" Caps="6" Goals="0">Netherlands U19</NationalTeam>
+          <NationalTeam NationalTeamId="3" Years="2014" Caps="2" Goals="0">Netherlands U20</NationalTeam>
+          <NationalTeam NationalTeamId="4" Years="2014-" Caps="9" Goals="1">Netherlands U21</NationalTeam>
+        </NationalTeams>
+        <CurrentTeam>AZ</CurrentTeam>
+        <CurrentNumber>23</CurrentNumber>
+      </Substitute>
+      <Substitute SubstituteId="3">
+        <Name>Rajko Brežančić</Name>
+        <Fullname>Rajko Brežančić</Fullname>
+        <Nickname></Nickname>
+        <BirthDate>August 21, 1989</BirthDate>
+        <BirthPlace City="Vlasenica" Country="SFR Yugoslavia"/>
+        <Height>1.76</Height>
+        <Weight></Weight>
+        <WikiPosition>Left-back</WikiPosition>
+        <GoalComPosition></GoalComPosition>
+        <GoalComPlayerNumber>5</GoalComPlayerNumber>
+        <GoalComShownName>R. Brežančić</GoalComShownName>
+        <GoalComWebsite>http://www.goal.com/en/people/serbia/31070/rajko-bre%C5%BEan%C4%8Di%C4%87</GoalComWebsite>
+        <YouthClubs>
+          <YouthClub YouthClubId="1" Years="">Radnički Nova Pazova</YouthClub>
+          <YouthClub YouthClubId="2" Years="2002-2007">Partizan</YouthClub>
+        </YouthClubs>
+        <SeniorClubs>
+          <SeniorClub SeniorClubId="1" Years="2007-2010" Caps="10" Goals="0">Partizan</SeniorClub>
+          <SeniorClub SeniorClubId="2" Years="2007-2008" Caps="15" Goals="0">→ Teleoptik (loan)</SeniorClub>
+          <SeniorClub SeniorClubId="3" Years="2008" Caps="13" Goals="0">→ Bežanija (loan)</SeniorClub>
+          <SeniorClub SeniorClubId="4" Years="2010" Caps="9" Goals="0">→ Teleoptik (loan)</SeniorClub>
+          <SeniorClub SeniorClubId="5" Years="2010-2011" Caps="7" Goals="0">Metalac Gornji Milanovac</SeniorClub>
+          <SeniorClub SeniorClubId="6" Years="2011" Caps="13" Goals="0">→ Bežanija (loan)</SeniorClub>
+          <SeniorClub SeniorClubId="7" Years="2011-2013" Caps="58" Goals="2">Bežanija</SeniorClub>
+          <SeniorClub SeniorClubId="8" Years="2013-2015" Caps="61" Goals="2">Čukarički</SeniorClub>
+          <SeniorClub SeniorClubId="9" Years="2015-2016" Caps="8" Goals="1">AZ</SeniorClub>
+          <SeniorClub SeniorClubId="10" Years="2016-" Caps="15" Goals="0">Huesca</SeniorClub>
+        </SeniorClubs>
+        <NationalTeams>
+          <NationalTeam NationalTeamId="1" Years="2005-2006" Caps="7" Goals="0">Serbia and Montenegro U17{{Efn|name  UEFA|Only official UEFA matches included}}</NationalTeam>
+          <NationalTeam NationalTeamId="2" Years="2007" Caps="2" Goals="0">Serbia U19{{Efn|name  UEFA}}</NationalTeam>
+          <NationalTeam NationalTeamId="3" Years="2009-2010" Caps="2" Goals="0">Serbia U21</NationalTeam>
+        </NationalTeams>
+        <CurrentTeam>Huesca</CurrentTeam>
+        <CurrentNumber>20</CurrentNumber>
+      </Substitute>
+      <Substitute SubstituteId="4">
+        <Name>Thom Haye</Name>
+        <Fullname>Thom Haye</Fullname>
+        <Nickname></Nickname>
+        <BirthDate>February 09, 1995</BirthDate>
+        <BirthPlace City="Amsterdam" Country="Netherlands"/>
+        <Height>1.77</Height>
+        <Weight></Weight>
+        <WikiPosition>Midfielder</WikiPosition>
+        <GoalComPosition></GoalComPosition>
+        <GoalComPlayerNumber>20</GoalComPlayerNumber>
+        <GoalComShownName>T. Haye</GoalComShownName>
+        <GoalComWebsite>http://www.goal.com/en/people/netherlands/55301/thom-haye</GoalComWebsite>
+        <YouthClubs>
+          <YouthClub YouthClubId="1" Years="{{0|0000}}-2012">AZ</YouthClub>
+        </YouthClubs>
+        <SeniorClubs>
+          <SeniorClub SeniorClubId="1" Years="2012-2016" Caps="56" Goals="1">AZ</SeniorClub>
+          <SeniorClub SeniorClubId="2" Years="2016-" Caps="30" Goals="3">Willem II</SeniorClub>
+        </SeniorClubs>
+        <NationalTeams>
+          <NationalTeam NationalTeamId="1" Years="2009-2010" Caps="5" Goals="0">Netherlands U15</NationalTeam>
+          <NationalTeam NationalTeamId="2" Years="2010-2011" Caps="6" Goals="0">Netherlands U16</NationalTeam>
+          <NationalTeam NationalTeamId="3" Years="2011-2012" Caps="21" Goals="3">Netherlands U17</NationalTeam>
+          <NationalTeam NationalTeamId="4" Years="2012-2013" Caps="8" Goals="2">Netherlands U19</NationalTeam>
+          <NationalTeam NationalTeamId="5" Years="2014" Caps="1" Goals="0">Netherlands U20</NationalTeam>
+          <NationalTeam NationalTeamId="6" Years="2015-" Caps="9" Goals="0">Netherlands U21</NationalTeam>
+        </NationalTeams>
+        <CurrentTeam>Willem II</CurrentTeam>
+        <CurrentNumber>8</CurrentNumber>
+      </Substitute>
+      <Substitute SubstituteId="5">
+        <Name>Celso Ortiz</Name>
+        <Fullname>Celso Fabián Ortiz Gamarra</Fullname>
+        <Nickname></Nickname>
+        <BirthDate>January 26, 1989</BirthDate>
+        <BirthPlace City="Asunción" Country="Paraguay"/>
+        <Height>1.75</Height>
+        <Weight>70 Kg.</Weight>
+        <WikiPosition>Central midfielder</WikiPosition>
+        <GoalComPosition></GoalComPosition>
+        <GoalComPlayerNumber>6</GoalComPlayerNumber>
+        <GoalComShownName>C. Ortiz</GoalComShownName>
+        <GoalComWebsite>http://www.goal.com/en/people/paraguay/27902/c-ortiz</GoalComWebsite>
+        <YouthClubs>
+          <YouthClub YouthClubId="1" Years="2005-2007">Cerro Porteño</YouthClub>
+        </YouthClubs>
+        <SeniorClubs>
+          <SeniorClub SeniorClubId="1" Years="2007-2010" Caps="46" Goals="7">Cerro Porteño</SeniorClub>
+          <SeniorClub SeniorClubId="2" Years="2010-2016" Caps="100" Goals="2">AZ</SeniorClub>
+          <SeniorClub SeniorClubId="3" Years="2016-" Caps="22" Goals="1">Monterrey</SeniorClub>
+        </SeniorClubs>
+        <NationalTeams>
+          <NationalTeam NationalTeamId="1" Years="2007-2009" Caps="10" Goals="3">Paraguay U-20</NationalTeam>
+          <NationalTeam NationalTeamId="2" Years="2010-" Caps="8" Goals="0">Paraguay</NationalTeam>
+        </NationalTeams>
+        <CurrentTeam>Monterrey</CurrentTeam>
+        <CurrentNumber>16</CurrentNumber>
+      </Substitute>
+      <Substitute SubstituteId="6">
+        <Name>Levi García</Name>
+        <Fullname>Levi Samuel García</Fullname>
+        <Nickname></Nickname>
+        <BirthDate>November 20, 1997</BirthDate>
+        <BirthPlace City="Santa Flora, Trinidad" Country="Trinidad and Tobago"/>
+        <Height>1.75</Height>
+        <Weight></Weight>
+        <WikiPosition>Left-winger</WikiPosition>
+        <GoalComPosition></GoalComPosition>
+        <GoalComPlayerNumber>28</GoalComPlayerNumber>
+        <GoalComShownName>L. Garcia</GoalComShownName>
+        <GoalComWebsite>http://www.goal.com/en/people/trinidad-and-tobago/93317/levi-garcia</GoalComWebsite>
+        <YouthClubs>
+          <YouthClub YouthClubId="1" Years="2011-2014">Shiva Boys' Hindu College</YouthClub>
+          <YouthClub YouthClubId="2" Years="2012-2013">TTEC</YouthClub>
+          <YouthClub YouthClubId="3" Years="2013-2014">Siparia Spurs</YouthClub>
+        </YouthClubs>
+        <SeniorClubs>
+          <SeniorClub SeniorClubId="1" Years="2012-2013" Caps="0" Goals="0">TTEC</SeniorClub>
+          <SeniorClub SeniorClubId="2" Years="2014-2015" Caps="0" Goals="0">Central FC</SeniorClub>
+          <SeniorClub SeniorClubId="3" Years="2015-" Caps="18" Goals="2">AZ</SeniorClub>
+        </SeniorClubs>
+        <NationalTeams>
+          <NationalTeam NationalTeamId="1" Years="2012-2013" Caps="4" Goals="0">Trinidad and Tobago U17</NationalTeam>
+          <NationalTeam NationalTeamId="2" Years="2014-" Caps="7" Goals="0">Trinidad and Tobago U20</NationalTeam>
+          <NationalTeam NationalTeamId="3" Years="2016-" Caps="8" Goals="2">Trinidad and Tobago</NationalTeam>
+        </NationalTeams>
+        <CurrentTeam>AZ</CurrentTeam>
+        <CurrentNumber>28</CurrentNumber>
+      </Substitute>
+      <Substitute SubstituteId="7">
+        <Name>Robert Mühren</Name>
+        <Fullname>Robert Mühren</Fullname>
+        <Nickname></Nickname>
+        <BirthDate>May 18, 1989</BirthDate>
+        <BirthPlace City="Purmerend" Country="Netherlands"/>
+        <Height>1.80</Height>
+        <Weight></Weight>
+        <WikiPosition>Striker</WikiPosition>
+        <GoalComPosition></GoalComPosition>
+        <GoalComPlayerNumber>21</GoalComPlayerNumber>
+        <GoalComShownName>R. Mühren</GoalComShownName>
+        <GoalComWebsite>http://www.goal.com/en/people/netherlands/57544/robert-m%C3%BChren</GoalComWebsite>
+        <YouthClubs>
+          <YouthClub YouthClubId="1" Years="">RKSAV Volendam</YouthClub>
+          <YouthClub YouthClubId="2" Years="">Ajax</YouthClub>
+        </YouthClubs>
+        <SeniorClubs>
+          <SeniorClub SeniorClubId="1" Years="2011-2014" Caps="102" Goals="49">FC Volendam</SeniorClub>
+          <SeniorClub SeniorClubId="2" Years="2014-2017" Caps="47" Goals="11">AZ</SeniorClub>
+          <SeniorClub SeniorClubId="3" Years="2017-" Caps="0" Goals="0">Zulte Waregem</SeniorClub>
+        </SeniorClubs>
+        <NationalTeams/>
+        <CurrentTeam>Zulte Waregem</CurrentTeam>
+        <CurrentNumber></CurrentNumber>
+      </Substitute>
+    </Home>
+    <Away>
+      <Substitute SubstituteId="1">
+        <Name>Piet Velthuizen</Name>
+        <Fullname>Piet Hubertus Velthuizen</Fullname>
+        <Nickname></Nickname>
+        <BirthDate>November 03, 1986</BirthDate>
+        <BirthPlace City="Nijmegen" Country="Netherlands"/>
+        <Height>1.89</Height>
+        <Weight>87 Kg.</Weight>
+        <WikiPosition>Goalkeeper</WikiPosition>
+        <GoalComPosition></GoalComPosition>
+        <GoalComPlayerNumber>22</GoalComPlayerNumber>
+        <GoalComShownName>P. Velthuizen</GoalComShownName>
+        <GoalComWebsite>http://www.goal.com/en/people/netherlands/16999/piet-velthuizen</GoalComWebsite>
+        <YouthClubs>
+          <YouthClub YouthClubId="1" Years="">SCE</YouthClub>
+          <YouthClub YouthClubId="2" Years="">Quick 1888</YouthClub>
+          <YouthClub YouthClubId="3" Years="{{0|0000}}-2006">Vitesse/ AGOVV</YouthClub>
+        </YouthClubs>
+        <SeniorClubs>
+          <SeniorClub SeniorClubId="1" Years="2006-2010" Caps="108" Goals="0">Vitesse Arnhem</SeniorClub>
+          <SeniorClub SeniorClubId="2" Years="2010-2011" Caps="3" Goals="0">Hércules</SeniorClub>
+          <SeniorClub SeniorClubId="3" Years="2011-2016" Caps="108" Goals="0">Vitesse</SeniorClub>
+          <SeniorClub SeniorClubId="4" Years="2016-" Caps="18" Goals="0">Hapoel Haifa</SeniorClub>
+        </SeniorClubs>
+        <NationalTeams>
+          <NationalTeam NationalTeamId="1" Years="2007-2008" Caps="8" Goals="0">Netherlands U-21</NationalTeam>
+          <NationalTeam NationalTeamId="2" Years="2008-2009" Caps="3" Goals="0">Netherlands B</NationalTeam>
+          <NationalTeam NationalTeamId="3" Years="2009" Caps="1" Goals="0">Netherlands</NationalTeam>
+        </NationalTeams>
+        <CurrentTeam>Hapoel Haifa</CurrentTeam>
+        <CurrentNumber>22</CurrentNumber>
+      </Substitute>
+      <Substitute SubstituteId="2">
+        <Name>Kelvin Leerdam</Name>
+        <Fullname>Kelvin Leerdam</Fullname>
+        <Nickname></Nickname>
+        <BirthDate>June 24, 1990</BirthDate>
+        <BirthPlace City="Paramaribo" Country="Suriname"/>
+        <Height>1.79</Height>
+        <Weight>74 Kg.</Weight>
+        <WikiPosition>Right Back</WikiPosition>
+        <GoalComPosition></GoalComPosition>
+        <GoalComPlayerNumber>5</GoalComPlayerNumber>
+        <GoalComShownName>K. Leerdam</GoalComShownName>
+        <GoalComWebsite>http://www.goal.com/en/people/suriname/26479/kelvin-leerdam</GoalComWebsite>
+        <YouthClubs>
+          <YouthClub YouthClubId="1" Years="">USV Elinkwijk</YouthClub>
+          <YouthClub YouthClubId="2" Years="2005-2008">Feyenoord</YouthClub>
+        </YouthClubs>
+        <SeniorClubs>
+          <SeniorClub SeniorClubId="1" Years="2008-2013" Caps="97" Goals="5">Feyenoord</SeniorClub>
+          <SeniorClub SeniorClubId="2" Years="2013-" Caps="89" Goals="12">Vitesse</SeniorClub>
+        </SeniorClubs>
+        <NationalTeams>
+          <NationalTeam NationalTeamId="1" Years="2009" Caps="3" Goals="0">Netherlands U19</NationalTeam>
+          <NationalTeam NationalTeamId="2" Years="2010-2013" Caps="19" Goals="1">Netherlands U21</NationalTeam>
+        </NationalTeams>
+        <CurrentTeam>Vitesse</CurrentTeam>
+        <CurrentNumber>5</CurrentNumber>
+      </Substitute>
+      <Substitute SubstituteId="3">
+        <Name>Mo Osman</Name>
+        <Fullname>Mohammed Osman</Fullname>
+        <Nickname></Nickname>
+        <BirthDate>January 01, 1994</BirthDate>
+        <BirthPlace City="Qamishli" Country="Syria"/>
+        <Height></Height>
+        <Weight></Weight>
+        <WikiPosition>Attacking midfielder</WikiPosition>
+        <GoalComPosition></GoalComPosition>
+        <GoalComPlayerNumber>41</GoalComPlayerNumber>
+        <GoalComShownName>M. Osman</GoalComShownName>
+        <GoalComWebsite>http://www.goal.com/en/people/netherlands/187642/mohammed-osman</GoalComWebsite>
+        <YouthClubs>
+          <YouthClub YouthClubId="1" Years="">DVV</YouthClub>
+          <YouthClub YouthClubId="2" Years="2008-2015">Vitesse</YouthClub>
+        </YouthClubs>
+        <SeniorClubs>
+          <SeniorClub SeniorClubId="1" Years="2015-" Caps="4" Goals="0">Vitesse</SeniorClub>
+          <SeniorClub SeniorClubId="2" Years="2016-" Caps="5" Goals="1">→ Vitesse II</SeniorClub>
+        </SeniorClubs>
+        <NationalTeams>
+          <NationalTeam NationalTeamId="1" Years="2009" Caps="3" Goals="0">Netherlands U16</NationalTeam>
+        </NationalTeams>
+        <CurrentTeam>Vitesse</CurrentTeam>
+        <CurrentNumber>20</CurrentNumber>
+      </Substitute>
+      <Substitute SubstituteId="4">
+        <Name>Nathan</Name>
+        <Fullname>Nathan Allan de Souza</Fullname>
+        <Nickname></Nickname>
+        <BirthDate>March 13, 1996</BirthDate>
+        <BirthPlace City="Blumenau" Country="Brazil"/>
+        <Height>1.77</Height>
+        <Weight>73 Kg.</Weight>
+        <WikiPosition>Midfielder</WikiPosition>
+        <GoalComPosition></GoalComPosition>
+        <GoalComPlayerNumber>13</GoalComPlayerNumber>
+        <GoalComShownName>Nathan</GoalComShownName>
+        <GoalComWebsite>http://www.goal.com/en/people/brazil/100640/nathan</GoalComWebsite>
+        <YouthClubs>
+          <YouthClub YouthClubId="1" Years="2009-2013">Atlético Paranaense</YouthClub>
+        </YouthClubs>
+        <SeniorClubs>
+          <SeniorClub SeniorClubId="1" Years="2013-2015" Caps="11" Goals="0">Atlético Paranaense</SeniorClub>
+          <SeniorClub SeniorClubId="2" Years="2015-" Caps="0" Goals="0">Chelsea</SeniorClub>
+          <SeniorClub SeniorClubId="3" Years="2015-" Caps="44" Goals="6">→ Vitesse (loan)</SeniorClub>
+        </SeniorClubs>
+        <NationalTeams>
+          <NationalTeam NationalTeamId="1" Years="2013-2014" Caps="5" Goals="5">Brazil U17</NationalTeam>
+          <NationalTeam NationalTeamId="2" Years="2014-" Caps="14" Goals="3">Brazil U20</NationalTeam>
+        </NationalTeams>
+        <CurrentTeam>Vitesse(on loan from Chelsea)</CurrentTeam>
+        <CurrentNumber>11</CurrentNumber>
+      </Substitute>
+      <Substitute SubstituteId="5">
+        <Name>Yuning Zhang</Name>
+        <Fullname></Fullname>
+        <Nickname></Nickname>
+        <BirthDate>May 23, 1977</BirthDate>
+        <BirthPlace City="" Country=""/>
+        <Height>186 cm.</Height>
+        <Weight>86 Kg.</Weight>
+        <WikiPosition>Forward</WikiPosition>
+        <GoalComPosition></GoalComPosition>
+        <GoalComPlayerNumber>43</GoalComPlayerNumber>
+        <GoalComShownName>Zhang Yuning</GoalComShownName>
+        <GoalComWebsite>http://www.goal.com/en/people/china/4443/zhang-yuning</GoalComWebsite>
+        <YouthClubs/>
+        <SeniorClubs/>
+        <NationalTeams/>
+        <CurrentTeam></CurrentTeam>
+        <CurrentNumber></CurrentNumber>
+      </Substitute>
+      <Substitute SubstituteId="6">
+        <Name>Mitchell van Bergen</Name>
+        <Fullname>Mitchell van Bergen</Fullname>
+        <Nickname></Nickname>
+        <BirthDate>August 27, 1999</BirthDate>
+        <BirthPlace City="Oss" Country="Netherlands"/>
+        <Height>1.70</Height>
+        <Weight></Weight>
+        <WikiPosition>Forward</WikiPosition>
+        <GoalComPosition></GoalComPosition>
+        <GoalComPlayerNumber>42</GoalComPlayerNumber>
+        <GoalComShownName>M. van Bergen</GoalComShownName>
+        <GoalComWebsite>http://www.goal.com/en/people/netherlands/280322/mitchell-van-bergen</GoalComWebsite>
+        <YouthClubs>
+          <YouthClub YouthClubId="1" Years="{{0|0000}}-2007">RKSV Margriet</YouthClub>
+          <YouthClub YouthClubId="2" Years="2007-2015">Willem II</YouthClub>
+          <YouthClub YouthClubId="3" Years="2015-2016">Vitesse</YouthClub>
+        </YouthClubs>
+        <SeniorClubs>
+          <SeniorClub SeniorClubId="1" Years="2015-" Caps="18" Goals="0">Vitesse</SeniorClub>
+        </SeniorClubs>
+        <NationalTeams>
+          <NationalTeam NationalTeamId="1" Years="2015-2016" Caps="5" Goals="0">Netherlands U17</NationalTeam>
+          <NationalTeam NationalTeamId="2" Years="2016-" Caps="6" Goals="0">Netherlands U19</NationalTeam>
+        </NationalTeams>
+        <CurrentTeam>Vitesse</CurrentTeam>
+        <CurrentNumber>16</CurrentNumber>
+      </Substitute>
+      <Substitute SubstituteId="7">
+        <Name>Denys Oliynyk</Name>
+        <Fullname>Denys Viktorovych Oliynyk</Fullname>
+        <Nickname></Nickname>
+        <BirthDate>June 16, 1987</BirthDate>
+        <BirthPlace City="Zaporizhia" Country="Ukrainian SSR"/>
+        <Height>1.78</Height>
+        <Weight>66 Kg.</Weight>
+        <WikiPosition>Winger</WikiPosition>
+        <GoalComPosition></GoalComPosition>
+        <GoalComPlayerNumber>11</GoalComPlayerNumber>
+        <GoalComShownName>D. Oliynyk</GoalComShownName>
+        <GoalComWebsite>http://www.goal.com/en/people/ukraine/50414/denys-oliynyk</GoalComWebsite>
+        <YouthClubs>
+          <YouthClub YouthClubId="1" Years="2004-2008">Dynamo Kyiv</YouthClub>
+        </YouthClubs>
+        <SeniorClubs>
+          <SeniorClub SeniorClubId="1" Years="2006-2008" Caps="3" Goals="1">Dynamo Kyiv</SeniorClub>
+          <SeniorClub SeniorClubId="2" Years="2007" Caps="14" Goals="1">→ Naftovyk-Ukrnafta Okhtyrka (loan)</SeniorClub>
+          <SeniorClub SeniorClubId="3" Years="2008" Caps="16" Goals="5">→ Arsenal Kyiv (loan)</SeniorClub>
+          <SeniorClub SeniorClubId="4" Years="2009-2011" Caps="68" Goals="21">Metalist Kharkiv</SeniorClub>
+          <SeniorClub SeniorClubId="5" Years="2011-2014" Caps="37" Goals="9">Dnipro Dnipropetrovsk</SeniorClub>
+          <SeniorClub SeniorClubId="6" Years="2014-2016" Caps="56" Goals="8">Vitesse</SeniorClub>
+          <SeniorClub SeniorClubId="7" Years="2016-" Caps="3" Goals="1">SV Darmstadt</SeniorClub>
+        </SeniorClubs>
+        <NationalTeams>
+          <NationalTeam NationalTeamId="1" Years="2007-2008" Caps="17" Goals="6">Ukraine U21</NationalTeam>
+          <NationalTeam NationalTeamId="2" Years="2010-" Caps="12" Goals="0">Ukraine</NationalTeam>
+        </NationalTeams>
+        <CurrentTeam>SV Darmstadt</CurrentTeam>
+        <CurrentNumber>22</CurrentNumber>
+      </Substitute>
+    </Away>
+  </Substitutes>
+  <Managers>
+    <Home>
+      <Manager ManagerId="1">
+        <Name>John van den Brom</Name>
+        <Fullname>Joseph Anthonius van den Brom</Fullname>
+        <Nickname></Nickname>
+        <BirthDate>October 04, 1966</BirthDate>
+        <BirthPlace City="Amersfoort" Country="Netherlands"/>
+        <Height>1.91</Height>
+        <Weight></Weight>
+        <WikiPosition>Midfielder</WikiPosition>
+        <GoalComShownName>J. van den Brom</GoalComShownName>
+        <GoalComWebsite>http://www.goal.com/en/people/netherlands/19820/john-van-den-brom</GoalComWebsite>
+        <YouthClubs>
+          <YouthClub YouthClubId="1" Years="">APWC</YouthClub>
+          <YouthClub YouthClubId="2" Years="">AFC Quick 1890</YouthClub>
+        </YouthClubs>
+        <SeniorClubs>
+          <SeniorClub SeniorClubId="1" Years="1986-1993" Caps="225" Goals="80">Vitesse</SeniorClub>
+          <SeniorClub SeniorClubId="2" Years="1993-1995" Caps="44" Goals="7">Ajax</SeniorClub>
+          <SeniorClub SeniorClubId="3" Years="1995-1996" Caps="22" Goals="3">Istanbulspor</SeniorClub>
+          <SeniorClub SeniorClubId="4" Years="1996-2001" Caps="99" Goals="13">Vitesse</SeniorClub>
+          <SeniorClub SeniorClubId="5" Years="2002-2003" Caps="42" Goals="4">De Graafschap</SeniorClub>
+        </SeniorClubs>
+        <NationalTeams>
+          <NationalTeam NationalTeamId="1" Years="1990-1993" Caps="2" Goals="1">Netherlands</NationalTeam>
+        </NationalTeams>
+        <CurrentTeam>AZ (manager)</CurrentTeam>
+      </Manager>
+    </Home>
+    <Away/>
+  </Managers>
+  <LastFiveGames>
+    <Home>
+      <Match MatchId="1">
+        <Opponent>SBV Vitesse</Opponent>
+        <ResultGame CurrentTeamGoals="0" OpponentGoals="2">0-2</ResultGame>
+        <HomeAwayGame>home</HomeAwayGame>
+        <WinDrawLostGame>lost</WinDrawLostGame>
+      </Match>
+      <Match MatchId="2">
+        <Opponent>FC Twente</Opponent>
+        <ResultGame CurrentTeamGoals="2" OpponentGoals="1">2-1</ResultGame>
+        <HomeAwayGame>home</HomeAwayGame>
+        <WinDrawLostGame>win</WinDrawLostGame>
+      </Match>
+      <Match MatchId="3">
+        <Opponent>Heracles Almelo</Opponent>
+        <ResultGame CurrentTeamGoals="2" OpponentGoals="1">1-2</ResultGame>
+        <HomeAwayGame>away</HomeAwayGame>
+        <WinDrawLostGame>win</WinDrawLostGame>
+      </Match>
+      <Match MatchId="4">
+        <Opponent>SV Roda JC</Opponent>
+        <ResultGame CurrentTeamGoals="1" OpponentGoals="1">1-1</ResultGame>
+        <HomeAwayGame>home</HomeAwayGame>
+        <WinDrawLostGame>draw</WinDrawLostGame>
+      </Match>
+      <Match MatchId="5">
+        <Opponent>AFC Ajax</Opponent>
+        <ResultGame CurrentTeamGoals="1" OpponentGoals="4">4-1</ResultGame>
+        <HomeAwayGame>away</HomeAwayGame>
+        <WinDrawLostGame>lost</WinDrawLostGame>
+      </Match>
+    </Home>
+    <Away>
+      <Match MatchId="1">
+        <Opponent>Alkmaar Zaanstreek</Opponent>
+        <ResultGame CurrentTeamGoals="2" OpponentGoals="0">0-2</ResultGame>
+        <HomeAwayGame>away</HomeAwayGame>
+        <WinDrawLostGame>win</WinDrawLostGame>
+      </Match>
+      <Match MatchId="2">
+        <Opponent>Feyenoord Rotterdam</Opponent>
+        <ResultGame CurrentTeamGoals="0" OpponentGoals="2">0-2</ResultGame>
+        <HomeAwayGame>home</HomeAwayGame>
+        <WinDrawLostGame>lost</WinDrawLostGame>
+      </Match>
+      <Match MatchId="3">
+        <Opponent>SBV Excelsior</Opponent>
+        <ResultGame CurrentTeamGoals="0" OpponentGoals="1">1-0</ResultGame>
+        <HomeAwayGame>away</HomeAwayGame>
+        <WinDrawLostGame>lost</WinDrawLostGame>
+      </Match>
+      <Match MatchId="4">
+        <Opponent>SC Heerenveen</Opponent>
+        <ResultGame CurrentTeamGoals="4" OpponentGoals="2">4-2</ResultGame>
+        <HomeAwayGame>home</HomeAwayGame>
+        <WinDrawLostGame>win</WinDrawLostGame>
+      </Match>
+      <Match MatchId="5">
+        <Opponent>Heracles Almelo</Opponent>
+        <ResultGame CurrentTeamGoals="1" OpponentGoals="0">0-1</ResultGame>
+        <HomeAwayGame>away</HomeAwayGame>
+        <WinDrawLostGame>win</WinDrawLostGame>
+      </Match>
+    </Away>
+  </LastFiveGames>
+  <PreviousMeetings>
+    <HomeTeamWins>2</HomeTeamWins>
+    <AwayTeamWins>2</AwayTeamWins>
+    <Draws>1</Draws>
+    <HomeTeamWinPrediction>59%</HomeTeamWinPrediction>
+    <DrawPrediction>33%</DrawPrediction>
+    <AwayTeamWinPrediction>8%</AwayTeamWinPrediction>
+    <PreviousMeetingsResults>
+      <Meeting MeetingId="1">
+        <Date>April 30, 2017</Date>
+        <HomeTeam>AZ</HomeTeam>
+        <AwayTeam>Vitesse</AwayTeam>
+        <Result HomeTeamGoals="0" AwayTeamGoals="2">0-2</Result>
+      </Meeting>
+      <Meeting MeetingId="2">
+        <Date>January 29, 2017</Date>
+        <HomeTeam>Vitesse</HomeTeam>
+        <AwayTeam>AZ</AwayTeam>
+        <Result HomeTeamGoals="2" AwayTeamGoals="1">2-1</Result>
+      </Meeting>
+      <Meeting MeetingId="3">
+        <Date>October 15, 2016</Date>
+        <HomeTeam>AZ</HomeTeam>
+        <AwayTeam>Vitesse</AwayTeam>
+        <Result HomeTeamGoals="2" AwayTeamGoals="2">2-2</Result>
+      </Meeting>
+      <Meeting MeetingId="4">
+        <Date>February 06, 2016</Date>
+        <HomeTeam>AZ</HomeTeam>
+        <AwayTeam>Vitesse</AwayTeam>
+        <Result HomeTeamGoals="1" AwayTeamGoals="0">1-0</Result>
+      </Meeting>
+      <Meeting MeetingId="5">
+        <Date>November 08, 2015</Date>
+        <HomeTeam>Vitesse</HomeTeam>
+        <AwayTeam>AZ</AwayTeam>
+        <Result HomeTeamGoals="0" AwayTeamGoals="2">0-2</Result>
+      </Meeting>
+    </PreviousMeetingsResults>
+    <MostPredictedResults>
+      <Prediction PredictionId="1">
+        <PredictedResult HomeTeamGoals="2" AwayTeamGoals="1">2-1</PredictedResult>
+      </Prediction>
+      <Prediction PredictionId="2">
+        <PredictedResult HomeTeamGoals="0" AwayTeamGoals="0">0-0</PredictedResult>
+      </Prediction>
+      <Prediction PredictionId="3">
+        <PredictedResult HomeTeamGoals="3" AwayTeamGoals="1">3-1</PredictedResult>
+      </Prediction>
+    </MostPredictedResults>
+  </PreviousMeetings>
+  <Statistics>
+    <Home>
+      <TotalShots>15</TotalShots>
+      <ShotsOnTarget>7</ShotsOnTarget>
+      <CompletedPasses>283</CompletedPasses>
+      <PassingAccuracy>70%</PassingAccuracy>
+      <Possession>45%</Possession>
+      <Corners>10</Corners>
+      <Offsides>2</Offsides>
+      <FoulsConceded>10</FoulsConceded>
+      <TotalPasses>405</TotalPasses>
+      <ShortPasses>338</ShortPasses>
+      <LongPasses>67</LongPasses>
+      <ForwardPasses>172</ForwardPasses>
+      <BackPasses>53</BackPasses>
+      <LeftPasses>87</LeftPasses>
+      <RightPasses>93</RightPasses>
+      <ForwardPassesPercentage>42%</ForwardPassesPercentage>
+      <BlockedShots>3</BlockedShots>
+      <CentreShots>12</CentreShots>
+      <LeftShots>2</LeftShots>
+      <RightShots>1</RightShots>
+      <OutsideArea>47%</OutsideArea>
+      <SuccessfulCrosses>4</SuccessfulCrosses>
+      <TotalCrosses>26</TotalCrosses>
+      <AccuracyCrosses>15%</AccuracyCrosses>
+      <CrossesInside18YardLine>21</CrossesInside18YardLine>
+      <CrossesOutside18YardLine>5</CrossesOutside18YardLine>
+      <LeftCrosses>8</LeftCrosses>
+      <RightCrosses>18</RightCrosses>
+      <TotalAttemptedTakeOns>22</TotalAttemptedTakeOns>
+      <SuccessfulTakeOns>10</SuccessfulTakeOns>
+      <SuccessfulFinal3rdTakeOns>5</SuccessfulFinal3rdTakeOns>
+      <SuccessfulLeftSideFinal3rdTakeOns>1</SuccessfulLeftSideFinal3rdTakeOns>
+      <SuccessfulCentreFinal3rdTakeOns>3</SuccessfulCentreFinal3rdTakeOns>
+      <SuccessfulRightSideFinal3rdTakeOns>1</SuccessfulRightSideFinal3rdTakeOns>
+      <Blocks>3</Blocks>
+      <Interceptions>14</Interceptions>
+      <Clearances>22</Clearances>
+      <Recoveries>67</Recoveries>
+      <SuccessfulTackles>19</SuccessfulTackles>
+      <TotalTackles>23</TotalTackles>
+      <TackleAccuracy>83%</TackleAccuracy>
+    </Home>
+    <Away>
+      <TotalShots>13</TotalShots>
+      <ShotsOnTarget>7</ShotsOnTarget>
+      <CompletedPasses>409</CompletedPasses>
+      <PassingAccuracy>79%</PassingAccuracy>
+      <Possession>55%</Possession>
+      <Corners>3</Corners>
+      <Offsides>1</Offsides>
+      <FoulsConceded>10</FoulsConceded>
+      <TotalPasses>515</TotalPasses>
+      <ShortPasses>441</ShortPasses>
+      <LongPasses>74</LongPasses>
+      <ForwardPasses>198</ForwardPasses>
+      <BackPasses>92</BackPasses>
+      <LeftPasses>116</LeftPasses>
+      <RightPasses>109</RightPasses>
+      <ForwardPassesPercentage>38%</ForwardPassesPercentage>
+      <BlockedShots>3</BlockedShots>
+      <CentreShots>11</CentreShots>
+      <LeftShots>2</LeftShots>
+      <RightShots>0</RightShots>
+      <OutsideArea>54%</OutsideArea>
+      <SuccessfulCrosses>3</SuccessfulCrosses>
+      <TotalCrosses>15</TotalCrosses>
+      <AccuracyCrosses>20%</AccuracyCrosses>
+      <CrossesInside18YardLine>11</CrossesInside18YardLine>
+      <CrossesOutside18YardLine>4</CrossesOutside18YardLine>
+      <LeftCrosses>6</LeftCrosses>
+      <RightCrosses>9</RightCrosses>
+      <TotalAttemptedTakeOns>18</TotalAttemptedTakeOns>
+      <SuccessfulTakeOns>9</SuccessfulTakeOns>
+      <SuccessfulFinal3rdTakeOns>4</SuccessfulFinal3rdTakeOns>
+      <SuccessfulLeftSideFinal3rdTakeOns>1</SuccessfulLeftSideFinal3rdTakeOns>
+      <SuccessfulCentreFinal3rdTakeOns>3</SuccessfulCentreFinal3rdTakeOns>
+      <SuccessfulRightSideFinal3rdTakeOns>0</SuccessfulRightSideFinal3rdTakeOns>
+      <Blocks>3</Blocks>
+      <Interceptions>21</Interceptions>
+      <Clearances>33</Clearances>
+      <Recoveries>68</Recoveries>
+      <SuccessfulTackles>17</SuccessfulTackles>
+      <TotalTackles>21</TotalTackles>
+      <TackleAccuracy>81%</TackleAccuracy>
+    </Away>
+  </Statistics>
+</Goal>

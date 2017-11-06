@@ -1,0 +1,1263 @@
+<Goal>
+  <Highlights>
+    <League>Eerste Divisie</League>
+    <StartDate>April 29, 2016</StartDate>
+    <StartTime>• 19:00</StartTime>
+    <Stadium>• TATA Steel Stadion</Stadium>
+    <City>Velsen-Zuid</City>
+    <Referee>J. Oostrom</Referee>
+    <Attendees>2602</Attendees>
+    <FullTime>FT</FullTime>
+    <ExtraInformation></ExtraInformation>
+    <FullTimeScore>1-0</FullTimeScore>
+    <Home>
+      <Team>Telstar</Team>
+      <GoalScorersList>
+        <Goal GoalId="1" Minute="67" PlayerLink="http://www.goal.com/en/people/netherlands/43279/stefano-lilipaly" OwnGoal="n">S. Lilipaly</Goal>
+      </GoalScorersList>
+      <FinalGoals>1</FinalGoals>
+    </Home>
+    <Away>
+      <Team>Helmond Sport</Team>
+      <GoalScorersList/>
+      <FinalGoals>0</FinalGoals>
+    </Away>
+  </Highlights>
+  <Events>
+    <AssistList/>
+    <GoalList>
+      <Goal GoalId="1" Minute="67">Stefano Lilipaly</Goal>
+    </GoalList>
+    <MissedPenaltyList/>
+    <PenaltyGoalList/>
+    <RedCardList/>
+    <YellowCardList>
+      <YellowCard YellowCardId="1" Minute="74">Tarik Tissoudali</YellowCard>
+    </YellowCardList>
+    <YellowRedList/>
+    <OwnGoalList/>
+    <SubstitutionList>
+      <Substitution SubstitutionId="1" Minute="46" SubOut="Stephen Warmolts" SubIn="Tim Rerimassie"/>
+      <Substitution SubstitutionId="2" Minute="64" SubOut="Anthony Correia" SubIn="Tom Noordhoff"/>
+      <Substitution SubstitutionId="3" Minute="72" SubOut="Mounir El Allouchi" SubIn="Sam Strijbosch"/>
+      <Substitution SubstitutionId="4" Minute="84" SubOut="Tim Keurntjes" SubIn="Tom Beissel"/>
+      <Substitution SubstitutionId="5" Minute="89" SubOut="Fabian Serrarens" SubIn="T. van Huizen"/>
+    </SubstitutionList>
+  </Events>
+  <LastGame>
+    <Home>
+      <LastGameLeague>Eerste Divisie</LastGameLeague>
+      <DateLastGame>April 15, 2016</DateLastGame>
+      <OpponentLastGame>FC Oss</OpponentLastGame>
+      <ResultLastGame CurrentTeamGoals="3" OpponentGoals="3">3-3</ResultLastGame>
+      <HomeAwayLastGame>away</HomeAwayLastGame>
+      <WinDrawLostLastGame>draw</WinDrawLostLastGame>
+      <GoneFromLineUpList>
+        <Player PlayerId="1">W. Zonneveld</Player>
+        <Player PlayerId="2">D. Mijnders</Player>
+        <Player PlayerId="3">T. Keurntjes</Player>
+        <Player PlayerId="4">E. Knol</Player>
+        <Player PlayerId="5">L. Abdulahi</Player>
+      </GoneFromLineUpList>
+      <NewInLineUpList>
+        <Player PlayerId="1">B. Horton</Player>
+        <Player PlayerId="2">F. Korpershoek</Player>
+        <Player PlayerId="3">J. Tutuarima</Player>
+        <Player PlayerId="4">B. van den Broek</Player>
+        <Player PlayerId="5">M. Ajnane</Player>
+      </NewInLineUpList>
+    </Home>
+    <Away>
+      <LastGameLeague>Eerste Divisie</LastGameLeague>
+      <DateLastGame>April 22, 2016</DateLastGame>
+      <OpponentLastGame>FC Oss</OpponentLastGame>
+      <ResultLastGame CurrentTeamGoals="4" OpponentGoals="0">4-0</ResultLastGame>
+      <HomeAwayLastGame>home</HomeAwayLastGame>
+      <WinDrawLostLastGame>won</WinDrawLostLastGame>
+      <GoneFromLineUpList>
+        <Player PlayerId="1">S. van Gassel</Player>
+        <Player PlayerId="2">Y. Cortie</Player>
+        <Player PlayerId="3">J. Verkennis</Player>
+        <Player PlayerId="4">G. Kerk</Player>
+        <Player PlayerId="5">C. de Reuver</Player>
+      </GoneFromLineUpList>
+      <NewInLineUpList>
+        <Player PlayerId="1">W. van der Steen</Player>
+        <Player PlayerId="2">S. Strijbosch</Player>
+        <Player PlayerId="3">K. Visser</Player>
+        <Player PlayerId="4">S. Edwards</Player>
+        <Player PlayerId="5">J. van Heck</Player>
+      </NewInLineUpList>
+    </Away>
+  </LastGame>
+  <Lineups>
+    <Home>
+      <Player PlayerId="1">
+        <Name>Wesley Zonneveld</Name>
+        <Fullname>Wesley Zonneveld</Fullname>
+        <Nickname></Nickname>
+        <BirthDate>June 17, 1992</BirthDate>
+        <BirthPlace City="Haarlem" Country="Netherlands"/>
+        <Height>1.95</Height>
+        <Weight></Weight>
+        <WikiPosition>Goalkeeper</WikiPosition>
+        <GoalComPosition></GoalComPosition>
+        <GoalComPlayerNumber>20</GoalComPlayerNumber>
+        <GoalComShownName>W. Zonneveld</GoalComShownName>
+        <GoalComWebsite>http://www.goal.com/en/people/netherlands/49114/wesley-zonneveld</GoalComWebsite>
+        <YouthClubs>
+          <YouthClub YouthClubId="1" Years="">FC Lisse</YouthClub>
+          <YouthClub YouthClubId="2" Years="">AZ</YouthClub>
+        </YouthClubs>
+        <SeniorClubs>
+          <SeniorClub SeniorClubId="1" Years="2011-" Caps="56" Goals="0">Telstar</SeniorClub>
+        </SeniorClubs>
+        <NationalTeams/>
+        <CurrentTeam>Telstar</CurrentTeam>
+        <CurrentNumber>20</CurrentNumber>
+      </Player>
+      <Player PlayerId="2">
+        <Name>Anthony Correia</Name>
+        <Fullname>Anthony Correia</Fullname>
+        <Nickname></Nickname>
+        <BirthDate>May 02, 1982</BirthDate>
+        <BirthPlace City="Paramaribo" Country="Suriname"/>
+        <Height>1.79</Height>
+        <Weight></Weight>
+        <WikiPosition>Right back</WikiPosition>
+        <GoalComPosition></GoalComPosition>
+        <GoalComPlayerNumber>2</GoalComPlayerNumber>
+        <GoalComShownName>A. Correia</GoalComShownName>
+        <GoalComWebsite>http://www.goal.com/en/people/suriname/19615/anthony-correia</GoalComWebsite>
+        <YouthClubs>
+          <YouthClub YouthClubId="1" Years="">Onze Gezellen</YouthClub>
+          <YouthClub YouthClubId="2" Years="">RKVV Velsen</YouthClub>
+        </YouthClubs>
+        <SeniorClubs>
+          <SeniorClub SeniorClubId="1" Years="2001-2016" Caps="354" Goals="1">Telstar</SeniorClub>
+        </SeniorClubs>
+        <NationalTeams/>
+        <CurrentTeam></CurrentTeam>
+        <CurrentNumber></CurrentNumber>
+      </Player>
+      <Player PlayerId="3">
+        <Name>Tim Keurntjes</Name>
+        <Fullname>Tim Keurntjes</Fullname>
+        <Nickname></Nickname>
+        <BirthDate>March 13, 1991</BirthDate>
+        <BirthPlace City="Doetinchem" Country="Netherlands"/>
+        <Height>1.76</Height>
+        <Weight></Weight>
+        <WikiPosition>Left back</WikiPosition>
+        <GoalComPosition></GoalComPosition>
+        <GoalComPlayerNumber>8</GoalComPlayerNumber>
+        <GoalComShownName>T. Keurntjes</GoalComShownName>
+        <GoalComWebsite>http://www.goal.com/en/people/netherlands/62104/tim-keurntjes</GoalComWebsite>
+        <YouthClubs>
+          <YouthClub YouthClubId="1" Years="2008-2010">De Graafschap</YouthClub>
+        </YouthClubs>
+        <SeniorClubs>
+          <SeniorClub SeniorClubId="1" Years="2009-2010" Caps="3" Goals="0">De Graafschap</SeniorClub>
+          <SeniorClub SeniorClubId="2" Years="2010-2013" Caps="8" Goals="0">FC Groningen</SeniorClub>
+          <SeniorClub SeniorClubId="3" Years="2012-2013" Caps="13" Goals="0">→ SC Cambuur (loan)</SeniorClub>
+          <SeniorClub SeniorClubId="4" Years="2013-2016" Caps="59" Goals="7">Telstar</SeniorClub>
+          <SeniorClub SeniorClubId="5" Years="2016-" Caps="0" Goals="0">De Graafschap</SeniorClub>
+        </SeniorClubs>
+        <NationalTeams/>
+        <CurrentTeam>De Graafschap</CurrentTeam>
+        <CurrentNumber>22</CurrentNumber>
+      </Player>
+      <Player PlayerId="4">
+        <Name>Bryan Ottenhoff</Name>
+        <Fullname></Fullname>
+        <Nickname></Nickname>
+        <BirthDate>July 08, 1991</BirthDate>
+        <BirthPlace City="Amsterdam" Country="Netherlands"/>
+        <Height>1.87</Height>
+        <Weight></Weight>
+        <WikiPosition>Centre back</WikiPosition>
+        <GoalComPosition></GoalComPosition>
+        <GoalComPlayerNumber>4</GoalComPlayerNumber>
+        <GoalComShownName>B. Ottenhoff</GoalComShownName>
+        <GoalComWebsite>http://www.goal.com/en/people/netherlands/89461/bryan-ottenhoff</GoalComWebsite>
+        <YouthClubs>
+          <YouthClub YouthClubId="1" Years="">Ajax</YouthClub>
+          <YouthClub YouthClubId="2" Years="">VA FC Twente</YouthClub>
+        </YouthClubs>
+        <SeniorClubs>
+          <SeniorClub SeniorClubId="1" Years="2013-2014" Caps="29" Goals="0">Almere City</SeniorClub>
+          <SeniorClub SeniorClubId="2" Years="2014-2015" Caps="0" Goals="0">Oțelul Galați</SeniorClub>
+          <SeniorClub SeniorClubId="3" Years="2015-" Caps="24" Goals="0">Telstar</SeniorClub>
+        </SeniorClubs>
+        <NationalTeams/>
+        <CurrentTeam>Telstar</CurrentTeam>
+        <CurrentNumber>4</CurrentNumber>
+      </Player>
+      <Player PlayerId="5">
+        <Name>Dustin Mijnders</Name>
+        <Fullname></Fullname>
+        <Nickname></Nickname>
+        <BirthDate>August 25, 1995</BirthDate>
+        <BirthPlace City="" Country=""/>
+        <Height></Height>
+        <Weight></Weight>
+        <WikiPosition>Defender</WikiPosition>
+        <GoalComPosition></GoalComPosition>
+        <GoalComPlayerNumber>19</GoalComPlayerNumber>
+        <GoalComShownName>D. Mijnders</GoalComShownName>
+        <GoalComWebsite>http://www.goal.com/en/people/netherlands/180042/dustin-mijnders</GoalComWebsite>
+        <YouthClubs/>
+        <SeniorClubs/>
+        <NationalTeams/>
+        <CurrentTeam></CurrentTeam>
+        <CurrentNumber></CurrentNumber>
+      </Player>
+      <Player PlayerId="6">
+        <Name>Stefano Lilipaly</Name>
+        <Fullname>Stefano Jantje Lilipaly</Fullname>
+        <Nickname></Nickname>
+        <BirthDate>January 10, 1990</BirthDate>
+        <BirthPlace City="Arnhem" Country="Netherlands"/>
+        <Height>1.75</Height>
+        <Weight></Weight>
+        <WikiPosition>Attacking midfielder, Winger</WikiPosition>
+        <GoalComPosition></GoalComPosition>
+        <GoalComPlayerNumber>26</GoalComPlayerNumber>
+        <GoalComShownName>S. Lilipaly</GoalComShownName>
+        <GoalComWebsite>http://www.goal.com/en/people/netherlands/43279/stefano-lilipaly</GoalComWebsite>
+        <YouthClubs>
+          <YouthClub YouthClubId="1" Years="1997-2000">DCG</YouthClub>
+          <YouthClub YouthClubId="2" Years="2000-2001">AZ</YouthClub>
+          <YouthClub YouthClubId="3" Years="2001-2010">Utrecht</YouthClub>
+        </YouthClubs>
+        <SeniorClubs>
+          <SeniorClub SeniorClubId="1" Years="2010-2012" Caps="5" Goals="1">Utrecht</SeniorClub>
+          <SeniorClub SeniorClubId="2" Years="2012-2014" Caps="39" Goals="3">Almere City</SeniorClub>
+          <SeniorClub SeniorClubId="3" Years="2014" Caps="0" Goals="0">Consadole Sapporo</SeniorClub>
+          <SeniorClub SeniorClubId="4" Years="2015-2017" Caps="44" Goals="9">Telstar</SeniorClub>
+          <SeniorClub SeniorClubId="5" Years="2017-" Caps="16" Goals="11">Cambuur</SeniorClub>
+        </SeniorClubs>
+        <NationalTeams>
+          <NationalTeam NationalTeamId="1" Years="2005" Caps="0" Goals="0">Netherlands U-16</NationalTeam>
+          <NationalTeam NationalTeamId="2" Years="2007" Caps="0" Goals="0">Netherlands U-17</NationalTeam>
+          <NationalTeam NationalTeamId="3" Years="2013-" Caps="9" Goals="2">Indonesia</NationalTeam>
+        </NationalTeams>
+        <CurrentTeam>Cambuur</CurrentTeam>
+        <CurrentNumber>8</CurrentNumber>
+      </Player>
+      <Player PlayerId="7">
+        <Name>Liban Abdulahi</Name>
+        <Fullname></Fullname>
+        <Nickname></Nickname>
+        <BirthDate>November 02, 1995</BirthDate>
+        <BirthPlace City="Haarlem" Country="Netherlands"/>
+        <Height>1.78</Height>
+        <Weight></Weight>
+        <WikiPosition>Midfielder</WikiPosition>
+        <GoalComPosition></GoalComPosition>
+        <GoalComPlayerNumber>21</GoalComPlayerNumber>
+        <GoalComShownName>L. Abdulahi</GoalComShownName>
+        <GoalComWebsite>http://www.goal.com/en/people/netherlands/173272/liban-abdulahi</GoalComWebsite>
+        <YouthClubs>
+          <YouthClub YouthClubId="1" Years="">SV Hoofddorp</YouthClub>
+          <YouthClub YouthClubId="2" Years="2009-2010">HFC Haarlem</YouthClub>
+          <YouthClub YouthClubId="3" Years="2010-2011">AFC Ajax</YouthClub>
+          <YouthClub YouthClubId="4" Years="2011-2012">A.V.V. Zeeburgia</YouthClub>
+          <YouthClub YouthClubId="5" Years="2012-2014">FC Groningen</YouthClub>
+        </YouthClubs>
+        <SeniorClubs>
+          <SeniorClub SeniorClubId="1" Years="2014-2015" Caps="0" Goals="0">FC Volendam</SeniorClub>
+          <SeniorClub SeniorClubId="2" Years="2015-" Caps="40" Goals="4">SC Telstar</SeniorClub>
+        </SeniorClubs>
+        <NationalTeams/>
+        <CurrentTeam>SC Telstar</CurrentTeam>
+        <CurrentNumber>14</CurrentNumber>
+      </Player>
+      <Player PlayerId="8">
+        <Name>Edo Knol</Name>
+        <Fullname>Edo Knol</Fullname>
+        <Nickname></Nickname>
+        <BirthDate>July 13, 1995</BirthDate>
+        <BirthPlace City="Velserbroek" Country="Netherlands"/>
+        <Height>1.76</Height>
+        <Weight></Weight>
+        <WikiPosition>Midfielder</WikiPosition>
+        <GoalComPosition></GoalComPosition>
+        <GoalComPlayerNumber>18</GoalComPlayerNumber>
+        <GoalComShownName>E. Knol</GoalComShownName>
+        <GoalComWebsite>http://www.goal.com/en/people/netherlands/173472/edo-knol</GoalComWebsite>
+        <YouthClubs>
+          <YouthClub YouthClubId="1" Years="">VSV</YouthClub>
+          <YouthClub YouthClubId="2" Years="">Haarlem</YouthClub>
+          <YouthClub YouthClubId="3" Years="">HFC EDO</YouthClub>
+          <YouthClub YouthClubId="4" Years="">ADO Den Haag</YouthClub>
+        </YouthClubs>
+        <SeniorClubs>
+          <SeniorClub SeniorClubId="1" Years="2014-" Caps="54" Goals="2">Telstar</SeniorClub>
+        </SeniorClubs>
+        <NationalTeams/>
+        <CurrentTeam>Telstar</CurrentTeam>
+        <CurrentNumber>18</CurrentNumber>
+      </Player>
+      <Player PlayerId="9">
+        <Name>Marko Maletić</Name>
+        <Fullname>Marko Maletić</Fullname>
+        <Nickname></Nickname>
+        <BirthDate>October 25, 1993</BirthDate>
+        <BirthPlace City="Belgrade" Country="SFR Yugoslavia"/>
+        <Height>1.96</Height>
+        <Weight></Weight>
+        <WikiPosition>Striker</WikiPosition>
+        <GoalComPosition></GoalComPosition>
+        <GoalComPlayerNumber>9</GoalComPlayerNumber>
+        <GoalComShownName>M. Maletić</GoalComShownName>
+        <GoalComWebsite>http://www.goal.com/en/people/bosnia-and-herzegovina/82221/marko-maleti%C4%87</GoalComWebsite>
+        <YouthClubs>
+          <YouthClub YouthClubId="1" Years="{{0|0000}}-2004">Voetbalvereniging Lengel</YouthClub>
+          <YouthClub YouthClubId="2" Years="2004-2009">De Graafschap</YouthClub>
+          <YouthClub YouthClubId="3" Years="2010-2012">Utrecht</YouthClub>
+        </YouthClubs>
+        <SeniorClubs>
+          <SeniorClub SeniorClubId="1" Years="2012-2014" Caps="14" Goals="1">VfB Stuttgart II</SeniorClub>
+          <SeniorClub SeniorClubId="2" Years="2013-2014" Caps="29" Goals="8">→ FC Oss (loan)</SeniorClub>
+          <SeniorClub SeniorClubId="3" Years="2014-2016" Caps="6" Goals="0">Excelsior</SeniorClub>
+          <SeniorClub SeniorClubId="4" Years="2015-2016" Caps="27" Goals="9">→ Telstar (loan)</SeniorClub>
+          <SeniorClub SeniorClubId="5" Years="2016-" Caps="0" Goals="0">Lommel United</SeniorClub>
+        </SeniorClubs>
+        <NationalTeams>
+          <NationalTeam NationalTeamId="1" Years="2009-2010" Caps="9" Goals="2">Bosnia and Herzegovina U17</NationalTeam>
+          <NationalTeam NationalTeamId="2" Years="2011-2012" Caps="8" Goals="3">Bosnia and Herzegovina U19</NationalTeam>
+          <NationalTeam NationalTeamId="3" Years="2012-2014" Caps="11" Goals="2">Bosnia and Herzegovina U21</NationalTeam>
+        </NationalTeams>
+        <CurrentTeam>Lommel United</CurrentTeam>
+        <CurrentNumber>25</CurrentNumber>
+      </Player>
+      <Player PlayerId="10">
+        <Name>Fabian Serrarens</Name>
+        <Fullname>Fabian Serrarens</Fullname>
+        <Nickname></Nickname>
+        <BirthDate>February 09, 1991</BirthDate>
+        <BirthPlace City="Amsterdam" Country="Netherlands"/>
+        <Height>1.93</Height>
+        <Weight></Weight>
+        <WikiPosition>Striker</WikiPosition>
+        <GoalComPosition></GoalComPosition>
+        <GoalComPlayerNumber>7</GoalComPlayerNumber>
+        <GoalComShownName>F. Serrarens</GoalComShownName>
+        <GoalComWebsite>http://www.goal.com/en/people/netherlands/57537/fabian-serrarens</GoalComWebsite>
+        <YouthClubs>
+          <YouthClub YouthClubId="1" Years="">SC Voorland</YouthClub>
+          <YouthClub YouthClubId="2" Years="">FC Utrecht</YouthClub>
+          <YouthClub YouthClubId="3" Years="">IJVV Stormvogels</YouthClub>
+          <YouthClub YouthClubId="4" Years="">Zeeburgia</YouthClub>
+          <YouthClub YouthClubId="5" Years="">Ajax</YouthClub>
+          <YouthClub YouthClubId="6" Years="">NAC Breda</YouthClub>
+        </YouthClubs>
+        <SeniorClubs>
+          <SeniorClub SeniorClubId="1" Years="2011-2015" Caps="91" Goals="22">Almere City</SeniorClub>
+          <SeniorClub SeniorClubId="2" Years="2015-" Caps="34" Goals="7">Telstar</SeniorClub>
+        </SeniorClubs>
+        <NationalTeams/>
+        <CurrentTeam>Telstar</CurrentTeam>
+        <CurrentNumber>7</CurrentNumber>
+      </Player>
+      <Player PlayerId="11">
+        <Name>Tarik Tissoudali</Name>
+        <Fullname>Tarik Tissoudali</Fullname>
+        <Nickname></Nickname>
+        <BirthDate>April 02, 1993</BirthDate>
+        <BirthPlace City="Amsterdam" Country="Netherlands"/>
+        <Height>1.75</Height>
+        <Weight></Weight>
+        <WikiPosition>Winger</WikiPosition>
+        <GoalComPosition></GoalComPosition>
+        <GoalComPlayerNumber>17</GoalComPlayerNumber>
+        <GoalComShownName>T. Tissoudali</GoalComShownName>
+        <GoalComWebsite>http://www.goal.com/en/people/netherlands/84482/tarik-tissoudali</GoalComWebsite>
+        <YouthClubs>
+          <YouthClub YouthClubId="1" Years="">Argon</YouthClub>
+          <YouthClub YouthClubId="2" Years="">Young Boys</YouthClub>
+          <YouthClub YouthClubId="3" Years="">DWS</YouthClub>
+          <YouthClub YouthClubId="4" Years="">Sparta Nijkerk</YouthClub>
+        </YouthClubs>
+        <SeniorClubs>
+          <SeniorClub SeniorClubId="1" Years="2014-2016" Caps="74" Goals="23">Telstar</SeniorClub>
+          <SeniorClub SeniorClubId="2" Years="2016-" Caps="0" Goals="0">Le Havre</SeniorClub>
+          <SeniorClub SeniorClubId="3" Years="2017-" Caps="0" Goals="0">→ SC Cambuur (loan)</SeniorClub>
+        </SeniorClubs>
+        <NationalTeams>
+          <NationalTeam NationalTeamId="1" Years="2016-" Caps="1" Goals="1">Morocco U23</NationalTeam>
+        </NationalTeams>
+        <CurrentTeam>SC Cambuur</CurrentTeam>
+        <CurrentNumber>11</CurrentNumber>
+      </Player>
+    </Home>
+    <Away>
+      <Player PlayerId="1">
+        <Name>Stijn van Gassel</Name>
+        <Fullname></Fullname>
+        <Nickname></Nickname>
+        <BirthDate>October 17, 1996</BirthDate>
+        <BirthPlace City="Ysselsteyn" Country="Netherlands"/>
+        <Height>1.85</Height>
+        <Weight></Weight>
+        <WikiPosition>Goalkeeper</WikiPosition>
+        <GoalComPosition></GoalComPosition>
+        <GoalComPlayerNumber>30</GoalComPlayerNumber>
+        <GoalComShownName>S. van Gassel</GoalComShownName>
+        <GoalComWebsite>http://www.goal.com/en/people/netherlands/102777/stijn-van-gassel</GoalComWebsite>
+        <YouthClubs>
+          <YouthClub YouthClubId="1" Years="">SV Ysselsteyn</YouthClub>
+          <YouthClub YouthClubId="2" Years="">SV Venray</YouthClub>
+          <YouthClub YouthClubId="3" Years="2009-2014">VVV-Venlo/Helmond Sport</YouthClub>
+        </YouthClubs>
+        <SeniorClubs>
+          <SeniorClub SeniorClubId="1" Years="2014-" Caps="2" Goals="0">Helmond Sport</SeniorClub>
+        </SeniorClubs>
+        <NationalTeams/>
+        <CurrentTeam>Helmond Sport</CurrentTeam>
+        <CurrentNumber>22</CurrentNumber>
+      </Player>
+      <Player PlayerId="2">
+        <Name>Gévero Markiet</Name>
+        <Fullname></Fullname>
+        <Nickname></Nickname>
+        <BirthDate>April 08, 1991</BirthDate>
+        <BirthPlace City="Amsterdam" Country="Netherlands"/>
+        <Height>1.87</Height>
+        <Weight></Weight>
+        <WikiPosition>Right backFull back</WikiPosition>
+        <GoalComPosition></GoalComPosition>
+        <GoalComPlayerNumber>2</GoalComPlayerNumber>
+        <GoalComShownName>G. Markiet</GoalComShownName>
+        <GoalComWebsite>http://www.goal.com/en/people/netherlands/24612/gevero-markiet</GoalComWebsite>
+        <YouthClubs>
+          <YouthClub YouthClubId="1" Years="">FC Omniworld</YouthClub>
+          <YouthClub YouthClubId="2" Years="">FC Utrecht</YouthClub>
+        </YouthClubs>
+        <SeniorClubs>
+          <SeniorClub SeniorClubId="1" Years="2009-2016" Caps="58" Goals="4">FC Utrecht</SeniorClub>
+          <SeniorClub SeniorClubId="2" Years="2015-2016" Caps="30" Goals="3">→ Helmond Sport (loan)</SeniorClub>
+          <SeniorClub SeniorClubId="3" Years="2016" Caps="30" Goals="3">Helmond Sport</SeniorClub>
+          <SeniorClub SeniorClubId="4" Years="2017-" Caps="2" Goals="0">FC 08 Homburg</SeniorClub>
+        </SeniorClubs>
+        <NationalTeams/>
+        <CurrentTeam>FC 08 Homburg</CurrentTeam>
+        <CurrentNumber>24</CurrentNumber>
+      </Player>
+      <Player PlayerId="3">
+        <Name>Joroen Verkinnis</Name>
+        <Fullname></Fullname>
+        <Nickname></Nickname>
+        <BirthDate>December 20, 1998</BirthDate>
+        <BirthPlace City="" Country=""/>
+        <Height></Height>
+        <Weight></Weight>
+        <WikiPosition></WikiPosition>
+        <GoalComPosition></GoalComPosition>
+        <GoalComPlayerNumber>26</GoalComPlayerNumber>
+        <GoalComShownName>J. Verkennis</GoalComShownName>
+        <GoalComWebsite>http://www.goal.com/en/people/netherlands/224962/joroen-verkinnis</GoalComWebsite>
+        <YouthClubs/>
+        <SeniorClubs/>
+        <NationalTeams/>
+        <CurrentTeam></CurrentTeam>
+        <CurrentNumber></CurrentNumber>
+      </Player>
+      <Player PlayerId="4">
+        <Name>Gillian Justiana</Name>
+        <Fullname>Gillian Varick Justiana</Fullname>
+        <Nickname></Nickname>
+        <BirthDate>March 05, 1991</BirthDate>
+        <BirthPlace City="Zwolle" Country="Netherlands"/>
+        <Height>1.76</Height>
+        <Weight></Weight>
+        <WikiPosition>Left back</WikiPosition>
+        <GoalComPosition></GoalComPosition>
+        <GoalComPlayerNumber>5</GoalComPlayerNumber>
+        <GoalComShownName>G. Justiana</GoalComShownName>
+        <GoalComWebsite>http://www.goal.com/en/people/netherlands/43866/gillian-justiana</GoalComWebsite>
+        <YouthClubs/>
+        <SeniorClubs>
+          <SeniorClub SeniorClubId="1" Years="2009-2011" Caps="36" Goals="0">PEC Zwolle</SeniorClub>
+          <SeniorClub SeniorClubId="2" Years="2011-" Caps="139" Goals="12">Helmond Sport</SeniorClub>
+        </SeniorClubs>
+        <NationalTeams>
+          <NationalTeam NationalTeamId="1" Years="2011-" Caps="6" Goals="0">Curaçao</NationalTeam>
+        </NationalTeams>
+        <CurrentTeam>Helmond Sport</CurrentTeam>
+        <CurrentNumber>5</CurrentNumber>
+      </Player>
+      <Player PlayerId="5">
+        <Name>Kai Heerings</Name>
+        <Fullname>Kai Heerings</Fullname>
+        <Nickname></Nickname>
+        <BirthDate>January 12, 1990</BirthDate>
+        <BirthPlace City="Amsterdam" Country="Netherlands"/>
+        <Height>1.90</Height>
+        <Weight></Weight>
+        <WikiPosition>Centre back</WikiPosition>
+        <GoalComPosition></GoalComPosition>
+        <GoalComPlayerNumber>3</GoalComPlayerNumber>
+        <GoalComShownName>K. Heerings</GoalComShownName>
+        <GoalComWebsite>http://www.goal.com/en/people/netherlands/51394/kai-heerings</GoalComWebsite>
+        <YouthClubs>
+          <YouthClub YouthClubId="1" Years="">RCZ</YouthClub>
+          <YouthClub YouthClubId="2" Years="">Zilvermeeuwen</YouthClub>
+          <YouthClub YouthClubId="3" Years="">Ajax</YouthClub>
+          <YouthClub YouthClubId="4" Years="">FC Utrecht</YouthClub>
+        </YouthClubs>
+        <SeniorClubs>
+          <SeniorClub SeniorClubId="1" Years="2011-2015" Caps="63" Goals="1">FC Utrecht</SeniorClub>
+          <SeniorClub SeniorClubId="2" Years="2015-2016" Caps="5" Goals="0">SC Cambuur</SeniorClub>
+          <SeniorClub SeniorClubId="3" Years="2016" Caps="10" Goals="1">→ Helmond Sport (loan)</SeniorClub>
+          <SeniorClub SeniorClubId="4" Years="2016-2017" Caps="5" Goals="0">SKN St. Pölten</SeniorClub>
+          <SeniorClub SeniorClubId="5" Years="2017-" Caps="2" Goals="0">FC 08 Homburg</SeniorClub>
+        </SeniorClubs>
+        <NationalTeams/>
+        <CurrentTeam>FC 08 Homburg</CurrentTeam>
+        <CurrentNumber>3</CurrentNumber>
+      </Player>
+      <Player PlayerId="6">
+        <Name>Stephen Warmolts</Name>
+        <Fullname>Stephen Warmolts</Fullname>
+        <Nickname></Nickname>
+        <BirthDate>April 10, 1994</BirthDate>
+        <BirthPlace City="Emmen" Country="Netherlands"/>
+        <Height>1.82</Height>
+        <Weight></Weight>
+        <WikiPosition>Right back</WikiPosition>
+        <GoalComPosition></GoalComPosition>
+        <GoalComPlayerNumber>14</GoalComPlayerNumber>
+        <GoalComShownName>S. Warmolts</GoalComShownName>
+        <GoalComWebsite>http://www.goal.com/en/people/netherlands/96969/stephen-warmolts</GoalComWebsite>
+        <YouthClubs>
+          <YouthClub YouthClubId="1" Years="">SC Heerenveen</YouthClub>
+        </YouthClubs>
+        <SeniorClubs>
+          <SeniorClub SeniorClubId="1" Years="2014-" Caps="0" Goals="0">SC Heerenveen</SeniorClub>
+          <SeniorClub SeniorClubId="2" Years="2015-2016" Caps="30" Goals="1">→ Helmond Sport (loan)</SeniorClub>
+          <SeniorClub SeniorClubId="3" Years="2016-" Caps="0" Goals="0">Helmond Sport</SeniorClub>
+        </SeniorClubs>
+        <NationalTeams/>
+        <CurrentTeam>Helmond Sport</CurrentTeam>
+        <CurrentNumber>4</CurrentNumber>
+      </Player>
+      <Player PlayerId="7">
+        <Name>Yannick Cortie</Name>
+        <Fullname>Yannick Cortie</Fullname>
+        <Nickname></Nickname>
+        <BirthDate>May 07, 1993</BirthDate>
+        <BirthPlace City="Amsterdam" Country="Netherlands"/>
+        <Height>1.83</Height>
+        <Weight></Weight>
+        <WikiPosition>Left back</WikiPosition>
+        <GoalComPosition></GoalComPosition>
+        <GoalComPlayerNumber>24</GoalComPlayerNumber>
+        <GoalComShownName>Y. Cortie</GoalComShownName>
+        <GoalComWebsite>http://www.goal.com/en/people/netherlands/93981/yannick-cortie</GoalComWebsite>
+        <YouthClubs>
+          <YouthClub YouthClubId="1" Years="{{0|0000}}-2014">FC Utrecht</YouthClub>
+        </YouthClubs>
+        <SeniorClubs>
+          <SeniorClub SeniorClubId="1" Years="2014-2016" Caps="7" Goals="0">FC Utrecht</SeniorClub>
+          <SeniorClub SeniorClubId="2" Years="2015-2016" Caps="24" Goals="3">→ Helmond Sport (loan)</SeniorClub>
+          <SeniorClub SeniorClubId="3" Years="2016-" Caps="0" Goals="0">Teutonia Watzenborn-Steinberg</SeniorClub>
+        </SeniorClubs>
+        <NationalTeams/>
+        <CurrentTeam>Teutonia Watzenborn-Steinberg</CurrentTeam>
+        <CurrentNumber></CurrentNumber>
+      </Player>
+      <Player PlayerId="8">
+        <Name>Mounir El Allouchi</Name>
+        <Fullname>Mounir El Allouchi</Fullname>
+        <Nickname></Nickname>
+        <BirthDate>September 27, 1994</BirthDate>
+        <BirthPlace City="Roosendaal" Country="Netherlands"/>
+        <Height>1.76</Height>
+        <Weight></Weight>
+        <WikiPosition>Attacking midfielder</WikiPosition>
+        <GoalComPosition></GoalComPosition>
+        <GoalComPlayerNumber>10</GoalComPlayerNumber>
+        <GoalComShownName>M. El Allouchi</GoalComShownName>
+        <GoalComWebsite>http://www.goal.com/en/people/netherlands/107293/mounir-el-allouchi</GoalComWebsite>
+        <YouthClubs>
+          <YouthClub YouthClubId="1" Years="{{0|0000}}-2014">NAC Breda</YouthClub>
+        </YouthClubs>
+        <SeniorClubs>
+          <SeniorClub SeniorClubId="1" Years="2014-" Caps="10" Goals="1">NAC Breda</SeniorClub>
+          <SeniorClub SeniorClubId="2" Years="2015-2016" Caps="47" Goals="9">→ Helmond Sport (loan)</SeniorClub>
+        </SeniorClubs>
+        <NationalTeams/>
+        <CurrentTeam>NAC Breda</CurrentTeam>
+        <CurrentNumber>27</CurrentNumber>
+      </Player>
+      <Player PlayerId="9">
+        <Name>Roel van de Sande</Name>
+        <Fullname>Roel van de Sande</Fullname>
+        <Nickname></Nickname>
+        <BirthDate>July 10, 1987</BirthDate>
+        <BirthPlace City="Best" Country="Netherlands"/>
+        <Height>1.79</Height>
+        <Weight></Weight>
+        <WikiPosition>Midfielder</WikiPosition>
+        <GoalComPosition></GoalComPosition>
+        <GoalComPlayerNumber>8</GoalComPlayerNumber>
+        <GoalComShownName>R. van de Sande</GoalComShownName>
+        <GoalComWebsite>http://www.goal.com/en/people/netherlands/20144/roel-van-de-sande</GoalComWebsite>
+        <YouthClubs>
+          <YouthClub YouthClubId="1" Years="">Best Vooruit</YouthClub>
+          <YouthClub YouthClubId="2" Years="">PSV</YouthClub>
+          <YouthClub YouthClubId="3" Years="">FC Eindhoven</YouthClub>
+        </YouthClubs>
+        <SeniorClubs>
+          <SeniorClub SeniorClubId="1" Years="2005-2007" Caps="2" Goals="0">FC Eindhoven</SeniorClub>
+          <SeniorClub SeniorClubId="2" Years="2007-2014" Caps="157" Goals="7">FC Oss</SeniorClub>
+          <SeniorClub SeniorClubId="3" Years="2014-2016" Caps="64" Goals="6">Helmond Sport</SeniorClub>
+          <SeniorClub SeniorClubId="4" Years="2016-" Caps="0" Goals="0">RKC Waalwijk</SeniorClub>
+        </SeniorClubs>
+        <NationalTeams/>
+        <CurrentTeam>RKC Waalwijk</CurrentTeam>
+        <CurrentNumber>8</CurrentNumber>
+      </Player>
+      <Player PlayerId="10">
+        <Name>Carlo de Reuver</Name>
+        <Fullname>Carlo de Reuver</Fullname>
+        <Nickname></Nickname>
+        <BirthDate>January 29, 1995</BirthDate>
+        <BirthPlace City="Rotterdam" Country="Netherlands"/>
+        <Height>1.80</Height>
+        <Weight></Weight>
+        <WikiPosition>Striker</WikiPosition>
+        <GoalComPosition></GoalComPosition>
+        <GoalComPlayerNumber>11</GoalComPlayerNumber>
+        <GoalComShownName>C. de Reuver</GoalComShownName>
+        <GoalComWebsite>http://www.goal.com/en/people/netherlands/89559/carlo-de-reuver</GoalComWebsite>
+        <YouthClubs>
+          <YouthClub YouthClubId="1" Years="">DCV</YouthClub>
+          <YouthClub YouthClubId="2" Years="">Excelsior</YouthClub>
+        </YouthClubs>
+        <SeniorClubs>
+          <SeniorClub SeniorClubId="1" Years="2013-2017" Caps="18" Goals="3">Excelsior</SeniorClub>
+          <SeniorClub SeniorClubId="2" Years="2015-2016" Caps="22" Goals="2">→ Helmond Sport (loan)</SeniorClub>
+          <SeniorClub SeniorClubId="3" Years="2017-" Caps="0" Goals="0">VV Capelle</SeniorClub>
+        </SeniorClubs>
+        <NationalTeams/>
+        <CurrentTeam>VV Capelle</CurrentTeam>
+        <CurrentNumber>14</CurrentNumber>
+      </Player>
+      <Player PlayerId="11">
+        <Name>Gyrano Kerk</Name>
+        <Fullname></Fullname>
+        <Nickname></Nickname>
+        <BirthDate>December 02, 1995</BirthDate>
+        <BirthPlace City="" Country=""/>
+        <Height>1.75</Height>
+        <Weight></Weight>
+        <WikiPosition>Winger</WikiPosition>
+        <GoalComPosition></GoalComPosition>
+        <GoalComPlayerNumber>15</GoalComPlayerNumber>
+        <GoalComShownName>G. Kerk</GoalComShownName>
+        <GoalComWebsite>http://www.goal.com/en/people/netherlands/107279/gyrano-kerk</GoalComWebsite>
+        <YouthClubs>
+          <YouthClub YouthClubId="1" Years="-2012">A.V.V. Zeeburgia</YouthClub>
+          <YouthClub YouthClubId="2" Years="2012-2014">FC Utrecht</YouthClub>
+        </YouthClubs>
+        <SeniorClubs>
+          <SeniorClub SeniorClubId="1" Years="2014-" Caps="4" Goals="1">FC Utrecht</SeniorClub>
+          <SeniorClub SeniorClubId="2" Years="2015-2016" Caps="34" Goals="7">→ Helmond Sport (loan)</SeniorClub>
+        </SeniorClubs>
+        <NationalTeams/>
+        <CurrentTeam>FC Utrecht</CurrentTeam>
+        <CurrentNumber>27</CurrentNumber>
+      </Player>
+    </Away>
+  </Lineups>
+  <Substitutes>
+    <Home>
+      <Substitute SubstituteId="1">
+        <Name>Blake Horton</Name>
+        <Fullname></Fullname>
+        <Nickname></Nickname>
+        <BirthDate>November 08, 1994</BirthDate>
+        <BirthPlace City="Nowra, New South Wales" Country="Australia"/>
+        <Height>1.84</Height>
+        <Weight></Weight>
+        <WikiPosition>Goalkeeper</WikiPosition>
+        <GoalComPosition></GoalComPosition>
+        <GoalComPlayerNumber>30</GoalComPlayerNumber>
+        <GoalComShownName>B. Horton</GoalComShownName>
+        <GoalComWebsite>http://www.goal.com/en/people/australia/180032/blake-horton</GoalComWebsite>
+        <YouthClubs>
+          <YouthClub YouthClubId="1" Years="2012-2013">Port Kembla</YouthClub>
+        </YouthClubs>
+        <SeniorClubs>
+          <SeniorClub SeniorClubId="1" Years="2014-2015" Caps="7" Goals="0">Rockdale City Suns</SeniorClub>
+          <SeniorClub SeniorClubId="2" Years="2015-" Caps="2" Goals="0">Telstar</SeniorClub>
+        </SeniorClubs>
+        <NationalTeams/>
+        <CurrentTeam>Telstar</CurrentTeam>
+        <CurrentNumber>16</CurrentNumber>
+      </Substitute>
+      <Substitute SubstituteId="2">
+        <Name>Yemaro Hoogdorp</Name>
+        <Fullname></Fullname>
+        <Nickname></Nickname>
+        <BirthDate>May 06, 1995</BirthDate>
+        <BirthPlace City="" Country=""/>
+        <Height></Height>
+        <Weight></Weight>
+        <WikiPosition>Defender</WikiPosition>
+        <GoalComPosition></GoalComPosition>
+        <GoalComPlayerNumber>28</GoalComPlayerNumber>
+        <GoalComShownName>Y. Hoogdorp</GoalComShownName>
+        <GoalComWebsite>http://www.goal.com/en/people/netherlands/210002/yemaro-hoogdorp</GoalComWebsite>
+        <YouthClubs/>
+        <SeniorClubs/>
+        <NationalTeams/>
+        <CurrentTeam></CurrentTeam>
+        <CurrentNumber></CurrentNumber>
+      </Substitute>
+      <Substitute SubstituteId="3">
+        <Name>Tom Beissel</Name>
+        <Fullname>Tom Beissel</Fullname>
+        <Nickname></Nickname>
+        <BirthDate>May 10, 1994</BirthDate>
+        <BirthPlace City="Nijmegen" Country="Netherlands"/>
+        <Height>1.81</Height>
+        <Weight></Weight>
+        <WikiPosition>Right back</WikiPosition>
+        <GoalComPosition></GoalComPosition>
+        <GoalComPlayerNumber>16</GoalComPlayerNumber>
+        <GoalComShownName>T. Beissel</GoalComShownName>
+        <GoalComWebsite>http://www.goal.com/en/people/netherlands/173442/tom-beissel</GoalComWebsite>
+        <YouthClubs>
+          <YouthClub YouthClubId="1" Years="2001-2004">SV Juliana '31</YouthClub>
+          <YouthClub YouthClubId="2" Years="2004-2006">SC NEC</YouthClub>
+          <YouthClub YouthClubId="3" Years="2006-2014">Vitesse</YouthClub>
+        </YouthClubs>
+        <SeniorClubs>
+          <SeniorClub SeniorClubId="1" Years="2014-" Caps="25" Goals="0">Telstar</SeniorClub>
+        </SeniorClubs>
+        <NationalTeams/>
+        <CurrentTeam>Telstar</CurrentTeam>
+        <CurrentNumber>2</CurrentNumber>
+      </Substitute>
+      <Substitute SubstituteId="4">
+        <Name>Toine van Huizen</Name>
+        <Fullname>Toine van Huizen</Fullname>
+        <Nickname></Nickname>
+        <BirthDate>February 13, 1990</BirthDate>
+        <BirthPlace City="Middenbeemster" Country="Netherlands"/>
+        <Height>1.88</Height>
+        <Weight>76 Kg.</Weight>
+        <WikiPosition>Centre back</WikiPosition>
+        <GoalComPosition></GoalComPosition>
+        <GoalComPlayerNumber>3</GoalComPlayerNumber>
+        <GoalComShownName>T. van Huizen</GoalComShownName>
+        <GoalComWebsite>http://www.goal.com/en/people/netherlands/43834/t-van-huizen</GoalComWebsite>
+        <YouthClubs>
+          <YouthClub YouthClubId="1" Years="">SV Beemster</YouthClub>
+          <YouthClub YouthClubId="2" Years="">Hellas Sport</YouthClub>
+          <YouthClub YouthClubId="3" Years="">AZ</YouthClub>
+        </YouthClubs>
+        <SeniorClubs>
+          <SeniorClub SeniorClubId="1" Years="2010-2011" Caps="0" Goals="0">AZ</SeniorClub>
+          <SeniorClub SeniorClubId="2" Years="2010" Caps="11" Goals="1">→ Telstar (loan)</SeniorClub>
+          <SeniorClub SeniorClubId="3" Years="2011-2013" Caps="15" Goals="1">Sparta Rotterdam</SeniorClub>
+          <SeniorClub SeniorClubId="4" Years="2013-" Caps="54" Goals="6">Telstar</SeniorClub>
+        </SeniorClubs>
+        <NationalTeams/>
+        <CurrentTeam>Telstar</CurrentTeam>
+        <CurrentNumber>3</CurrentNumber>
+      </Substitute>
+      <Substitute SubstituteId="5">
+        <Name>Tom Noordhoff</Name>
+        <Fullname>Tom Noordhoff</Fullname>
+        <Nickname></Nickname>
+        <BirthDate>July 19, 1995</BirthDate>
+        <BirthPlace City="Haarlem" Country="Netherlands"/>
+        <Height>1.78</Height>
+        <Weight></Weight>
+        <WikiPosition>Defensive midfielder</WikiPosition>
+        <GoalComPosition></GoalComPosition>
+        <GoalComPlayerNumber>14</GoalComPlayerNumber>
+        <GoalComShownName>T. Noordhoff</GoalComShownName>
+        <GoalComWebsite>http://www.goal.com/en/people/netherlands/103298/tom-noordhoff</GoalComWebsite>
+        <YouthClubs>
+          <YouthClub YouthClubId="1" Years="">VV Schoten</YouthClub>
+          <YouthClub YouthClubId="2" Years="-2007">Telstar</YouthClub>
+          <YouthClub YouthClubId="3" Years="2007-2013">Ajax</YouthClub>
+        </YouthClubs>
+        <SeniorClubs>
+          <SeniorClub SeniorClubId="1" Years="2013-2015" Caps="0" Goals="0">Ajax</SeniorClub>
+          <SeniorClub SeniorClubId="2" Years="2013-2015" Caps="17" Goals="1">→ Jong Ajax</SeniorClub>
+          <SeniorClub SeniorClubId="3" Years="2015-2016" Caps="7" Goals="0">Telstar</SeniorClub>
+          <SeniorClub SeniorClubId="4" Years="2016-" Caps="0" Goals="0">Almere City</SeniorClub>
+        </SeniorClubs>
+        <NationalTeams>
+          <NationalTeam NationalTeamId="1" Years="2011" Caps="3" Goals="0">Netherlands U17</NationalTeam>
+          <NationalTeam NationalTeamId="2" Years="2013" Caps="1" Goals="0">Netherlands U18</NationalTeam>
+        </NationalTeams>
+        <CurrentTeam>Almere City</CurrentTeam>
+        <CurrentNumber>23</CurrentNumber>
+      </Substitute>
+      <Substitute SubstituteId="6">
+        <Name>Rafael Uiterloo</Name>
+        <Fullname>Rafael Steve Uiterloo</Fullname>
+        <Nickname></Nickname>
+        <BirthDate>December 07, 1990</BirthDate>
+        <BirthPlace City="Amsterdam" Country="Netherlands"/>
+        <Height>1.81</Height>
+        <Weight></Weight>
+        <WikiPosition>Striker</WikiPosition>
+        <GoalComPosition></GoalComPosition>
+        <GoalComPlayerNumber>11</GoalComPlayerNumber>
+        <GoalComShownName>R. Uiterloo</GoalComShownName>
+        <GoalComWebsite>http://www.goal.com/en/people/netherlands/35294/rafael-uiterloo</GoalComWebsite>
+        <YouthClubs>
+          <YouthClub YouthClubId="1" Years="">SC Voorland</YouthClub>
+          <YouthClub YouthClubId="2" Years="{{0|0000}}-2006">Zeeburgia</YouthClub>
+          <YouthClub YouthClubId="3" Years="2006-2008">Ajax</YouthClub>
+          <YouthClub YouthClubId="4" Years="2008-2010">Utrecht</YouthClub>
+        </YouthClubs>
+        <SeniorClubs>
+          <SeniorClub SeniorClubId="1" Years="2008-2010" Caps="9" Goals="1">Utrecht</SeniorClub>
+          <SeniorClub SeniorClubId="2" Years="2009" Caps="0" Goals="0">→ Omniworld (loan)</SeniorClub>
+          <SeniorClub SeniorClubId="3" Years="2010-2011" Caps="1" Goals="0">Baniyas</SeniorClub>
+          <SeniorClub SeniorClubId="4" Years="2013-2015" Caps="51" Goals="26">FC Lienden</SeniorClub>
+          <SeniorClub SeniorClubId="5" Years="2015-2016" Caps="18" Goals="1">Telstar</SeniorClub>
+          <SeniorClub SeniorClubId="6" Years="2016-" Caps="0" Goals="0">FC Eindhoven</SeniorClub>
+        </SeniorClubs>
+        <NationalTeams/>
+        <CurrentTeam>FC Eindhoven</CurrentTeam>
+        <CurrentNumber></CurrentNumber>
+      </Substitute>
+      <Substitute SubstituteId="7">
+        <Name>Donovan Deekman</Name>
+        <Fullname>Donovan Demian Lucien Deekman</Fullname>
+        <Nickname></Nickname>
+        <BirthDate>June 23, 1988</BirthDate>
+        <BirthPlace City="Amsterdam" Country="Netherlands"/>
+        <Height>1.82</Height>
+        <Weight></Weight>
+        <WikiPosition>Striker</WikiPosition>
+        <GoalComPosition></GoalComPosition>
+        <GoalComPlayerNumber>29</GoalComPlayerNumber>
+        <GoalComShownName>D. Deekman</GoalComShownName>
+        <GoalComWebsite>http://www.goal.com/en/people/netherlands/18331/d-deekman</GoalComWebsite>
+        <YouthClubs/>
+        <SeniorClubs>
+          <SeniorClub SeniorClubId="1" Years="2007-2009" Caps="1" Goals="0">Heerenveen</SeniorClub>
+          <SeniorClub SeniorClubId="2" Years="2009-2012" Caps="32" Goals="3">Lokeren</SeniorClub>
+          <SeniorClub SeniorClubId="3" Years="2012-2014" Caps="61" Goals="20">Sparta Rotterdam</SeniorClub>
+          <SeniorClub SeniorClubId="4" Years="2014-2015" Caps="3" Goals="0">Concordia Chiajna</SeniorClub>
+          <SeniorClub SeniorClubId="5" Years="2015" Caps="3" Goals="0">Naft Tehran</SeniorClub>
+          <SeniorClub SeniorClubId="6" Years="2015-" Caps="3" Goals="1">Telstar</SeniorClub>
+        </SeniorClubs>
+        <NationalTeams/>
+        <CurrentTeam>Telstar</CurrentTeam>
+        <CurrentNumber>29</CurrentNumber>
+      </Substitute>
+    </Home>
+    <Away>
+      <Substitute SubstituteId="1">
+        <Name>Wouter van der Steen</Name>
+        <Fullname>Wouter van der Steen</Fullname>
+        <Nickname></Nickname>
+        <BirthDate>June 03, 1990</BirthDate>
+        <BirthPlace City="Vught" Country="Netherlands"/>
+        <Height>1.87</Height>
+        <Weight></Weight>
+        <WikiPosition>Goalkeeper</WikiPosition>
+        <GoalComPosition></GoalComPosition>
+        <GoalComPlayerNumber>1</GoalComPlayerNumber>
+        <GoalComShownName>W. van der Steen</GoalComShownName>
+        <GoalComWebsite>http://www.goal.com/en/people/netherlands/43859/wouter-van-der-steen</GoalComWebsite>
+        <YouthClubs>
+          <YouthClub YouthClubId="1" Years="">Zwaluw VFC</YouthClub>
+          <YouthClub YouthClubId="2" Years="">PSV</YouthClub>
+          <YouthClub YouthClubId="3" Years="">Helmond Sport</YouthClub>
+        </YouthClubs>
+        <SeniorClubs>
+          <SeniorClub SeniorClubId="1" Years="2010-2016" Caps="146" Goals="0">Helmond Sport</SeniorClub>
+          <SeniorClub SeniorClubId="2" Years="2016-" Caps="0" Goals="0">SC Heerenveen</SeniorClub>
+        </SeniorClubs>
+        <NationalTeams/>
+        <CurrentTeam>SC Heerenveen</CurrentTeam>
+        <CurrentNumber>33</CurrentNumber>
+      </Substitute>
+      <Substitute SubstituteId="2">
+        <Name>Tim Rerimassie</Name>
+        <Fullname></Fullname>
+        <Nickname></Nickname>
+        <BirthDate>September 01, 1996</BirthDate>
+        <BirthPlace City="Nuenen" Country="Netherlands"/>
+        <Height>1.76</Height>
+        <Weight></Weight>
+        <WikiPosition>Defender</WikiPosition>
+        <GoalComPosition></GoalComPosition>
+        <GoalComPlayerNumber>29</GoalComPlayerNumber>
+        <GoalComShownName>T. Rerimassie</GoalComShownName>
+        <GoalComWebsite>http://www.goal.com/en/people/netherlands/172862/tim-rerimassie</GoalComWebsite>
+        <YouthClubs>
+          <YouthClub YouthClubId="1" Years="">Helmond Sport</YouthClub>
+        </YouthClubs>
+        <SeniorClubs>
+          <SeniorClub SeniorClubId="1" Years="2015-" Caps="3" Goals="0">Helmond Sport</SeniorClub>
+        </SeniorClubs>
+        <NationalTeams/>
+        <CurrentTeam>Helmond Sport</CurrentTeam>
+        <CurrentNumber>23</CurrentNumber>
+      </Substitute>
+      <Substitute SubstituteId="3">
+        <Name>Sam Strijbosch</Name>
+        <Fullname></Fullname>
+        <Nickname></Nickname>
+        <BirthDate>January 11, 1995</BirthDate>
+        <BirthPlace City="Asten" Country="Netherlands"/>
+        <Height>1.78</Height>
+        <Weight></Weight>
+        <WikiPosition>Midfielder</WikiPosition>
+        <GoalComPosition></GoalComPosition>
+        <GoalComPlayerNumber>18</GoalComPlayerNumber>
+        <GoalComShownName>S. Strijbosch</GoalComShownName>
+        <GoalComWebsite>http://www.goal.com/en/people/netherlands/102776/sam-strijbosch</GoalComWebsite>
+        <YouthClubs>
+          <YouthClub YouthClubId="1" Years="">NWC Asten</YouthClub>
+          <YouthClub YouthClubId="2" Years="2006-2014">Helmond Sport</YouthClub>
+        </YouthClubs>
+        <SeniorClubs>
+          <SeniorClub SeniorClubId="1" Years="2014-" Caps="30" Goals="3">Helmond Sport</SeniorClub>
+        </SeniorClubs>
+        <NationalTeams/>
+        <CurrentTeam>Helmond Sport</CurrentTeam>
+        <CurrentNumber>18</CurrentNumber>
+      </Substitute>
+      <Substitute SubstituteId="4">
+        <Name>Steven Edwards</Name>
+        <Fullname>Steven Edwards</Fullname>
+        <Nickname></Nickname>
+        <BirthDate>January 15, 1991</BirthDate>
+        <BirthPlace City="Breda" Country="Netherlands"/>
+        <Height>1.87</Height>
+        <Weight></Weight>
+        <WikiPosition>Midfielder</WikiPosition>
+        <GoalComPosition></GoalComPosition>
+        <GoalComPlayerNumber>7</GoalComPlayerNumber>
+        <GoalComShownName>S. Edwards</GoalComShownName>
+        <GoalComWebsite>http://www.goal.com/en/people/england/41610/steven-edwards</GoalComWebsite>
+        <YouthClubs/>
+        <SeniorClubs>
+          <SeniorClub SeniorClubId="1" Years="2012-2013" Caps="2" Goals="0">NAC Breda</SeniorClub>
+          <SeniorClub SeniorClubId="2" Years="2013-2015" Caps="66" Goals="5">Achilles '29</SeniorClub>
+          <SeniorClub SeniorClubId="3" Years="2015-" Caps="30" Goals="4">Helmond Sport</SeniorClub>
+        </SeniorClubs>
+        <NationalTeams/>
+        <CurrentTeam>Helmond Sport</CurrentTeam>
+        <CurrentNumber>6</CurrentNumber>
+      </Substitute>
+      <Substitute SubstituteId="5">
+        <Name>Colin van Gool</Name>
+        <Fullname></Fullname>
+        <Nickname></Nickname>
+        <BirthDate>February 10, 1995</BirthDate>
+        <BirthPlace City="" Country=""/>
+        <Height></Height>
+        <Weight></Weight>
+        <WikiPosition>Midfielder</WikiPosition>
+        <GoalComPosition></GoalComPosition>
+        <GoalComPlayerNumber>17</GoalComPlayerNumber>
+        <GoalComShownName>C. van Gool</GoalComShownName>
+        <GoalComWebsite>http://www.goal.com/en/people/netherlands/96378/colin-van-gool</GoalComWebsite>
+        <YouthClubs/>
+        <SeniorClubs/>
+        <NationalTeams/>
+        <CurrentTeam></CurrentTeam>
+        <CurrentNumber></CurrentNumber>
+      </Substitute>
+      <Substitute SubstituteId="6">
+        <Name>Marijn van Heugten</Name>
+        <Fullname></Fullname>
+        <Nickname></Nickname>
+        <BirthDate>June 06, 1997</BirthDate>
+        <BirthPlace City="Neerkant" Country="Netherlands"/>
+        <Height>1.84</Height>
+        <Weight></Weight>
+        <WikiPosition>Forward</WikiPosition>
+        <GoalComPosition></GoalComPosition>
+        <GoalComPlayerNumber>25</GoalComPlayerNumber>
+        <GoalComShownName>M. van Heugten</GoalComShownName>
+        <GoalComWebsite>http://www.goal.com/en/people/netherlands/210032/marijn-van-heugten</GoalComWebsite>
+        <YouthClubs>
+          <YouthClub YouthClubId="1" Years="">Helmond Sport</YouthClub>
+        </YouthClubs>
+        <SeniorClubs>
+          <SeniorClub SeniorClubId="1" Years="2015-" Caps="4" Goals="0">Helmond Sport</SeniorClub>
+        </SeniorClubs>
+        <NationalTeams/>
+        <CurrentTeam>Helmond Sport</CurrentTeam>
+        <CurrentNumber>25</CurrentNumber>
+      </Substitute>
+      <Substitute SubstituteId="7">
+        <Name>Thomas Schilders</Name>
+        <Fullname></Fullname>
+        <Nickname></Nickname>
+        <BirthDate>January 18, 1995</BirthDate>
+        <BirthPlace City="" Country=""/>
+        <Height></Height>
+        <Weight></Weight>
+        <WikiPosition>Forward</WikiPosition>
+        <GoalComPosition></GoalComPosition>
+        <GoalComPlayerNumber>16</GoalComPlayerNumber>
+        <GoalComShownName>T. Schilders</GoalComShownName>
+        <GoalComWebsite>http://www.goal.com/en/people/netherlands/179592/thomas-schilders</GoalComWebsite>
+        <YouthClubs/>
+        <SeniorClubs/>
+        <NationalTeams/>
+        <CurrentTeam></CurrentTeam>
+        <CurrentNumber></CurrentNumber>
+      </Substitute>
+    </Away>
+  </Substitutes>
+  <Managers>
+    <Home>
+      <Manager ManagerId="1">
+        <Name>Michel Vonk</Name>
+        <Fullname>Michel Vonk</Fullname>
+        <Nickname></Nickname>
+        <BirthDate>October 28, 1968</BirthDate>
+        <BirthPlace City="Alkmaar" Country="Netherlands"/>
+        <Height></Height>
+        <Weight></Weight>
+        <WikiPosition>Defender</WikiPosition>
+        <GoalComShownName>M. Vonk</GoalComShownName>
+        <GoalComWebsite>http://www.goal.com/en/people/netherlands/53698/michel-vonk</GoalComWebsite>
+        <YouthClubs/>
+        <SeniorClubs>
+          <SeniorClub SeniorClubId="1" Years="1986-1991" Caps="111" Goals="8">AZ</SeniorClub>
+          <SeniorClub SeniorClubId="2" Years="1991-1992" Caps="51" Goals="1">SVV Dordrecht</SeniorClub>
+          <SeniorClub SeniorClubId="3" Years="1992-1995" Caps="91" Goals="3">Manchester City</SeniorClub>
+          <SeniorClub SeniorClubId="4" Years="1995" Caps="5" Goals="1">Oldham Athletic</SeniorClub>
+          <SeniorClub SeniorClubId="5" Years="1995-1998" Caps="37" Goals="2">Sheffield United</SeniorClub>
+          <SeniorClub SeniorClubId="6" Years="1998-2001" Caps="47" Goals="0">MVV Maastricht</SeniorClub>
+        </SeniorClubs>
+        <NationalTeams/>
+        <CurrentTeam></CurrentTeam>
+      </Manager>
+    </Home>
+    <Away>
+      <Manager ManagerId="1">
+        <Name>Remond Strijbosch</Name>
+        <Fullname></Fullname>
+        <Nickname></Nickname>
+        <BirthDate>Apr 11, 1980 (Age 37)</BirthDate>
+        <BirthPlace City="Helmond" Country=""/>
+        <Height></Height>
+        <Weight></Weight>
+        <WikiPosition>Goalkeeper</WikiPosition>
+        <GoalComShownName>R. Strijbosch</GoalComShownName>
+        <GoalComWebsite>http://www.goal.com/en/people/netherlands/20027/remond-strijbosch</GoalComWebsite>
+        <YouthClubs/>
+        <SeniorClubs/>
+        <NationalTeams/>
+        <CurrentTeam></CurrentTeam>
+      </Manager>
+    </Away>
+  </Managers>
+  <LastFiveGames>
+    <Home>
+      <Match MatchId="1">
+        <Opponent>PSV Eindhoven II</Opponent>
+        <ResultGame CurrentTeamGoals="0" OpponentGoals="1">1-0</ResultGame>
+        <HomeAwayGame>away</HomeAwayGame>
+        <WinDrawLostGame>lost</WinDrawLostGame>
+      </Match>
+      <Match MatchId="2">
+        <Opponent>FC Utrecht II</Opponent>
+        <ResultGame CurrentTeamGoals="3" OpponentGoals="1">3-1</ResultGame>
+        <HomeAwayGame>home</HomeAwayGame>
+        <WinDrawLostGame>win</WinDrawLostGame>
+      </Match>
+      <Match MatchId="3">
+        <Opponent>FC Dordrecht</Opponent>
+        <ResultGame CurrentTeamGoals="2" OpponentGoals="0">0-2</ResultGame>
+        <HomeAwayGame>away</HomeAwayGame>
+        <WinDrawLostGame>win</WinDrawLostGame>
+      </Match>
+      <Match MatchId="4">
+        <Opponent>SC Cambuur Leeuwarden</Opponent>
+        <ResultGame CurrentTeamGoals="1" OpponentGoals="5">5-1</ResultGame>
+        <HomeAwayGame>away</HomeAwayGame>
+        <WinDrawLostGame>lost</WinDrawLostGame>
+      </Match>
+      <Match MatchId="5">
+        <Opponent>AFC Ajax II</Opponent>
+        <ResultGame CurrentTeamGoals="1" OpponentGoals="3">1-3</ResultGame>
+        <HomeAwayGame>home</HomeAwayGame>
+        <WinDrawLostGame>lost</WinDrawLostGame>
+      </Match>
+    </Home>
+    <Away>
+      <Match MatchId="1">
+        <Opponent>Almere City FC</Opponent>
+        <ResultGame CurrentTeamGoals="1" OpponentGoals="1">1-1</ResultGame>
+        <HomeAwayGame>home</HomeAwayGame>
+        <WinDrawLostGame>draw</WinDrawLostGame>
+      </Match>
+      <Match MatchId="2">
+        <Opponent>AFC Ajax II</Opponent>
+        <ResultGame CurrentTeamGoals="0" OpponentGoals="2">2-0</ResultGame>
+        <HomeAwayGame>away</HomeAwayGame>
+        <WinDrawLostGame>lost</WinDrawLostGame>
+      </Match>
+      <Match MatchId="3">
+        <Opponent>FC Den Bosch</Opponent>
+        <ResultGame CurrentTeamGoals="2" OpponentGoals="0">2-0</ResultGame>
+        <HomeAwayGame>home</HomeAwayGame>
+        <WinDrawLostGame>win</WinDrawLostGame>
+      </Match>
+      <Match MatchId="4">
+        <Opponent>NAC Breda</Opponent>
+        <ResultGame CurrentTeamGoals="2" OpponentGoals="1">2-1</ResultGame>
+        <HomeAwayGame>home</HomeAwayGame>
+        <WinDrawLostGame>win</WinDrawLostGame>
+      </Match>
+      <Match MatchId="5">
+        <Opponent>Fortuna Sittard</Opponent>
+        <ResultGame CurrentTeamGoals="1" OpponentGoals="4">4-1</ResultGame>
+        <HomeAwayGame>away</HomeAwayGame>
+        <WinDrawLostGame>lost</WinDrawLostGame>
+      </Match>
+    </Away>
+  </LastFiveGames>
+  <PreviousMeetings>
+    <HomeTeamWins>4</HomeTeamWins>
+    <AwayTeamWins>1</AwayTeamWins>
+    <Draws>0</Draws>
+    <HomeTeamWinPrediction></HomeTeamWinPrediction>
+    <DrawPrediction></DrawPrediction>
+    <AwayTeamWinPrediction></AwayTeamWinPrediction>
+    <PreviousMeetingsResults>
+      <Meeting MeetingId="1">
+        <Date>February 06, 2017</Date>
+        <HomeTeam>Helmond Sport</HomeTeam>
+        <AwayTeam>Telstar</AwayTeam>
+        <Result HomeTeamGoals="3" AwayTeamGoals="4">3-4</Result>
+      </Meeting>
+      <Meeting MeetingId="2">
+        <Date>August 22, 2016</Date>
+        <HomeTeam>Telstar</HomeTeam>
+        <AwayTeam>Helmond Sport</AwayTeam>
+        <Result HomeTeamGoals="4" AwayTeamGoals="2">4-2</Result>
+      </Meeting>
+      <Meeting MeetingId="3">
+        <Date>April 29, 2016</Date>
+        <HomeTeam>Telstar</HomeTeam>
+        <AwayTeam>Helmond Sport</AwayTeam>
+        <Result HomeTeamGoals="1" AwayTeamGoals="0">1-0</Result>
+      </Meeting>
+      <Meeting MeetingId="4">
+        <Date>December 11, 2015</Date>
+        <HomeTeam>Helmond Sport</HomeTeam>
+        <AwayTeam>Telstar</AwayTeam>
+        <Result HomeTeamGoals="4" AwayTeamGoals="1">4-1</Result>
+      </Meeting>
+      <Meeting MeetingId="5">
+        <Date>May 08, 2015</Date>
+        <HomeTeam>Telstar</HomeTeam>
+        <AwayTeam>Helmond Sport</AwayTeam>
+        <Result HomeTeamGoals="4" AwayTeamGoals="0">4-0</Result>
+      </Meeting>
+    </PreviousMeetingsResults>
+    <MostPredictedResults/>
+  </PreviousMeetings>
+  <Statistics>
+    <Home>
+      <TotalShots></TotalShots>
+      <ShotsOnTarget></ShotsOnTarget>
+      <CompletedPasses></CompletedPasses>
+      <PassingAccuracy></PassingAccuracy>
+      <Possession></Possession>
+      <Corners></Corners>
+      <Offsides></Offsides>
+      <FoulsConceded></FoulsConceded>
+      <TotalPasses></TotalPasses>
+      <ShortPasses></ShortPasses>
+      <LongPasses></LongPasses>
+      <ForwardPasses></ForwardPasses>
+      <BackPasses></BackPasses>
+      <LeftPasses></LeftPasses>
+      <RightPasses></RightPasses>
+      <ForwardPassesPercentage></ForwardPassesPercentage>
+      <BlockedShots></BlockedShots>
+      <CentreShots></CentreShots>
+      <LeftShots></LeftShots>
+      <RightShots></RightShots>
+      <OutsideArea></OutsideArea>
+      <SuccessfulCrosses></SuccessfulCrosses>
+      <TotalCrosses></TotalCrosses>
+      <AccuracyCrosses></AccuracyCrosses>
+      <CrossesInside18YardLine></CrossesInside18YardLine>
+      <CrossesOutside18YardLine></CrossesOutside18YardLine>
+      <LeftCrosses></LeftCrosses>
+      <RightCrosses></RightCrosses>
+      <TotalAttemptedTakeOns></TotalAttemptedTakeOns>
+      <SuccessfulTakeOns></SuccessfulTakeOns>
+      <SuccessfulFinal3rdTakeOns></SuccessfulFinal3rdTakeOns>
+      <SuccessfulLeftSideFinal3rdTakeOns></SuccessfulLeftSideFinal3rdTakeOns>
+      <SuccessfulCentreFinal3rdTakeOns></SuccessfulCentreFinal3rdTakeOns>
+      <SuccessfulRightSideFinal3rdTakeOns></SuccessfulRightSideFinal3rdTakeOns>
+      <Blocks></Blocks>
+      <Interceptions></Interceptions>
+      <Clearances></Clearances>
+      <Recoveries></Recoveries>
+      <SuccessfulTackles></SuccessfulTackles>
+      <TotalTackles></TotalTackles>
+      <TackleAccuracy></TackleAccuracy>
+    </Home>
+    <Away>
+      <TotalShots></TotalShots>
+      <ShotsOnTarget></ShotsOnTarget>
+      <CompletedPasses></CompletedPasses>
+      <PassingAccuracy></PassingAccuracy>
+      <Possession></Possession>
+      <Corners></Corners>
+      <Offsides></Offsides>
+      <FoulsConceded></FoulsConceded>
+      <TotalPasses></TotalPasses>
+      <ShortPasses></ShortPasses>
+      <LongPasses></LongPasses>
+      <ForwardPasses></ForwardPasses>
+      <BackPasses></BackPasses>
+      <LeftPasses></LeftPasses>
+      <RightPasses></RightPasses>
+      <ForwardPassesPercentage></ForwardPassesPercentage>
+      <BlockedShots></BlockedShots>
+      <CentreShots></CentreShots>
+      <LeftShots></LeftShots>
+      <RightShots></RightShots>
+      <OutsideArea></OutsideArea>
+      <SuccessfulCrosses></SuccessfulCrosses>
+      <TotalCrosses></TotalCrosses>
+      <AccuracyCrosses></AccuracyCrosses>
+      <CrossesInside18YardLine></CrossesInside18YardLine>
+      <CrossesOutside18YardLine></CrossesOutside18YardLine>
+      <LeftCrosses></LeftCrosses>
+      <RightCrosses></RightCrosses>
+      <TotalAttemptedTakeOns></TotalAttemptedTakeOns>
+      <SuccessfulTakeOns></SuccessfulTakeOns>
+      <SuccessfulFinal3rdTakeOns></SuccessfulFinal3rdTakeOns>
+      <SuccessfulLeftSideFinal3rdTakeOns></SuccessfulLeftSideFinal3rdTakeOns>
+      <SuccessfulCentreFinal3rdTakeOns></SuccessfulCentreFinal3rdTakeOns>
+      <SuccessfulRightSideFinal3rdTakeOns></SuccessfulRightSideFinal3rdTakeOns>
+      <Blocks></Blocks>
+      <Interceptions></Interceptions>
+      <Clearances></Clearances>
+      <Recoveries></Recoveries>
+      <SuccessfulTackles></SuccessfulTackles>
+      <TotalTackles></TotalTackles>
+      <TackleAccuracy></TackleAccuracy>
+    </Away>
+  </Statistics>
+</Goal>
