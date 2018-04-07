@@ -145,6 +145,8 @@ def GameCourseEvents(soup):
     return eventdict
 
 def TopicCollection(file):
+    print('file name/location:')
+    print(file)
     with open(file, 'rb') as f:
         soup = BeautifulSoup(f, "lxml")
     eventlist = GameCourseEvents(soup)
@@ -161,3 +163,5 @@ def TopicCollection(file):
     return gamecourselist, gamestatisticslist
 
 #print(TopicCollection('C:/Syncmap/Promotie/MASC Newspaper/GoalStats/InfoXMLs/DG_NEC_27112015_goal.xml'))
+
+#print(TopicCollection('/Users/stasiuz/PASS/InfoXMLs/DG_NEC_27112015_goal.xml'))

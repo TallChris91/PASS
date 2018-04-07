@@ -5,7 +5,7 @@ import sys
 
 def main(argv):
     if len(argv) == 1:
-        file = argv
+        file = argv[0]
     if len(argv) == 2:
         file, savestate = argv
     templatetexthome, templatetextaway = TopicWalk(file)
@@ -23,7 +23,9 @@ def main(argv):
             print(newfile + 'away.txt saved')
             f.write(bytes(templatetextaway, 'UTF-8'))
 
-#main('C:/Users/Chris/Documents/Syncmap/Promotie/PASS/InfoXMLs/AC_DB_04122015_goal.xml', 'y')
+# main('C:/Users/Chris/Documents/Syncmap/Promotie/PASS/InfoXMLs/AC_DB_04122015_goal.xml', 'y')
+# main('/Users/stasiuz/PASS/InfoXMLs/AC_DB_04122015_goal.xml')
+
 
 if __name__ == '__main__':
     main(sys.argv[1:])
