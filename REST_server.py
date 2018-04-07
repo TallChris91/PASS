@@ -1,5 +1,9 @@
-from flask import Flask, json
+from flask import Flask, json, Response
 from PASS import main as pass_main
+from PASS import matches
+import glob
+import os
+
 
 app = Flask(__name__)
 
@@ -9,16 +13,32 @@ def hello():
     return 'Hello world!'
 
 
-@app.route('/pass')
-def run_main():
-    print('PASS started')
+@app.route('/get_demo')
+def get_demo():
+    print('PASS starting...')
     data = pass_main(['/Users/stasiuz/PASS/InfoXMLs/ACH_FCD_19122015_goal.xml', 'y'])
+    print('PASS done!')
 
-    response = app.response_class(
+    print('Returning data...')
+    return json_response(data)
+
+
+@app.route('/get_matches')
+def get_matches():
+    print('Getting all available matches...')
+    data = matches()
+
+    print('Returning data...')
+    return json_response(data)
+
+
+def json_response(data):
+    response = Response(
         response=json.dumps(data),
         status=200,
-        mimetype='application/json'
+        mimetype='application/json',
     )
+    response.headers["Access-Control-Allow-Origin"] = "*"
     return response
 
 

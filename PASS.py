@@ -1,7 +1,8 @@
-from Governing_module import TopicWalk
+from Governing_module import TopicWalk, GeneralEvents
 import re
 import os
 import sys
+import glob
 
 
 def main(argv):
@@ -32,8 +33,27 @@ def main(argv):
     return data
 
 
+def matches():
+    matches = []
+    xml_files = glob.glob('InfoXMLs/*.xml')
+    for file in xml_files:
+        data = {}
+        data['file'] = os.path.basename(file)
+        data['team1'] = 'team 1 name'
+        data['team2'] = 'team 2 name'
+        data['score'] = 'score'
+
+        matches.append(data)
+
+    return matches
+
+
+
 # main('C:/Users/Chris/Documents/Syncmap/Promotie/PASS/InfoXMLs/AC_DB_04122015_goal.xml', 'y')
-# main('/Users/stasiuz/PASS/InfoXMLs/AC_DB_04122015_goal.xml')
+#main(['/Users/stasiuz/PASS/InfoXMLs/AC_DB_04122015_goal.xml'])
+
+
+# matches()
 
 
 if __name__ == '__main__':
