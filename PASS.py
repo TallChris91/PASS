@@ -3,6 +3,7 @@ import re
 import os
 import sys
 
+
 def main(argv):
     if len(argv) == 1:
         file = argv[0]
@@ -11,6 +12,11 @@ def main(argv):
     templatetexthome, templatetextaway = TopicWalk(file)
     print(templatetexthome)
     print(templatetextaway)
+
+    data = {}
+    data['home'] = templatetexthome
+    data['away'] = templatetextaway
+
     if savestate == 'y':
         newfile = os.path.splitext(os.path.basename(file))[0]
         newfile = re.sub(r'goal', '', newfile)
@@ -22,6 +28,9 @@ def main(argv):
         with open('./SavedReports/' + newfile + 'away.txt', 'wb') as f:
             print(newfile + 'away.txt saved')
             f.write(bytes(templatetextaway, 'UTF-8'))
+
+    return data
+
 
 # main('C:/Users/Chris/Documents/Syncmap/Promotie/PASS/InfoXMLs/AC_DB_04122015_goal.xml', 'y')
 # main('/Users/stasiuz/PASS/InfoXMLs/AC_DB_04122015_goal.xml')
