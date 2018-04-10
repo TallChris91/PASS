@@ -1,9 +1,6 @@
-from flask import Flask, json, Response
+from flask import Flask, json, Response, request
 from PASS import main as pass_main
 from PASS import matches
-import glob
-import os
-
 
 app = Flask(__name__)
 
@@ -29,6 +26,14 @@ def get_matches():
     data = matches()
 
     print('Returning data...')
+    return json_response(data)
+
+
+@app.route('/get_summary')
+def get_summary():
+    file = request.args.get('file')
+    data = pass_main(['/Users/stasiuz/PASS/InfoXMLs/' + file, 'y'])
+
     return json_response(data)
 
 

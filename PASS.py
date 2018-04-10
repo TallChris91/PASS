@@ -50,7 +50,7 @@ def matches():
 
 
 # main('C:/Users/Chris/Documents/Syncmap/Promotie/PASS/InfoXMLs/AC_DB_04122015_goal.xml', 'y')
-#main(['/Users/stasiuz/PASS/InfoXMLs/AC_DB_04122015_goal.xml'])
+# main(['/Users/stasiuz/PASS/InfoXMLs/AC_DB_04122015_goal.xml', 'y'])
 
 
 # matches()
