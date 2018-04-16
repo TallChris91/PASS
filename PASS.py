@@ -3,11 +3,7 @@ import re
 import os
 import sys
 
-def main(argv):
-    if len(argv) == 1:
-        file = argv
-    if len(argv) == 2:
-        file, savestate = argv
+def main(file, savestate='n'):
     templatetexthome, templatetextaway = TopicWalk(file)
     print(templatetexthome)
     print(templatetextaway)
@@ -23,7 +19,9 @@ def main(argv):
             print(newfile + 'away.txt saved')
             f.write(bytes(templatetextaway, 'UTF-8'))
 
-#main('C:/Users/Chris/Documents/Syncmap/Promotie/PASS/InfoXMLs/AC_DB_04122015_goal.xml', 'y')
+main('./InfoXMLs/VVV_FCEM_22042016_goal.xml', 'y')
 
-if __name__ == '__main__':
-    main(sys.argv[1:])
+
+
+#if __name__ == '__main__':
+    #main(sys.argv[1:])
