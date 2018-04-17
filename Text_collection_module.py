@@ -10,4 +10,9 @@ def TextCollection(templatelist, soup, homeaway, generallen, gamecourselen, game
         allstring = team2 + '\n' + general[0] + '\n' + ' '.join(general[1:]) + '\n' + ' '.join(gamecourse) + '\n' + ' '.join(gamestatistics)
     else:
         allstring = team2 + '\n' + general[0] + '\n' + ' '.join(general[1:]) + '\n' + ' '.join(gamestatistics)
-    return allstring
+
+    #Add a dictionary for the web implementation
+
+    paragraphdict = {'title_' + team: general[0], 'general_' + team: ' '.join(general[1:]), 'gamecourse_' + team: ' '.join(gamecourse), 'gamestatistics_' + team: ' '.join(gamestatistics)}
+
+    return allstring, paragraphdict

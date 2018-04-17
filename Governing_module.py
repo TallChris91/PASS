@@ -84,7 +84,7 @@ def TopicWalk(file):
         else:
             lastgaphome = previousgaplisthome[idx - 1]
         templatehomelist[idx], previousgaplisthome[idx] = TemplateReplacement(soup, 'home', templatehomelist[idx], event=alleventshome[idx], gamecourselist=gamecoursehome, previousgaplist=lastgaphome, gamestatisticslist=gamestatistics, eventlist=alleventshome, idx=idx)
-    templatetexthome = TextCollection(templatehomelist, soup, 'home', len(general), len(gamecoursehome), len(gamestatistics))
+    templatetexthome, templatedicthome = TextCollection(templatehomelist, soup, 'home', len(general), len(gamecoursehome), len(gamestatistics))
 
     previousgaplistaway = [''] * len(templateawaylist)
     for idx, val in enumerate(templateawaylist):
@@ -95,5 +95,7 @@ def TopicWalk(file):
         templateawaylist[idx], previousgaplistaway[idx] = TemplateReplacement(soup, 'away', templateawaylist[idx], event=alleventsaway[idx],
                                                                           gamecourselist=gamecourseaway, previousgaplist=lastgapaway,
                                                                           gamestatisticslist=gamestatistics, eventlist=alleventsaway, idx=idx)
-    templatetextaway = TextCollection(templateawaylist, soup, 'away', len(general), len(gamecourseaway), len(gamestatistics))
-    return templatetexthome, templatetextaway
+    templatetextaway, templatedictaway = TextCollection(templateawaylist, soup, 'away', len(general), len(gamecourseaway), len(gamestatistics))
+    templatedict = templatedicthome.copy()
+    templatedict.update(templatedictaway)
+    return templatetexthome, templatetextaway, templatedict
