@@ -1,18 +1,19 @@
-from Governing_module import TopicWalk, GeneralEvents
+from Governing_module import TopicWalk
 import re
 import os
 import sys
+import pickle
+from Info_dict_module import InfoDict
 import glob
 
 
-def main(argv):
-    if len(argv) == 1:
-        file = argv[0]
-    if len(argv) == 2:
-        file, savestate = argv
-    templatetexthome, templatetextaway = TopicWalk(file)
+def main(file, savestate='n'):
+    templatetexthome, templatetextaway, templatedict = TopicWalk(file)
+    infodict = InfoDict(file)
     print(templatetexthome)
     print(templatetextaway)
+    print(templatedict)
+    print(infodict)
 
     data = {}
     data['home'] = templatetexthome
@@ -30,6 +31,13 @@ def main(argv):
             print(newfile + 'away.txt saved')
             f.write(bytes(templatetextaway, 'UTF-8'))
 
+        with open('./SavedReports/' + newfile + 'matchdict.p', 'wb') as f:
+            print(newfile + 'matchdict.p saved')
+            pickle.dump(templatedict, f)
+
+        with open('./SavedReports/' + newfile + 'infodict.p', 'wb') as f:
+            print(newfile + 'infodict.p saved')
+            pickle.dump(infodict, f)
     return data
 
 
@@ -56,5 +64,7 @@ def matches():
 # matches()
 
 
-if __name__ == '__main__':
-    main(sys.argv[1:])
+main('./InfoXMLs/VVV_FCEM_22042016_goal.xml', 'y')
+
+#if __name__ == '__main__':
+    #main(sys.argv[1:])
