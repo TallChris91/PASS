@@ -1,19 +1,20 @@
 from flask import Flask, json, Response, request
 from PASS import main as pass_main
 from PASS import matches
+import glob
 
 app = Flask(__name__)
 
 
 @app.route('/')
 def hello():
-    return 'Hello world!'
+    return 'Hello world from PASS!'
 
 
 @app.route('/get_demo')
 def get_demo():
     print('PASS starting...')
-    data = pass_main(['/Users/stasiuz/PASS/InfoXMLs/ACH_FCD_19122015_goal.xml', 'y'])
+    data = pass_main(glob.glob('./InfoXMLs/*.xml')[0])
     print('PASS done!')
 
     print('Returning data...')
@@ -32,7 +33,7 @@ def get_matches():
 @app.route('/get_summary')
 def get_summary():
     file = request.args.get('file')
-    data = pass_main(['/Users/stasiuz/PASS/InfoXMLs/' + file, 'y'])
+    data = pass_main('./InfoXMLs/' + file)
 
     return json_response(data)
 

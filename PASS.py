@@ -15,9 +15,7 @@ def main(file, savestate='n'):
     print(templatedict)
     print(infodict)
 
-    data = {}
-    data['home'] = templatetexthome
-    data['away'] = templatetextaway
+    data = {'meta': infodict, 'content': templatedict}
 
     if savestate == 'y':
         newfile = os.path.splitext(os.path.basename(file))[0]
@@ -38,33 +36,33 @@ def main(file, savestate='n'):
         with open('./SavedReports/' + newfile + 'infodict.p', 'wb') as f:
             print(newfile + 'infodict.p saved')
             pickle.dump(infodict, f)
+
     return data
 
 
 def matches():
     matches = []
-    xml_files = glob.glob('InfoXMLs/*.xml')
+    xml_files = glob.glob('./InfoXMLs/*.xml')
+    print(os.getcwd())
+    print(xml_files)
+    i = 0
     for file in xml_files:
+        if i == 10:
+            break
         data = {}
         data['file'] = os.path.basename(file)
-        data['team1'] = 'team 1 name'
-        data['team2'] = 'team 2 name'
-        data['score'] = 'score'
+        data['info'] = InfoDict(file)
 
         matches.append(data)
+        i = i + 1
 
+    # TODO: sort matches by date
     return matches
 
 
+# print(matches())
 
-# main('C:/Users/Chris/Documents/Syncmap/Promotie/PASS/InfoXMLs/AC_DB_04122015_goal.xml', 'y')
-# main(['/Users/stasiuz/PASS/InfoXMLs/AC_DB_04122015_goal.xml', 'y'])
-
-
-# matches()
-
-
-main('./InfoXMLs/VVV_FCEM_22042016_goal.xml', 'y')
+# main('./InfoXMLs/VVV_FCEM_22042016_goal.xml', 'y')
 
 #if __name__ == '__main__':
     #main(sys.argv[1:])
