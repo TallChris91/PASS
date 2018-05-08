@@ -6,7 +6,9 @@ def InfoDict(file):
         soup = BeautifulSoup(f, "lxml")
     league = soup.find('highlights').find('league').text
     date = soup.find('highlights').find('startdate').text
-    date = datetime.strptime(date, '%B %d, %Y')
+    date_object = datetime.strptime(date, '%B %d, %Y')
+    date = date_object.isoformat()
+
     finalscore = soup.find('highlights').find('fulltimescore').text
     hometeam = soup.find('highlights').find('home').find('team').text
     awayteam = soup.find('highlights').find('away').find('team').text
