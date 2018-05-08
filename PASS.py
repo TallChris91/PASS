@@ -10,12 +10,13 @@ import glob
 def main(file, savestate='n'):
     templatetexthome, templatetextaway, templatedict = TopicWalk(file)
     infodict = InfoDict(file)
-    print(templatetexthome)
-    print(templatetextaway)
-    print(templatedict)
-    print(infodict)
+    # print(templatetexthome)
+    # print(templatetextaway)
+    # print(templatedict)
+    # print(infodict)
 
     data = {'meta': infodict, 'content': templatedict}
+    print(data)
 
     if savestate == 'y':
         newfile = os.path.splitext(os.path.basename(file))[0]
