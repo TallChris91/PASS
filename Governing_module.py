@@ -96,6 +96,6 @@ def TopicWalk(file):
                                                                           gamecourselist=gamecourseaway, previousgaplist=lastgapaway,
                                                                           gamestatisticslist=gamestatistics, eventlist=alleventsaway, idx=idx)
     templatetextaway, templatedictaway = TextCollection(templateawaylist, soup, 'away', len(general), len(gamecourseaway), len(gamestatistics))
-    templatedict = templatedicthome.copy()
-    templatedict.update(templatedictaway)
+    templatedict = {'home_team': templatedicthome.copy()}
+    templatedict.update({'away_team': templatedictaway})
     return templatetexthome, templatetextaway, templatedict
