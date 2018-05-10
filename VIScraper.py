@@ -543,6 +543,7 @@ def matchxml(matchlink, currentpath):
         with open(currentpath + '/NewInfoXMLs/MatchTest' + str(number) + '.xml', 'wb') as f:
             print('XML file written')
             f.write(goaltree)
+            break
 
     '''
     s2 = matchroot.prettify()
