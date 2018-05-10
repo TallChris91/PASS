@@ -538,9 +538,9 @@ def matchxml(matchlink, currentpath):
 
     goaltree = etree.tostring(goaltree, encoding="utf-8", xml_declaration=False, pretty_print=True)
     for number in range(0,999):
-        if os.path.isfile(currentpath + 'NewInfoXMLs/MatchTest' + str(number) + '.xml'):
+        if os.path.isfile(currentpath + '/NewInfoXMLs/MatchTest' + str(number) + '.xml'):
             continue
-        with open(currentpath + 'NewInfoXMLs/MatchTest' + str(number) + '.xml', 'wb') as f:
+        with open(currentpath + '/NewInfoXMLs/MatchTest' + str(number) + '.xml', 'wb') as f:
             print('XML file written')
             f.write(goaltree)
 
