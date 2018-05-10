@@ -4,8 +4,10 @@ import os
 import sys
 import pickle
 from Info_dict_module import InfoDict
+from VIScraper import mainscraper
 
 def main(file, savestate='n'):
+    mainscraper()
     templatetexthome, templatetextaway, templatedict = TopicWalk(file)
     infodict = InfoDict(file)
     print(templatetexthome)
@@ -32,7 +34,7 @@ def main(file, savestate='n'):
             print(newfile + 'infodict.p saved')
             pickle.dump(infodict, f)
 
-main('./InfoXMLs/VVV_FCEM_22042016_goal.xml', 'y')
+main('./NewInfoXMLs/MatchTest.xml', 'y')
 
 #if __name__ == '__main__':
     #main(sys.argv[1:])

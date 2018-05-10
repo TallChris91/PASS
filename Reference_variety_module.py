@@ -36,7 +36,10 @@ def PlayerReferenceModel(player, soup, homeaway, gap, **kwargs):
                                 except AttributeError:
                                     print('Named Entity Problem for: ' + player)
                                     sys.exit(1)
-            fullplayer = fullplayer.find('name').text
+            try:
+                fullplayer = fullplayer.find('name').text
+            except AttributeError:
+                fullplayer = fullplayer.find('fullname').text
             try:
                 if fullplayer in previousgap:
                     previousreference.append(fullplayer)
@@ -69,7 +72,10 @@ def PlayerReferenceModel(player, soup, homeaway, gap, **kwargs):
     #If there is no previous mention of the player, or no recent mention, use one of the following references
     namepossibilities = []
     if (len(previousreference) == 0):
-        fullname = name.find('name').text
+        try:
+            fullname = name.find('name').text
+        except AttributeError:
+            fullname = name.find('fullname').text
         namepossibilities.append([fullname, 10])
         splitname = str.split(fullname)
         firstname = None
