@@ -110,7 +110,10 @@ def PlayerReferenceModel(player, soup, homeaway, gap, **kwargs):
             namepossibilities.append(['manager ' + fullname, 5])
     #If there was a recent mention of the player, make sure there is a variation to the reference
     if len(previousreference) > 0:
-        fullname = name.find('name').text
+        try:
+            fullname = name.find('name').text
+        except AttributeError:
+            fullname = name.find('fullname').text
         if fullname not in previousreference:
             namepossibilities.append([fullname, 10])
         splitname = str.split(fullname)

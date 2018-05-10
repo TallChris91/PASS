@@ -1,0 +1,754 @@
+<Goal>
+  <Highlights>
+    <League>Tweede Divisie</League>
+    <StartDate>May 6, 2018</StartDate>
+    <StartTime>14:30</StartTime>
+    <Stadium>Sportpark Zuid</Stadium>
+    <City></City>
+    <Referee></Referee>
+    <Attendees></Attendees>
+    <FullTimeScore>2-2</FullTimeScore>
+    <Home>
+      <Team>De Treffers</Team>
+      <GoalScorersList>
+        <Goal GoalId="1" Minute="77" PlayerLink="https://www.vi.nl/spelers/robin-janssen/profiel" OwnGoal="n">R. Janssen</Goal>
+        <Goal GoalId="2" Minute="80" PlayerLink="https://www.vi.nl/spelers/coen-maertzdorf/profiel" OwnGoal="n">C. Maertzdorf</Goal>
+      </GoalScorersList>
+      <FinalGoals>2</FinalGoals>
+    </Home>
+    <Away>
+      <Team>TEC</Team>
+      <GoalScorersList>
+        <Goal GoalId="1" Minute="16" PlayerLink="https://www.vi.nl/spelers/serhat-koc/profiel" OwnGoal="n">S. Koç</Goal>
+        <Goal GoalId="2" Minute="40" PlayerLink="https://www.vi.nl/spelers/serhat-koc/profiel" OwnGoal="n">S. Koç</Goal>
+      </GoalScorersList>
+      <FinalGoals>2</FinalGoals>
+    </Away>
+  </Highlights>
+  <Events>
+    <AssistList>
+      <Assist AssistId="1" Minute="16">N. Kuiper</Assist>
+      <Assist AssistId="2" Minute="40">S. Grot</Assist>
+      <Assist AssistId="3" Minute="80">J. Janssen</Assist>
+    </AssistList>
+    <GoalList>
+      <Goal GoalId="1" Minute="16">S. Koç</Goal>
+      <Goal GoalId="2" Minute="40">S. Koç</Goal>
+      <Goal GoalId="3" Minute="77">R. Janssen</Goal>
+      <Goal GoalId="4" Minute="80">C. Maertzdorf</Goal>
+    </GoalList>
+    <MissedPenaltyList/>
+    <PenaltyGoalList/>
+    <RedCardList/>
+    <YellowCardList>
+      <YellowCard YellowCardId="1" Minute="2">C. Misidjan</YellowCard>
+      <YellowCard YellowCardId="2" Minute="41">S. Grot</YellowCard>
+      <YellowCard YellowCardId="3" Minute="63">M. van Gessel</YellowCard>
+    </YellowCardList>
+    <YellowRedList/>
+    <OwnGoalList/>
+    <SubstitutionList>
+      <Substitution SubstitutionId="1" Minute="28" SubOut="P. Balkestein" SubIn="S. Sirvania"/>
+      <Substitution SubstitutionId="1" Minute="46" SubOut="N. Versteegen" SubIn="C. Badjeck"/>
+      <Substitution SubstitutionId="1" Minute="46" SubOut="N. Wouters" SubIn="E. van Riel"/>
+      <Substitution SubstitutionId="1" Minute="70" SubOut="S. Grot" SubIn="R. Shakison"/>
+      <Substitution SubstitutionId="1" Minute="85" SubOut="M. Zeller" SubIn="K. de Windt"/>
+    </SubstitutionList>
+  </Events>
+  <Lineups>
+    <Home>
+      <Player PlayerId="1">
+        <FirstName>Niels</FirstName>
+        <LastName>Kornelis</LastName>
+        <Fullname>Niels Kornelis</Fullname>
+        <BirthDate>February 7, 1990</BirthDate>
+        <Age>28</Age>
+        <BirthPlace BirthPlace="" Nationality="Nederland"/>
+        <Height></Height>
+        <Weight></Weight>
+        <PreferredFoot></PreferredFoot>
+        <WikiPosition>Goalkeeper</WikiPosition>
+        <GoalComPlayerNumber>1</GoalComPlayerNumber>
+        <GoalComShownName>N. Kornelis</GoalComShownName>
+        <GoalComWebsite>https://www.vi.nl/spelers/niels-kornelis/profiel</GoalComWebsite>
+        <CurrentTeam>De Treffers</CurrentTeam>
+        <YearsAtCurrentTeam>01-07-2013-</YearsAtCurrentTeam>
+        <CurrentDivision>Tweede Divisie</CurrentDivision>
+        <CurrentNumber>1</CurrentNumber>
+      </Player>
+      <Player PlayerId="2">
+        <FirstName>Cendrino</FirstName>
+        <LastName>Misidjan</LastName>
+        <Fullname>Cendrino Misidjan</Fullname>
+        <BirthDate>August 29, 1988</BirthDate>
+        <Age>29</Age>
+        <BirthPlace BirthPlace="Paramaribo" Nationality="Nederland"/>
+        <Height>1,91 m</Height>
+        <Weight>78 kg</Weight>
+        <PreferredFoot>Links</PreferredFoot>
+        <WikiPosition>Defender</WikiPosition>
+        <GoalComPlayerNumber></GoalComPlayerNumber>
+        <GoalComShownName>C. Misidjan</GoalComShownName>
+        <GoalComWebsite>https://www.vi.nl/spelers/cendrino-misidjan/profiel</GoalComWebsite>
+        <CurrentTeam>De Treffers</CurrentTeam>
+        <YearsAtCurrentTeam>08-02-2018-</YearsAtCurrentTeam>
+        <CurrentDivision>Tweede Divisie</CurrentDivision>
+        <CurrentNumber></CurrentNumber>
+      </Player>
+      <Player PlayerId="3">
+        <FirstName>Pim</FirstName>
+        <LastName>Balkestein</LastName>
+        <Fullname>Pim Balkestein</Fullname>
+        <BirthDate>April 29, 1987</BirthDate>
+        <Age>31</Age>
+        <BirthPlace BirthPlace="Gouda" Nationality="Nederland"/>
+        <Height>1,91 m</Height>
+        <Weight>84 kg</Weight>
+        <PreferredFoot></PreferredFoot>
+        <WikiPosition>Defender</WikiPosition>
+        <GoalComPlayerNumber>23</GoalComPlayerNumber>
+        <GoalComShownName>P. Balkestein</GoalComShownName>
+        <GoalComWebsite>https://www.vi.nl/spelers/pim-balkestein/profiel</GoalComWebsite>
+        <CurrentTeam>De Treffers</CurrentTeam>
+        <YearsAtCurrentTeam>01-01-2015-</YearsAtCurrentTeam>
+        <CurrentDivision>Tweede Divisie</CurrentDivision>
+        <CurrentNumber>23</CurrentNumber>
+      </Player>
+      <Player PlayerId="4">
+        <FirstName>Joris</FirstName>
+        <LastName>Janssen</LastName>
+        <Fullname>Joris Janssen</Fullname>
+        <BirthDate>February 25, 1995</BirthDate>
+        <Age>23</Age>
+        <BirthPlace BirthPlace="" Nationality="Nederland"/>
+        <Height></Height>
+        <Weight></Weight>
+        <PreferredFoot></PreferredFoot>
+        <WikiPosition>Defender</WikiPosition>
+        <GoalComPlayerNumber>4</GoalComPlayerNumber>
+        <GoalComShownName>J. Janssen</GoalComShownName>
+        <GoalComWebsite>https://www.vi.nl/spelers/joris-janssen/profiel</GoalComWebsite>
+        <CurrentTeam>De Treffers</CurrentTeam>
+        <YearsAtCurrentTeam>01-07-2014-</YearsAtCurrentTeam>
+        <CurrentDivision>Tweede Divisie</CurrentDivision>
+        <CurrentNumber>4</CurrentNumber>
+      </Player>
+      <Player PlayerId="5">
+        <FirstName>Mees</FirstName>
+        <LastName>Siers</LastName>
+        <Fullname>Mees Siers</Fullname>
+        <BirthDate>October 6, 1987</BirthDate>
+        <Age>30</Age>
+        <BirthPlace BirthPlace="Zelhem" Nationality="Nederland"/>
+        <Height>1,80 m</Height>
+        <Weight>73 kg</Weight>
+        <PreferredFoot></PreferredFoot>
+        <WikiPosition>Defender</WikiPosition>
+        <GoalComPlayerNumber></GoalComPlayerNumber>
+        <GoalComShownName>M. Siers</GoalComShownName>
+        <GoalComWebsite>https://www.vi.nl/spelers/mees-siers/profiel</GoalComWebsite>
+        <CurrentTeam>De Treffers</CurrentTeam>
+        <YearsAtCurrentTeam>10-03-2018-</YearsAtCurrentTeam>
+        <CurrentDivision>Tweede Divisie</CurrentDivision>
+        <CurrentNumber></CurrentNumber>
+      </Player>
+      <Player PlayerId="6">
+        <FirstName>Niels</FirstName>
+        <LastName>Wouters</LastName>
+        <Fullname>Niels Wouters</Fullname>
+        <BirthDate>May 4, 1996</BirthDate>
+        <Age>22</Age>
+        <BirthPlace BirthPlace="" Nationality="Nederland"/>
+        <Height></Height>
+        <Weight></Weight>
+        <PreferredFoot></PreferredFoot>
+        <WikiPosition>Attacker</WikiPosition>
+        <GoalComPlayerNumber></GoalComPlayerNumber>
+        <GoalComShownName>N. Wouters</GoalComShownName>
+        <GoalComWebsite>https://www.vi.nl/spelers/niels-wouters/profiel</GoalComWebsite>
+        <CurrentTeam>De Treffers</CurrentTeam>
+        <YearsAtCurrentTeam>14-01-2018-</YearsAtCurrentTeam>
+        <CurrentDivision>Tweede Divisie</CurrentDivision>
+        <CurrentNumber></CurrentNumber>
+      </Player>
+      <Player PlayerId="7">
+        <FirstName>Robin</FirstName>
+        <LastName>Janssen</LastName>
+        <Fullname>Robin Janssen</Fullname>
+        <BirthDate>February 14, 1987</BirthDate>
+        <Age>31</Age>
+        <BirthPlace BirthPlace="Nijmegen" Nationality="Nederland"/>
+        <Height>1,82 m</Height>
+        <Weight></Weight>
+        <PreferredFoot></PreferredFoot>
+        <WikiPosition>Midfielder</WikiPosition>
+        <GoalComPlayerNumber>8</GoalComPlayerNumber>
+        <GoalComShownName>R. Janssen</GoalComShownName>
+        <GoalComWebsite>https://www.vi.nl/spelers/robin-janssen/profiel</GoalComWebsite>
+        <CurrentTeam>De Treffers</CurrentTeam>
+        <YearsAtCurrentTeam>01-10-2009-</YearsAtCurrentTeam>
+        <CurrentDivision>Tweede Divisie</CurrentDivision>
+        <CurrentNumber>8</CurrentNumber>
+      </Player>
+      <Player PlayerId="8">
+        <FirstName>Boy</FirstName>
+        <LastName>van de Beek</LastName>
+        <Fullname>Boy van de Beek</Fullname>
+        <BirthDate>November 15, 1993</BirthDate>
+        <Age>24</Age>
+        <BirthPlace BirthPlace="Nijmegen" Nationality="Nederland"/>
+        <Height></Height>
+        <Weight></Weight>
+        <PreferredFoot></PreferredFoot>
+        <WikiPosition>Midfielder</WikiPosition>
+        <GoalComPlayerNumber></GoalComPlayerNumber>
+        <GoalComShownName>B. van de Beek</GoalComShownName>
+        <GoalComWebsite>https://www.vi.nl/spelers/boy-van-de-beek/profiel</GoalComWebsite>
+        <CurrentTeam>De Treffers</CurrentTeam>
+        <YearsAtCurrentTeam>01-02-2018-</YearsAtCurrentTeam>
+        <CurrentDivision>Tweede Divisie</CurrentDivision>
+        <CurrentNumber></CurrentNumber>
+      </Player>
+      <Player PlayerId="9">
+        <FirstName>Nick</FirstName>
+        <LastName>de Bondt</LastName>
+        <Fullname>Nick de Bondt</Fullname>
+        <BirthDate>April 21, 1994</BirthDate>
+        <Age>24</Age>
+        <BirthPlace BirthPlace="Otterlo" Nationality="Nederland"/>
+        <Height>1,79 m</Height>
+        <Weight></Weight>
+        <PreferredFoot>Links</PreferredFoot>
+        <WikiPosition>Attacker</WikiPosition>
+        <GoalComPlayerNumber>7</GoalComPlayerNumber>
+        <GoalComShownName>N. de Bondt</GoalComShownName>
+        <GoalComWebsite>https://www.vi.nl/spelers/nick-de-bondt/profiel</GoalComWebsite>
+        <CurrentTeam>De Treffers</CurrentTeam>
+        <YearsAtCurrentTeam>01-07-2016-</YearsAtCurrentTeam>
+        <CurrentDivision>Tweede Divisie</CurrentDivision>
+        <CurrentNumber>7</CurrentNumber>
+      </Player>
+      <Player PlayerId="10">
+        <FirstName>Niek</FirstName>
+        <LastName>Versteegen</LastName>
+        <Fullname>Niek Versteegen</Fullname>
+        <BirthDate>October 12, 1994</BirthDate>
+        <Age>23</Age>
+        <BirthPlace BirthPlace="Venray" Nationality="Nederland"/>
+        <Height></Height>
+        <Weight></Weight>
+        <PreferredFoot></PreferredFoot>
+        <WikiPosition>Attacker</WikiPosition>
+        <GoalComPlayerNumber></GoalComPlayerNumber>
+        <GoalComShownName>N. Versteegen</GoalComShownName>
+        <GoalComWebsite>https://www.vi.nl/spelers/niek-versteegen/profiel</GoalComWebsite>
+        <CurrentTeam>De Treffers</CurrentTeam>
+        <YearsAtCurrentTeam>27-01-2018-</YearsAtCurrentTeam>
+        <CurrentDivision>Tweede Divisie</CurrentDivision>
+        <CurrentNumber></CurrentNumber>
+      </Player>
+      <Player PlayerId="11">
+        <FirstName>Coen</FirstName>
+        <LastName>Maertzdorf</LastName>
+        <Fullname>Coen Maertzdorf</Fullname>
+        <BirthDate>August 24, 1993</BirthDate>
+        <Age>24</Age>
+        <BirthPlace BirthPlace="Zevenaar" Nationality="Nederland"/>
+        <Height></Height>
+        <Weight></Weight>
+        <PreferredFoot></PreferredFoot>
+        <WikiPosition>Attacker</WikiPosition>
+        <GoalComPlayerNumber>11</GoalComPlayerNumber>
+        <GoalComShownName>C. Maertzdorf</GoalComShownName>
+        <GoalComWebsite>https://www.vi.nl/spelers/coen-maertzdorf/profiel</GoalComWebsite>
+        <CurrentTeam>De Treffers</CurrentTeam>
+        <YearsAtCurrentTeam>01-07-2014-</YearsAtCurrentTeam>
+        <CurrentDivision>Tweede Divisie</CurrentDivision>
+        <CurrentNumber>11</CurrentNumber>
+      </Player>
+    </Home>
+    <Away>
+      <Player PlayerId="1">
+        <FirstName>Sebastiaan</FirstName>
+        <LastName>van der Sman</LastName>
+        <Fullname>Sebastiaan van der Sman</Fullname>
+        <BirthDate>July 23, 1988</BirthDate>
+        <Age>29</Age>
+        <BirthPlace BirthPlace="Arnhem" Nationality="Nederland"/>
+        <Height>1,87 m</Height>
+        <Weight>86 kg</Weight>
+        <PreferredFoot></PreferredFoot>
+        <WikiPosition>Goalkeeper</WikiPosition>
+        <GoalComPlayerNumber>1</GoalComPlayerNumber>
+        <GoalComShownName>S. van der Sman</GoalComShownName>
+        <GoalComWebsite>https://www.vi.nl/spelers/sebastiaan-van-der-sman/profiel</GoalComWebsite>
+        <CurrentTeam>sv Tielse Eendracht Combinatie</CurrentTeam>
+        <YearsAtCurrentTeam>01-07-2013-</YearsAtCurrentTeam>
+        <CurrentDivision>Tweede Divisie</CurrentDivision>
+        <CurrentNumber>1</CurrentNumber>
+      </Player>
+      <Player PlayerId="2">
+        <FirstName>Vinnie</FirstName>
+        <LastName>Vermeer</LastName>
+        <Fullname>Vinnie Vermeer</Fullname>
+        <BirthDate>July 2, 1995</BirthDate>
+        <Age>22</Age>
+        <BirthPlace BirthPlace="Berkel-Enschot" Nationality="Nederland"/>
+        <Height>1,73 m</Height>
+        <Weight>70 kg</Weight>
+        <PreferredFoot>Rechts</PreferredFoot>
+        <WikiPosition>Midfielder</WikiPosition>
+        <GoalComPlayerNumber></GoalComPlayerNumber>
+        <GoalComShownName>V. Vermeer</GoalComShownName>
+        <GoalComWebsite>https://www.vi.nl/spelers/vinnie-vermeer/profiel</GoalComWebsite>
+        <CurrentTeam>sv Tielse Eendracht Combinatie</CurrentTeam>
+        <YearsAtCurrentTeam>03-01-2018-</YearsAtCurrentTeam>
+        <CurrentDivision>Tweede Divisie</CurrentDivision>
+        <CurrentNumber></CurrentNumber>
+      </Player>
+      <Player PlayerId="3">
+        <FirstName>Migiel</FirstName>
+        <LastName>Zeller</LastName>
+        <Fullname>Migiel Zeller</Fullname>
+        <BirthDate>April 8, 1993</BirthDate>
+        <Age>25</Age>
+        <BirthPlace BirthPlace="Malden" Nationality="Nederland"/>
+        <Height></Height>
+        <Weight></Weight>
+        <PreferredFoot></PreferredFoot>
+        <WikiPosition>Defender</WikiPosition>
+        <GoalComPlayerNumber>3</GoalComPlayerNumber>
+        <GoalComShownName>M. Zeller</GoalComShownName>
+        <GoalComWebsite>https://www.vi.nl/spelers/migiel-zeller/profiel</GoalComWebsite>
+        <CurrentTeam>sv Tielse Eendracht Combinatie</CurrentTeam>
+        <YearsAtCurrentTeam>01-07-2017-</YearsAtCurrentTeam>
+        <CurrentDivision>Tweede Divisie</CurrentDivision>
+        <CurrentNumber>3</CurrentNumber>
+      </Player>
+      <Player PlayerId="4">
+        <FirstName>Daan</FirstName>
+        <LastName>Disveld</LastName>
+        <Fullname>Daan Disveld</Fullname>
+        <BirthDate>January 20, 1994</BirthDate>
+        <Age>24</Age>
+        <BirthPlace BirthPlace="Lent" Nationality="Nederland"/>
+        <Height>1,80 m</Height>
+        <Weight>83 kg</Weight>
+        <PreferredFoot>Rechts</PreferredFoot>
+        <WikiPosition>Defender</WikiPosition>
+        <GoalComPlayerNumber>6</GoalComPlayerNumber>
+        <GoalComShownName>D. Disveld</GoalComShownName>
+        <GoalComWebsite>https://www.vi.nl/spelers/daan-disveld/profiel</GoalComWebsite>
+        <CurrentTeam>sv Tielse Eendracht Combinatie</CurrentTeam>
+        <YearsAtCurrentTeam>01-01-2016-</YearsAtCurrentTeam>
+        <CurrentDivision>Tweede Divisie</CurrentDivision>
+        <CurrentNumber>6</CurrentNumber>
+      </Player>
+      <Player PlayerId="5">
+        <FirstName>Obi</FirstName>
+        <LastName>Onyeike</LastName>
+        <Fullname>Obi Onyeike</Fullname>
+        <BirthDate>June 25, 1994</BirthDate>
+        <Age>23</Age>
+        <BirthPlace BirthPlace="Zeist" Nationality="Nederland"/>
+        <Height></Height>
+        <Weight></Weight>
+        <PreferredFoot></PreferredFoot>
+        <WikiPosition>Defender</WikiPosition>
+        <GoalComPlayerNumber>12</GoalComPlayerNumber>
+        <GoalComShownName>O. Onyeike</GoalComShownName>
+        <GoalComWebsite>https://www.vi.nl/spelers/obi-onyeike/profiel</GoalComWebsite>
+        <CurrentTeam>sv Tielse Eendracht Combinatie</CurrentTeam>
+        <YearsAtCurrentTeam>01-07-2015-</YearsAtCurrentTeam>
+        <CurrentDivision>Tweede Divisie</CurrentDivision>
+        <CurrentNumber>12</CurrentNumber>
+      </Player>
+      <Player PlayerId="6">
+        <FirstName>Matthijs</FirstName>
+        <LastName>van Gessel</LastName>
+        <Fullname>Matthijs van Gessel</Fullname>
+        <BirthDate>November 13, 1989</BirthDate>
+        <Age>28</Age>
+        <BirthPlace BirthPlace="" Nationality="Nederland"/>
+        <Height></Height>
+        <Weight></Weight>
+        <PreferredFoot></PreferredFoot>
+        <WikiPosition>Midfielder</WikiPosition>
+        <GoalComPlayerNumber>18</GoalComPlayerNumber>
+        <GoalComShownName>M. van Gessel</GoalComShownName>
+        <GoalComWebsite>https://www.vi.nl/spelers/matthijs-van-gessel/profiel</GoalComWebsite>
+        <CurrentTeam>sv Tielse Eendracht Combinatie</CurrentTeam>
+        <YearsAtCurrentTeam>01-07-2013-</YearsAtCurrentTeam>
+        <CurrentDivision>Tweede Divisie</CurrentDivision>
+        <CurrentNumber>18</CurrentNumber>
+      </Player>
+      <Player PlayerId="7">
+        <FirstName>Bart</FirstName>
+        <LastName>van Westerlaken</LastName>
+        <Fullname>Bart van Westerlaken</Fullname>
+        <BirthDate>October 13, 1993</BirthDate>
+        <Age>24</Age>
+        <BirthPlace BirthPlace="" Nationality="Nederland"/>
+        <Height></Height>
+        <Weight></Weight>
+        <PreferredFoot></PreferredFoot>
+        <WikiPosition>Midfielder</WikiPosition>
+        <GoalComPlayerNumber>4</GoalComPlayerNumber>
+        <GoalComShownName>B. van Westerlaken</GoalComShownName>
+        <GoalComWebsite>https://www.vi.nl/spelers/bart-van-westerlaken/profiel</GoalComWebsite>
+        <CurrentTeam>sv Tielse Eendracht Combinatie</CurrentTeam>
+        <YearsAtCurrentTeam>01-07-2015-</YearsAtCurrentTeam>
+        <CurrentDivision>Tweede Divisie</CurrentDivision>
+        <CurrentNumber>4</CurrentNumber>
+      </Player>
+      <Player PlayerId="8">
+        <FirstName>Wimilio</FirstName>
+        <LastName>Vink</LastName>
+        <Fullname>Wimilio Vink</Fullname>
+        <BirthDate>September 13, 1993</BirthDate>
+        <Age>24</Age>
+        <BirthPlace BirthPlace="Tiel" Nationality="Nederland"/>
+        <Height>1,73 m</Height>
+        <Weight>68 kg</Weight>
+        <PreferredFoot>Rechts</PreferredFoot>
+        <WikiPosition>Midfielder</WikiPosition>
+        <GoalComPlayerNumber>22</GoalComPlayerNumber>
+        <GoalComShownName>W. Vink</GoalComShownName>
+        <GoalComWebsite>https://www.vi.nl/spelers/wimilio-vink/profiel</GoalComWebsite>
+        <CurrentTeam>sv Tielse Eendracht Combinatie</CurrentTeam>
+        <YearsAtCurrentTeam>01-07-2016-</YearsAtCurrentTeam>
+        <CurrentDivision>Tweede Divisie</CurrentDivision>
+        <CurrentNumber>22</CurrentNumber>
+      </Player>
+      <Player PlayerId="9">
+        <FirstName>Nicky</FirstName>
+        <LastName>Kuiper</LastName>
+        <Fullname>Nicky Kuiper</Fullname>
+        <BirthDate>June 7, 1989</BirthDate>
+        <Age>28</Age>
+        <BirthPlace BirthPlace="Arnhem" Nationality="Nederland"/>
+        <Height>1,83 m</Height>
+        <Weight>84 kg</Weight>
+        <PreferredFoot>Links</PreferredFoot>
+        <WikiPosition>Defender</WikiPosition>
+        <GoalComPlayerNumber></GoalComPlayerNumber>
+        <GoalComShownName>N. Kuiper</GoalComShownName>
+        <GoalComWebsite>https://www.vi.nl/spelers/nicky-kuiper/profiel</GoalComWebsite>
+        <CurrentTeam>sv Tielse Eendracht Combinatie</CurrentTeam>
+        <YearsAtCurrentTeam>28-01-2018-</YearsAtCurrentTeam>
+        <CurrentDivision>Tweede Divisie</CurrentDivision>
+        <CurrentNumber></CurrentNumber>
+      </Player>
+      <Player PlayerId="10">
+        <FirstName>Sherwin</FirstName>
+        <LastName>Grot</LastName>
+        <Fullname>Sherwin Grot</Fullname>
+        <BirthDate>July 29, 1990</BirthDate>
+        <Age>27</Age>
+        <BirthPlace BirthPlace="Arnhem" Nationality="Nederland"/>
+        <Height></Height>
+        <Weight></Weight>
+        <PreferredFoot></PreferredFoot>
+        <WikiPosition>Attacker</WikiPosition>
+        <GoalComPlayerNumber></GoalComPlayerNumber>
+        <GoalComShownName>S. Grot</GoalComShownName>
+        <GoalComWebsite>https://www.vi.nl/spelers/sherwin-grot/profiel</GoalComWebsite>
+        <CurrentTeam>sv Tielse Eendracht Combinatie</CurrentTeam>
+        <YearsAtCurrentTeam>15-01-2018-</YearsAtCurrentTeam>
+        <CurrentDivision>Tweede Divisie</CurrentDivision>
+        <CurrentNumber></CurrentNumber>
+      </Player>
+      <Player PlayerId="11">
+        <FirstName>Serhat</FirstName>
+        <LastName>Koç</LastName>
+        <Fullname>Serhat Koç</Fullname>
+        <BirthDate>July 18, 1990</BirthDate>
+        <Age>27</Age>
+        <BirthPlace BirthPlace="Eindhoven" Nationality="Nederland"/>
+        <Height>1,66 m</Height>
+        <Weight>64 kg</Weight>
+        <PreferredFoot></PreferredFoot>
+        <WikiPosition>Attacker</WikiPosition>
+        <GoalComPlayerNumber>9</GoalComPlayerNumber>
+        <GoalComShownName>S. Koç</GoalComShownName>
+        <GoalComWebsite>https://www.vi.nl/spelers/serhat-koc/profiel</GoalComWebsite>
+        <CurrentTeam>sv Tielse Eendracht Combinatie</CurrentTeam>
+        <YearsAtCurrentTeam>01-07-2017-</YearsAtCurrentTeam>
+        <CurrentDivision>Tweede Divisie</CurrentDivision>
+        <CurrentNumber>9</CurrentNumber>
+      </Player>
+    </Away>
+  </Lineups>
+  <Substitutes>
+    <Home>
+      <Player PlayerId="1">
+        <FirstName>Cedric</FirstName>
+        <LastName>Badjeck</LastName>
+        <Fullname>Cedric Badjeck</Fullname>
+        <BirthDate>January 25, 1995</BirthDate>
+        <Age>23</Age>
+        <BirthPlace BirthPlace="" Nationality="Kameroen"/>
+        <Height>1,81 m</Height>
+        <Weight></Weight>
+        <PreferredFoot>Rechts</PreferredFoot>
+        <WikiPosition>Attacker</WikiPosition>
+        <GoalComPlayerNumber>9</GoalComPlayerNumber>
+        <GoalComShownName>C. Badjeck</GoalComShownName>
+        <GoalComWebsite>https://www.vi.nl/spelers/cedric-badjeck/profiel</GoalComWebsite>
+        <CurrentTeam>De Treffers</CurrentTeam>
+        <YearsAtCurrentTeam>01-07-2017-</YearsAtCurrentTeam>
+        <CurrentDivision>Tweede Divisie</CurrentDivision>
+        <CurrentNumber>9</CurrentNumber>
+      </Player>
+      <Player PlayerId="2">
+        <FirstName>Dyon</FirstName>
+        <LastName>Gijzen</LastName>
+        <Fullname>Dyon Gijzen</Fullname>
+        <BirthDate>February 16, 1994</BirthDate>
+        <Age>24</Age>
+        <BirthPlace BirthPlace="Roermond" Nationality="Nederland"/>
+        <Height>1,76 m</Height>
+        <Weight>67 kg</Weight>
+        <PreferredFoot>Links</PreferredFoot>
+        <WikiPosition>Attacker</WikiPosition>
+        <GoalComPlayerNumber>15</GoalComPlayerNumber>
+        <GoalComShownName>D. Gijzen</GoalComShownName>
+        <GoalComWebsite>https://www.vi.nl/spelers/dyon-gijzen/profiel</GoalComWebsite>
+        <CurrentTeam>De Treffers</CurrentTeam>
+        <YearsAtCurrentTeam>11-07-2017-</YearsAtCurrentTeam>
+        <CurrentDivision>Tweede Divisie</CurrentDivision>
+        <CurrentNumber>15</CurrentNumber>
+      </Player>
+      <Player PlayerId="3">
+        <FirstName>Bas</FirstName>
+        <LastName>Hendriks</LastName>
+        <Fullname>Bas Hendriks</Fullname>
+        <BirthDate>September 15, 1994</BirthDate>
+        <Age>23</Age>
+        <BirthPlace BirthPlace="Boxmeer" Nationality="Nederland"/>
+        <Height>1,84 m</Height>
+        <Weight>77 kg</Weight>
+        <PreferredFoot></PreferredFoot>
+        <WikiPosition>Midfielder</WikiPosition>
+        <GoalComPlayerNumber>19</GoalComPlayerNumber>
+        <GoalComShownName>B. Hendriks</GoalComShownName>
+        <GoalComWebsite>https://www.vi.nl/spelers/bas-hendriks/profiel</GoalComWebsite>
+        <CurrentTeam>De Treffers</CurrentTeam>
+        <YearsAtCurrentTeam>01-07-2015-</YearsAtCurrentTeam>
+        <CurrentDivision>Tweede Divisie</CurrentDivision>
+        <CurrentNumber>19</CurrentNumber>
+      </Player>
+      <Player PlayerId="4">
+        <FirstName>Bryan</FirstName>
+        <LastName>Sirvania</LastName>
+        <Fullname>Bryan Sirvania</Fullname>
+        <BirthDate>May 30, 1999</BirthDate>
+        <Age>18</Age>
+        <BirthPlace BirthPlace="" Nationality="Nederland"/>
+        <Height></Height>
+        <Weight></Weight>
+        <PreferredFoot></PreferredFoot>
+        <WikiPosition>Defender</WikiPosition>
+        <GoalComPlayerNumber>21</GoalComPlayerNumber>
+        <GoalComShownName>S. Sirvania</GoalComShownName>
+        <GoalComWebsite>https://www.vi.nl/spelers/bryan-sirvania/profiel</GoalComWebsite>
+        <CurrentTeam>De Treffers</CurrentTeam>
+        <YearsAtCurrentTeam>01-02-2017-</YearsAtCurrentTeam>
+        <CurrentDivision>Tweede Divisie</CurrentDivision>
+        <CurrentNumber>21</CurrentNumber>
+      </Player>
+      <Player PlayerId="5">
+        <FirstName>Wouter</FirstName>
+        <LastName>op den Camp</LastName>
+        <Fullname>Wouter op den Camp</Fullname>
+        <BirthDate>January 24, 1995</BirthDate>
+        <Age>23</Age>
+        <BirthPlace BirthPlace="" Nationality="Nederland"/>
+        <Height></Height>
+        <Weight></Weight>
+        <PreferredFoot></PreferredFoot>
+        <WikiPosition>Midfielder</WikiPosition>
+        <GoalComPlayerNumber>14</GoalComPlayerNumber>
+        <GoalComShownName>W. op den Camp</GoalComShownName>
+        <GoalComWebsite>https://www.vi.nl/spelers/wouter-op-den-camp/profiel</GoalComWebsite>
+        <CurrentTeam>De Treffers</CurrentTeam>
+        <YearsAtCurrentTeam>01-07-2017-</YearsAtCurrentTeam>
+        <CurrentDivision>Tweede Divisie</CurrentDivision>
+        <CurrentNumber>14</CurrentNumber>
+      </Player>
+      <Player PlayerId="6">
+        <FirstName>Eef</FirstName>
+        <LastName>van Riel</LastName>
+        <Fullname>Eef van Riel</Fullname>
+        <BirthDate>December 24, 1991</BirthDate>
+        <Age>26</Age>
+        <BirthPlace BirthPlace="Gendt" Nationality="Nederland"/>
+        <Height></Height>
+        <Weight></Weight>
+        <PreferredFoot></PreferredFoot>
+        <WikiPosition>Midfielder</WikiPosition>
+        <GoalComPlayerNumber>6</GoalComPlayerNumber>
+        <GoalComShownName>E. van Riel</GoalComShownName>
+        <GoalComWebsite>https://www.vi.nl/spelers/eef-van-riel/profiel</GoalComWebsite>
+        <CurrentTeam>De Treffers</CurrentTeam>
+        <YearsAtCurrentTeam>01-07-2017-</YearsAtCurrentTeam>
+        <CurrentDivision>Tweede Divisie</CurrentDivision>
+        <CurrentNumber>6</CurrentNumber>
+      </Player>
+      <Player PlayerId="7">
+        <FirstName>Jordy</FirstName>
+        <LastName>van de Kracht</LastName>
+        <Fullname>Jordy van de Kracht</Fullname>
+        <BirthDate>June 3, 1990</BirthDate>
+        <Age>27</Age>
+        <BirthPlace BirthPlace="Rheden" Nationality="Nederland"/>
+        <Height>1,80 m</Height>
+        <Weight>80 kg</Weight>
+        <PreferredFoot></PreferredFoot>
+        <WikiPosition>Goalkeeper</WikiPosition>
+        <GoalComPlayerNumber>22</GoalComPlayerNumber>
+        <GoalComShownName>J. van de Kracht</GoalComShownName>
+        <GoalComWebsite>https://www.vi.nl/spelers/jordy-van-de-kracht/profiel</GoalComWebsite>
+        <CurrentTeam>De Treffers</CurrentTeam>
+        <YearsAtCurrentTeam>01-07-2015-</YearsAtCurrentTeam>
+        <CurrentDivision>Tweede Divisie</CurrentDivision>
+        <CurrentNumber>22</CurrentNumber>
+      </Player>
+    </Home>
+    <Away>
+      <Player PlayerId="1">
+        <FirstName>Trumaine</FirstName>
+        <LastName>Balrak</LastName>
+        <Fullname>Trumaine Balrak</Fullname>
+        <BirthDate>February 5, 1994</BirthDate>
+        <Age>24</Age>
+        <BirthPlace BirthPlace="" Nationality="Nederland"/>
+        <Height></Height>
+        <Weight></Weight>
+        <PreferredFoot></PreferredFoot>
+        <WikiPosition>Attacker</WikiPosition>
+        <GoalComPlayerNumber>14</GoalComPlayerNumber>
+        <GoalComShownName>T. Balrak</GoalComShownName>
+        <GoalComWebsite>https://www.vi.nl/spelers/trumaine-balrak/profiel</GoalComWebsite>
+        <CurrentTeam>sv Tielse Eendracht Combinatie</CurrentTeam>
+        <YearsAtCurrentTeam>01-07-2015-</YearsAtCurrentTeam>
+        <CurrentDivision>Tweede Divisie</CurrentDivision>
+        <CurrentNumber>14</CurrentNumber>
+      </Player>
+      <Player PlayerId="2">
+        <FirstName>Don</FirstName>
+        <LastName>Bosman</LastName>
+        <Fullname>Don Bosman</Fullname>
+        <BirthDate></BirthDate>
+        <Age></Age>
+        <BirthPlace BirthPlace="" Nationality="Nederland"/>
+        <Height></Height>
+        <Weight></Weight>
+        <PreferredFoot></PreferredFoot>
+        <WikiPosition>Goalkeeper</WikiPosition>
+        <GoalComPlayerNumber></GoalComPlayerNumber>
+        <GoalComShownName>D. Bosman</GoalComShownName>
+        <GoalComWebsite>https://www.vi.nl/spelers/don-bosman/profiel</GoalComWebsite>
+        <CurrentTeam>sv Tielse Eendracht Combinatie</CurrentTeam>
+        <YearsAtCurrentTeam>01-05-2018-</YearsAtCurrentTeam>
+        <CurrentDivision>Tweede Divisie</CurrentDivision>
+        <CurrentNumber></CurrentNumber>
+      </Player>
+      <Player PlayerId="3">
+        <FirstName>Brandon</FirstName>
+        <LastName>Fijneman</LastName>
+        <Fullname>Brandon Fijneman</Fullname>
+        <BirthDate>January 23, 1996</BirthDate>
+        <Age>22</Age>
+        <BirthPlace BirthPlace="Amsterdam" Nationality="Nederland"/>
+        <Height></Height>
+        <Weight></Weight>
+        <PreferredFoot></PreferredFoot>
+        <WikiPosition>Midfielder</WikiPosition>
+        <GoalComPlayerNumber>21</GoalComPlayerNumber>
+        <GoalComShownName>B. Fijneman</GoalComShownName>
+        <GoalComWebsite>https://www.vi.nl/spelers/brandon-fijneman/profiel</GoalComWebsite>
+        <CurrentTeam>sv Tielse Eendracht Combinatie</CurrentTeam>
+        <YearsAtCurrentTeam>01-07-2017-</YearsAtCurrentTeam>
+        <CurrentDivision>Tweede Divisie</CurrentDivision>
+        <CurrentNumber>21</CurrentNumber>
+      </Player>
+      <Player PlayerId="4">
+        <FirstName>Walter</FirstName>
+        <LastName>Kiomegni</LastName>
+        <Fullname>Walter Kiomegni</Fullname>
+        <BirthDate>July 1, 1992</BirthDate>
+        <Age>25</Age>
+        <BirthPlace BirthPlace="" Nationality="Kameroen"/>
+        <Height></Height>
+        <Weight></Weight>
+        <PreferredFoot></PreferredFoot>
+        <WikiPosition>Defender</WikiPosition>
+        <GoalComPlayerNumber>5</GoalComPlayerNumber>
+        <GoalComShownName>W. Kiomegni</GoalComShownName>
+        <GoalComWebsite>https://www.vi.nl/spelers/walter-kiomegni/profiel</GoalComWebsite>
+        <CurrentTeam>sv Tielse Eendracht Combinatie</CurrentTeam>
+        <YearsAtCurrentTeam>01-07-2013-</YearsAtCurrentTeam>
+        <CurrentDivision>Tweede Divisie</CurrentDivision>
+        <CurrentNumber>5</CurrentNumber>
+      </Player>
+      <Player PlayerId="5">
+        <FirstName>Randel</FirstName>
+        <LastName>Shakison</LastName>
+        <Fullname>Randel Shakison</Fullname>
+        <BirthDate>February 28, 1990</BirthDate>
+        <Age>28</Age>
+        <BirthPlace BirthPlace="Amsterdam" Nationality="Nederland"/>
+        <Height>1,87 m</Height>
+        <Weight></Weight>
+        <PreferredFoot></PreferredFoot>
+        <WikiPosition>Defender</WikiPosition>
+        <GoalComPlayerNumber>31</GoalComPlayerNumber>
+        <GoalComShownName>R. Shakison</GoalComShownName>
+        <GoalComWebsite>https://www.vi.nl/spelers/randel-shakison/profiel</GoalComWebsite>
+        <CurrentTeam>sv Tielse Eendracht Combinatie</CurrentTeam>
+        <YearsAtCurrentTeam>01-07-2016-</YearsAtCurrentTeam>
+        <CurrentDivision>Tweede Divisie</CurrentDivision>
+        <CurrentNumber>31</CurrentNumber>
+      </Player>
+      <Player PlayerId="6">
+        <FirstName>Kurtley</FirstName>
+        <LastName>de Windt</LastName>
+        <Fullname>Kurtley de Windt</Fullname>
+        <BirthDate>October 21, 1993</BirthDate>
+        <Age>24</Age>
+        <BirthPlace BirthPlace="" Nationality="Nederland"/>
+        <Height></Height>
+        <Weight></Weight>
+        <PreferredFoot></PreferredFoot>
+        <WikiPosition>Attacker</WikiPosition>
+        <GoalComPlayerNumber>7</GoalComPlayerNumber>
+        <GoalComShownName>K. de Windt</GoalComShownName>
+        <GoalComWebsite>https://www.vi.nl/spelers/kurtley-de-windt/profiel</GoalComWebsite>
+        <CurrentTeam>sv Tielse Eendracht Combinatie</CurrentTeam>
+        <YearsAtCurrentTeam>01-07-2013-</YearsAtCurrentTeam>
+        <CurrentDivision>Tweede Divisie</CurrentDivision>
+        <CurrentNumber>7</CurrentNumber>
+      </Player>
+      <Player PlayerId="7">
+        <FirstName>Thijs</FirstName>
+        <LastName>van Hofwegen</LastName>
+        <Fullname>Thijs van Hofwegen</Fullname>
+        <BirthDate>November 30, 1992</BirthDate>
+        <Age>25</Age>
+        <BirthPlace BirthPlace="Haarlemmermeer" Nationality="Nederland"/>
+        <Height>1,84 m</Height>
+        <Weight>75 kg</Weight>
+        <PreferredFoot></PreferredFoot>
+        <WikiPosition>Midfielder</WikiPosition>
+        <GoalComPlayerNumber></GoalComPlayerNumber>
+        <GoalComShownName>T. van Hofwegen</GoalComShownName>
+        <GoalComWebsite>https://www.vi.nl/spelers/thijs-van-hofwegen/profiel</GoalComWebsite>
+        <CurrentTeam>sv Tielse Eendracht Combinatie</CurrentTeam>
+        <YearsAtCurrentTeam>31-01-2018-</YearsAtCurrentTeam>
+        <CurrentDivision>Tweede Divisie</CurrentDivision>
+        <CurrentNumber></CurrentNumber>
+      </Player>
+    </Away>
+  </Substitutes>
+</Goal>
