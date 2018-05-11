@@ -14,7 +14,7 @@ def hello():
 @app.route('/get_demo')
 def get_demo():
     print('PASS starting...')
-    data = pass_main(glob.glob('./InfoXMLs/*.xml')[0])
+    data = pass_main(glob.glob('./NewInfoXMLs/*.xml')[0])
     print('PASS done!')
 
     print('Returning data...')
@@ -33,7 +33,7 @@ def get_matches():
 @app.route('/get_summary')
 def get_summary():
     file = request.args.get('file')
-    data = pass_main('./InfoXMLs/' + file)
+    data = pass_main('./NewInfoXMLs/' + file)
 
     return json_response(data)
 

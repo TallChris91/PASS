@@ -8,7 +8,7 @@ import glob
 
 
 def main(file, savestate='n'):
-    templatetexthome, templatetextaway, templatedict = TopicWalk(file)
+    templatetexthome, templatetextaway, templatetextneutral, templatedict = TopicWalk(file)
     infodict = InfoDict(file)
     # print(templatetexthome)
     # print(templatetextaway)
@@ -43,7 +43,7 @@ def main(file, savestate='n'):
 
 def matches():
     matches = []
-    xml_files = glob.glob('./InfoXMLs/*.xml')
+    xml_files = glob.glob('./NewInfoXMLs/*.xml')
     print(os.getcwd())
     print(xml_files)
     i = 0

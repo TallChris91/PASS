@@ -1,0 +1,750 @@
+<Goal>
+  <Highlights>
+    <League>Tweede Divisie</League>
+    <StartDate>May 5, 2018</StartDate>
+    <StartTime>15:30</StartTime>
+    <Stadium>Sportpark De Westmaat (IJsselmeervogels)</Stadium>
+    <City></City>
+    <Referee></Referee>
+    <Attendees></Attendees>
+    <FullTimeScore>2-0</FullTimeScore>
+    <Home>
+      <Team>IJsselmeervogels</Team>
+      <GoalScorersList>
+        <Goal GoalId="1" Minute="21" PlayerLink="https://www.vi.nl/spelers/gevero-markiet/profiel" OwnGoal="n">G. Markiet</Goal>
+        <Goal GoalId="2" Minute="34" PlayerLink="https://www.vi.nl/spelers/mike-van-de-laar/profiel" OwnGoal="n">M. van de Laar</Goal>
+      </GoalScorersList>
+      <FinalGoals>2</FinalGoals>
+    </Home>
+    <Away>
+      <Team>Lisse</Team>
+      <GoalScorersList/>
+      <FinalGoals>0</FinalGoals>
+    </Away>
+  </Highlights>
+  <Events>
+    <AssistList>
+      <Assist AssistId="1" Minute="21">M. van de Laar</Assist>
+      <Assist AssistId="2" Minute="34">A. Akla</Assist>
+    </AssistList>
+    <GoalList>
+      <Goal GoalId="1" Minute="21">G. Markiet</Goal>
+      <Goal GoalId="2" Minute="34">M. van de Laar</Goal>
+    </GoalList>
+    <MissedPenaltyList/>
+    <PenaltyGoalList/>
+    <RedCardList/>
+    <YellowCardList>
+      <YellowCard YellowCardId="1" Minute="45">M. Adouch</YellowCard>
+      <YellowCard YellowCardId="2" Minute="60">A. Akla</YellowCard>
+      <YellowCard YellowCardId="3" Minute="85">R. Olijfveld</YellowCard>
+      <YellowCard YellowCardId="4" Minute="86">B. van der Werff</YellowCard>
+    </YellowCardList>
+    <YellowRedList/>
+    <OwnGoalList/>
+    <SubstitutionList>
+      <Substitution SubstitutionId="1" Minute="40" SubOut="N. Buijs" SubIn="A. Malhi"/>
+      <Substitution SubstitutionId="1" Minute="48" SubOut="L. Tarani" SubIn="A. Ait Afkir"/>
+      <Substitution SubstitutionId="1" Minute="61" SubOut="A. Akla" SubIn="B. Powel"/>
+      <Substitution SubstitutionId="1" Minute="71" SubOut="M. van de Laar" SubIn="C. van Hussen"/>
+      <Substitution SubstitutionId="1" Minute="75" SubOut="R. Vermeulen" SubIn="T. Monteny"/>
+      <Substitution SubstitutionId="1" Minute="82" SubOut="R. Olijfveld" SubIn="S. Moro"/>
+    </SubstitutionList>
+  </Events>
+  <Lineups>
+    <Home>
+      <Player PlayerId="1">
+        <FirstName>Jaimy</FirstName>
+        <LastName>Schaap</LastName>
+        <Fullname>Jaimy Schaap</Fullname>
+        <BirthDate>June 29, 1994</BirthDate>
+        <Age>23</Age>
+        <BirthPlace BirthPlace="" Nationality="Nederland"/>
+        <Height></Height>
+        <Weight></Weight>
+        <PreferredFoot></PreferredFoot>
+        <WikiPosition>Goalkeeper</WikiPosition>
+        <GoalComPlayerNumber>1</GoalComPlayerNumber>
+        <GoalComShownName>J. Schaap</GoalComShownName>
+        <GoalComWebsite>https://www.vi.nl/spelers/jaimy-schaap/profiel</GoalComWebsite>
+        <CurrentTeam>IJsselmeervogels</CurrentTeam>
+        <YearsAtCurrentTeam>01-07-2016-</YearsAtCurrentTeam>
+        <CurrentDivision>Tweede Divisie</CurrentDivision>
+        <CurrentNumber>1</CurrentNumber>
+      </Player>
+      <Player PlayerId="2">
+        <FirstName>Shanon</FirstName>
+        <LastName>Carmelia</LastName>
+        <Fullname>Shanon Carmelia</Fullname>
+        <BirthDate>March 20, 1989</BirthDate>
+        <Age>29</Age>
+        <BirthPlace BirthPlace="" Nationality="Curaçao"/>
+        <Height></Height>
+        <Weight></Weight>
+        <PreferredFoot></PreferredFoot>
+        <WikiPosition>Defender</WikiPosition>
+        <GoalComPlayerNumber>2</GoalComPlayerNumber>
+        <GoalComShownName>S. Carmelia</GoalComShownName>
+        <GoalComWebsite>https://www.vi.nl/spelers/shanon-carmelia/profiel</GoalComWebsite>
+        <CurrentTeam>IJsselmeervogels</CurrentTeam>
+        <YearsAtCurrentTeam>01-07-2016-</YearsAtCurrentTeam>
+        <CurrentDivision>Tweede Divisie</CurrentDivision>
+        <CurrentNumber>2</CurrentNumber>
+      </Player>
+      <Player PlayerId="3">
+        <FirstName>Marciano</FirstName>
+        <LastName>van Leijenhorst</LastName>
+        <Fullname>Marciano van Leijenhorst</Fullname>
+        <BirthDate>January 20, 1994</BirthDate>
+        <Age>24</Age>
+        <BirthPlace BirthPlace="" Nationality="Nederland"/>
+        <Height></Height>
+        <Weight></Weight>
+        <PreferredFoot>Links</PreferredFoot>
+        <WikiPosition>Defender</WikiPosition>
+        <GoalComPlayerNumber>23</GoalComPlayerNumber>
+        <GoalComShownName>M. van Leijenhorst</GoalComShownName>
+        <GoalComWebsite>https://www.vi.nl/spelers/marciano-van-leijenhorst/profiel</GoalComWebsite>
+        <CurrentTeam>IJsselmeervogels</CurrentTeam>
+        <YearsAtCurrentTeam>01-07-2016-</YearsAtCurrentTeam>
+        <CurrentDivision>Tweede Divisie</CurrentDivision>
+        <CurrentNumber>23</CurrentNumber>
+      </Player>
+      <Player PlayerId="4">
+        <FirstName>Gévero</FirstName>
+        <LastName>Markiet</LastName>
+        <Fullname>Gévero Markiet</Fullname>
+        <BirthDate>April 8, 1991</BirthDate>
+        <Age>27</Age>
+        <BirthPlace BirthPlace="Amsterdam" Nationality="Nederland"/>
+        <Height>1,87 m</Height>
+        <Weight></Weight>
+        <PreferredFoot>Rechts</PreferredFoot>
+        <WikiPosition>Defender</WikiPosition>
+        <GoalComPlayerNumber>25</GoalComPlayerNumber>
+        <GoalComShownName>G. Markiet</GoalComShownName>
+        <GoalComWebsite>https://www.vi.nl/spelers/gevero-markiet/profiel</GoalComWebsite>
+        <CurrentTeam>IJsselmeervogels</CurrentTeam>
+        <YearsAtCurrentTeam>24-10-2017-</YearsAtCurrentTeam>
+        <CurrentDivision>Tweede Divisie</CurrentDivision>
+        <CurrentNumber>25</CurrentNumber>
+      </Player>
+      <Player PlayerId="5">
+        <FirstName>Jeffrey</FirstName>
+        <LastName>Buitenhuis</LastName>
+        <Fullname>Jeffrey Buitenhuis</Fullname>
+        <BirthDate>February 8, 1992</BirthDate>
+        <Age>26</Age>
+        <BirthPlace BirthPlace="Utrecht" Nationality="Nederland"/>
+        <Height></Height>
+        <Weight></Weight>
+        <PreferredFoot></PreferredFoot>
+        <WikiPosition>Defender</WikiPosition>
+        <GoalComPlayerNumber>3</GoalComPlayerNumber>
+        <GoalComShownName>J. Buitenhuis</GoalComShownName>
+        <GoalComWebsite>https://www.vi.nl/spelers/jeffrey-buitenhuis/profiel</GoalComWebsite>
+        <CurrentTeam>IJsselmeervogels</CurrentTeam>
+        <YearsAtCurrentTeam>01-07-2014-</YearsAtCurrentTeam>
+        <CurrentDivision>Tweede Divisie</CurrentDivision>
+        <CurrentNumber>3</CurrentNumber>
+      </Player>
+      <Player PlayerId="6">
+        <FirstName>Gillian</FirstName>
+        <LastName>Justiana</LastName>
+        <Fullname>Gillian Justiana</Fullname>
+        <BirthDate>March 5, 1991</BirthDate>
+        <Age>27</Age>
+        <BirthPlace BirthPlace="Zwolle" Nationality="Curaçao"/>
+        <Height>1,72 m</Height>
+        <Weight>67 kg</Weight>
+        <PreferredFoot></PreferredFoot>
+        <WikiPosition>Defender</WikiPosition>
+        <GoalComPlayerNumber>5</GoalComPlayerNumber>
+        <GoalComShownName>G. Justiana</GoalComShownName>
+        <GoalComWebsite>https://www.vi.nl/spelers/gillian-justiana/profiel</GoalComWebsite>
+        <CurrentTeam>IJsselmeervogels</CurrentTeam>
+        <YearsAtCurrentTeam>31-08-2017-</YearsAtCurrentTeam>
+        <CurrentDivision>Tweede Divisie</CurrentDivision>
+        <CurrentNumber>5</CurrentNumber>
+      </Player>
+      <Player PlayerId="7">
+        <FirstName>Achraf</FirstName>
+        <LastName>Nejmi</LastName>
+        <Fullname>Achraf Nejmi</Fullname>
+        <BirthDate>March 13, 1991</BirthDate>
+        <Age>27</Age>
+        <BirthPlace BirthPlace="" Nationality="Nederland"/>
+        <Height></Height>
+        <Weight></Weight>
+        <PreferredFoot></PreferredFoot>
+        <WikiPosition>Midfielder</WikiPosition>
+        <GoalComPlayerNumber>6</GoalComPlayerNumber>
+        <GoalComShownName>A. Nejmi</GoalComShownName>
+        <GoalComWebsite>https://www.vi.nl/spelers/achraf-nejmi/profiel</GoalComWebsite>
+        <CurrentTeam>IJsselmeervogels</CurrentTeam>
+        <YearsAtCurrentTeam>01-07-2015-</YearsAtCurrentTeam>
+        <CurrentDivision>Tweede Divisie</CurrentDivision>
+        <CurrentNumber>6</CurrentNumber>
+      </Player>
+      <Player PlayerId="8">
+        <FirstName>Mike</FirstName>
+        <LastName>van de Laar</LastName>
+        <Fullname>Mike van de Laar</Fullname>
+        <BirthDate>November 9, 1992</BirthDate>
+        <Age>25</Age>
+        <BirthPlace BirthPlace="" Nationality="Nederland"/>
+        <Height></Height>
+        <Weight></Weight>
+        <PreferredFoot></PreferredFoot>
+        <WikiPosition>Defender</WikiPosition>
+        <GoalComPlayerNumber>8</GoalComPlayerNumber>
+        <GoalComShownName>M. van de Laar</GoalComShownName>
+        <GoalComWebsite>https://www.vi.nl/spelers/mike-van-de-laar/profiel</GoalComWebsite>
+        <CurrentTeam>IJsselmeervogels</CurrentTeam>
+        <YearsAtCurrentTeam>01-07-2010-</YearsAtCurrentTeam>
+        <CurrentDivision>Tweede Divisie</CurrentDivision>
+        <CurrentNumber>8</CurrentNumber>
+      </Player>
+      <Player PlayerId="9">
+        <FirstName>Oktay</FirstName>
+        <LastName>Öztürk</LastName>
+        <Fullname>Oktay Öztürk</Fullname>
+        <BirthDate>February 8, 1990</BirthDate>
+        <Age>28</Age>
+        <BirthPlace BirthPlace="" Nationality="Nederland"/>
+        <Height></Height>
+        <Weight></Weight>
+        <PreferredFoot></PreferredFoot>
+        <WikiPosition>Midfielder</WikiPosition>
+        <GoalComPlayerNumber>10</GoalComPlayerNumber>
+        <GoalComShownName>O. Öztürk</GoalComShownName>
+        <GoalComWebsite>https://www.vi.nl/spelers/oktay-ozturk/profiel</GoalComWebsite>
+        <CurrentTeam>IJsselmeervogels</CurrentTeam>
+        <YearsAtCurrentTeam>01-07-2015-</YearsAtCurrentTeam>
+        <CurrentDivision>Tweede Divisie</CurrentDivision>
+        <CurrentNumber>10</CurrentNumber>
+      </Player>
+      <Player PlayerId="10">
+        <FirstName>Ali</FirstName>
+        <LastName>Akla</LastName>
+        <Fullname>Ali Akla</Fullname>
+        <BirthDate>February 9, 1993</BirthDate>
+        <Age>25</Age>
+        <BirthPlace BirthPlace="" Nationality="Nederland"/>
+        <Height></Height>
+        <Weight></Weight>
+        <PreferredFoot></PreferredFoot>
+        <WikiPosition>Attacker</WikiPosition>
+        <GoalComPlayerNumber>11</GoalComPlayerNumber>
+        <GoalComShownName>A. Akla</GoalComShownName>
+        <GoalComWebsite>https://www.vi.nl/spelers/ali-akla/profiel</GoalComWebsite>
+        <CurrentTeam>IJsselmeervogels</CurrentTeam>
+        <YearsAtCurrentTeam>01-07-2016-</YearsAtCurrentTeam>
+        <CurrentDivision>Tweede Divisie</CurrentDivision>
+        <CurrentNumber>11</CurrentNumber>
+      </Player>
+      <Player PlayerId="11">
+        <FirstName>Robbert</FirstName>
+        <LastName>Olijfveld</LastName>
+        <Fullname>Robbert Olijfveld</Fullname>
+        <BirthDate>August 15, 1994</BirthDate>
+        <Age>23</Age>
+        <BirthPlace BirthPlace="" Nationality="Nederland"/>
+        <Height></Height>
+        <Weight></Weight>
+        <PreferredFoot></PreferredFoot>
+        <WikiPosition>Attacker</WikiPosition>
+        <GoalComPlayerNumber>13</GoalComPlayerNumber>
+        <GoalComShownName>R. Olijfveld</GoalComShownName>
+        <GoalComWebsite>https://www.vi.nl/spelers/robbert-olijfveld/profiel</GoalComWebsite>
+        <CurrentTeam>IJsselmeervogels</CurrentTeam>
+        <YearsAtCurrentTeam>01-07-2017-</YearsAtCurrentTeam>
+        <CurrentDivision>Tweede Divisie</CurrentDivision>
+        <CurrentNumber>13</CurrentNumber>
+      </Player>
+    </Home>
+    <Away>
+      <Player PlayerId="1">
+        <FirstName>Brian</FirstName>
+        <LastName>van der Werff</LastName>
+        <Fullname>Brian van der Werff</Fullname>
+        <BirthDate>April 10, 1993</BirthDate>
+        <Age>25</Age>
+        <BirthPlace BirthPlace="" Nationality="Nederland"/>
+        <Height></Height>
+        <Weight></Weight>
+        <PreferredFoot></PreferredFoot>
+        <WikiPosition>Goalkeeper</WikiPosition>
+        <GoalComPlayerNumber>78</GoalComPlayerNumber>
+        <GoalComShownName>B. van der Werff</GoalComShownName>
+        <GoalComWebsite>https://www.vi.nl/spelers/brian-van-der-werff/profiel</GoalComWebsite>
+        <CurrentTeam>FC Lisse</CurrentTeam>
+        <YearsAtCurrentTeam>01-07-2016-</YearsAtCurrentTeam>
+        <CurrentDivision>Tweede Divisie</CurrentDivision>
+        <CurrentNumber>78</CurrentNumber>
+      </Player>
+      <Player PlayerId="2">
+        <FirstName>Tom</FirstName>
+        <LastName>Enthoven</LastName>
+        <Fullname>Tom Enthoven</Fullname>
+        <BirthDate></BirthDate>
+        <Age></Age>
+        <BirthPlace BirthPlace="" Nationality="Nederland"/>
+        <Height></Height>
+        <Weight></Weight>
+        <PreferredFoot></PreferredFoot>
+        <WikiPosition>Defender</WikiPosition>
+        <GoalComPlayerNumber></GoalComPlayerNumber>
+        <GoalComShownName>T. Enthoven</GoalComShownName>
+        <GoalComWebsite>https://www.vi.nl/spelers/tom-enthoven/profiel</GoalComWebsite>
+        <CurrentTeam>FC Lisse</CurrentTeam>
+        <YearsAtCurrentTeam>01-07-2017-</YearsAtCurrentTeam>
+        <CurrentDivision>Tweede Divisie</CurrentDivision>
+        <CurrentNumber></CurrentNumber>
+      </Player>
+      <Player PlayerId="3">
+        <FirstName>Roel</FirstName>
+        <LastName>de Goede</LastName>
+        <Fullname>Roel de Goede</Fullname>
+        <BirthDate>June 14, 1982</BirthDate>
+        <Age>35</Age>
+        <BirthPlace BirthPlace="" Nationality="Nederland"/>
+        <Height></Height>
+        <Weight></Weight>
+        <PreferredFoot></PreferredFoot>
+        <WikiPosition>Defender</WikiPosition>
+        <GoalComPlayerNumber>5</GoalComPlayerNumber>
+        <GoalComShownName>R. de Goede</GoalComShownName>
+        <GoalComWebsite>https://www.vi.nl/spelers/roel-de-goede/profiel</GoalComWebsite>
+        <CurrentTeam>FC Lisse</CurrentTeam>
+        <YearsAtCurrentTeam>01-07-2010-</YearsAtCurrentTeam>
+        <CurrentDivision>Tweede Divisie</CurrentDivision>
+        <CurrentNumber>5</CurrentNumber>
+      </Player>
+      <Player PlayerId="4">
+        <FirstName>Justin</FirstName>
+        <LastName>Valk</LastName>
+        <Fullname>Justin Valk</Fullname>
+        <BirthDate>August 14, 1991</BirthDate>
+        <Age>26</Age>
+        <BirthPlace BirthPlace="" Nationality="Nederland"/>
+        <Height></Height>
+        <Weight></Weight>
+        <PreferredFoot></PreferredFoot>
+        <WikiPosition>Midfielder</WikiPosition>
+        <GoalComPlayerNumber>12</GoalComPlayerNumber>
+        <GoalComShownName>J. Valk</GoalComShownName>
+        <GoalComWebsite>https://www.vi.nl/spelers/justin-valk/profiel</GoalComWebsite>
+        <CurrentTeam>FC Lisse</CurrentTeam>
+        <YearsAtCurrentTeam>01-07-2012-</YearsAtCurrentTeam>
+        <CurrentDivision>Tweede Divisie</CurrentDivision>
+        <CurrentNumber>12</CurrentNumber>
+      </Player>
+      <Player PlayerId="5">
+        <FirstName>Niels</FirstName>
+        <LastName>Buijs</LastName>
+        <Fullname>Niels Buijs</Fullname>
+        <BirthDate>October 6, 1991</BirthDate>
+        <Age>26</Age>
+        <BirthPlace BirthPlace="" Nationality="Nederland"/>
+        <Height>1,78 m</Height>
+        <Weight>72 kg</Weight>
+        <PreferredFoot></PreferredFoot>
+        <WikiPosition>Defender</WikiPosition>
+        <GoalComPlayerNumber>2</GoalComPlayerNumber>
+        <GoalComShownName>N. Buijs</GoalComShownName>
+        <GoalComWebsite>https://www.vi.nl/spelers/niels-buijs/profiel</GoalComWebsite>
+        <CurrentTeam>FC Lisse</CurrentTeam>
+        <YearsAtCurrentTeam>01-07-2012-</YearsAtCurrentTeam>
+        <CurrentDivision>Tweede Divisie</CurrentDivision>
+        <CurrentNumber>2</CurrentNumber>
+      </Player>
+      <Player PlayerId="6">
+        <FirstName>Lars</FirstName>
+        <LastName>Rauws</LastName>
+        <Fullname>Lars Rauws</Fullname>
+        <BirthDate>May 7, 1992</BirthDate>
+        <Age>26</Age>
+        <BirthPlace BirthPlace="" Nationality="Nederland"/>
+        <Height></Height>
+        <Weight></Weight>
+        <PreferredFoot></PreferredFoot>
+        <WikiPosition>Defender</WikiPosition>
+        <GoalComPlayerNumber>6</GoalComPlayerNumber>
+        <GoalComShownName>L. Rauws</GoalComShownName>
+        <GoalComWebsite>https://www.vi.nl/spelers/lars-rauws/profiel</GoalComWebsite>
+        <CurrentTeam>FC Lisse</CurrentTeam>
+        <YearsAtCurrentTeam>01-07-2010-</YearsAtCurrentTeam>
+        <CurrentDivision>Tweede Divisie</CurrentDivision>
+        <CurrentNumber>6</CurrentNumber>
+      </Player>
+      <Player PlayerId="7">
+        <FirstName>Mobarak</FirstName>
+        <LastName>Adouch</LastName>
+        <Fullname>Mobarak Adouch</Fullname>
+        <BirthDate>January 1, 1998</BirthDate>
+        <Age>20</Age>
+        <BirthPlace BirthPlace="" Nationality="Nederland"/>
+        <Height></Height>
+        <Weight></Weight>
+        <PreferredFoot></PreferredFoot>
+        <WikiPosition>Defender</WikiPosition>
+        <GoalComPlayerNumber></GoalComPlayerNumber>
+        <GoalComShownName>M. Adouch</GoalComShownName>
+        <GoalComWebsite>https://www.vi.nl/spelers/mobarak-adouch/profiel</GoalComWebsite>
+        <CurrentTeam>FC Lisse</CurrentTeam>
+        <YearsAtCurrentTeam>09-02-2018-</YearsAtCurrentTeam>
+        <CurrentDivision>Tweede Divisie</CurrentDivision>
+        <CurrentNumber></CurrentNumber>
+      </Player>
+      <Player PlayerId="8">
+        <FirstName>Martin</FirstName>
+        <LastName>van Eeuwijk</LastName>
+        <Fullname>Martin van Eeuwijk</Fullname>
+        <BirthDate>January 1, 1987</BirthDate>
+        <Age>31</Age>
+        <BirthPlace BirthPlace="" Nationality="Nederland"/>
+        <Height></Height>
+        <Weight></Weight>
+        <PreferredFoot></PreferredFoot>
+        <WikiPosition>Midfielder</WikiPosition>
+        <GoalComPlayerNumber>7</GoalComPlayerNumber>
+        <GoalComShownName>M. van Eeuwijk</GoalComShownName>
+        <GoalComWebsite>https://www.vi.nl/spelers/martin-van-eeuwijk/profiel</GoalComWebsite>
+        <CurrentTeam>FC Lisse</CurrentTeam>
+        <YearsAtCurrentTeam>01-07-2016-</YearsAtCurrentTeam>
+        <CurrentDivision>Tweede Divisie</CurrentDivision>
+        <CurrentNumber>7</CurrentNumber>
+      </Player>
+      <Player PlayerId="9">
+        <FirstName>Rik</FirstName>
+        <LastName>Vermeulen</LastName>
+        <Fullname>Rik Vermeulen</Fullname>
+        <BirthDate>January 9, 1986</BirthDate>
+        <Age>32</Age>
+        <BirthPlace BirthPlace="Lisse" Nationality="Nederland"/>
+        <Height></Height>
+        <Weight></Weight>
+        <PreferredFoot></PreferredFoot>
+        <WikiPosition>Midfielder</WikiPosition>
+        <GoalComPlayerNumber>10</GoalComPlayerNumber>
+        <GoalComShownName>R. Vermeulen</GoalComShownName>
+        <GoalComWebsite>https://www.vi.nl/spelers/rik-vermeulen/profiel</GoalComWebsite>
+        <CurrentTeam>FC Lisse</CurrentTeam>
+        <YearsAtCurrentTeam>01-09-2008-</YearsAtCurrentTeam>
+        <CurrentDivision>Tweede Divisie</CurrentDivision>
+        <CurrentNumber>10</CurrentNumber>
+      </Player>
+      <Player PlayerId="10">
+        <FirstName>Luca</FirstName>
+        <LastName>Tarani</LastName>
+        <Fullname>Luca Tarani</Fullname>
+        <BirthDate>November 17, 1998</BirthDate>
+        <Age>19</Age>
+        <BirthPlace BirthPlace="" Nationality="Nederland"/>
+        <Height></Height>
+        <Weight></Weight>
+        <PreferredFoot></PreferredFoot>
+        <WikiPosition>Midfielder</WikiPosition>
+        <GoalComPlayerNumber></GoalComPlayerNumber>
+        <GoalComShownName>L. Tarani</GoalComShownName>
+        <GoalComWebsite>https://www.vi.nl/spelers/luca-tarani/profiel</GoalComWebsite>
+        <CurrentTeam>FC Lisse</CurrentTeam>
+        <YearsAtCurrentTeam>22-09-2017-</YearsAtCurrentTeam>
+        <CurrentDivision>Tweede Divisie</CurrentDivision>
+        <CurrentNumber></CurrentNumber>
+      </Player>
+      <Player PlayerId="11">
+        <FirstName>Bas</FirstName>
+        <LastName>Buimer</LastName>
+        <Fullname>Bas Buimer</Fullname>
+        <BirthDate>September 24, 1992</BirthDate>
+        <Age>25</Age>
+        <BirthPlace BirthPlace="" Nationality="Nederland"/>
+        <Height></Height>
+        <Weight></Weight>
+        <PreferredFoot></PreferredFoot>
+        <WikiPosition>Attacker</WikiPosition>
+        <GoalComPlayerNumber>20</GoalComPlayerNumber>
+        <GoalComShownName>B. Buimer</GoalComShownName>
+        <GoalComWebsite>https://www.vi.nl/spelers/bas-buimer/profiel</GoalComWebsite>
+        <CurrentTeam>FC Lisse</CurrentTeam>
+        <YearsAtCurrentTeam>01-07-2017-</YearsAtCurrentTeam>
+        <CurrentDivision>Tweede Divisie</CurrentDivision>
+        <CurrentNumber>20</CurrentNumber>
+      </Player>
+    </Away>
+  </Lineups>
+  <Substitutes>
+    <Home>
+      <Player PlayerId="1">
+        <FirstName>Bryan</FirstName>
+        <LastName>Burgerhout</LastName>
+        <Fullname>Bryan Burgerhout</Fullname>
+        <BirthDate>July 16, 1994</BirthDate>
+        <Age>23</Age>
+        <BirthPlace BirthPlace="" Nationality="Nederland"/>
+        <Height></Height>
+        <Weight></Weight>
+        <PreferredFoot></PreferredFoot>
+        <WikiPosition>Midfielder</WikiPosition>
+        <GoalComPlayerNumber>18</GoalComPlayerNumber>
+        <GoalComShownName>B. Burgerhout</GoalComShownName>
+        <GoalComWebsite>https://www.vi.nl/spelers/bryan-burgerhout/profiel</GoalComWebsite>
+        <CurrentTeam>IJsselmeervogels</CurrentTeam>
+        <YearsAtCurrentTeam>01-03-2012-</YearsAtCurrentTeam>
+        <CurrentDivision>Tweede Divisie</CurrentDivision>
+        <CurrentNumber>18</CurrentNumber>
+      </Player>
+      <Player PlayerId="2">
+        <FirstName>Ralph</FirstName>
+        <LastName>Hovestad</LastName>
+        <Fullname>Ralph Hovestad</Fullname>
+        <BirthDate>February 8, 1989</BirthDate>
+        <Age>29</Age>
+        <BirthPlace BirthPlace="Bilthoven" Nationality="Nederland"/>
+        <Height>1,92 m</Height>
+        <Weight>79 kg</Weight>
+        <PreferredFoot></PreferredFoot>
+        <WikiPosition>Defender</WikiPosition>
+        <GoalComPlayerNumber>4</GoalComPlayerNumber>
+        <GoalComShownName>R. Hovestad</GoalComShownName>
+        <GoalComWebsite>https://www.vi.nl/spelers/ralph-hovestad/profiel</GoalComWebsite>
+        <CurrentTeam>IJsselmeervogels</CurrentTeam>
+        <YearsAtCurrentTeam>01-07-2016-</YearsAtCurrentTeam>
+        <CurrentDivision>Tweede Divisie</CurrentDivision>
+        <CurrentNumber>4</CurrentNumber>
+      </Player>
+      <Player PlayerId="3">
+        <FirstName>Soufian</FirstName>
+        <LastName>Moro</LastName>
+        <Fullname>Soufian Moro</Fullname>
+        <BirthDate>February 21, 1993</BirthDate>
+        <Age>25</Age>
+        <BirthPlace BirthPlace="Amsterdam" Nationality="Nederland"/>
+        <Height></Height>
+        <Weight></Weight>
+        <PreferredFoot></PreferredFoot>
+        <WikiPosition>Attacker</WikiPosition>
+        <GoalComPlayerNumber>21</GoalComPlayerNumber>
+        <GoalComShownName>S. Moro</GoalComShownName>
+        <GoalComWebsite>https://www.vi.nl/spelers/soufian-moro/profiel</GoalComWebsite>
+        <CurrentTeam>IJsselmeervogels</CurrentTeam>
+        <YearsAtCurrentTeam>31-01-2017-</YearsAtCurrentTeam>
+        <CurrentDivision>Tweede Divisie</CurrentDivision>
+        <CurrentNumber>21</CurrentNumber>
+      </Player>
+      <Player PlayerId="4">
+        <FirstName>Berry</FirstName>
+        <LastName>Powel</LastName>
+        <Fullname>Berry Powel</Fullname>
+        <BirthDate>May 2, 1980</BirthDate>
+        <Age>38</Age>
+        <BirthPlace BirthPlace="Utrecht" Nationality="Nederland"/>
+        <Height>1,85 m</Height>
+        <Weight>87 kg</Weight>
+        <PreferredFoot></PreferredFoot>
+        <WikiPosition>Attacker</WikiPosition>
+        <GoalComPlayerNumber>9</GoalComPlayerNumber>
+        <GoalComShownName>B. Powel</GoalComShownName>
+        <GoalComWebsite>https://www.vi.nl/spelers/berry-powel/profiel</GoalComWebsite>
+        <CurrentTeam>IJsselmeervogels</CurrentTeam>
+        <YearsAtCurrentTeam>31-01-2017-</YearsAtCurrentTeam>
+        <CurrentDivision>Tweede Divisie</CurrentDivision>
+        <CurrentNumber>9</CurrentNumber>
+      </Player>
+      <Player PlayerId="5">
+        <FirstName>Jan</FirstName>
+        <LastName>Vedder</LastName>
+        <Fullname>Jan Vedder</Fullname>
+        <BirthDate>April 4, 1998</BirthDate>
+        <Age>20</Age>
+        <BirthPlace BirthPlace="" Nationality="Nederland"/>
+        <Height></Height>
+        <Weight></Weight>
+        <PreferredFoot></PreferredFoot>
+        <WikiPosition>Attacker</WikiPosition>
+        <GoalComPlayerNumber></GoalComPlayerNumber>
+        <GoalComShownName>J. Vedder</GoalComShownName>
+        <GoalComWebsite>https://www.vi.nl/spelers/jan-vedder/profiel</GoalComWebsite>
+        <CurrentTeam>IJsselmeervogels</CurrentTeam>
+        <YearsAtCurrentTeam>30-03-2018-</YearsAtCurrentTeam>
+        <CurrentDivision>Tweede Divisie</CurrentDivision>
+        <CurrentNumber></CurrentNumber>
+      </Player>
+      <Player PlayerId="6">
+        <FirstName>Raymon</FirstName>
+        <LastName>van Emmerik</LastName>
+        <Fullname>Raymon van Emmerik</Fullname>
+        <BirthDate>June 11, 1980</BirthDate>
+        <Age>37</Age>
+        <BirthPlace BirthPlace="Naarden" Nationality="Nederland"/>
+        <Height></Height>
+        <Weight></Weight>
+        <PreferredFoot></PreferredFoot>
+        <WikiPosition>Goalkeeper</WikiPosition>
+        <GoalComPlayerNumber>99</GoalComPlayerNumber>
+        <GoalComShownName>R. van Emmerik</GoalComShownName>
+        <GoalComWebsite>https://www.vi.nl/spelers/raymon-van-emmerik/profiel</GoalComWebsite>
+        <CurrentTeam>IJsselmeervogels</CurrentTeam>
+        <YearsAtCurrentTeam>01-07-2014-</YearsAtCurrentTeam>
+        <CurrentDivision>Tweede Divisie</CurrentDivision>
+        <CurrentNumber>99</CurrentNumber>
+      </Player>
+      <Player PlayerId="7">
+        <FirstName>Christiaan</FirstName>
+        <LastName>van Hussen</LastName>
+        <Fullname>Christiaan van Hussen</Fullname>
+        <BirthDate>March 8, 1992</BirthDate>
+        <Age>26</Age>
+        <BirthPlace BirthPlace="" Nationality="Nederland"/>
+        <Height></Height>
+        <Weight></Weight>
+        <PreferredFoot></PreferredFoot>
+        <WikiPosition>Midfielder</WikiPosition>
+        <GoalComPlayerNumber>7</GoalComPlayerNumber>
+        <GoalComShownName>C. van Hussen</GoalComShownName>
+        <GoalComWebsite>https://www.vi.nl/spelers/christiaan-van-hussen/profiel</GoalComWebsite>
+        <CurrentTeam>IJsselmeervogels</CurrentTeam>
+        <YearsAtCurrentTeam>01-07-2016-</YearsAtCurrentTeam>
+        <CurrentDivision>Tweede Divisie</CurrentDivision>
+        <CurrentNumber>7</CurrentNumber>
+      </Player>
+    </Home>
+    <Away>
+      <Player PlayerId="1">
+        <FirstName>Ayoub</FirstName>
+        <LastName>Ait Afkir</LastName>
+        <Fullname>Ayoub Ait Afkir</Fullname>
+        <BirthDate>January 30, 1995</BirthDate>
+        <Age>23</Age>
+        <BirthPlace BirthPlace="Amsterdam" Nationality="Nederland"/>
+        <Height></Height>
+        <Weight></Weight>
+        <PreferredFoot></PreferredFoot>
+        <WikiPosition>Attacker</WikiPosition>
+        <GoalComPlayerNumber></GoalComPlayerNumber>
+        <GoalComShownName>A. Ait Afkir</GoalComShownName>
+        <GoalComWebsite>https://www.vi.nl/spelers/ayoub-ait-afkir/profiel</GoalComWebsite>
+        <CurrentTeam>FC Lisse</CurrentTeam>
+        <YearsAtCurrentTeam>11-02-2018-</YearsAtCurrentTeam>
+        <CurrentDivision>Tweede Divisie</CurrentDivision>
+        <CurrentNumber></CurrentNumber>
+      </Player>
+      <Player PlayerId="2">
+        <FirstName>Kay</FirstName>
+        <LastName>Gerritsen</LastName>
+        <Fullname>Kay Gerritsen</Fullname>
+        <BirthDate></BirthDate>
+        <Age></Age>
+        <BirthPlace BirthPlace="" Nationality="Nederland"/>
+        <Height></Height>
+        <Weight></Weight>
+        <PreferredFoot></PreferredFoot>
+        <WikiPosition>Midfielder</WikiPosition>
+        <GoalComPlayerNumber></GoalComPlayerNumber>
+        <GoalComShownName>K. Gerritsen</GoalComShownName>
+        <GoalComWebsite>https://www.vi.nl/spelers/kay-gerritsen/profiel</GoalComWebsite>
+        <CurrentTeam>FC Lisse</CurrentTeam>
+        <YearsAtCurrentTeam>12-01-2018-</YearsAtCurrentTeam>
+        <CurrentDivision>Tweede Divisie</CurrentDivision>
+        <CurrentNumber></CurrentNumber>
+      </Player>
+      <Player PlayerId="3">
+        <FirstName>Hanne</FirstName>
+        <LastName>Hagary</LastName>
+        <Fullname>Hanne Hagary</Fullname>
+        <BirthDate>January 27, 1989</BirthDate>
+        <Age>29</Age>
+        <BirthPlace BirthPlace="" Nationality="Nederland"/>
+        <Height>1,79 m</Height>
+        <Weight></Weight>
+        <PreferredFoot></PreferredFoot>
+        <WikiPosition>Attacker</WikiPosition>
+        <GoalComPlayerNumber>18</GoalComPlayerNumber>
+        <GoalComShownName>H. Hagary</GoalComShownName>
+        <GoalComWebsite>https://www.vi.nl/spelers/hanne-hagary/profiel</GoalComWebsite>
+        <CurrentTeam>FC Lisse</CurrentTeam>
+        <YearsAtCurrentTeam>01-07-2017-</YearsAtCurrentTeam>
+        <CurrentDivision>Tweede Divisie</CurrentDivision>
+        <CurrentNumber>18</CurrentNumber>
+      </Player>
+      <Player PlayerId="4">
+        <FirstName>Björn</FirstName>
+        <LastName>Haggerty</LastName>
+        <Fullname>Björn Haggerty</Fullname>
+        <BirthDate>October 25, 1997</BirthDate>
+        <Age>20</Age>
+        <BirthPlace BirthPlace="" Nationality="Nederland"/>
+        <Height></Height>
+        <Weight></Weight>
+        <PreferredFoot></PreferredFoot>
+        <WikiPosition>Goalkeeper</WikiPosition>
+        <GoalComPlayerNumber>22</GoalComPlayerNumber>
+        <GoalComShownName>B. Haggerty</GoalComShownName>
+        <GoalComWebsite>https://www.vi.nl/spelers/bjorn-haggerty/profiel</GoalComWebsite>
+        <CurrentTeam>FC Lisse</CurrentTeam>
+        <YearsAtCurrentTeam>26-07-2017-</YearsAtCurrentTeam>
+        <CurrentDivision>Tweede Divisie</CurrentDivision>
+        <CurrentNumber>22</CurrentNumber>
+      </Player>
+      <Player PlayerId="5">
+        <FirstName>Atul</FirstName>
+        <LastName>Malhi</LastName>
+        <Fullname>Atul Malhi</Fullname>
+        <BirthDate></BirthDate>
+        <Age></Age>
+        <BirthPlace BirthPlace="" Nationality="Nederland"/>
+        <Height></Height>
+        <Weight></Weight>
+        <PreferredFoot></PreferredFoot>
+        <WikiPosition>Defender</WikiPosition>
+        <GoalComPlayerNumber></GoalComPlayerNumber>
+        <GoalComShownName>A. Malhi</GoalComShownName>
+        <GoalComWebsite>https://www.vi.nl/spelers/atul-malhi/profiel</GoalComWebsite>
+        <CurrentTeam>FC Lisse</CurrentTeam>
+        <YearsAtCurrentTeam>20-04-2018-</YearsAtCurrentTeam>
+        <CurrentDivision>Tweede Divisie</CurrentDivision>
+        <CurrentNumber></CurrentNumber>
+      </Player>
+      <Player PlayerId="6">
+        <FirstName>Thierry</FirstName>
+        <LastName>Monteny</LastName>
+        <Fullname>Thierry Monteny</Fullname>
+        <BirthDate>June 12, 1993</BirthDate>
+        <Age>24</Age>
+        <BirthPlace BirthPlace="" Nationality="Nederland"/>
+        <Height></Height>
+        <Weight></Weight>
+        <PreferredFoot></PreferredFoot>
+        <WikiPosition>Midfielder</WikiPosition>
+        <GoalComPlayerNumber>8</GoalComPlayerNumber>
+        <GoalComShownName>T. Monteny</GoalComShownName>
+        <GoalComWebsite>https://www.vi.nl/spelers/thierry-monteny/profiel</GoalComWebsite>
+        <CurrentTeam>FC Lisse</CurrentTeam>
+        <YearsAtCurrentTeam>01-07-2013-</YearsAtCurrentTeam>
+        <CurrentDivision>Tweede Divisie</CurrentDivision>
+        <CurrentNumber>8</CurrentNumber>
+      </Player>
+      <Player PlayerId="7">
+        <FirstName>Rowdy</FirstName>
+        <LastName>van der Putten</LastName>
+        <Fullname>Rowdy van der Putten</Fullname>
+        <BirthDate>February 12, 1996</BirthDate>
+        <Age>22</Age>
+        <BirthPlace BirthPlace="Lisse" Nationality="Nederland"/>
+        <Height></Height>
+        <Weight></Weight>
+        <PreferredFoot>Rechts</PreferredFoot>
+        <WikiPosition>Attacker</WikiPosition>
+        <GoalComPlayerNumber>9</GoalComPlayerNumber>
+        <GoalComShownName>R. van der Putten</GoalComShownName>
+        <GoalComWebsite>https://www.vi.nl/spelers/rowdy-van-der-putten/profiel</GoalComWebsite>
+        <CurrentTeam>FC Lisse</CurrentTeam>
+        <YearsAtCurrentTeam>01-01-2016-</YearsAtCurrentTeam>
+        <CurrentDivision>Tweede Divisie</CurrentDivision>
+        <CurrentNumber>9</CurrentNumber>
+      </Player>
+    </Away>
+  </Substitutes>
+</Goal>
