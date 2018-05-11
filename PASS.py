@@ -8,10 +8,11 @@ from VIScraper import mainscraper
 
 def main(file, savestate='n'):
     #mainscraper()
-    templatetexthome, templatetextaway, templatedict = TopicWalk(file)
+    templatetexthome, templatetextaway, templatetextneutral, templatedict = TopicWalk(file)
     infodict = InfoDict(file)
     print(templatetexthome)
     print(templatetextaway)
+    print(templatetextneutral)
     print(templatedict)
     print(infodict)
     if savestate == 'y':

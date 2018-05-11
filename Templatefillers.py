@@ -24,6 +24,51 @@ def templatefillers(soup, homeaway, gap, **kwargs):
             club = soup.find('highlights').find('home').find('team').text
             clubtuple = ClubReferenceModel(club, soup, homeaway, gap, **kwargs)
             return clubtuple
+    elif gap == 'home team':
+        club = soup.find('highlights').find('home').find('team').text
+        clubtuple = ClubReferenceModel(club, soup, homeaway, gap, **kwargs)
+        return clubtuple
+    elif gap == 'away team':
+        club = soup.find('highlights').find('away').find('team').text
+        clubtuple = ClubReferenceModel(club, soup, homeaway, gap, **kwargs)
+        return clubtuple
+    elif gap == 'tieing team':
+        #Since the ruleset has already found the final goal scorer made the decisive goal, the final goal scorer is also the deciding goal scorer
+        goalscorershomelist = soup.find('highlights').find('home').find('goalscorerslist').find_all('goal')
+        minute = 0
+        for goalscorer in goalscorershomelist:
+            #If the minute scored is more than the minute scored of the previous found event, update the player value with the player name of the current event
+            newminute = re.search(r'\d+', goalscorer['minute']).group()
+            if int(newminute) > minute:
+                minute = int(goalscorer['minute'])
+
+        goalscorersawaylist = soup.find('highlights').find('away').find('goalscorerslist').find_all('goal')
+        for goalscorer in goalscorersawaylist:
+            #If the minute scored is more than the minute scored of the previous found event, update the player value with the player name of the current event
+            newminute = re.search(r'\d+', goalscorer['minute']).group()
+            if int(newminute) > minute:
+                return soup.find('highlights').find('away').find('team').text
+        return soup.find('highlights').find('home').find('team').text
+    elif gap == 'winning team':
+        #Get a list of home goal scorers
+        goalscorershomelist = soup.find('highlights').find('home').find('goalscorerslist').find_all('goal')
+        #And away goal scorers
+        goalscorersawaylist = soup.find('highlights').find('away').find('goalscorerslist').find_all('goal')
+        #If the away team scored more goals, return the away team
+        if len(goalscorersawaylist) > len(goalscorershomelist):
+            return soup.find('highlights').find('away').find('team').text
+        else:
+            return soup.find('highlights').find('home').find('team').text
+    elif gap == 'losing team':
+        #Get a list of home goal scorers
+        goalscorershomelist = soup.find('highlights').find('home').find('goalscorerslist').find_all('goal')
+        #And away goal scorers
+        goalscorersawaylist = soup.find('highlights').find('away').find('goalscorerslist').find_all('goal')
+        #If the away team scored less goals, return the away team
+        if len(goalscorersawaylist) < len(goalscorershomelist):
+            return soup.find('highlights').find('away').find('team').text
+        else:
+            return soup.find('highlights').find('home').find('team').text
     elif gap == 'final home goals':
         homegoals = soup.find('highlights').find('home').find('finalgoals').text
         return homegoals
@@ -34,6 +79,10 @@ def templatefillers(soup, homeaway, gap, **kwargs):
         stadium = soup.find('highlights').find('stadium').text
         stadium = stadium.replace(u"\u2022 ", "")
         return stadium
+    elif gap == 'league':
+        league = soup.find('highlights').find('league').text
+        league = league.replace(u"\u2022 ", "")
+        return league
     elif gap == 'time':
         time = soup.find('highlights').find('starttime').text
         return time
@@ -97,6 +146,35 @@ def templatefillers(soup, homeaway, gap, **kwargs):
             sys.exit(1)
         playertuple = PlayerReferenceModel(player, soup, homeaway, gap, **kwargs)
         return playertuple
+    elif gap == 'scoring team':
+        event = kwargs['event']
+        try:
+            team = event['team']
+            club = soup.find('highlights').find(team).find('team').text
+            clubtuple = ClubReferenceModel(club, soup, homeaway, gap, **kwargs)
+            return clubtuple
+        except TypeError:
+            print(event)
+            print(gap)
+            print(kwargs['gamestatisticslist'])
+            sys.exit(1)
+    elif gap == 'not scoring team':
+        event = kwargs['event']
+        try:
+            team = event['team']
+            if team == 'home':
+                club = soup.find('highlights').find('away').find('team').text
+                clubtuple = ClubReferenceModel(club, soup, homeaway, gap, **kwargs)
+                return clubtuple
+            if team == 'away':
+                club = soup.find('highlights').find('home').find('team').text
+                clubtuple = ClubReferenceModel(club, soup, homeaway, gap, **kwargs)
+                return clubtuple
+        except TypeError:
+            print(event)
+            print(gap)
+            print(kwargs['gamestatisticslist'])
+            sys.exit(1)
     elif gap == 'minute':
         event = kwargs['event']
         try:
@@ -148,7 +226,10 @@ def templatefillers(soup, homeaway, gap, **kwargs):
         try:
             player = gk.text
         except AttributeError:
-            gk = soup.find('lineups').find(other).find('goalkeeper').find('goalcomshownname').text
+            try:
+                gk = soup.find('lineups').find(other).find('goalkeeper').find('goalcomshownname').text
+            except AttributeError:
+                gk = soup.find('lineups').find(other).find('player', {"playerid": "1"}).find('fullname').text
             player = gk
         playertuple = PlayerReferenceModel(player, soup, homeaway, gap, **kwargs)
         return playertuple

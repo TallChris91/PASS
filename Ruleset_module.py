@@ -580,6 +580,80 @@ def otherredcards(gamestatisticslist, homeaway):
             return True
     return False
 
+def winnerredcards(gamecourselist, gamestatisticslist, homeaway):
+    if homeaway == 'home':
+        focus = homeaway
+        other = 'away'
+    else:
+        focus = homeaway
+        other = 'home'
+
+    focusgoals = 0
+    othergoals = 0
+    # Get the goals for the focus team and other team
+    for eventidx, event in enumerate(gamecourselist):
+        if ((event['event'] == 'regular goal') and (event['team'] == homeaway)) or (
+            (event['event'] == 'penalty goal') and (event['team'] == homeaway)) or ((event['event'] == 'own goal') and (event['team'] != homeaway)):
+            if 'player' in event:
+                focusgoals += 1
+            else:
+                focusgoals += 2
+        if ((event['event'] == 'regular goal') and (event['team'] != homeaway)) or (
+            (event['event'] == 'penalty goal') and (event['team'] != homeaway)) or ((event['event'] == 'own goal') and (event['team'] == homeaway)):
+            if 'player' in event:
+                othergoals += 1
+            else:
+                othergoals += 2
+    #The winner has scored more goals
+    if othergoals > focusgoals:
+        winner = other
+    if focusgoals > othergoals:
+        winner = focus
+    for idx, event in enumerate(gamestatisticslist):
+        if ((event['event'] == 'red card') or (event['event'] == 'twice yellow')) and (event['team'] == focus) and (winner == focus):
+            return True
+        if ((event['event'] == 'red card') or (event['event'] == 'twice yellow')) and (event['team'] == other) and (winner == other):
+            return True
+    return False
+
+def loserredcards(gamecourselist, gamestatisticslist, homeaway):
+    if homeaway == 'home':
+        focus = homeaway
+        other = 'away'
+    else:
+        focus = homeaway
+        other = 'home'
+
+    focusgoals = 0
+    othergoals = 0
+    # Get the goals for the focus team and other team
+    for eventidx, event in enumerate(gamecourselist):
+        if ((event['event'] == 'regular goal') and (event['team'] == homeaway)) or (
+                    (event['event'] == 'penalty goal') and (event['team'] == homeaway)) or (
+            (event['event'] == 'own goal') and (event['team'] != homeaway)):
+            if 'player' in event:
+                focusgoals += 1
+            else:
+                focusgoals += 2
+        if ((event['event'] == 'regular goal') and (event['team'] != homeaway)) or (
+                    (event['event'] == 'penalty goal') and (event['team'] != homeaway)) or (
+            (event['event'] == 'own goal') and (event['team'] == homeaway)):
+            if 'player' in event:
+                othergoals += 1
+            else:
+                othergoals += 2
+    # The winner has scored more goals
+    if othergoals > focusgoals:
+        winner = other
+    if focusgoals > othergoals:
+        winner = focus
+    for idx, event in enumerate(gamestatisticslist):
+        if ((event['event'] == 'red card') or (event['event'] == 'twice yellow')) and (event['team'] == focus) and (winner != focus):
+            return True
+        if ((event['event'] == 'red card') or (event['event'] == 'twice yellow')) and (event['team'] == other) and (winner != other):
+            return True
+    return False
+
 def finalgoalfocusteam(gamecourselist, homeaway):
     num = len(gamecourselist)-1
     while num >= 0:
@@ -1029,4 +1103,25 @@ def bigloss(gamecourselist, homeaway):
             return False
     except IndexError:
         #A goalless match
+        return False
+
+def winner(gamecourselist, homeaway):
+    differencelist = []
+    focusgoals = 0
+    othergoals = 0
+    #Get the goals for the focus team and other team
+    for eventidx, event in enumerate(gamecourselist):
+        if ((event['event'] == 'regular goal') and (event['team'] == homeaway)) or ((event['event'] == 'penalty goal') and (event['team'] == homeaway)) or ((event['event'] == 'own goal') and (event['team'] != homeaway)):
+            if 'player' in event:
+                focusgoals += 1
+            else:
+                focusgoals += 2
+        if ((event['event'] == 'regular goal') and (event['team'] != homeaway)) or ((event['event'] == 'penalty goal') and (event['team'] != homeaway)) or ((event['event'] == 'own goal') and (event['team'] == homeaway)):
+            if 'player' in event:
+                othergoals += 1
+            else:
+                othergoals += 2
+    if (focusgoals > othergoals) or (othergoals > focusgoals):
+        return True
+    else:
         return False
