@@ -1,8 +1,11 @@
 from bs4 import BeautifulSoup
 
 def TextCollection(templatelist, soup, homeaway, generallen, gamecourselen, gamestatisticslen):
-    team = soup.find('highlights').find(homeaway).find('team').text
-    team2 = 'Verslag voor de achterban van ' + team
+    if homeaway == 'neutral':
+        team2 = 'Verslag voor de neutrale toeschouwer'
+    else:
+        team = soup.find('highlights').find(homeaway).find('team').text
+        team2 = 'Verslag voor de achterban van ' + team
     general = templatelist[:generallen]
     gamecourse = templatelist[generallen:generallen+gamecourselen]
     gamestatistics = templatelist[generallen+gamecourselen:generallen+gamecourselen+gamestatisticslen]

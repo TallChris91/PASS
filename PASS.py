@@ -35,7 +35,7 @@ def main(file, savestate='n'):
             print(newfile + 'infodict.p saved')
             pickle.dump(infodict, f)
 
-main('./NewInfoXMLs/MatchTest9.xml', 'y')
+main('./NewInfoXMLs/MatchTest1.xml', 'y')
 
 #if __name__ == '__main__':
     #main(sys.argv[1:])

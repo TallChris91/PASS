@@ -121,7 +121,7 @@ def TopicWalk(file):
         templateneutrallist[idx], previousgaplistneutral[idx] = TemplateReplacement(soup, 'home', templateneutrallist[idx], event=alleventsneutral[idx],
                                                                               gamecourselist=gamecourseneutral, previousgaplist=lastgapneutral,
                                                                               gamestatisticslist=gamestatistics, eventlist=alleventsneutral, idx=idx)
-    templatetextneutral, templatedictneutral = TextCollection(templateneutrallist, soup, 'home', len(general), len(gamecourseneutral), len(gamestatistics))
+    templatetextneutral, templatedictneutral = TextCollection(templateneutrallist, soup, 'neutral', len(general), len(gamecourseneutral), len(gamestatistics))
 
     templatedict = {'home_team': templatedicthome.copy()}
     templatedict.update({'away_team': templatedictaway})
