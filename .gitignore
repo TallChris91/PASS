@@ -1,5 +1,8 @@
 .idea/
 __pycache__/
 SavedReports/
+InfoXMLs/
+chromedriver
+chromedriver.exe
 templatesaway.p
 templateshome.p
