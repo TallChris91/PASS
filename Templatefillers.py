@@ -121,7 +121,10 @@ def templatefillers(soup, homeaway, gap, **kwargs):
         try:
             gk = soup.find('lineups').find(homeaway).find('goalkeeper').find('name').text
         except AttributeError:
-            gk = soup.find('lineups').find(homeaway).find('player', {"playerid": "1"}).find('name').text
+            try:
+                gk = soup.find('lineups').find(homeaway).find('player', {"playerid": "1"}).find('name').text
+            except AttributeError:
+                gk = soup.find('lineups').find(homeaway).find('player', {"playerid": "1"}).find('fullname').text
         if gk:
             player = gk
             playertuple = PlayerReferenceModel(player, soup, homeaway, gap, **kwargs)
@@ -138,10 +141,13 @@ def templatefillers(soup, homeaway, gap, **kwargs):
         try:
             gk = soup.find('lineups').find(other).find('goalkeeper').find('name')
         except AttributeError:
-            gk = soup.find('lineups').find(other).find('player', {"playerid": "1"}).find('name')
-        if gk.text:
+            try:
+                gk = soup.find('lineups').find(other).find('player', {"playerid": "1"}).find('name')
+            except AttributeError:
+                gk = soup.find('lineups').find(other).find('player', {"playerid": "1"}).find('fullname')
+        try:
             player = gk.text
-        else:
+        except AttributeError:
             gk = soup.find('lineups').find(other).find('goalkeeper').find('goalcomshownname').text
             player = gk
         playertuple = PlayerReferenceModel(player, soup, homeaway, gap, **kwargs)
@@ -254,7 +260,10 @@ def templatefillers(soup, homeaway, gap, **kwargs):
                             except AttributeError:
                                 print('Player not found: ' + player)
                                 sys.exit(1)
-                playerlist[idx] = name.find('name').text
+                try:
+                    playerlist[idx] = name.find('name').text
+                except AttributeError:
+                    playerlist[idx] = name.find('fullname').text
             homeawaylist = sorted(homeawaylist, key=lambda x: x[0])
             homeawaylist = [x[1] for x in homeawaylist]
             return playerlist, homeawaylist
@@ -380,7 +389,10 @@ def templatefillers(soup, homeaway, gap, **kwargs):
                         except AttributeError:
                             print('Player not found: ' + player)
                             sys.exit(1)
-            goalscorerslist[idx] = name.find('name').text
+            try:
+                goalscorerslist[idx] = name.find('name').text
+            except AttributeError:
+                goalscorerslist[idx] = name.find('fullname').text
         if len(goalscorerslist) > 1:
             gsstring = ', '.join(goalscorerslist[:-1]) + ' en ' + goalscorerslist[-1]
         else:
@@ -394,7 +406,8 @@ def templatefillers(soup, homeaway, gap, **kwargs):
         minute = 0
         for goalscorer in goalscorerslist:
             #If the minute scored is more than the minute scored of the previous found event, update the player value with the player name of the current event
-            if int(goalscorer['minute']) > minute:
+            newminute = re.search(r'\d+', goalscorer['minute']).group()
+            if int(newminute) > minute:
                 minute = int(goalscorer['minute'])
                 player = goalscorer.text
         playertuple = PlayerReferenceModel(player, soup, homeaway, gap, **kwargs)
