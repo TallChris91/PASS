@@ -106,12 +106,37 @@ def GeneralTemplateSelection(type, possiblelegend, possibletemplates, gamecourse
                 ''
         # If there were more than 5 goals during the game, add that category to the title possibilities
         if Ruleset.manygoals(soup) == True:
-            categorytemplates = possibletemplates[possiblelegend.index("Title (many goals)")]
             try:
-                template = random.choice(categorytemplates)
-                possibletitles.append([template, 0.5])
-            except IndexError:
+                categorytemplates = possibletemplates[possiblelegend.index("Title (many goals)")]
+                try:
+                    template = random.choice(categorytemplates)
+                    possibletitles.append([template, 0.5])
+                except IndexError:
+                    ''
+            except ValueError:
                 ''
+        if (Ruleset.manygoals(soup) == True) and (Ruleset.winner(gamecourselist, homeaway) == True):
+            try:
+                categorytemplates = possibletemplates[possiblelegend.index("Title (many goals win)")]
+                try:
+                    template = random.choice(categorytemplates)
+                    possibletitles.append([template, 0.5])
+                except IndexError:
+                    ''
+            except ValueError:
+                ''
+
+        if (Ruleset.manygoals(soup) == True) and (Ruleset.winner(gamecourselist, homeaway) == False):
+            try:
+                categorytemplates = possibletemplates[possiblelegend.index("Title (many goals win)")]
+                try:
+                    template = random.choice(categorytemplates)
+                    possibletitles.append([template, 0.5])
+                except IndexError:
+                    ''
+            except ValueError:
+                ''
+
         # If there were no goals during the game, add that category to the title possibilities
         if Ruleset.nogoals(soup) == True:
             categorytemplates = possibletemplates[possiblelegend.index("Title (no goals)")]
