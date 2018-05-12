@@ -191,7 +191,12 @@ def ClubReferenceModel(club, soup, homeaway, gap, **kwargs):
                 if ('de ploeg van manager ' + manager) not in previousreference:
                     namepossibilities.append(['de ploeg van manager ' + manager, 10])
             except AttributeError:
-                ''
+                try:
+                    manager = soup.find('managers').find('home').find('fullname').text
+                    if ('de ploeg van manager ' + manager) not in previousreference:
+                        namepossibilities.append(['de ploeg van manager ' + manager, 10])
+                except AttributeError:
+                    ''
         else:
             if ('de uitploeg') not in previousreference:
                 namepossibilities.append(['de uitploeg', 10])
@@ -200,7 +205,12 @@ def ClubReferenceModel(club, soup, homeaway, gap, **kwargs):
                 if ('de ploeg van manager ' + manager) not in previousreference:
                     namepossibilities.append(['de ploeg van manager ' + manager, 10])
             except AttributeError:
-                ''
+                try:
+                    manager = soup.find('managers').find('home').find('fullname').text
+                    if ('de ploeg van manager ' + manager) not in previousreference:
+                        namepossibilities.append(['de ploeg van manager ' + manager, 10])
+                except AttributeError:
+                    ''
 
         citydict = {}
         workbook = xlrd.open_workbook(r'Clubs and Nicknames.xlsx')
