@@ -1092,11 +1092,14 @@ def GameStatisticsTemplateSelection(event, legend, templates, gamestatisticslist
             except IndexError:
                 ''
         if Ruleset.redfocus(homeaway, gamestatisticslist, idx) == True:
-            categorytemplates = templates[legend.index("Game statistics, red cards (focus team)")]
             try:
-                template = random.choice(categorytemplates)
-                possibleredtemplates.append(template)
-            except IndexError:
+                categorytemplates = templates[legend.index("Game statistics, red cards (focus team)")]
+                try:
+                    template = random.choice(categorytemplates)
+                    possibleredtemplates.append(template)
+                except IndexError:
+                    ''
+            except ValueError:
                 ''
 
         categorytemplates = templates[legend.index("Game statistics, red cards")]
