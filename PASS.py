@@ -46,16 +46,16 @@ def matches():
     xml_files = glob.glob('./NewInfoXMLs/*.xml')
     print(os.getcwd())
     print(xml_files)
-    i = 0
+    # i = 0
     for file in xml_files:
-        if i == 10:
-            break
+        # if i == 10:
+        #     break
         data = {}
         data['file'] = os.path.basename(file)
         data['info'] = InfoDict(file)
 
         matches.append(data)
-        i = i + 1
+        # i = i + 1
 
     # TODO: sort matches by date
     return matches

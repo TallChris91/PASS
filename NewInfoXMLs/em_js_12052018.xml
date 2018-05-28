@@ -1,0 +1,679 @@
+<Goal>
+  <Highlights>
+    <League>Tweede Divisie</League>
+    <StartDate>May 12, 2018</StartDate>
+    <StartTime>14:30</StartTime>
+    <Stadium>Sportpark Dijkpolder</Stadium>
+    <City/>
+    <Referee/>
+    <Attendees/>
+    <FullTimeScore>1-1</FullTimeScore>
+    <Home>
+      <Team>Excelsior Maassluis</Team>
+      <GoalScorersList>
+        <Goal GoalId="1" Minute="89" PlayerLink="https://www.vi.nl/spelers/daan-blij/profiel" OwnGoal="n">D. Blij</Goal>
+      </GoalScorersList>
+      <FinalGoals>1</FinalGoals>
+    </Home>
+    <Away>
+      <Team>Jong Sparta</Team>
+      <GoalScorersList>
+        <Goal GoalId="1" Minute="48" PlayerLink="https://www.vi.nl/spelers/ayoub-boukhari/profiel" OwnGoal="n">A. Boukhari</Goal>
+      </GoalScorersList>
+      <FinalGoals>1</FinalGoals>
+    </Away>
+  </Highlights>
+  <Events>
+    <AssistList/>
+    <GoalList>
+      <Goal GoalId="1" Minute="48">A. Boukhari</Goal>
+      <Goal GoalId="2" Minute="89">D. Blij</Goal>
+    </GoalList>
+    <MissedPenaltyList/>
+    <PenaltyGoalList/>
+    <RedCardList/>
+    <YellowCardList>
+      <YellowCard YellowCardId="1" Minute="40">M. Poeljes</YellowCard>
+      <YellowCard YellowCardId="2" Minute="51">D. Smith</YellowCard>
+      <YellowCard YellowCardId="3" Minute="53">K. Dercks</YellowCard>
+      <YellowCard YellowCardId="4" Minute="84">J. Kozuh</YellowCard>
+      <YellowCard YellowCardId="5" Minute="88">J. Klap</YellowCard>
+    </YellowCardList>
+    <YellowRedList/>
+    <OwnGoalList/>
+    <SubstitutionList>
+      <Substitution SubstitutionId="1" Minute="4" SubOut="J. Moreno" SubIn="R. Ouali"/>
+      <Substitution SubstitutionId="1" Minute="46" SubOut="L. Bouwens" SubIn="L. Felicia"/>
+      <Substitution SubstitutionId="1" Minute="46" SubOut="J. Saksela" SubIn="J. Klap"/>
+      <Substitution SubstitutionId="1" Minute="62" SubOut="W. Bennett" SubIn="D. van Ooijen"/>
+      <Substitution SubstitutionId="1" Minute="81" SubOut="M. Poeljes" SubIn="S. Kurt"/>
+      <Substitution SubstitutionId="1" Minute="82" SubOut="M. Ripmeester" SubIn="J. Kozuh"/>
+    </SubstitutionList>
+  </Events>
+  <Lineups>
+    <Home>
+      <Player PlayerId="1">
+        <FirstName>Jean-Paul</FirstName>
+        <LastName>van Leeuwen</LastName>
+        <Fullname>Jean-Paul van Leeuwen</Fullname>
+        <BirthDate>April 2, 1993</BirthDate>
+        <Age>25</Age>
+        <BirthPlace BirthPlace="" Nationality="Nederland"/>
+        <Height/>
+        <Weight/>
+        <PreferredFoot/>
+        <WikiPosition>Goalkeeper</WikiPosition>
+        <GoalComPlayerNumber>1</GoalComPlayerNumber>
+        <GoalComShownName>J. van Leeuwen</GoalComShownName>
+        <GoalComWebsite>https://www.vi.nl/spelers/jean-paul-van-leeuwen/profiel</GoalComWebsite>
+        <CurrentTeam>Excelsior Maassluis</CurrentTeam>
+        <YearsAtCurrentTeam>01-07-2013-</YearsAtCurrentTeam>
+        <CurrentDivision>Tweede Divisie</CurrentDivision>
+        <CurrentNumber>1</CurrentNumber>
+      </Player>
+      <Player PlayerId="2">
+        <FirstName>Robin</FirstName>
+        <LastName>van der Ende</LastName>
+        <Fullname>Robin van der Ende</Fullname>
+        <BirthDate>February 9, 1990</BirthDate>
+        <Age>28</Age>
+        <BirthPlace BirthPlace="" Nationality="Nederland"/>
+        <Height/>
+        <Weight/>
+        <PreferredFoot/>
+        <WikiPosition>Attacker</WikiPosition>
+        <GoalComPlayerNumber>5</GoalComPlayerNumber>
+        <GoalComShownName>R. van der Ende</GoalComShownName>
+        <GoalComWebsite>https://www.vi.nl/spelers/robin-van-der-ende/profiel</GoalComWebsite>
+        <CurrentTeam>Excelsior Maassluis</CurrentTeam>
+        <YearsAtCurrentTeam>01-07-2009-</YearsAtCurrentTeam>
+        <CurrentDivision>Tweede Divisie</CurrentDivision>
+        <CurrentNumber>5</CurrentNumber>
+      </Player>
+      <Player PlayerId="3">
+        <FirstName>Daan</FirstName>
+        <LastName>Smith</LastName>
+        <Fullname>Daan Smith</Fullname>
+        <BirthDate>March 18, 1992</BirthDate>
+        <Age>26</Age>
+        <BirthPlace BirthPlace="Schiedam" Nationality="Nederland"/>
+        <Height/>
+        <Weight/>
+        <PreferredFoot/>
+        <WikiPosition>Defender</WikiPosition>
+        <GoalComPlayerNumber>4</GoalComPlayerNumber>
+        <GoalComShownName>D. Smith</GoalComShownName>
+        <GoalComWebsite>https://www.vi.nl/spelers/daan-smith/profiel</GoalComWebsite>
+        <CurrentTeam>Excelsior Maassluis</CurrentTeam>
+        <YearsAtCurrentTeam>01-07-2014-</YearsAtCurrentTeam>
+        <CurrentDivision>Tweede Divisie</CurrentDivision>
+        <CurrentNumber>4</CurrentNumber>
+      </Player>
+      <Player PlayerId="4">
+        <FirstName>Kevin</FirstName>
+        <LastName>Ringeling</LastName>
+        <Fullname>Kevin Ringeling</Fullname>
+        <BirthDate>April 22, 1998</BirthDate>
+        <Age>20</Age>
+        <BirthPlace BirthPlace="" Nationality="Nederland"/>
+        <Height/>
+        <Weight/>
+        <PreferredFoot/>
+        <WikiPosition>Midfielder</WikiPosition>
+        <GoalComPlayerNumber>3</GoalComPlayerNumber>
+        <GoalComShownName>K. Ringeling</GoalComShownName>
+        <GoalComWebsite>https://www.vi.nl/spelers/kevin-ringeling/profiel</GoalComWebsite>
+        <CurrentTeam>Excelsior Maassluis</CurrentTeam>
+        <YearsAtCurrentTeam>01-04-2016-</YearsAtCurrentTeam>
+        <CurrentDivision>Tweede Divisie</CurrentDivision>
+        <CurrentNumber>3</CurrentNumber>
+      </Player>
+      <Player PlayerId="5">
+        <FirstName>Michael</FirstName>
+        <LastName>Poeljes</LastName>
+        <Fullname>Michael Poeljes</Fullname>
+        <BirthDate>October 8, 1990</BirthDate>
+        <Age>27</Age>
+        <BirthPlace BirthPlace="" Nationality="Nederland"/>
+        <Height/>
+        <Weight/>
+        <PreferredFoot>Rechts</PreferredFoot>
+        <WikiPosition>Defender</WikiPosition>
+        <GoalComPlayerNumber>2</GoalComPlayerNumber>
+        <GoalComShownName>M. Poeljes</GoalComShownName>
+        <GoalComWebsite>https://www.vi.nl/spelers/michael-poeljes/profiel</GoalComWebsite>
+        <CurrentTeam>Excelsior Maassluis</CurrentTeam>
+        <YearsAtCurrentTeam>01-10-2009-</YearsAtCurrentTeam>
+        <CurrentDivision>Tweede Divisie</CurrentDivision>
+        <CurrentNumber>2</CurrentNumber>
+      </Player>
+      <Player PlayerId="6">
+        <FirstName>Stephan</FirstName>
+        <LastName>Kruithof</LastName>
+        <Fullname>Stephan Kruithof</Fullname>
+        <BirthDate>February 5, 1992</BirthDate>
+        <Age>26</Age>
+        <BirthPlace BirthPlace="" Nationality="Nederland"/>
+        <Height/>
+        <Weight/>
+        <PreferredFoot/>
+        <WikiPosition>Defender</WikiPosition>
+        <GoalComPlayerNumber>8</GoalComPlayerNumber>
+        <GoalComShownName>S. Kruithof</GoalComShownName>
+        <GoalComWebsite>https://www.vi.nl/spelers/stephan-kruithof/profiel</GoalComWebsite>
+        <CurrentTeam>Excelsior Maassluis</CurrentTeam>
+        <YearsAtCurrentTeam>01-07-2013-</YearsAtCurrentTeam>
+        <CurrentDivision>Tweede Divisie</CurrentDivision>
+        <CurrentNumber>8</CurrentNumber>
+      </Player>
+      <Player PlayerId="7">
+        <FirstName>Walter</FirstName>
+        <LastName>Bennett</LastName>
+        <Fullname>Walter Bennett</Fullname>
+        <BirthDate>March 18, 1997</BirthDate>
+        <Age>21</Age>
+        <BirthPlace BirthPlace="" Nationality="Aruba"/>
+        <Height/>
+        <Weight/>
+        <PreferredFoot/>
+        <WikiPosition>Midfielder</WikiPosition>
+        <GoalComPlayerNumber>26</GoalComPlayerNumber>
+        <GoalComShownName>W. Bennett</GoalComShownName>
+        <GoalComWebsite>https://www.vi.nl/spelers/walter-bennett/profiel</GoalComWebsite>
+        <CurrentTeam>Excelsior Maassluis</CurrentTeam>
+        <YearsAtCurrentTeam>01-08-2016-</YearsAtCurrentTeam>
+        <CurrentDivision>Tweede Divisie</CurrentDivision>
+        <CurrentNumber>26</CurrentNumber>
+      </Player>
+      <Player PlayerId="8">
+        <FirstName>Kevin</FirstName>
+        <LastName>Dercks</LastName>
+        <Fullname>Kevin Dercks</Fullname>
+        <BirthDate>January 15, 1994</BirthDate>
+        <Age>24</Age>
+        <BirthPlace BirthPlace="" Nationality="Nederland"/>
+        <Height/>
+        <Weight/>
+        <PreferredFoot/>
+        <WikiPosition>Midfielder</WikiPosition>
+        <GoalComPlayerNumber>17</GoalComPlayerNumber>
+        <GoalComShownName>K. Dercks</GoalComShownName>
+        <GoalComWebsite>https://www.vi.nl/spelers/kevin-dercks/profiel</GoalComWebsite>
+        <CurrentTeam>Excelsior Maassluis</CurrentTeam>
+        <YearsAtCurrentTeam>01-07-2015-</YearsAtCurrentTeam>
+        <CurrentDivision>Tweede Divisie</CurrentDivision>
+        <CurrentNumber>17</CurrentNumber>
+      </Player>
+      <Player PlayerId="9">
+        <FirstName>Vincent</FirstName>
+        <LastName>van den Berg</LastName>
+        <Fullname>Vincent van den Berg</Fullname>
+        <BirthDate>January 19, 1989</BirthDate>
+        <Age>29</Age>
+        <BirthPlace BirthPlace="" Nationality="Nederland"/>
+        <Height>1,83 m</Height>
+        <Weight>75 kg</Weight>
+        <PreferredFoot/>
+        <WikiPosition>Attacker</WikiPosition>
+        <GoalComPlayerNumber>11</GoalComPlayerNumber>
+        <GoalComShownName>V. van den Berg</GoalComShownName>
+        <GoalComWebsite>https://www.vi.nl/spelers/vincent-van-den-berg/profiel</GoalComWebsite>
+        <CurrentTeam>Excelsior Maassluis</CurrentTeam>
+        <YearsAtCurrentTeam>22-09-2009-</YearsAtCurrentTeam>
+        <CurrentDivision>Tweede Divisie</CurrentDivision>
+        <CurrentNumber>11</CurrentNumber>
+      </Player>
+      <Player PlayerId="10">
+        <FirstName>Jeremy</FirstName>
+        <LastName>Moreno</LastName>
+        <Fullname>Jeremy Moreno</Fullname>
+        <BirthDate>December 2, 1996</BirthDate>
+        <Age>21</Age>
+        <BirthPlace BirthPlace="" Nationality="Nederland"/>
+        <Height/>
+        <Weight/>
+        <PreferredFoot/>
+        <WikiPosition>Attacker</WikiPosition>
+        <GoalComPlayerNumber>12</GoalComPlayerNumber>
+        <GoalComShownName>J. Moreno</GoalComShownName>
+        <GoalComWebsite>https://www.vi.nl/spelers/jeremy-moreno/profiel</GoalComWebsite>
+        <CurrentTeam>Excelsior Maassluis</CurrentTeam>
+        <YearsAtCurrentTeam>01-07-2015-</YearsAtCurrentTeam>
+        <CurrentDivision>Tweede Divisie</CurrentDivision>
+        <CurrentNumber>12</CurrentNumber>
+      </Player>
+      <Player PlayerId="11">
+        <FirstName>Daan</FirstName>
+        <LastName>Blij</LastName>
+        <Fullname>Daan Blij</Fullname>
+        <BirthDate>September 25, 1993</BirthDate>
+        <Age>24</Age>
+        <BirthPlace BirthPlace="Rotterdam" Nationality="Nederland"/>
+        <Height/>
+        <Weight/>
+        <PreferredFoot/>
+        <WikiPosition>Attacker</WikiPosition>
+        <GoalComPlayerNumber>10</GoalComPlayerNumber>
+        <GoalComShownName>D. Blij</GoalComShownName>
+        <GoalComWebsite>https://www.vi.nl/spelers/daan-blij/profiel</GoalComWebsite>
+        <CurrentTeam>Excelsior Maassluis</CurrentTeam>
+        <YearsAtCurrentTeam>01-07-2015-</YearsAtCurrentTeam>
+        <CurrentDivision>Tweede Divisie</CurrentDivision>
+        <CurrentNumber>10</CurrentNumber>
+      </Player>
+    </Home>
+    <Away>
+      <Player PlayerId="1">
+        <FirstName>Michael</FirstName>
+        <LastName>Fabrie</LastName>
+        <Fullname>Michael Fabrie</Fullname>
+        <BirthDate>November 11, 1997</BirthDate>
+        <Age>20</Age>
+        <BirthPlace BirthPlace="" Nationality="Nederland"/>
+        <Height>1,93 m</Height>
+        <Weight/>
+        <PreferredFoot/>
+        <WikiPosition>Goalkeeper</WikiPosition>
+        <GoalComPlayerNumber/>
+        <GoalComShownName>M. Fabrie</GoalComShownName>
+        <GoalComWebsite>https://www.vi.nl/spelers/michael-fabrie/profiel</GoalComWebsite>
+        <CurrentTeam>Sparta Rotterdam</CurrentTeam>
+        <YearsAtCurrentTeam>01-08-2016-</YearsAtCurrentTeam>
+        <CurrentDivision>Eredivisie</CurrentDivision>
+        <CurrentNumber/>
+      </Player>
+      <Player PlayerId="2">
+        <FirstName>Marlon</FirstName>
+        <LastName>Pereira Freire</LastName>
+        <Fullname>Marlon Pereira Freire</Fullname>
+        <BirthDate>March 26, 1987</BirthDate>
+        <Age>31</Age>
+        <BirthPlace BirthPlace="Rotterdam" Nationality="Nederland"/>
+        <Height>1,78 m</Height>
+        <Weight>81 kg</Weight>
+        <PreferredFoot>Beide</PreferredFoot>
+        <WikiPosition>Defender</WikiPosition>
+        <GoalComPlayerNumber/>
+        <GoalComShownName>M. Pereira</GoalComShownName>
+        <GoalComWebsite>https://www.vi.nl/spelers/marlon-pereira-freire/profiel</GoalComWebsite>
+        <CurrentTeam>Jong Sparta Rotterdam</CurrentTeam>
+        <YearsAtCurrentTeam>31-01-2018-</YearsAtCurrentTeam>
+        <CurrentDivision>Tweede Divisie</CurrentDivision>
+        <CurrentNumber/>
+      </Player>
+      <Player PlayerId="3">
+        <FirstName>Bradley</FirstName>
+        <LastName>Martis</LastName>
+        <Fullname>Bradley Martis</Fullname>
+        <BirthDate>July 13, 1998</BirthDate>
+        <Age>19</Age>
+        <BirthPlace BirthPlace="" Nationality="Curaçao"/>
+        <Height/>
+        <Weight/>
+        <PreferredFoot/>
+        <WikiPosition>Defender</WikiPosition>
+        <GoalComPlayerNumber/>
+        <GoalComShownName>B. Martis</GoalComShownName>
+        <GoalComWebsite>https://www.vi.nl/spelers/bradley-martis/profiel</GoalComWebsite>
+        <CurrentTeam>Jong Sparta Rotterdam</CurrentTeam>
+        <YearsAtCurrentTeam>01-04-2017-</YearsAtCurrentTeam>
+        <CurrentDivision>Tweede Divisie</CurrentDivision>
+        <CurrentNumber/>
+      </Player>
+      <Player PlayerId="4">
+        <FirstName>Diederick</FirstName>
+        <LastName>Luydens</LastName>
+        <Fullname>Diederick Luydens</Fullname>
+        <BirthDate>February 18, 1999</BirthDate>
+        <Age>19</Age>
+        <BirthPlace BirthPlace="" Nationality="Nederland"/>
+        <Height/>
+        <Weight/>
+        <PreferredFoot/>
+        <WikiPosition>Defender</WikiPosition>
+        <GoalComPlayerNumber/>
+        <GoalComShownName>D. Luydens</GoalComShownName>
+        <GoalComWebsite>https://www.vi.nl/spelers/diederick-luydens/profiel</GoalComWebsite>
+        <CurrentTeam>Sparta Rotterdam Under 19</CurrentTeam>
+        <YearsAtCurrentTeam>01-07-2017-</YearsAtCurrentTeam>
+        <CurrentDivision>Eredivisie O19</CurrentDivision>
+        <CurrentNumber/>
+      </Player>
+      <Player PlayerId="5">
+        <FirstName>Janne</FirstName>
+        <LastName>Saksela</LastName>
+        <Fullname>Janne Saksela</Fullname>
+        <BirthDate>March 14, 1993</BirthDate>
+        <Age>25</Age>
+        <BirthPlace BirthPlace="Helsinki" Nationality="Finland"/>
+        <Height>1,85 m</Height>
+        <Weight>74 kg</Weight>
+        <PreferredFoot>Rechts</PreferredFoot>
+        <WikiPosition>Defender</WikiPosition>
+        <GoalComPlayerNumber/>
+        <GoalComShownName>J. Saksela</GoalComShownName>
+        <GoalComWebsite>https://www.vi.nl/spelers/janne-saksela/profiel</GoalComWebsite>
+        <CurrentTeam>Sparta Rotterdam</CurrentTeam>
+        <YearsAtCurrentTeam>01-01-2016-</YearsAtCurrentTeam>
+        <CurrentDivision>Eredivisie</CurrentDivision>
+        <CurrentNumber/>
+      </Player>
+      <Player PlayerId="6">
+        <FirstName>Levi</FirstName>
+        <LastName>Bouwens</LastName>
+        <Fullname>Levi Bouwens</Fullname>
+        <BirthDate>June 27, 2000</BirthDate>
+        <Age>17</Age>
+        <BirthPlace BirthPlace="" Nationality="Nederland"/>
+        <Height/>
+        <Weight/>
+        <PreferredFoot/>
+        <WikiPosition>Midfielder</WikiPosition>
+        <GoalComPlayerNumber/>
+        <GoalComShownName>L. Bouwens</GoalComShownName>
+        <GoalComWebsite>https://www.vi.nl/spelers/levi-bouwens/profiel</GoalComWebsite>
+        <CurrentTeam>Sparta Rotterdam Under 19</CurrentTeam>
+        <YearsAtCurrentTeam>01-07-2017-</YearsAtCurrentTeam>
+        <CurrentDivision>Eredivisie O19</CurrentDivision>
+        <CurrentNumber/>
+      </Player>
+      <Player PlayerId="7">
+        <FirstName>Ayoub</FirstName>
+        <LastName>Boukhari</LastName>
+        <Fullname>Ayoub Boukhari</Fullname>
+        <BirthDate>May 6, 1997</BirthDate>
+        <Age>21</Age>
+        <BirthPlace BirthPlace="" Nationality="Nederland"/>
+        <Height/>
+        <Weight/>
+        <PreferredFoot/>
+        <WikiPosition>Midfielder</WikiPosition>
+        <GoalComPlayerNumber/>
+        <GoalComShownName>A. Boukhari</GoalComShownName>
+        <GoalComWebsite>https://www.vi.nl/spelers/ayoub-boukhari/profiel</GoalComWebsite>
+        <CurrentTeam>Jong Sparta Rotterdam</CurrentTeam>
+        <YearsAtCurrentTeam>01-07-2017-</YearsAtCurrentTeam>
+        <CurrentDivision>Tweede Divisie</CurrentDivision>
+        <CurrentNumber/>
+      </Player>
+      <Player PlayerId="8">
+        <FirstName>Jaimy</FirstName>
+        <LastName>Brute</LastName>
+        <Fullname>Jaimy Brute</Fullname>
+        <BirthDate>April 15, 1999</BirthDate>
+        <Age>19</Age>
+        <BirthPlace BirthPlace="" Nationality="Nederland"/>
+        <Height/>
+        <Weight/>
+        <PreferredFoot/>
+        <WikiPosition>Midfielder</WikiPosition>
+        <GoalComPlayerNumber/>
+        <GoalComShownName>J. Brute</GoalComShownName>
+        <GoalComWebsite>https://www.vi.nl/spelers/jaimy-brute/profiel</GoalComWebsite>
+        <CurrentTeam>Jong Sparta Rotterdam</CurrentTeam>
+        <YearsAtCurrentTeam>01-07-2016-</YearsAtCurrentTeam>
+        <CurrentDivision>Tweede Divisie</CurrentDivision>
+        <CurrentNumber/>
+      </Player>
+      <Player PlayerId="9">
+        <FirstName>Youssef</FirstName>
+        <LastName>El Kachati</LastName>
+        <Fullname>Youssef El Kachati</Fullname>
+        <BirthDate>November 30, 1999</BirthDate>
+        <Age>18</Age>
+        <BirthPlace BirthPlace="" Nationality="Nederland"/>
+        <Height/>
+        <Weight/>
+        <PreferredFoot/>
+        <WikiPosition>Attacker</WikiPosition>
+        <GoalComPlayerNumber/>
+        <GoalComShownName>Y. El Kachati</GoalComShownName>
+        <GoalComWebsite>https://www.vi.nl/spelers/youssef-el-kachati/profiel</GoalComWebsite>
+        <CurrentTeam>Sparta Rotterdam Under 19</CurrentTeam>
+        <YearsAtCurrentTeam>01-07-2016-</YearsAtCurrentTeam>
+        <CurrentDivision>Eredivisie O19</CurrentDivision>
+        <CurrentNumber/>
+      </Player>
+      <Player PlayerId="10">
+        <FirstName>Ioannis</FirstName>
+        <LastName>Bouras</LastName>
+        <Fullname>Ioannis Bouras</Fullname>
+        <BirthDate>October 16, 1998</BirthDate>
+        <Age>19</Age>
+        <BirthPlace BirthPlace="" Nationality="Griekenland"/>
+        <Height>1,90 m</Height>
+        <Weight/>
+        <PreferredFoot>Rechts</PreferredFoot>
+        <WikiPosition>Attacker</WikiPosition>
+        <GoalComPlayerNumber/>
+        <GoalComShownName>I. Bouras</GoalComShownName>
+        <GoalComWebsite>https://www.vi.nl/spelers/ioannis-bouras/profiel</GoalComWebsite>
+        <CurrentTeam>Jong Sparta Rotterdam</CurrentTeam>
+        <YearsAtCurrentTeam>01-08-2016-</YearsAtCurrentTeam>
+        <CurrentDivision>Tweede Divisie</CurrentDivision>
+        <CurrentNumber/>
+      </Player>
+      <Player PlayerId="11">
+        <FirstName>Marc</FirstName>
+        <LastName>Ripmeester</LastName>
+        <Fullname>Marc Ripmeester</Fullname>
+        <BirthDate>May 10, 1998</BirthDate>
+        <Age>20</Age>
+        <BirthPlace BirthPlace="" Nationality="Nederland"/>
+        <Height>1,81 m</Height>
+        <Weight>75 kg</Weight>
+        <PreferredFoot/>
+        <WikiPosition>Attacker</WikiPosition>
+        <GoalComPlayerNumber/>
+        <GoalComShownName>M. Ripmeester</GoalComShownName>
+        <GoalComWebsite>https://www.vi.nl/spelers/marc-ripmeester/profiel</GoalComWebsite>
+        <CurrentTeam>Jong Sparta Rotterdam</CurrentTeam>
+        <YearsAtCurrentTeam>01-03-2017-</YearsAtCurrentTeam>
+        <CurrentDivision>Tweede Divisie</CurrentDivision>
+        <CurrentNumber/>
+      </Player>
+    </Away>
+  </Lineups>
+  <Substitutes>
+    <Home>
+      <Player PlayerId="1">
+        <FirstName>Sefa</FirstName>
+        <LastName>Kurt</LastName>
+        <Fullname>Sefa Kurt</Fullname>
+        <BirthDate>April 18, 1991</BirthDate>
+        <Age>27</Age>
+        <BirthPlace BirthPlace="" Nationality="Nederland"/>
+        <Height/>
+        <Weight/>
+        <PreferredFoot/>
+        <WikiPosition>Defender</WikiPosition>
+        <GoalComPlayerNumber>20</GoalComPlayerNumber>
+        <GoalComShownName>S. Kurt</GoalComShownName>
+        <GoalComWebsite>https://www.vi.nl/spelers/sefa-kurt/profiel</GoalComWebsite>
+        <CurrentTeam>Excelsior Maassluis</CurrentTeam>
+        <YearsAtCurrentTeam>01-07-2010-</YearsAtCurrentTeam>
+        <CurrentDivision>Tweede Divisie</CurrentDivision>
+        <CurrentNumber>20</CurrentNumber>
+      </Player>
+      <Player PlayerId="2">
+        <FirstName>Jesse</FirstName>
+        <LastName>Lub</LastName>
+        <Fullname>Jesse Lub</Fullname>
+        <BirthDate>May 6, 1988</BirthDate>
+        <Age>30</Age>
+        <BirthPlace BirthPlace="" Nationality="Nederland"/>
+        <Height/>
+        <Weight/>
+        <PreferredFoot/>
+        <WikiPosition>Goalkeeper</WikiPosition>
+        <GoalComPlayerNumber>16</GoalComPlayerNumber>
+        <GoalComShownName>J. Lub</GoalComShownName>
+        <GoalComWebsite>https://www.vi.nl/spelers/jesse-lub/profiel</GoalComWebsite>
+        <CurrentTeam>Excelsior Maassluis</CurrentTeam>
+        <YearsAtCurrentTeam>01-07-2016-</YearsAtCurrentTeam>
+        <CurrentDivision>Tweede Divisie</CurrentDivision>
+        <CurrentNumber>16</CurrentNumber>
+      </Player>
+      <Player PlayerId="3">
+        <FirstName>Redouan Omar</FirstName>
+        <LastName>Ouali</LastName>
+        <Fullname>Redouan Omar Ouali</Fullname>
+        <BirthDate/>
+        <Age/>
+        <BirthPlace BirthPlace="" Nationality="Nederland"/>
+        <Height/>
+        <Weight/>
+        <PreferredFoot/>
+        <WikiPosition>Attacker</WikiPosition>
+        <GoalComPlayerNumber/>
+        <GoalComShownName>R. Ouali</GoalComShownName>
+        <GoalComWebsite>https://www.vi.nl/spelers/redouan-omar-ouali/profiel</GoalComWebsite>
+        <CurrentTeam>Excelsior Maassluis</CurrentTeam>
+        <YearsAtCurrentTeam>01-04-2018-</YearsAtCurrentTeam>
+        <CurrentDivision>Tweede Divisie</CurrentDivision>
+        <CurrentNumber/>
+      </Player>
+      <Player PlayerId="4">
+        <FirstName>Dean</FirstName>
+        <LastName>van Ooijen</LastName>
+        <Fullname>Dean van Ooijen</Fullname>
+        <BirthDate>October 5, 1993</BirthDate>
+        <Age>24</Age>
+        <BirthPlace BirthPlace="" Nationality="Nederland"/>
+        <Height/>
+        <Weight/>
+        <PreferredFoot/>
+        <WikiPosition>Attacker</WikiPosition>
+        <GoalComPlayerNumber>13</GoalComPlayerNumber>
+        <GoalComShownName>D. van Ooijen</GoalComShownName>
+        <GoalComWebsite>https://www.vi.nl/spelers/dean-van-ooijen/profiel</GoalComWebsite>
+        <CurrentTeam>Excelsior Maassluis</CurrentTeam>
+        <YearsAtCurrentTeam>01-01-2015-</YearsAtCurrentTeam>
+        <CurrentDivision>Tweede Divisie</CurrentDivision>
+        <CurrentNumber>13</CurrentNumber>
+      </Player>
+    </Home>
+    <Away>
+      <Player PlayerId="1">
+        <FirstName>Lovette</FirstName>
+        <LastName>Felicia</LastName>
+        <Fullname>Lovette Felicia</Fullname>
+        <BirthDate>August 9, 1995</BirthDate>
+        <Age>22</Age>
+        <BirthPlace BirthPlace="Den Haag" Nationality="Ghana"/>
+        <Height>1,82 m</Height>
+        <Weight/>
+        <PreferredFoot>Beide</PreferredFoot>
+        <WikiPosition>Attacker</WikiPosition>
+        <GoalComPlayerNumber/>
+        <GoalComShownName>L. Felicia</GoalComShownName>
+        <GoalComWebsite>https://www.vi.nl/spelers/lovette-felicia/profiel</GoalComWebsite>
+        <CurrentTeam>Jong Sparta Rotterdam</CurrentTeam>
+        <YearsAtCurrentTeam>01-07-2016-</YearsAtCurrentTeam>
+        <CurrentDivision>Tweede Divisie</CurrentDivision>
+        <CurrentNumber/>
+      </Player>
+      <Player PlayerId="2">
+        <FirstName>Jelle</FirstName>
+        <LastName>Klap</LastName>
+        <Fullname>Jelle Klap</Fullname>
+        <BirthDate>July 15, 1996</BirthDate>
+        <Age>21</Age>
+        <BirthPlace BirthPlace="" Nationality="Nederland"/>
+        <Height/>
+        <Weight/>
+        <PreferredFoot/>
+        <WikiPosition>Defender</WikiPosition>
+        <GoalComPlayerNumber/>
+        <GoalComShownName>J. Klap</GoalComShownName>
+        <GoalComWebsite>https://www.vi.nl/spelers/jelle-klap/profiel</GoalComWebsite>
+        <CurrentTeam>Jong Sparta Rotterdam</CurrentTeam>
+        <YearsAtCurrentTeam>01-07-2017-</YearsAtCurrentTeam>
+        <CurrentDivision>Tweede Divisie</CurrentDivision>
+        <CurrentNumber/>
+      </Player>
+      <Player PlayerId="3">
+        <FirstName>Joshua</FirstName>
+        <LastName>Kozuh</LastName>
+        <Fullname>Joshua Kozuh</Fullname>
+        <BirthDate>August 2, 1999</BirthDate>
+        <Age>18</Age>
+        <BirthPlace BirthPlace="" Nationality="Nederland"/>
+        <Height/>
+        <Weight/>
+        <PreferredFoot/>
+        <WikiPosition>Midfielder</WikiPosition>
+        <GoalComPlayerNumber/>
+        <GoalComShownName>J. Kozuh</GoalComShownName>
+        <GoalComWebsite>https://www.vi.nl/spelers/joshua-kozuh/profiel</GoalComWebsite>
+        <CurrentTeam>Sparta Rotterdam Under 19</CurrentTeam>
+        <YearsAtCurrentTeam>01-07-2017-</YearsAtCurrentTeam>
+        <CurrentDivision>Eredivisie O19</CurrentDivision>
+        <CurrentNumber/>
+      </Player>
+      <Player PlayerId="4">
+        <FirstName>Kenny</FirstName>
+        <LastName>Lipman</LastName>
+        <Fullname>Kenny Lipman</Fullname>
+        <BirthDate>March 12, 1999</BirthDate>
+        <Age>19</Age>
+        <BirthPlace BirthPlace="" Nationality="Nederland"/>
+        <Height/>
+        <Weight/>
+        <PreferredFoot/>
+        <WikiPosition>Goalkeeper</WikiPosition>
+        <GoalComPlayerNumber/>
+        <GoalComShownName>K. Lipman</GoalComShownName>
+        <GoalComWebsite>https://www.vi.nl/spelers/kenny-lipman/profiel</GoalComWebsite>
+        <CurrentTeam>Sparta Rotterdam Under 19</CurrentTeam>
+        <YearsAtCurrentTeam>01-07-2017-</YearsAtCurrentTeam>
+        <CurrentDivision>Eredivisie O19</CurrentDivision>
+        <CurrentNumber/>
+      </Player>
+    </Away>
+  </Substitutes>
+  <Managers>
+    <Home>
+      <Manager ManagerId="1">
+        <FirstName>Jeroen</FirstName>
+        <LastName>Rijsdijk</LastName>
+        <Fullname>Jeroen Rijsdijk</Fullname>
+        <BirthDate>May 24, 1977</BirthDate>
+        <Age>40</Age>
+        <BirthPlace BirthPlace="" Nationality="Nederland"/>
+        <Height/>
+        <Weight/>
+        <PreferredFoot/>
+        <WikiPosition/>
+        <GoalComPlayerNumber/>
+        <GoalComShownName>J. Rijsdijk (Hoofdtrainer)</GoalComShownName>
+        <GoalComWebsite>https://www.vi.nl/spelers/jeroen-rijsdijk/profiel</GoalComWebsite>
+        <CurrentTeam>Excelsior Maassluis</CurrentTeam>
+        <YearsAtCurrentTeam>01-07-2015-</YearsAtCurrentTeam>
+        <CurrentDivision/>
+        <CurrentNumber/>
+      </Manager>
+    </Home>
+    <Away>
+      <Manager ManagerId="1">
+        <FirstName>Frank</FirstName>
+        <LastName>van Kempen</LastName>
+        <Fullname>Frank van Kempen</Fullname>
+        <BirthDate>January 6, 1972</BirthDate>
+        <Age>46</Age>
+        <BirthPlace BirthPlace="Sevenum" Nationality="Nederland"/>
+        <Height/>
+        <Weight/>
+        <PreferredFoot/>
+        <WikiPosition/>
+        <GoalComPlayerNumber/>
+        <GoalComShownName>F. van Kempen (Hoofdtrainer)</GoalComShownName>
+        <GoalComWebsite>https://www.vi.nl/spelers/frank-van-kempen/profiel</GoalComWebsite>
+        <CurrentTeam>Jong Sparta Rotterdam</CurrentTeam>
+        <YearsAtCurrentTeam>01-07-2017-</YearsAtCurrentTeam>
+        <CurrentDivision/>
+        <CurrentNumber/>
+      </Manager>
+    </Away>
+  </Managers>
+</Goal>

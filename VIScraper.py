@@ -11,7 +11,9 @@ import regex as re
 from datetime import date
 from lxml import etree
 import sys
-
+import tarfile
+from Tar_updater import create_new_tar
+import shutil
 
 def query(query, currentpath):
     chrome_options = webdriver.ChromeOptions()
@@ -31,6 +33,30 @@ def query(query, currentpath):
     driver.close()
     root = BeautifulSoup(page_source, "lxml")
     return root
+
+def filenamefinder(matchroot):
+    abbreviationdict = {'Katwijk': 'kw', 'Jong Sparta': 'js', 'AFC': 'afc', 'Barendrecht': 'bd', 'HHC': 'hhc', 'GVVV': 'gvvv', 'Lienden': 'ld', 'Kozakken Boys': 'kb', 'De Dijk': 'dd', 'IJsselmeervogels': 'ijmv', 'Lisse': 'ls', 'Rijnsburgse Boys': 'rb', 'Koninklijke HFC': 'khfc', 'Excelsior Maassluis': 'em', 'VVSB': 'vvsb', 'De Treffers': 'dt', 'TEC': 'tec', "Achilles '29": 'ach'}
+    datedict = {'januari': '01', 'februari': '02', 'maart': '03', 'april': '04', 'mei': '05', 'juni': '06', 'juli': '07',
+                'augustus': '08', 'september': '09', 'oktober': '10', 'november': '11', 'december': '12'}
+    hometeam = matchroot.find('div', {"class": "c-match-header__team c-match-header__team--home"}).text.strip()
+    awayteam = matchroot.find('div', {"class": "c-match-header__team c-match-header__team--away"}).text.strip()
+    time = matchroot.find('time').text.strip()
+    date = re.search(r'^(.*?),', time).group(1)
+    date = date.split(' ')
+    date[1] = datedict[date[1]]
+    datestring = ''.join(date)
+    hometeamstring = abbreviationdict[hometeam]
+    awayteamstring = abbreviationdict[awayteam]
+    file = hometeamstring + '_' + awayteamstring + '_' + datestring
+    return file
+
+def managerlink(matchroot):
+    abbreviationdict = {'Katwijk': 'katwijk', 'Jong Sparta': 'jong_sparta', 'AFC': 'afc', 'Barendrecht': 'barendrecht', 'HHC': 'hhc', 'GVVV': 'gvvv', 'Lienden': 'lienden', 'Kozakken Boys': 'kozakken_boys', 'De Dijk': 'de_dijk', 'IJsselmeervogels': 'ijsselmeervogels', 'Lisse': 'lisse', 'Rijnsburgse Boys': 'rijnsburgse_boys', 'Koninklijke HFC': 'koninklijke_hfc', 'Excelsior Maassluis': 'excelsior_maassluis', 'VVSB': 'vvsb', 'De Treffers': 'de_treffers', 'TEC': 'tec', "Achilles '29": "achilles_29"}
+    hometeam = matchroot.find('div', {"class": "c-match-header__team c-match-header__team--home"}).text.strip()
+    awayteam = matchroot.find('div', {"class": "c-match-header__team c-match-header__team--away"}).text.strip()
+    hometeamstring = abbreviationdict[hometeam]
+    awayteamstring = abbreviationdict[awayteam]
+    return hometeamstring, awayteamstring
 
 def findmatches(root):
     datedict = {'jan': 1, 'feb': 2, 'mrt': 3, 'apr': 4, 'mei': 5, 'jun': 6, 'jul': 7, 'aug': 8, 'sep': 9, 'okt': 10, 'nov': 11, 'dec': 12}
@@ -186,9 +212,12 @@ def eventspart(matchroot):
             substitutionlist.append((str(len(owngoallist) + 1), eventminute, suboutplayer, subinplayer))
     return assistlist, goallist, missedpenaltylist, penaltygoallist, redcardlist, yellowcardlist, yellowredlist, owngoallist, substitutionlist
 
-def playerinfo(playerlink, currentpath):
+def playerinfo(playerlink, currentpath, filename):
     playerroot = query(playerlink, currentpath)
-    time.sleep(1)
+    s2 = playerroot.prettify()
+    with open(currentpath + '/PlayerInfoXMLs/NewPlayers/' + filename + '_pagesource.xml', 'wb') as f:
+        f.write(bytes(s2, 'UTF-8'))
+    print(currentpath + '/PlayerInfoXMLs/NewPlayers/' + filename + '_pagesource.xml has been written')
     #infile = open(currentpath + '/PlayerTest.xml', "rb")
     #contents = infile.read()
     #infile.close()
@@ -295,29 +324,57 @@ def lineupspart(matchroot, currentpath):
     homestarters = [x for x in homestarters if len(x['class']) == 1]
     homestarterslist = playerlinkgetter(homestarters)
     for idx, homestarter in enumerate(homestarterslist):
-        playerinfolist = playerinfo(homestarter[1], currentpath)
-        homestarterslist[idx] = (str(idx+1),) + homestarterslist[idx] + playerinfolist
+        filename = re.search(r'spelers\/(.*?)\/profiel', homestarter[1]).group(1)
+        filename = re.sub(r'-', '_', filename)
+
+        with tarfile.open(currentpath + '/PlayerInfoXMLs/PlayerInfo.tar.gz', "r:gz") as tar:
+            if filename + '_element.xml' in tar.getnames():
+                continue
+            else:
+                playerinfolist = playerinfo(homestarter[1], currentpath, filename)
+                homestarterslist[idx] = (str(idx+1),) + homestarterslist[idx] + playerinfolist
 
     homesubs = homeplayers.find('ul', {"class": "c-line-up__list c-line-up__list--sub"}).find_all('li', {"class": "c-line-up__player c-line-up__player--sub"})
     homesubslist = playerlinkgetter(homesubs)
     for idx, homesub in enumerate(homesubslist):
-        playerinfolist = playerinfo(homesub[1], currentpath)
-        homesubslist[idx] = (str(idx+1),) + homesubslist[idx] + playerinfolist
+        filename = re.search(r'spelers\/(.*?)\/profiel', homesub[1]).group(1)
+        filename = re.sub(r'-', '_', filename)
+
+        with tarfile.open(currentpath + '/PlayerInfoXMLs/PlayerInfo.tar.gz', "r:gz") as tar:
+            if filename + '_element.xml' in tar.getnames():
+                continue
+            else:
+                playerinfolist = playerinfo(homesub[1], currentpath, filename)
+                homesubslist[idx] = (str(idx+1),) + homesubslist[idx] + playerinfolist
 
     awayplayers = matchroot.find('div', {"class": "c-line-up__team c-line-up__team--away o-layout__item u-6/12"})
     awaystarters = awayplayers.find('ul', {"class": "c-line-up__list"}).find_all('li', {"class": "c-line-up__player"})
     awaystarters = [x for x in awaystarters if len(x['class']) == 1]
     awaystarterslist = playerlinkgetter(awaystarters)
     for idx, awaystarter in enumerate(awaystarterslist):
-        playerinfolist = playerinfo(awaystarter[1], currentpath)
-        awaystarterslist[idx] = (str(idx+1),) + awaystarterslist[idx] + playerinfolist
+        filename = re.search(r'spelers\/(.*?)\/profiel', awaystarter[1]).group(1)
+        filename = re.sub(r'-', '_', filename)
+
+        with tarfile.open(currentpath + '/PlayerInfoXMLs/PlayerInfo.tar.gz', "r:gz") as tar:
+            if filename + '_element.xml' in tar.getnames():
+                continue
+            else:
+                playerinfolist = playerinfo(awaystarter[1], currentpath, filename)
+                awaystarterslist[idx] = (str(idx+1),) + awaystarterslist[idx] + playerinfolist
 
     awaysubs = awayplayers.find('ul', {"class": "c-line-up__list c-line-up__list--sub"}).find_all('li', {
         "class": "c-line-up__player c-line-up__player--sub"})
     awaysubslist = playerlinkgetter(awaysubs)
     for idx, awaysub in enumerate(awaysubslist):
-        playerinfolist = playerinfo(awaysub[1], currentpath)
-        awaysubslist[idx] = (str(idx+1),) + awaysubslist[idx] + playerinfolist
+        filename = re.search(r'spelers\/(.*?)\/profiel', awaysub[1]).group(1)
+        filename = re.sub(r'-', '_', filename)
+
+        with tarfile.open(currentpath + '/PlayerInfoXMLs/PlayerInfo.tar.gz', "r:gz") as tar:
+            if filename + '_element.xml' in tar.getnames():
+                continue
+            else:
+                playerinfolist = playerinfo(awaysub[1], currentpath, filename)
+                awaysubslist[idx] = (str(idx+1),) + awaysubslist[idx] + playerinfolist
     return homestarterslist, homesubslist, awaystarterslist, awaysubslist
 
 def highlightsxml(highlightstuple):
@@ -453,7 +510,7 @@ def eventsxml(eventstuple):
     return events
 
 
-def PlayerXML(player):
+def PlayerXML(player, currentpath, filename):
     id, viname, vilink, fullname, firstname, lastname, birthdate, age, birthplace, nationality, height, weight, preferredfoot, currentclub, activeatclub, currentdivision, position, kitnumber = player
     playerelement = etree.Element("Player")
     playerelement.set("PlayerId", id)
@@ -493,57 +550,171 @@ def PlayerXML(player):
     currentnumber = etree.SubElement(playerelement, "CurrentNumber")
     currentnumber.text = kitnumber
 
+    p2 = etree.tostring(playerelement, encoding="utf-8", xml_declaration=False, pretty_print=True)
+    with open(currentpath + '/PlayerInfoXMLs/NewPlayers/' + filename + '_element.xml', 'wb') as f:
+        f.write(p2)
+    print(currentpath + '/PlayerInfoXMLs/NewPlayers/' + filename + '_element.xml has been written')
+
     return playerelement
 
-def lineupsxml(lineupstuple):
+def lineupsxml(lineupstuple, currentpath, hometeamlink, awayteamlink):
     homestarterslist, homesubslist, awaystarterslist, awaysubslist = lineupstuple
     lineups = etree.Element("Lineups")
     lineupshome = etree.SubElement(lineups, "Home")
-    for player in homestarterslist:
-        playerxml = PlayerXML(player)
-        lineupshome.append(playerxml)
+    for idx, player in enumerate(homestarterslist):
+        if len(player) == 2:
+            filename = re.search(r'spelers\/(.*?)\/profiel', player[1]).group(1)
+            filename = re.sub(r'-', '_', filename)
+            filename = filename + '_element.xml'
+
+            with tarfile.open(currentpath + '/PlayerInfoXMLs/PlayerInfo.tar.gz', "r:gz") as tar:
+                f = tar.extractfile(filename)
+                playerxml = etree.parse(f)
+                playerxml = playerxml.getroot()
+                playerxml.set('PlayerId', str(idx+1))
+                playerxml = etree.tostring(playerxml)
+                playerxml = (playerxml.decode('utf-8'))
+                playerxml = re.sub(r'\n', '', playerxml)
+                playerxml = re.sub(r'[>]\s+[<]', '><', playerxml)
+                playerxml = etree.XML(playerxml)
+            lineupshome.append(playerxml)
+        else:
+            filename = re.search(r'spelers\/(.*?)\/profiel', player[2]).group(1)
+            filename = re.sub(r'-', '_', filename)
+            playerxml = PlayerXML(player, currentpath, filename)
+            lineupshome.append(playerxml)
     lineupsaway = etree.SubElement(lineups, "Away")
-    for player in awaystarterslist:
-        playerxml = PlayerXML(player)
-        lineupsaway.append(playerxml)
+    for idx, player in enumerate(awaystarterslist):
+        if len(player) == 2:
+            filename = re.search(r'spelers\/(.*?)\/profiel', player[1]).group(1)
+            filename = re.sub(r'-', '_', filename)
+            filename = filename + '_element.xml'
+
+            with tarfile.open(currentpath + '/PlayerInfoXMLs/PlayerInfo.tar.gz', "r:gz") as tar:
+                f = tar.extractfile(filename)
+                playerxml = etree.parse(f)
+                playerxml = playerxml.getroot()
+                playerxml.set('PlayerId', str(idx + 1))
+                playerxml = etree.tostring(playerxml)
+                playerxml = (playerxml.decode('utf-8'))
+                playerxml = re.sub(r'\n', '', playerxml)
+                playerxml = re.sub(r'[>]\s+[<]', '><', playerxml)
+                playerxml = etree.XML(playerxml)
+            lineupsaway.append(playerxml)
+        else:
+            filename = re.search(r'spelers\/(.*?)\/profiel', player[2]).group(1)
+            filename = re.sub(r'-', '_', filename)
+            playerxml = PlayerXML(player, currentpath, filename)
+            lineupsaway.append(playerxml)
 
     substitutes = etree.Element("Substitutes")
     subshome = etree.SubElement(substitutes, "Home")
-    for player in homesubslist:
-        playerxml = PlayerXML(player)
-        subshome.append(playerxml)
-    subsaway = etree.SubElement(substitutes, "Away")
-    for player in awaysubslist:
-        playerxml = PlayerXML(player)
-        subsaway.append(playerxml)
+    for idx, player in enumerate(homesubslist):
+        if len(player) == 2:
+            filename = re.search(r'spelers\/(.*?)\/profiel', player[1]).group(1)
+            filename = re.sub(r'-', '_', filename)
+            filename = filename + '_element.xml'
 
-    return lineups, substitutes
+            with tarfile.open(currentpath + '/PlayerInfoXMLs/PlayerInfo.tar.gz', "r:gz") as tar:
+                f = tar.extractfile(filename)
+                playerxml = etree.parse(f)
+                playerxml = playerxml.getroot()
+                playerxml.set('PlayerId', str(idx + 1))
+                playerxml = etree.tostring(playerxml)
+                playerxml = (playerxml.decode('utf-8'))
+                playerxml = re.sub(r'\n', '', playerxml)
+                playerxml = re.sub(r'[>]\s+[<]', '><', playerxml)
+                playerxml = etree.XML(playerxml)
+            subshome.append(playerxml)
+        else:
+            filename = re.search(r'spelers\/(.*?)\/profiel', player[2]).group(1)
+            filename = re.sub(r'-', '_', filename)
+            playerxml = PlayerXML(player, currentpath, filename)
+            subshome.append(playerxml)
+    subsaway = etree.SubElement(substitutes, "Away")
+    for idx, player in enumerate(awaysubslist):
+        if len(player) == 2:
+            filename = re.search(r'spelers\/(.*?)\/profiel', player[1]).group(1)
+            filename = re.sub(r'-', '_', filename)
+            filename = filename + '_element.xml'
+
+            with tarfile.open(currentpath + '/PlayerInfoXMLs/PlayerInfo.tar.gz', "r:gz") as tar:
+                f = tar.extractfile(filename)
+                playerxml = etree.parse(f)
+                playerxml = playerxml.getroot()
+                playerxml.set('PlayerId', str(idx + 1))
+                playerxml = etree.tostring(playerxml)
+                playerxml = (playerxml.decode('utf-8'))
+                playerxml = re.sub(r'\n', '', playerxml)
+                playerxml = re.sub(r'[>]\s+[<]', '><', playerxml)
+                playerxml = etree.XML(playerxml)
+            subsaway.append(playerxml)
+        else:
+            filename = re.search(r'spelers\/(.*?)\/profiel', player[2]).group(1)
+            filename = re.sub(r'-', '_', filename)
+            playerxml = PlayerXML(player, currentpath, filename)
+            subsaway.append(playerxml)
+
+    managers = etree.Element("Managers")
+    managershome = etree.SubElement(managers, "Home")
+
+    with tarfile.open(currentpath + '/PlayerInfoXMLs/PlayerInfo.tar.gz', "r:gz") as tar:
+        f = tar.extractfile('manager_' + hometeamlink + '_element.xml')
+        managerxml = etree.parse(f)
+        managerxml = managerxml.getroot()
+        managerxml.set('ManagerId', '1')
+        managerxml = etree.tostring(managerxml)
+        managerxml = (managerxml.decode('utf-8'))
+        managerxml = re.sub(r'\n', '', managerxml)
+        managerxml = re.sub(r'[>]\s+[<]', '><', managerxml)
+        managerxml = etree.XML(managerxml)
+    managershome.append(managerxml)
+    managertag = managershome.find('Player')
+    managertag.tag = "Manager"
+
+    managersaway = etree.SubElement(managers, "Away")
+
+    with tarfile.open(currentpath + '/PlayerInfoXMLs/PlayerInfo.tar.gz', "r:gz") as tar:
+        f = tar.extractfile('manager_' + awayteamlink + '_element.xml')
+        managerxml = etree.parse(f)
+        managerxml = managerxml.getroot()
+        managerxml.set('ManagerId', '1')
+        managerxml = etree.tostring(managerxml)
+        managerxml = (managerxml.decode('utf-8'))
+        managerxml = re.sub(r'\n', '', managerxml)
+        managerxml = re.sub(r'[>]\s+[<]', '><', managerxml)
+        managerxml = etree.XML(managerxml)
+    managersaway.append(managerxml)
+    managertag = managersaway.find('Player')
+    managertag.tag = "Manager"
+
+    return lineups, substitutes, managers
 
 
 def matchxml(matchlink, currentpath):
     matchroot = query(matchlink, currentpath)
-    highlightstuple = highlightspart(matchroot)
-    eventstuple = eventspart(matchroot)
-    lineupstuple = lineupspart(matchroot, currentpath)
+    fn = filenamefinder(matchroot)
+    hometeamlink, awayteamlink = managerlink(matchroot)
+    if not os.path.isfile(currentpath + '/NewInfoXMLs/' + fn + '.xml'):
+        highlightstuple = highlightspart(matchroot)
+        eventstuple = eventspart(matchroot)
+        lineupstuple = lineupspart(matchroot, currentpath)
 
-    highlights = highlightsxml(highlightstuple)
-    events = eventsxml(eventstuple)
-    lineups, substitutes = lineupsxml(lineupstuple)
+        highlights = highlightsxml(highlightstuple)
+        events = eventsxml(eventstuple)
+        lineups, substitutes, managers = lineupsxml(lineupstuple,currentpath, hometeamlink, awayteamlink)
 
-    goaltree = etree.Element("Goal")
-    goaltree.append(highlights)
-    goaltree.append(events)
-    goaltree.append(lineups)
-    goaltree.append(substitutes)
+        goaltree = etree.Element("Goal")
+        goaltree.append(highlights)
+        goaltree.append(events)
+        goaltree.append(lineups)
+        goaltree.append(substitutes)
+        goaltree.append(managers)
 
-    goaltree = etree.tostring(goaltree, encoding="utf-8", xml_declaration=False, pretty_print=True)
-    for number in range(0,999):
-        if os.path.isfile(currentpath + '/NewInfoXMLs/MatchTest' + str(number) + '.xml'):
-            continue
-        with open(currentpath + '/NewInfoXMLs/MatchTest' + str(number) + '.xml', 'wb') as f:
+        goaltree = etree.tostring(goaltree, encoding="utf-8", xml_declaration=False, pretty_print=True)
+        with open(currentpath + '/NewInfoXMLs/' + fn + '.xml', 'wb') as f:
             print('XML file written')
             f.write(goaltree)
-            break
 
     '''
     s2 = matchroot.prettify()
@@ -554,13 +725,20 @@ def matchxml(matchlink, currentpath):
 
 def mainscraper():
     currentpath = os.getcwd()
+    #if os.path.exists(currentpath + "/NewInfoXMLs"):
+        #shutil.rmtree(currentpath + "/NewInfoXMLs")
+    #os.mkdir(currentpath + "/NewInfoXMLs")
     root = query("https://www.vi.nl/competities/nederland/tweede-divisie/2017-2018/wedstrijden", currentpath)
     matcheslist = findmatches(root)
     for matchlink in matcheslist:
         matchxml(matchlink, currentpath)
+
+        if os.listdir(currentpath + '/PlayerInfoXMLs/NewPlayers') != []:
+            create_new_tar()
 '''
 infile = open(currentpath + '/Test.xml',"rb")
 contents = infile.read()
 infile.close()
 matchroot = BeautifulSoup(contents, "xml")
 '''
+mainscraper()
