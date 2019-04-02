@@ -16,6 +16,8 @@ You can find the templates for the win/loss and neutral conditions in Databases.
 
 Only one library is needed to run PASS: BeautifulSoup (https://www.crummy.com/software/BeautifulSoup/bs4/doc/).
 
-To generate reports immediately, you can either do it via an IDE such as PyCharm, using PASS.py: change the path on line 47 to a data file of your desire, and indicate whether you want to save the result or not. Using PASS via command line is possible as well: delete or comment out lines 40 and 47 from PASS.py and then use the following command:
+To generate reports immediately, you can either do it via an IDE such as PyCharm, using PASS.py: change the path on line 47 to a data file of your desire, and indicate whether you want to save the result or not. 
+
+Using PASS via command line is possible as well: delete or comment out lines 40 and 47 from PASS.py and then use the following command:
 
 python3 PASS.py main(link_to_data, save_state (y or n))
