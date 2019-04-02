@@ -102,6 +102,8 @@ def finalgoal(gamecourselist, idx):
                 if (event['event'] == 'regular goal') or (event['event'] == 'penalty goal') or (event['event'] == 'own goal'):
                     return False
             return True
+    else:
+        return False
 
 
 def secondgoal(gamecourselist, idx):
@@ -609,6 +611,8 @@ def winnerredcards(gamecourselist, gamestatisticslist, homeaway):
         winner = other
     if focusgoals > othergoals:
         winner = focus
+    else:
+        return False
     for idx, event in enumerate(gamestatisticslist):
         if ((event['event'] == 'red card') or (event['event'] == 'twice yellow')) and (event['team'] == focus) and (winner == focus):
             return True
@@ -655,6 +659,23 @@ def loserredcards(gamecourselist, gamestatisticslist, homeaway):
     return False
 
 def finalgoalfocusteam(gamecourselist, homeaway):
+    #There should be more than one goal scored in the match for this condition to fire
+    goalnumber = 0
+    goaleventteam = []
+    for event in gamecourselist:
+        if (event['event'] == 'regular goal') or (event['event'] == 'penalty goal'):
+            goalnumber += 1
+            goaleventteam.append(event['team'])
+    if goalnumber > 1:
+        # If the goal is the last entry in the goaleventlist, it is the final goal
+        if goaleventteam[-1] == homeaway:
+            return True
+        else:
+            return False
+    else:
+        return False
+
+    '''
     num = len(gamecourselist)-1
     while num >= 0:
         #Don't work with own goals
@@ -667,6 +688,20 @@ def finalgoalfocusteam(gamecourselist, homeaway):
                 return False
         num -= 1
     return False
+    '''
+
+def finalgoaltitle(gamecourselist, homeaway):
+    #There should be more than one goal scored in the match for this condition to fire
+    goalnumber = 0
+    goaleventteam = []
+    for event in gamecourselist:
+        if (event['event'] == 'regular goal') or (event['event'] == 'penalty goal'):
+            goalnumber += 1
+            goaleventteam.append(event['team'])
+    if goalnumber > 1:
+        return True
+    else:
+        return False
 
 def focusteamplayedaway(homeaway):
     if homeaway == 'away':

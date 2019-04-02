@@ -314,6 +314,17 @@ def GeneralTemplateSelection(type, possiblelegend, possibletemplates, gamecourse
             except ValueError:
                 ''
 
+        if (Ruleset.winner(gamecourselist, homeaway) == False) and (Ruleset.finalgoaltitle(gamecourselist, homeaway) == True):
+            try:
+                categorytemplates = possibletemplates[possiblelegend.index("Title (tie and goals)")]
+                try:
+                    template = random.choice(categorytemplates)
+                    possibletitles.append([template, 0.14])
+                except IndexError:
+                    ''
+            except ValueError:
+                ''
+
         try:
             categorytemplates = possibletemplates[possiblelegend.index("Title (all purpose)")]
             try:
@@ -726,7 +737,10 @@ def GameCourseTemplateSelection(event, legend, templates, gamecourselist, soup, 
             try:
                 categorytemplates = templates[legend.index("Game course, penalty miss focus team")]
             except ValueError:
-                categorytemplates = templates[legend.index("Game course, penalty miss focus team (all purpose)")]
+                try:
+                    categorytemplates = templates[legend.index("Game course, penalty miss focus team (all purpose)")]
+                except ValueError:
+                    categorytemplates = templates[legend.index("Game course, penalty miss (all purpose)")]
             try:
                 template = random.choice(categorytemplates)
                 temptemplatelist.append([template, 0.1])

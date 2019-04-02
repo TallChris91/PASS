@@ -25,6 +25,10 @@ def main(file, savestate='n'):
             print(newfile + 'away.txt saved')
             f.write(bytes(templatetextaway, 'UTF-8'))
 
+        with open('./SavedReports/' + newfile + 'neutral.txt', 'wb') as f:
+            print(newfile + 'neutral.txt saved')
+            f.write(bytes(templatetextneutral, 'UTF-8'))
+
         with open('./SavedReports/' + newfile + 'matchdict.p', 'wb') as f:
             print(newfile + 'matchdict.p saved')
             pickle.dump(templatedict, f)
@@ -33,7 +37,14 @@ def main(file, savestate='n'):
             print(newfile + 'infodict.p saved')
             pickle.dump(infodict, f)
 
-main('./NewInfoXMLs/kw_js_8052018.xml', 'y')
+currentpath = os.getcwd()
+#textpath = os.path.dirname(currentpath) + '/Europa_League/TestInfoXMLs'
+#onlyfiles = [textpath + '/' + f for f in os.listdir(textpath) if os.path.isfile(os.path.join(textpath, f))]
+#for file in onlyfiles:
+    #main(file, 'y')
+
+#main(os.path.dirname(currentpath) + '/Europa_League/NewInfoXMLs/rea_aja_5032019.xml', 'y')
+main(currentpath + '/NewInfoXMLs/hhc_bd_2032019.xml', 'y')
 
 #if __name__ == '__main__':
     #main(sys.argv[1:])
