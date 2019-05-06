@@ -48,7 +48,6 @@ def TopicWalk(file):
         templateneutral = GeneralTemplateSelection(generaltopic, possiblelegendneutral, possibletemplatesneutral, gamecourse, gamestatistics, jsongamedata, 'home')
         templateneutrallist.append(templateneutral)
 
-    pdb.set_trace()
     #Get a separate gamecoursehome, away and neutral, since the gamecourselist can be modified
     gamecoursehome = gamecourse.copy()
     gamecourseaway = gamecourse.copy()
