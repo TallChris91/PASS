@@ -118,7 +118,7 @@ def GeneralTemplates(type, homelegend, hometemplates, awaylegend, awaytemplates,
             if re.search(r'^General\,\swin\/tie\/loss\s\(final\sscore\)', val):
                 possiblelegendneutral.append(neutrallegend[idx])
                 possibletemplatesneutral.append(neutraltemplates[idx])
-        return possiblelegendhome, possibletemplateshome, possiblelegendneutral, possibletemplatesneutral, possiblelegendneutral, possibletemplatesneutral
+        return possiblelegendhome, possibletemplateshome, possiblelegendaway, possibletemplatesaway, possiblelegendneutral, possibletemplatesneutral
 
 def GameCourseTemplates(gamecoursetopic, homelegend, hometemplates, awaylegend, awaytemplates, neutrallegend, neutraltemplates):
     #Four types of events are reported on: regular goals, missed penalties, own goals, and penalty goals, furthermore all these topics can be
