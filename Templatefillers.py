@@ -1,102 +1,111 @@
 import sys
 import os.path
-from bs4 import BeautifulSoup
 import xlrd
 import re
 import random
+from math import ceil
 from operator import itemgetter
 import Ruleset_module as Ruleset
 from Ruleset_module import secondgoal
 from Reference_variety_module import PlayerReferenceModel, ClubReferenceModel
-from datetime import datetime
+from datetime import datetime,timedelta
 
-def templatefillers(soup, homeaway, gap, **kwargs):
+#This is used to convert MS JSON/MS AJAX datetime format into a datetime
+def json_date_as_datetime(jd):
+    sign = jd[-7]
+    if sign not in '-+' or len(jd) == 13:
+        millisecs = int(jd[6:-2])
+    else:
+        millisecs = int(jd[6:-7])
+        hh = int(jd[-7:-4])
+        mm = int(jd[-4:-2])
+        if sign == '-': mm = -mm
+        millisecs += (hh * 60 + mm) * 60000
+    return datetime(1970, 1, 1) + timedelta(microseconds=millisecs * 1000)
+
+
+def templatefillers(jsongamedata, homeaway, gap, **kwargs):
     if gap == 'focus team':
-        club = soup.find('highlights').find(homeaway).find('team').text
-        clubtuple = ClubReferenceModel(club, soup, homeaway, gap, **kwargs)
+        club = jsongamedata['MatchInfo'][0]['c_'+homeaway.capitalize()+'Team']
+        clubtuple = ClubReferenceModel(club, jsongamedata, homeaway, gap, **kwargs)
         return clubtuple
     elif gap == 'other team':
         if homeaway == 'home':
-            club = soup.find('highlights').find('away').find('team').text
-            clubtuple = ClubReferenceModel(club, soup, homeaway, gap, **kwargs)
+            club = jsongamedata['MatchInfo'][0]['c_AwayTeam']
+            clubtuple = ClubReferenceModel(club, jsongamedata, homeaway, gap, **kwargs)
             return clubtuple
         if homeaway == 'away':
-            club = soup.find('highlights').find('home').find('team').text
-            clubtuple = ClubReferenceModel(club, soup, homeaway, gap, **kwargs)
+            club = jsongamedata['MatchInfo'][0]['c_HomeTeam']
+            clubtuple = ClubReferenceModel(club, jsongamedata, homeaway, gap, **kwargs)
             return clubtuple
     elif gap == 'home team':
-        club = soup.find('highlights').find('home').find('team').text
-        clubtuple = ClubReferenceModel(club, soup, homeaway, gap, **kwargs)
+        club = jsongamedata['MatchInfo'][0]['c_HomeTeam']
+        clubtuple = ClubReferenceModel(club, jsongamedata, homeaway, gap, **kwargs)
         return clubtuple
     elif gap == 'away team':
-        club = soup.find('highlights').find('away').find('team').text
-        clubtuple = ClubReferenceModel(club, soup, homeaway, gap, **kwargs)
+        club = jsongamedata['MatchInfo'][0]['c_AwayTeam']
+        clubtuple = ClubReferenceModel(club, jsongamedata, homeaway, gap, **kwargs)
         return clubtuple
     elif gap == 'tieing team':
         #Since the ruleset has already found the final goal scorer made the decisive goal, the final goal scorer is also the deciding goal scorer
-        goalscorershomelist = soup.find('highlights').find('home').find('goalscorerslist').find_all('goal')
-        minute = 0
-        for goalscorer in goalscorershomelist:
-            #If the minute scored is more than the minute scored of the previous found event, update the player value with the player name of the current event
-            newminute = re.search(r'\d+', goalscorer['minute']).group()
-            if int(newminute) > minute:
-                minute = int(goalscorer['minute'])
+        #a for a in list_a for b in list_b if a == 
+        goals = [event for event in jsongamedata['MatchActions'] if event['n_ActionSet']==1]
+        goalshomelist = [event for event in goals if event['n_HomeOrAway']==1]
+        goalsawaylist = [event for event in goals if event['n_HomeOrAway']==-1]
 
-        goalscorersawaylist = soup.find('highlights').find('away').find('goalscorerslist').find_all('goal')
-        for goalscorer in goalscorersawaylist:
+        minute = 0
+        for goal in goalshomelist:
             #If the minute scored is more than the minute scored of the previous found event, update the player value with the player name of the current event
-            newminute = re.search(r'\d+', goalscorer['minute']).group()
-            if int(newminute) > minute:
-                return soup.find('highlights').find('away').find('team').text
-        return soup.find('highlights').find('home').find('team').text
+            newminute = goal['n_ActionTime']
+            if newminute > minute:
+                minute = goal['n_ActionTime']
+
+        for goal in goalsawaylist:
+            #If the minute scored is more than the minute scored of the previous found event, update the player value with the player name of the current event
+            newminute = goal['n_ActionTime']
+            if newminute > minute:
+                return jsongamedata['MatchInfo'][0]['c_AwayTeam']
+        return jsongamedata['MatchInfo'][0]['c_HomeTeam']
     elif gap == 'winning team':
-        #Get a list of home goal scorers
-        goalscorershomelist = soup.find('highlights').find('home').find('goalscorerslist').find_all('goal')
-        #And away goal scorers
-        goalscorersawaylist = soup.find('highlights').find('away').find('goalscorerslist').find_all('goal')
-        #If the away team scored more goals, return the away team
-        if len(goalscorersawaylist) > len(goalscorershomelist):
-            return soup.find('highlights').find('away').find('team').text
+        homegoals = jsongamedata['MatchInfo'][0]['n_HomeGoals']
+        awaygoals = jsongamedata['MatchInfo'][0]['n_AwayGoals']
+
+        if homegoals > awaygoals:
+            return jsongamedata['MatchInfo'][0]['c_HomeTeam']
         else:
-            return soup.find('highlights').find('home').find('team').text
+            return jsongamedata['MatchInfo'][0]['c_AwayTeam']
     elif gap == 'losing team':
-        #Get a list of home goal scorers
-        goalscorershomelist = soup.find('highlights').find('home').find('goalscorerslist').find_all('goal')
-        #And away goal scorers
-        goalscorersawaylist = soup.find('highlights').find('away').find('goalscorerslist').find_all('goal')
-        #If the away team scored less goals, return the away team
-        if len(goalscorersawaylist) < len(goalscorershomelist):
-            return soup.find('highlights').find('away').find('team').text
+        homegoals = jsongamedata['MatchInfo'][0]['n_HomeGoals']
+        awaygoals = jsongamedata['MatchInfo'][0]['n_AwayGoals']
+
+        if awaygoals > homegoals:
+            return jsongamedata['MatchInfo'][0]['c_HomeTeam']
         else:
-            return soup.find('highlights').find('home').find('team').text
+            return jsongamedata['MatchInfo'][0]['c_AwayTeam']
     elif gap == 'final home goals':
-        homegoals = soup.find('highlights').find('home').find('finalgoals').text
-        return homegoals
+        return jsongamedata['MatchInfo'][0]['n_HomeGoals']
     elif gap == 'final away goals':
-        awaygoals = soup.find('highlights').find('away').find('finalgoals').text
-        return awaygoals
+        return jsongamedata['MatchInfo'][0]['n_AwayGoals']
     elif gap == 'stadium':
-        stadium = soup.find('highlights').find('stadium').text
-        stadium = stadium.replace(u"\u2022 ", "")
-        return stadium
+        return jsongamedata['MatchInfo'][0]['c_Stadium']
     elif gap == 'league':
-        league = soup.find('highlights').find('league').text
-        league = league.replace(u"\u2022 ", "")
-        return league
+        return jsongamedata['MatchInfo'][0]['c_Competition']
     elif gap == 'time':
-        time = soup.find('highlights').find('starttime').text
-        return time
+        #d_DateLocal contains the "scheduled start time", while d_MatchStartTimeLocal is the actual time
+        #e.g. 18:45 vs 18:46:47
+        msjsontime = jsongamedata['MatchInfo'][0]['d_DateLocal']
+        d = json_date_as_datetime(msjsontime) 
+        return d.strftime("%H:%M")
     elif gap == 'referee':
-        referee = soup.find('highlights').find('referee').text
-        referee = re.sub(r'^(.*?)\.\s', '', referee)
-        return referee
+        #TODO: use n_RefereeID
+        return jsongamedata['MatchInfo'][0]['c_Referee']
     elif gap == 'homeaway':
         return homeaway
     elif gap == 'city':
-        city = soup.find('highlights').find('city').text
+        city = jsongamedata['MatchInfo'][0]['c_City']
         return city
     elif gap == 'attendees':
-        attendees = soup.find('highlights').find('attendees').text
+        attendees = jsongamedata['MatchInfo'][0]['n_Spectators']
         return attendees
     elif (gap == 'home goals') or (gap == 'away goals') or (gap == 'number of goals focus team') or (gap == 'number of goals other team') or (gap == 'number of goals'):
         eventlist = kwargs['eventlist']
@@ -144,14 +153,14 @@ def templatefillers(soup, homeaway, gap, **kwargs):
             print(gap)
             print(kwargs['gamestatisticslist'])
             sys.exit(1)
-        playertuple = PlayerReferenceModel(player, soup, homeaway, gap, **kwargs)
+        playertuple = PlayerReferenceModel(player, jsongamedata, homeaway, gap, **kwargs)
         return playertuple
     elif gap == 'scoring team':
         event = kwargs['event']
         try:
             team = event['team']
-            club = soup.find('highlights').find(team).find('team').text
-            clubtuple = ClubReferenceModel(club, soup, homeaway, gap, **kwargs)
+            #club = jsongamedata.find('highlights').find(team).find('team').text
+            clubtuple = ClubReferenceModel(team, jsongamedata, homeaway, gap, **kwargs)
             return clubtuple
         except TypeError:
             print(event)
@@ -163,12 +172,12 @@ def templatefillers(soup, homeaway, gap, **kwargs):
         try:
             team = event['team']
             if team == 'home':
-                club = soup.find('highlights').find('away').find('team').text
-                clubtuple = ClubReferenceModel(club, soup, homeaway, gap, **kwargs)
+                club = jsongamedata['MatchInfo'][0]['c_AwayTeam']
+                clubtuple = ClubReferenceModel(club, jsongamedata, homeaway, gap, **kwargs)
                 return clubtuple
             if team == 'away':
-                club = soup.find('highlights').find('home').find('team').text
-                clubtuple = ClubReferenceModel(club, soup, homeaway, gap, **kwargs)
+                club = jsongamedata['MatchInfo'][0]['c_HomeTeam']
+                clubtuple = ClubReferenceModel(club, jsongamedata, homeaway, gap, **kwargs)
                 return clubtuple
         except TypeError:
             print(event)
@@ -184,8 +193,8 @@ def templatefillers(soup, homeaway, gap, **kwargs):
             sys.exit(1)
     elif gap == 'minus minute':
         event = kwargs['event']
-        minute = event['minute']
-        minusminute = 90 - minute
+        minute = event['minute_asFloat']
+        minusminute = ceil(90 - minute)
         return str(minusminute)
     elif gap == 'assist giver':
         event = kwargs['event']
@@ -193,85 +202,62 @@ def templatefillers(soup, homeaway, gap, **kwargs):
             player = event['assist']
         except KeyError:
             print(event)
-        playertuple = PlayerReferenceModel(player, soup, homeaway, gap, **kwargs)
+        playertuple = PlayerReferenceModel(player, jsongamedata, homeaway, gap, **kwargs)
         return playertuple
     elif gap == 'goalkeeper focus team':
-        try:
-            gk = soup.find('lineups').find(homeaway).find('goalkeeper').find('name').text
-        except AttributeError:
-            try:
-                gk = soup.find('lineups').find(homeaway).find('player', {"playerid": "1"}).find('name').text
-            except AttributeError:
-                gk = soup.find('lineups').find(homeaway).find('player', {"playerid": "1"}).find('fullname').text
-        if gk:
-            player = gk
-            playertuple = PlayerReferenceModel(player, soup, homeaway, gap, **kwargs)
-            return playertuple
-        else:
-            player = soup.find('lineups').find(homeaway).find('goalkeeper').find('goalcomshownname').text
-            playertuple = PlayerReferenceModel(player, soup, homeaway, gap, **kwargs)
-            return playertuple
+        teamnumber = 1
+        if homeaway=="away":
+            teamnumber = -1
+        #TODO: use person ID
+        for person in jsongamedata['MatchLineup']:
+            #this would fail if goalkeeper is also the coach... but it rules out the bench goalkeeper
+            if person['n_FunctionCode']==1 and person['n_HomeOrAway']==teamnumber:
+                gk = person
+                break
+        playertuple = PlayerReferenceModel(gk, jsongamedata, homeaway, gap, **kwargs)
     elif gap == 'goalkeeper other team':
+        teamnumber = 1
         if homeaway == 'home':
-            other = 'away'
-        elif homeaway == 'away':
-            other = 'home'
-        try:
-            gk = soup.find('lineups').find(other).find('goalkeeper').find('name')
-        except AttributeError:
-            try:
-                gk = soup.find('lineups').find(other).find('player', {"playerid": "1"}).find('name')
-            except AttributeError:
-                gk = soup.find('lineups').find(other).find('player', {"playerid": "1"}).find('fullname')
-        try:
-            player = gk.text
-        except AttributeError:
-            try:
-                gk = soup.find('lineups').find(other).find('goalkeeper').find('goalcomshownname').text
-            except AttributeError:
-                gk = soup.find('lineups').find(other).find('player', {"playerid": "1"}).find('fullname').text
-            player = gk
-        playertuple = PlayerReferenceModel(player, soup, homeaway, gap, **kwargs)
+            teamnumber = -1
+        for person in jsongamedata['MatchLineup']:
+            if person['n_FunctionCode']==1 and person['n_HomeOrAway']==teamnumber:
+                gk = person
+                break
+        playertuple = PlayerReferenceModel(gk, jsongamedata, homeaway, gap, **kwargs)
         return playertuple
     elif gap == 'focus team manager':
-        try:
-            manager = soup.find('managers').find(homeaway).find('manager').find('name')
-            if manager.text:
-                player = manager.text
-        except AttributeError:
-            try:
-                manager = soup.find('managers').find(homeaway).find('manager').find('goalcomshownname').text
-                player = manager
-            except AttributeError:
-                return 'de manager'
-        playertuple = PlayerReferenceModel(player, soup, homeaway, gap, **kwargs)
+        teamnumber = 1
+        if homeaway=="away":
+            teamnumber = -1
+        for person in jsongamedata['MatchLineup']:
+            if person['n_FunctionCode']&16 and person['n_HomeOrAway']==teamnumber:
+                manager = person
+                break
+        playertuple = PlayerReferenceModel(manager, jsongamedata, homeaway, gap, **kwargs)
         return playertuple
     elif gap == 'other team manager':
+        teamnumber = 1
         if homeaway == 'home':
-            other = 'away'
-        if homeaway == 'away':
-            other = 'home'
-        manager = soup.find('managers').find(other).find('manager').find('name')
-        if manager.text:
-            player = manager.text
-        else:
-            manager = soup.find('managers').find(other).find('manager').find('goalcomshownname').text
-            player = manager
-        playertuple = PlayerReferenceModel(player, soup, homeaway, gap, **kwargs)
+            teamnumber = -1
+        for person in jsongamedata['MatchLineup']:
+            if person['n_FunctionCode']&16 and person['n_HomeOrAway']==teamnumber:
+                manager = person
+                break            
+        playertuple = PlayerReferenceModel(manager, jsongamedata, homeaway, gap, **kwargs)
         return playertuple
     elif gap == 'time between goals':
         event = kwargs['event']
-        tbg = str(abs(event['minute 1'] - event['minute 2']))
+        tbg = str(abs(ceil(event['minute_asFloat 1'] - event['minute_asFloat 2'])))
         return tbg
     elif gap == 'goal scorer 1':
         event = kwargs['event']
         player = event['player 1']
-        playertuple = PlayerReferenceModel(player, soup, homeaway, gap, **kwargs)
+        playertuple = PlayerReferenceModel(player, jsongamedata, homeaway, gap, **kwargs)
         return playertuple
     elif gap == 'goal scorer 2':
         event = kwargs['event']
         player = event['player 2']
-        playertuple = PlayerReferenceModel(player, soup, homeaway, gap, **kwargs)
+        playertuple = PlayerReferenceModel(player, jsongamedata, homeaway, gap, **kwargs)
         return playertuple
     elif gap == 'minute 1':
         event = kwargs['event']
@@ -281,7 +267,7 @@ def templatefillers(soup, homeaway, gap, **kwargs):
         return str(event['minute 2'])
     elif gap == 'first/second half':
         event = kwargs['event']
-        if event['minute'] > 45:
+        if int(event['minute'].split("+")[0]) > 45:
             return 'second half'
         else:
             return 'first half'
@@ -300,14 +286,7 @@ def templatefillers(soup, homeaway, gap, **kwargs):
         return 'goal ' + str(numbergoals)
     elif gap == 'number of yellow cards':
         #Get the yellow cards from the yellow card list
-        yellowcards = soup.find('yellowcardlist').findChildren()
-        #And get the players that got 2x yellow
-        yellowreds = soup.find('yellowredlist').findChildren()
-        for idx, val in enumerate(yellowreds):
-            yellowreds[idx] = yellowreds[idx].text
-        #If a player has gotten 2x yellow, remove him from the yellow card list
-        yellowcards = [x for x in yellowcards if x.text not in yellowreds]
-
+        yellowcards = [event for event in jsongamedata['MatchActions'] if event['n_ActionSet'] == 3 and event['n_ActionCode']&2048]
         return str(len(yellowcards))
     elif (gap == 'focus team yellow card players') or (gap == 'yellow card players') or (gap == 'other team yellow card players') or (gap == 'twice yellow players'):
         def playerlistcreate(event):
@@ -326,25 +305,25 @@ def templatefillers(soup, homeaway, gap, **kwargs):
                         homeawaylist.append(t)
             playerlist = sorted(playerlist, key=lambda x: x[0])
             playerlist = [x[1] for x in playerlist]
-            for idx, player in enumerate(playerlist):
-                try:
-                    name = soup.find('lineups').find(text=player).parent.parent
-                except AttributeError:
-                    try:
-                        name = soup.find('substitutes').find(text=player).parent.parent
-                    except AttributeError:
-                        try:
-                            name = soup.find('lineups').find(['name', 'fullname', 'goalcomshownname'], text=re.compile(player.split()[-1], re.I)).parent
-                        except AttributeError:
-                            try:
-                                name = soup.find('substitutes').find(['name', 'fullname', 'goalcomshownname'], text=re.compile(player.split()[-1], re.I)).parent
-                            except AttributeError:
-                                print('Player not found: ' + player)
-                                sys.exit(1)
-                try:
-                    playerlist[idx] = name.find('name').text
-                except AttributeError:
-                    playerlist[idx] = name.find('fullname').text
+#           for idx, player in enumerate(playerlist):
+#               try:
+#                   name = jsongamedata.find('lineups').find(text=player).parent.parent
+#               except AttributeError:
+#                   try:
+#                       name = jsongamedata.find('substitutes').find(text=player).parent.parent
+#                   except AttributeError:
+#                       try:
+#                           name = jsongamedata.find('lineups').find(['name', 'fullname', 'goalcomshownname'], text=re.compile(player.split()[-1], re.I)).parent
+#                       except AttributeError:
+#                           try:
+#                               name = jsongamedata.find('substitutes').find(['name', 'fullname', 'goalcomshownname'], text=re.compile(player.split()[-1], re.I)).parent
+#                           except AttributeError:
+#                               print('Player not found: ' + player)
+#                               sys.exit(1)
+#               try:
+#                   playerlist[idx] = name.find('name').text
+#               except AttributeError:
+#                   playerlist[idx] = name.find('fullname').text
             homeawaylist = sorted(homeawaylist, key=lambda x: x[0])
             homeawaylist = [x[1] for x in homeawaylist]
             return playerlist, homeawaylist
@@ -387,12 +366,12 @@ def templatefillers(soup, homeaway, gap, **kwargs):
         event = kwargs['event']
         team = event['team']
         if team == 'home':
-            club = soup.find('highlights').find('home').find('team').text
-            clubtuple = ClubReferenceModel(club, soup, homeaway, gap, **kwargs)
+            club = jsongamedata['MatchInfo'][0]['c_HomeTeam']
+            clubtuple = ClubReferenceModel(club, jsongamedata, homeaway, gap, **kwargs)
             return clubtuple
         if team == 'away':
-            club = soup.find('highlights').find('away').find('team').text
-            clubtuple = ClubReferenceModel(club, soup, homeaway, gap, **kwargs)
+            club = jsongamedata['MatchInfo'][0]['c_AwayTeam']
+            clubtuple = ClubReferenceModel(club, jsongamedata, homeaway, gap, **kwargs)
             return clubtuple
     elif gap == 'remaining players red team':
         event = kwargs['event']
@@ -410,24 +389,26 @@ def templatefillers(soup, homeaway, gap, **kwargs):
     elif gap == 'minutes since substitution':
         event = kwargs['event']
         player = event['player']
-        minute = int(event['minute'])
-        subs = soup.find('events').find('substitutionlist').find_all("substitution")
-        for i in subs:
-            if str(i['subin']) == player:
-                minsub = minute - int(i['minute'])
+        minute = float(event['minute'].replace("+","."))
+        subs = [event for event in jsongamedata['MatchActions'] if event['n_ActionSet']==5]
+        for sub_event in subs:
+            if sub_event['c_Person'] == player:
+                sub_minute = float(c_ActionMinute['minute'].replace("+",".").strip("'"))
+                minsub = math.ceil(minute - sub_minute)
                 break
         return minsub
     elif gap == 'position own goal scorer':
         event = kwargs['event']
         eventplayer = event['player']
-        playerlist = soup.find('lineups').find('home').find_all('name')
-        playerlist.extend(soup.find('substitutes').find('home').find_all('name'))
-        playerlist.extend(soup.find('lineups').find('home').find_all('goalcomshownname'))
-        playerlist.extend(soup.find('substitutes').find('home').find_all('goalcomshownname'))
-        playerlist.extend(soup.find('lineups').find('away').find_all('name'))
-        playerlist.extend(soup.find('substitutes').find('away').find_all('name'))
-        playerlist.extend(soup.find('lineups').find('away').find_all('goalcomshownname'))
-        playerlist.extend(soup.find('substitutes').find('away').find_all('goalcomshownname'))
+        print(event)
+        playerlist = jsongamedata.find('lineups').find('home').find_all('name')
+        playerlist.extend(jsongamedata.find('substitutes').find('home').find_all('name'))
+        playerlist.extend(jsongamedata.find('lineups').find('home').find_all('goalcomshownname'))
+        playerlist.extend(jsongamedata.find('substitutes').find('home').find_all('goalcomshownname'))
+        playerlist.extend(jsongamedata.find('lineups').find('away').find_all('name'))
+        playerlist.extend(jsongamedata.find('substitutes').find('away').find_all('name'))
+        playerlist.extend(jsongamedata.find('lineups').find('away').find_all('goalcomshownname'))
+        playerlist.extend(jsongamedata.find('substitutes').find('away').find_all('goalcomshownname'))
         for player in playerlist:
             if player.text == eventplayer:
                 parent = player.parent.name
@@ -455,25 +436,6 @@ def templatefillers(soup, homeaway, gap, **kwargs):
                 for player in playerlist:
                     if player not in goalscorerslist:
                         goalscorerslist.append(player)
-        for idx, player in enumerate(goalscorerslist):
-            try:
-                name = soup.find('lineups').find(text=player).parent.parent
-            except AttributeError:
-                try:
-                    name = soup.find('substitutes').find(text=player).parent.parent
-                except AttributeError:
-                    try:
-                        name = soup.find('lineups').find(text=re.compile(player.split()[-1])).parent.parent
-                    except AttributeError:
-                        try:
-                            name = soup.find('substitutes').find(text=re.compile(player.split()[-1])).parent.parent
-                        except AttributeError:
-                            print('Player not found: ' + player)
-                            sys.exit(1)
-            try:
-                goalscorerslist[idx] = name.find('name').text
-            except AttributeError:
-                goalscorerslist[idx] = name.find('fullname').text
         if len(goalscorerslist) > 1:
             gsstring = ', '.join(goalscorerslist[:-1]) + ' en ' + goalscorerslist[-1]
         else:
@@ -482,16 +444,15 @@ def templatefillers(soup, homeaway, gap, **kwargs):
     elif gap == 'deciding goal scorer':
         #Since the ruleset has already found the final goal scorer made the decisive goal, the final goal scorer is also the deciding goal scorer
         #Combine the home and away goalscorerslist
-        goalscorerslist = soup.find('highlights').find('home').find('goalscorerslist').find_all('goal')
-        goalscorerslist.extend(soup.find('highlights').find('away').find('goalscorerslist').find_all('goal'))
+        goals = [event for event in jsongamedata['MatchActions'] if event['n_ActionSet']==1]
         minute = 0
-        for goalscorer in goalscorerslist:
+        for goalevent in goals:
             #If the minute scored is more than the minute scored of the previous found event, update the player value with the player name of the current event
-            newminute = re.search(r'\d+', goalscorer['minute']).group()
+            newminute = goalevent['n_ActionTime']
             if int(newminute) > minute:
-                minute = int(goalscorer['minute'])
-                player = goalscorer.text
-        playertuple = PlayerReferenceModel(player, soup, homeaway, gap, **kwargs)
+                minute = goalevent['n_ActionTime']
+                player = goalevent['c_Person']
+        playertuple = PlayerReferenceModel(player, jsongamedata, homeaway, gap, **kwargs)
         return playertuple
     elif gap == 'biggest goal difference home goals':
         gamecourselist = kwargs['gamecourselist']
@@ -554,16 +515,15 @@ def templatefillers(soup, homeaway, gap, **kwargs):
         maxdifference = max(differencedict)
         return str(differencedict[maxdifference])
     elif gap == 'day':
-        date = soup.find('highlights').find('startdate').text
-        date = datetime.strptime(date, '%B %d, %Y')
+        msjsontime = jsongamedata['MatchInfo'][0]['d_DateLocal']
+        date = json_date_as_datetime(msjsontime) 
         weekday = date.weekday()
         weeklist = ['maandag', 'dinsdag', 'woensdag', 'donderdag', 'vrijdag', 'zaterdag', 'zondag']
         weekday = weeklist[weekday]
         return weekday
     elif gap == 'daytime':
-        time = soup.find('highlights').find('starttime').text
-        time = time.replace(u"\u2022 ", "")
-        time = datetime.strptime(time, '%H:%M')
+        msjsontime = jsongamedata['MatchInfo'][0]['d_DateLocal']
+        time = json_date_as_datetime(msjsontime) 
         if time.hour < 11:
             return 'morning'
         if time.hour > 16:
@@ -571,14 +531,14 @@ def templatefillers(soup, homeaway, gap, **kwargs):
         else:
             return 'afternoon'
     elif gap == 'focus team clubname':
-        club = soup.find('highlights').find(homeaway).find('team').text
+        club = jsongamedata['MatchInfo'][0]['c_'+homeaway.capitalize()+'Team']
         return club
     elif gap == 'other team clubname':
         if homeaway == 'home':
-            club = soup.find('highlights').find('away').find('team').text
+            club = jsongamedata['MatchInfo'][0]['c_AwayTeam']
             return club
         if homeaway == 'away':
-            club = soup.find('highlights').find('home').find('team').text
+            club = jsongamedata['MatchInfo'][0]['c_HomeTeam']
             return club
     elif gap == 'final remaining players focus team':
         gamestatisticslist = kwargs['gamestatisticslist']

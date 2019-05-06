@@ -1,10 +1,8 @@
-from bs4 import BeautifulSoup
-
-def TextCollection(templatelist, soup, homeaway, generallen, gamecourselen, gamestatisticslen):
+def TextCollection(templatelist, jsongamedata, homeaway, generallen, gamecourselen, gamestatisticslen):
     if homeaway == 'neutral':
         team2 = 'Verslag voor de neutrale toeschouwer'
     else:
-        team = soup.find('highlights').find(homeaway).find('team').text
+        team = jsongamedata['MatchInfo'][0]['c_'+homeaway.capitalize()+'Team']
         team2 = 'Verslag voor de achterban van ' + team
     general = templatelist[:generallen]
     gamecourse = templatelist[generallen:generallen+gamecourselen]

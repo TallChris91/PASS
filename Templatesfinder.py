@@ -1,7 +1,6 @@
 import sys
 from contextlib import closing
 from lxml import etree
-from bs4 import BeautifulSoup
 import lxml.html as html # pip install 'lxml>=2.3.1'
 from lxml.html.clean        import Cleaner
 from selenium.webdriver     import Firefox         # pip install selenium

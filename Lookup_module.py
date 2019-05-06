@@ -1,17 +1,15 @@
 from Topic_collection_module import TopicCollection
 import xlrd
-from bs4 import BeautifulSoup
 import re
+import json
 import sys
 
-def ArrangeDatabase(file):
+def ArrangeDatabase(jsongamedata):
     #Determine the database of which the system is going to use the templates.
     #The database is determined by whether the team won, tied or lost
-    soup = BeautifulSoup(open(file, 'rb'), "lxml")
     windb, tiedb, lossdb, neutraldb = ('Databases/Templates GoalgetterWin.xlsx', 'Databases/Templates GoalgetterTie.xlsx', 'Databases/Templates GoalgetterLoss.xlsx', 'Databases/Templates GoalgetterNeutral.xlsx')
-    #Get all goals scored by the home team and the away team to determine if and which one has won
-    homegoals = int(soup.find('highlights').find('home').find('finalgoals').text)
-    awaygoals = int(soup.find('highlights').find('away').find('finalgoals').text)
+    homegoals = jsongamedata['MatchInfo'][0]['n_HomeGoals']
+    awaygoals = jsongamedata['MatchInfo'][0]['n_AwayGoals']
     #More homegoals means the home team has won
     if homegoals > awaygoals:
         #So the hometeam uses the win database and the away team the loss database

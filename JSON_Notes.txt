@@ -1,0 +1,8 @@
+Inside lineup:
+n_FunctionCode
+1 	 keeper
+2 	 defender
+4	 midfielder
+8	 forward
+16	 coach
+1024 bench

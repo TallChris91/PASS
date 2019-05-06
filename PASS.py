@@ -6,8 +6,8 @@ import pickle
 from Info_dict_module import InfoDict
 
 def main(file, savestate='n'):
-    templatetexthome, templatetextaway, templatetextneutral, templatedict = TopicWalk(file)
-    infodict = InfoDict(file)
+    templatetexthome, templatetextaway, templatetextneutral, templatedict, jsongamedata = TopicWalk(file)
+    infodict = InfoDict(jsongamedata)
     print(templatetexthome)
     print(templatetextaway)
     print(templatetextneutral)
@@ -44,7 +44,7 @@ currentpath = os.getcwd()
     #main(file, 'y')
 
 #main(os.path.dirname(currentpath) + '/Europa_League/NewInfoXMLs/rea_aja_5032019.xml', 'y')
-main(currentpath + '/NewInfoXMLs/hhc_bd_2032019.xml', 'y')
+main(currentpath + '/JSONGameData/ado_aja_20190224.json', 'y')
 
 #if __name__ == '__main__':
     #main(sys.argv[1:])
