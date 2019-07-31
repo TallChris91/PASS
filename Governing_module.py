@@ -1,7 +1,7 @@
 from Topic_collection_module import TopicCollection
 from Lookup_module import ArrangeDatabase, ConvertWorkbook, GeneralTemplates, GameCourseTemplates, GameStatisticsTemplates
 from Template_selection_module import GeneralTemplateSelection, GameCourseTemplateSelection, GameStatisticsTemplateSelection
-from Template_filler_module import TemplateReplacement
+from Template_filler_module import TemplateReplacement, TemplateReplacementWithPronouns
 from Text_collection_module import TextCollection
 import pickle
 import json
@@ -81,13 +81,14 @@ def TopicWalk(file):
 		gamestatistics = list(filter(None, gamestatistics))
 		allevents = general + individualgamecourse + gamestatistics
 		previousgaplist = [''] * len(templatelist)
-
+		mentionedentities = {}
+		
 		for idx, val in enumerate(templatelist):
 			if idx <= 1:
 				lastgap = []
 			else:
 				lastgap = previousgaplist[idx - 1]
-			templatelist[idx], previousgaplist[idx] = TemplateReplacementWithPronouns(jsongamedata, reporttarget, templatelist[idx], event=allevents[idx], gamecourselist=individualgamecourse, previousgaplist=lastgap, gamestatisticslist=gamestatistics, eventlist=allevents, idx=idx, previous_gaps=previousgaplist)
+			templatelist[idx], previousgaplist[idx] = TemplateReplacementWithPronouns(jsongamedata, homeaway, templatelist[idx], event=allevents[idx], gamecourselist=individualgamecourse, previousgaplist=lastgap, gamestatisticslist=gamestatistics, eventlist=allevents, idx=idx, previous_gaps=previousgaplist, mentionedentities=mentionedentities)
 		templatetext, templatedict = TextCollection(templatelist, jsongamedata, reporttarget, len(general), len(individualgamecourse), len(gamestatistics))
 
 		templatedicts[reporttarget] = templatedict.copy()

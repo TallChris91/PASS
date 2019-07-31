@@ -286,6 +286,8 @@ def equalizer(homeaway, gamecourselist, idx):
 
 
 def twoplusdifference(homeaway, gamecourselist, idx):
+	# TODO: consider that this template will activate multiple times,
+	# i.e. for a game that has a 6-0. It would be more suited for a final score of 2+?
     # First two goals can never result in a 2+ goal difference
     if idx <= 1:
         return False
@@ -380,7 +382,8 @@ def withassist(gamecourselist, idx):
 def twosuccessive(gamecourselist, idx):
     if idx == len(gamecourselist) - 1:
         return False
-    if ((gamecourselist[idx]['event'] == 'regular goal') and (gamecourselist[idx + 1]['event'] == 'regular goal')) and (gamecourselist[idx]['team'] == gamecourselist[idx + 1]['team']):
+    #do not activate the template if the same player did both goals
+    if ((gamecourselist[idx]['event'] == 'regular goal') and (gamecourselist[idx + 1]['event'] == 'regular goal')) and (gamecourselist[idx]['player'] != gamecourselist[idx + 1]['player']) and (gamecourselist[idx]['team'] == gamecourselist[idx + 1]['team']):
         return True
     else:
         return False
