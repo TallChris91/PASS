@@ -16,7 +16,7 @@ class ReferenceType(Enum):
 debug = True
 
 def PlayerReferenceModelWithPronouns(playerinfo, jsongamedata, homeaway, gap, **kwargs):
-	# Previousmentions is a dict with all the entities that were already mentioned
+	# mentionedentities is a dict with all the entities that were already mentioned
 	# Name (TODO: ID) is the key 
 	# The value is an array, and every time I mention an entity I add to this array
 	# a dict such that :
@@ -150,7 +150,52 @@ def PlayerReferenceModelWithPronouns(playerinfo, jsongamedata, homeaway, gap, **
 	if debug:
 		print ('I will use: '+str(nametuple))
 	return nametuple
+
+
+def RefereeReferenceModel(refereefullname, jsongamedata, homeaway, gap, **kwargs):
+	# mentionedentities is a dict with all the entities that were already mentioned
+	# Name (TODO: ID) is the key 
+	# The value is an array, and every time I mention an entity I add to this array
+	# a dict such that :
+	# {
+	#  sentidx : sentence idx of this mention
+	#  gapidx : which gap of the sentence
+	#  mention : string of the current mention (e.g. 'Francesco Totti')
+	#  entityinfo : information about the club or player mentioned
+	#  mentiontype : ReferenceType ('definite'|'semi'|'pronoun')
+	# }
+	mentionedentities = kwargs['mentionedentities']
+	currentsentidx = kwargs['idx']
+	currentgapidx = kwargs['gapidx']
+	#First find the player's information by looking up the player
+
 	
+	namepossibilities = []
+
+	if debug:
+		print('\n###Referee naming algo:###')
+		print('Current template: '+kwargs['templatetext'])
+		print('Referee: '+refereefullname)
+	
+	if (refereefullname not in mentionedentities):
+		if debug:
+			print("First mention of the referee")
+		#If there is no previous mention of the player, use a definite description
+		namepossibilities = [['arbiter '+refereefullname, 'scheidsrechter '+refereefullname], [0.5, 0.5]]
+		mentionedentities[refereefullname] = {'mentions':[], 'entityinfo':[]}
+	else:
+		lastname = refereefullname.split(None,1)[1]
+		namepossibilities = [['arbiter '+lastname, 'scheidsrechter '+lastname, lastname, 'de arbiter', 'de scheidsrechter'], [0.2, 0.2, 0.2, 0.2, 0.2]]
+	mentiontype = ReferenceType.DEFINITE
+	namechoice = numpy.random.choice(namepossibilities[0], p=namepossibilities[1])
+	nametuple = (refereefullname, namechoice)
+	mentionedentities[refereefullname]['mentions'].append({ 'sentidx': currentsentidx,
+									   'gapidx': currentgapidx,
+									   'mention': namechoice,
+									   'mentiontype': mentiontype})
+	if debug:
+		print ('I will use: '+str(nametuple))
+	return nametuple
 	
 def PlayerDefiniteDescription(playerinfo):
 	manager = playerinfo['n_FunctionCode']&16
@@ -275,5 +320,7 @@ def ClubReferenceModel(club, jsongamedata, homeaway, gap, **kwargs):
 	namechoice = numpy.random.choice(elems, p=norm)
 	nametuple = (club, namechoice)
 	return nametuple
+	
+	
 
 #print ClubReferenceModel('Ajax', jsongamedata, homeaway, gap, event=event, previousgaplist=previousgaplist)

@@ -7,8 +7,9 @@ from math import ceil
 from operator import itemgetter
 import Ruleset_module as Ruleset
 from Ruleset_module import secondgoal
-from Reference_variety_module import PlayerReferenceModelWithPronouns, ClubReferenceModel
+from Reference_variety_module import PlayerReferenceModelWithPronouns, ClubReferenceModel, RefereeReferenceModel
 from datetime import datetime,timedelta
+import pdb
 
 #This is used to convert MS JSON/MS AJAX datetime format into a datetime
 def json_date_as_datetime(jd):
@@ -98,7 +99,7 @@ def templatefillers(jsongamedata, homeaway, gap, **kwargs):
 		return d.strftime("%H:%M")
 	elif gap == 'referee':
 		#TODO: use n_RefereeID
-		return jsongamedata['MatchInfo'][0]['c_Referee']
+		return RefereeReferenceModel(jsongamedata['MatchInfo'][0]['c_Referee'], jsongamedata, homeaway, gap, **kwargs)
 	elif gap == 'homeaway':
 		return homeaway
 	elif gap == 'city':
