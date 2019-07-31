@@ -1,0 +1,26 @@
+<script>
+	document.getElementById("loading").outerHTML = "";
+</script>
+<tr id="titlesrow"></tr>
+<tr id="reportsrow">
+	<td class="generationerror" colspan="3">
+	An error in the generation process happened. Please go back and try again.
+	</td>
+</tr>
+<tr>
+	<td colspan="3">
+		<input id="resubmit" type="submit" class="button" value="Try again!"/>
+	</td>
+</tr>
+
+</table>
+
+<script>
+function setLoader() {
+	document.getElementById("resubmit").outerHTML = '<div class="loader" style="height:40px; width:40px; margin-top:0;"></div>';
+	return true;
+}
+</script>
+</form>
+</body>
+</html>

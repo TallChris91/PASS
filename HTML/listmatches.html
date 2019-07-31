@@ -4,14 +4,35 @@
 <meta charset="utf-8" />      
 <head>
 <style>
+
+body {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 55%;
+    background: #666;
+    padding: 20px 30px 20px 30px;
+    font: 16px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-shadow: 1px 1px 1px #444;
+    border: none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    color: #F9F9F9;
+    text-shadow: 2px 2px 2px #444;
+	text-align: center;     
+}
+
 #matches {
   font-family: sans-serif;
   border-collapse: collapse;
   width: 100%;
+  color: black;  
+  text-shadow: 1px 1px 1px white;
+  text-align: center;  
 }
 
 #matches td, #matches th {
-  border: 1px solid #ddd;
+
   padding: 8px;
 }
 
@@ -19,21 +40,21 @@
   display:block
 }
 
-#matches tr:nth-child(even){background-color: #f2f2f2;}
+#matches tr{background-color: #EFEFEF;}
+#matches tr:nth-child(even){background-color: #F9F9F9;}
 
 #matches tr:hover {background-color: #ddd;}
 
 #matches th {
   padding-top: 12px;
   padding-bottom: 12px;
-  text-align: left;
-  background-color: #4CAF50;
-  color: white;
+  background-color: #2CC3FF;
+  color: black;
 }
 </style>
 </head>
 <body>
-
+<h1>Games in the local database</h1>
 <table id="matches">
   <tr>
     <th>Home team</th>

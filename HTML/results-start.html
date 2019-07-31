@@ -1,0 +1,110 @@
+<!DOCTYPE html 
+      PUBLIC "-//W3C//DTD HTML 4.01//EN"
+      "http://www.w3.org/TR/html4/strict.dtd">
+<meta charset="utf-8" />      
+<html lang="en-US">
+<head>
+<link rel="icon" 
+      type="image/svg" 
+      href="IMAGES/football_logo.svg">
+<link rel="stylesheet"
+	  type="text/css" 
+      href="results-style.css">      
+<title>PASS - Personalized Automated Soccer texts System</title>
+
+<script>
+var matches = {
+"ADO Den Haag" : [  "AZ", "Ajax", "Cambuur", "De Graafschap", "Excelsior", "Feyenoord", "Groningen", "Heerenveen", "Heracles", "NEC", "PEC Zwolle", "PSV", "Roda JC", "Twente", "Utrecht", "Vitesse", "Willem II" ],
+"AZ" : [  "ADO Den Haag", "Ajax", "Cambuur", "De Graafschap", "Excelsior", "Feyenoord", "Groningen", "Heerenveen", "Heracles (September 26, 2015)", "Heracles (November 27, 2016)", "NEC", "PEC Zwolle", "PSV", "Roda JC", "Twente", "Utrecht", "Vitesse", "Willem II" ],
+"Achilles '29" : [  "Ajax II", "Almere City", "Den Bosch", "Dordrecht", "Eindhoven", "Emmen", "Fortuna Sittard", "Go Ahead Eagles", "Helmond Sport", "MVV", "NAC Breda", "Oss", "PSV II", "RKC Waalwijk", "Sparta Rotterdam", "Telstar", "VVV", "Volendam" ],
+"Ajax" : [  "ADO Den Haag", "AZ", "Cambuur", "De Graafschap", "Excelsior", "Feyenoord", "Groningen", "Heerenveen", "Heracles", "NEC", "PEC Zwolle", "PSV", "Roda JC (October 31, 2015)", "Roda JC (August 13, 2016)", "Twente", "Utrecht", "Vitesse", "Willem II" ],
+"Ajax II" : [  "Achilles '29", "Almere City", "Den Bosch", "Dordrecht", "Eindhoven", "Emmen", "Fortuna Sittard", "Go Ahead Eagles", "Helmond Sport", "MVV (November 6, 2015)", "MVV (February 14, 2017)", "NAC Breda", "Oss", "RKC Waalwijk", "Sparta Rotterdam", "Telstar", "VVV", "Volendam" ],
+"Almere City" : [  "Achilles '29", "Ajax II", "Den Bosch", "Dordrecht", "Eindhoven", "Emmen", "Fortuna Sittard", "Go Ahead Eagles", "Helmond Sport", "MVV", "Oss", "PSV II", "Sparta Rotterdam", "Telstar (March 31, 2017)", "Telstar (January 22, 2016)", "VVV", "Volendam" ],
+"Cambuur" : [  "ADO Den Haag", "AZ", "Ajax", "De Graafschap", "Excelsior", "Feyenoord", "Groningen", "Heerenveen", "Heracles", "NEC", "PEC Zwolle", "PSV", "Roda JC", "Twente", "Utrecht", "Vitesse", "Willem II" ],
+"De Graafschap" : [  "ADO Den Haag", "AZ", "Ajax", "Cambuur", "Excelsior", "Feyenoord", "Groningen", "Heerenveen", "Heracles", "NEC", "PEC Zwolle", "PSV", "Roda JC", "Twente", "Utrecht", "Vitesse", "Willem II" ],
+"Den Bosch" : [  "Achilles '29", "Ajax II", "Almere City", "Dordrecht", "Eindhoven", "Emmen", "Fortuna Sittard", "Go Ahead Eagles", "Helmond Sport", "NAC Breda", "Oss", "PSV II", "RKC Waalwijk", "Sparta Rotterdam", "Telstar", "VVV", "Volendam" ],
+"Dordrecht" : [  "Achilles '29", "Ajax II", "Almere City", "Den Bosch", "Eindhoven", "Emmen", "Fortuna Sittard", "Go Ahead Eagles", "Helmond Sport", "MVV", "NAC Breda", "PSV II", "RKC Waalwijk", "Sparta Rotterdam", "Telstar", "VVV", "Volendam" ],
+"Eindhoven" : [  "Achilles '29", "Ajax II", "Almere City", "Den Bosch", "Dordrecht", "Emmen", "Fortuna Sittard", "Go Ahead Eagles", "Helmond Sport", "NAC Breda", "Oss", "RKC Waalwijk", "Sparta Rotterdam", "Telstar (February 26, 2016)", "Telstar (March 3, 2017)", "VVV" ],
+"Emmen" : [  "Achilles '29", "Ajax II", "Almere City", "Den Bosch", "Dordrecht", "Eindhoven", "Fortuna Sittard", "Go Ahead Eagles", "Helmond Sport", "MVV", "NAC Breda", "Oss", "PSV II", "RKC Waalwijk", "Sparta Rotterdam", "Telstar", "VVV" ],
+"Excelsior" : [  "ADO Den Haag", "AZ", "Ajax", "Cambuur", "De Graafschap", "Feyenoord", "Groningen", "Heerenveen", "Heracles", "NEC", "PEC Zwolle", "PSV", "Roda JC", "Twente", "Utrecht", "Vitesse", "Willem II" ],
+"Feyenoord" : [  "ADO Den Haag", "AZ", "Ajax", "Cambuur", "De Graafschap", "Excelsior", "Groningen", "Heerenveen", "Heracles", "NEC", "PEC Zwolle", "PSV (January 17, 2016)", "PSV (February 26, 2017)", "Roda JC", "Twente", "Utrecht", "Vitesse", "Willem II" ],
+"Fortuna Sittard" : [  "Achilles '29", "Ajax II", "Almere City", "Den Bosch", "Dordrecht", "Eindhoven", "Emmen", "Go Ahead Eagles", "Helmond Sport", "MVV", "NAC Breda", "Oss", "PSV II (March 3, 2017)", "PSV II (October 16, 2015)", "RKC Waalwijk", "Sparta Rotterdam", "Telstar", "Volendam" ],
+"Go Ahead Eagles" : [  "Achilles '29", "Ajax II", "Almere City", "Den Bosch", "Dordrecht", "Eindhoven", "Emmen", "Fortuna Sittard", "Helmond Sport", "MVV", "NAC Breda", "Oss", "PSV II", "RKC Waalwijk", "Sparta Rotterdam", "Telstar", "VVV", "Volendam" ],
+"Groningen" : [  "ADO Den Haag", "AZ", "Ajax", "Cambuur", "De Graafschap", "Excelsior", "Feyenoord", "Heerenveen (October 15, 2016)", "Heerenveen (September 13, 2015)", "NEC", "PEC Zwolle", "PSV", "Roda JC", "Twente", "Utrecht", "Vitesse", "Willem II" ],
+"Heerenveen" : [  "ADO Den Haag", "AZ", "Ajax", "Cambuur", "De Graafschap", "Excelsior", "Feyenoord", "Heracles", "NEC", "PEC Zwolle", "Roda JC", "Twente", "Utrecht", "Vitesse", "Willem II" ],
+"Helmond Sport" : [  "Achilles '29", "Ajax II", "Almere City", "Den Bosch", "Dordrecht", "Eindhoven", "Emmen", "Fortuna Sittard", "Go Ahead Eagles", "NAC Breda", "Oss", "PSV II", "RKC Waalwijk", "Sparta Rotterdam", "Telstar", "VVV", "Volendam" ],
+"Heracles" : [  "ADO Den Haag", "AZ", "Ajax", "Cambuur", "De Graafschap", "Excelsior", "Feyenoord", "Groningen", "Heerenveen", "NEC", "PEC Zwolle", "PSV", "Roda JC", "Twente", "Utrecht", "Willem II" ],
+"MVV" : [  "Almere City", "Den Bosch", "Dordrecht", "Eindhoven", "Emmen", "Fortuna Sittard", "Go Ahead Eagles", "NAC Breda", "Oss", "PSV II", "Sparta Rotterdam", "VVV", "Volendam" ],
+"NAC Breda" : [  "Achilles '29", "Ajax II", "Almere City", "Den Bosch", "Dordrecht", "Eindhoven", "Emmen", "Fortuna Sittard", "Go Ahead Eagles", "Helmond Sport", "MVV", "Oss", "PSV II", "RKC Waalwijk", "Sparta Rotterdam", "Telstar", "VVV", "Volendam" ],
+"NEC" : [  "ADO Den Haag", "AZ", "Ajax", "Cambuur", "De Graafschap", "Excelsior", "Feyenoord", "Groningen", "Heerenveen", "Heracles", "PEC Zwolle", "PSV", "Roda JC", "Twente", "Utrecht", "Vitesse", "Willem II" ],
+"Oss" : [  "Achilles '29", "Ajax II", "Almere City", "Den Bosch", "Dordrecht", "Eindhoven", "Emmen", "Fortuna Sittard", "Go Ahead Eagles", "Helmond Sport", "NAC Breda", "PSV II (April 14, 2017)", "PSV II (October 23, 2015)", "RKC Waalwijk", "Sparta Rotterdam", "Telstar", "VVV", "Volendam" ],
+"PEC Zwolle" : [  "ADO Den Haag", "AZ", "Ajax", "Cambuur", "De Graafschap", "Excelsior", "Feyenoord", "Groningen", "Heerenveen", "Heracles", "NEC", "PSV", "Roda JC", "Twente", "Utrecht", "Vitesse" ],
+"PSV" : [  "ADO Den Haag", "AZ", "Ajax", "Cambuur", "De Graafschap", "Excelsior", "Groningen", "Heerenveen (March 12, 2016)", "Heerenveen (January 22, 2017)", "Heracles", "NEC", "PEC Zwolle", "Roda JC", "Twente", "Utrecht", "Vitesse", "Willem II" ],
+"PSV II" : [  "Achilles '29", "Ajax II", "Almere City", "Den Bosch", "Dordrecht", "Eindhoven", "Emmen", "Go Ahead Eagles", "Helmond Sport", "MVV", "NAC Breda", "RKC Waalwijk", "Sparta Rotterdam", "Telstar", "VVV", "Volendam" ],
+"RKC Waalwijk" : [  "Achilles '29", "Ajax II", "Almere City (April 17, 2017)", "Almere City (August 24, 2015)", "Den Bosch", "Dordrecht", "Eindhoven", "Emmen", "Fortuna Sittard", "Go Ahead Eagles", "Helmond Sport", "MVV", "NAC Breda", "Oss", "PSV II", "Sparta Rotterdam", "Telstar", "VVV", "Volendam" ],
+"Roda JC" : [  "ADO Den Haag", "AZ", "Ajax", "Cambuur", "De Graafschap", "Excelsior", "Feyenoord", "Groningen", "Heerenveen", "Heracles", "NEC", "PEC Zwolle", "PSV", "Twente", "Utrecht", "Vitesse", "Willem II" ],
+"Sparta Rotterdam" : [  "Achilles '29", "Ajax II", "Den Bosch", "Dordrecht", "Eindhoven", "Emmen", "Fortuna Sittard", "Go Ahead Eagles", "MVV", "NAC Breda", "PSV II", "RKC Waalwijk", "Telstar", "VVV", "Volendam" ],
+"Telstar" : [  "Achilles '29", "Ajax II", "Den Bosch", "Dordrecht", "Eindhoven", "Emmen", "Fortuna Sittard", "Go Ahead Eagles", "Helmond Sport", "NAC Breda", "Oss", "PSV II", "RKC Waalwijk", "Sparta Rotterdam", "VVV", "Volendam" ],
+"Twente" : [  "ADO Den Haag", "Ajax", "Cambuur", "De Graafschap", "Excelsior", "Feyenoord", "Groningen", "Heerenveen", "Heracles", "PEC Zwolle", "PSV", "Roda JC", "Utrecht", "Vitesse", "Willem II" ],
+"Utrecht" : [  "ADO Den Haag", "Ajax", "Cambuur", "De Graafschap", "Excelsior (November 6, 2016)", "Excelsior (March 18, 2016)", "Feyenoord", "Groningen", "Heerenveen", "Heracles", "NEC", "PEC Zwolle", "PSV", "Roda JC", "Vitesse", "Willem II" ],
+"VVV" : [  "Achilles '29", "Ajax II", "Almere City", "Den Bosch", "Dordrecht", "Eindhoven", "Emmen", "Fortuna Sittard", "Go Ahead Eagles", "Helmond Sport", "MVV", "NAC Breda", "Oss", "PSV II", "RKC Waalwijk", "Sparta Rotterdam", "Telstar", "Volendam" ],
+"Vitesse" : [  "ADO Den Haag", "AZ", "Ajax", "Cambuur", "De Graafschap", "Excelsior", "Feyenoord", "Groningen", "Heerenveen", "Heracles", "NEC", "PEC Zwolle", "PSV", "Roda JC", "Twente", "Utrecht", "Willem II" ],
+"Volendam" : [  "Achilles '29", "Ajax II", "Almere City", "Dordrecht", "Eindhoven", "Emmen", "Fortuna Sittard", "Go Ahead Eagles", "Helmond Sport", "MVV", "NAC Breda", "Oss", "PSV II", "RKC Waalwijk", "Sparta Rotterdam", "Telstar" ],
+"Willem II" : [  "ADO Den Haag", "AZ", "Ajax", "Cambuur", "De Graafschap", "Excelsior", "Feyenoord", "Groningen", "Heerenveen", "Heracles", "NEC", "PEC Zwolle (October 3, 2015)", "PEC Zwolle (March 12, 2017)", "PSV", "Roda JC", "Twente", "Utrecht", "Vitesse" ],
+
+}
+</script>
+
+</head>
+<body style="max-width:70%">
+
+<div id="title">
+	 <a href="http://localhost:8888" class="send-home" title="Go back to the home screen">
+	<img src="IMAGES/football_logo.svg"/ class="logo">
+  	<h1 style="text-align: center">PASS - Personalized Automated Soccer texts System</h1>
+  	</a>
+</div>
+
+
+<form action="generate" method="post" class="form"  onsubmit="return setLoader();">
+<input type="hidden" name="selectHome" value="#FORMVALUE1#">
+<input type="hidden" name="selectAway" value="#FORMVALUE2#">
+<input type="hidden" name="resubmitted" value="true">
+
+
+<table class="eventinfo">
+	<tr><td>#LEAGUE#</td></tr>
+	<tr><td>#DATETIME#</td></tr>
+	<tr><td>#STADIUM#</td></tr>
+</table>
+<table>
+<tr id="logosrow">
+	<td class="column1">
+		<div id="teamhome">
+			<div class="teamlogo">
+				<img class="teamlogoimg" src="LOGOS/#TEAMHOMEENCODED#.svg">
+			</div>
+			<div class="teamname" id="hometeamname">
+				#TEAMHOME#
+			</div>
+		</div>
+	</td>
+	<td class="column2">
+		#RESULTHOME# - #RESULTAWAY#
+	</td>
+	<td class="column3">
+		<div id="teamaway">
+			<div class="teamlogo">
+				<img class="teamlogoimg" src="LOGOS/#TEAMAWAYENCODED#.svg">
+			</div>
+			<div class="teamname" id="hometeamname">
+				#TEAMAWAY#
+			</div>
+		</div>
+	</td>
+</tr>
+<tr id="loading">
+	<td> <div class="loader"></div> </td>
+	<td></td>
+	<td> <div class="loader"></div> </td>
+</tr>
