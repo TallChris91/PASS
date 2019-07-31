@@ -1,14 +1,11 @@
 import re
 import Templatefillers
 import sys
-import pdb
-from enum import Enum, auto
-
-class GrammaticalCase(Enum):
-    NOMINAL = auto()
-    OTHER = auto()
-  
-
+# from enum import Enum, auto
+# 
+# class GrammaticalCase(Enum):
+#     NOMINAL = auto()
+#     OTHER = auto()
 
 
 def ReplaceSemicolon(jsongamedata, homeaway, template, **kwargs):
@@ -67,10 +64,9 @@ def TemplateReplacementWithPronouns(jsongamedata, homeaway, template, **kwargs):
 	for gapidx, gap in enumerate(gapsreplacement):
 		kwargs['gapidx'] = gapidx
 		if gapscomplete[gapidx].startswith("<#"):
-			kwargs['case']=GrammaticalCase.NOMINAL
+			kwargs['case']='nominal'
 		else:
-			kwargs['case']=GrammaticalCase.OTHER
-			pdb.set_trace()
+			kwargs['case']='other'
 		if ';;' in gap:
 			replacementgaps.append(ReplaceSemicolon(jsongamedata, homeaway, gap, **kwargs))
 		else:

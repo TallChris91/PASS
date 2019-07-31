@@ -120,9 +120,9 @@ def PlayerReferenceModelWithPronouns(playerinfo, jsongamedata, homeaway, gap, **
 					mentiontype = ReferenceType.DEFINITE
 				else:					
 					#2.2(b):
-					pdb.set_trace()
+					#pdb.set_trace()
 					pronoun = 'hem'
-					if 'case' in kwargs and kwargs['case'] == GrammaticalCase.NOMINAL:
+					if 'case' in kwargs and kwargs['case'] == 'nominal':
 						pronoun = 'hij'
 					if debug:
 						namepossibilities = [[pronoun+' ['+playerfullname+']'], [1]]
@@ -133,8 +133,8 @@ def PlayerReferenceModelWithPronouns(playerinfo, jsongamedata, homeaway, gap, **
 	#this should be Figure 3.5
 	if len(namepossibilities)==0:
 		pronoun = 'hem'
-		pdb.set_trace()
-		if 'case' in kwargs and kwargs['case'] == GrammaticalCase.NOMINAL:
+		#pdb.set_trace()
+		if 'case' in kwargs and kwargs['case'] == 'nominal':
 			pronoun = 'hij'
 		if debug:
 			namepossibilities = [[pronoun+' ['+playerfullname+']'], [1]]
