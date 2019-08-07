@@ -316,8 +316,20 @@ def ClubReferenceModel(club, jsongamedata, homeaway, gap, **kwargs):
 	elems = [i[0] for i in namepossibilities]
 	probs = [i[1] for i in namepossibilities]
 	norm = [float(i) / sum(probs) for i in probs]
-
 	namechoice = numpy.random.choice(elems, p=norm)
+	
+	#add manager to mentioned entities to avoid ambiguous pronouns
+	if "manager" in namechoice:
+		mentionedentities = kwargs['mentionedentities']
+		if manager not in mentionedentities:
+			mentionedentities[manager] = {'mentions':[], 'entityinfo':[]}
+		mentionedentities[manager]['mentions'].append(
+									{ 'sentidx': kwargs['idx'],
+									   'gapidx': kwargs['gapidx'],
+									   'mention': namechoice,
+									   'mentiontype': ReferenceType.DEFINITE}
+								)		
+	
 	nametuple = (club, namechoice)
 	return nametuple
 	
