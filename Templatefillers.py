@@ -99,7 +99,13 @@ def templatefillers(jsongamedata, homeaway, gap, **kwargs):
 		return d.strftime("%H:%M")
 	elif gap == 'referee':
 		#TODO: use n_RefereeID
-		return RefereeReferenceModel(jsongamedata['MatchInfo'][0]['c_Referee'], jsongamedata, homeaway, gap, **kwargs)
+		referee = jsongamedata['MatchInfo'][0]['c_Referee']
+		for person in jsongamedata['MatchLineup']:
+			#ToDo: use person id
+			if (isinstance(referee, str) and person['c_Person']==referee) or (person==referee):
+				referee = person
+				break
+		return RefereeReferenceModel(referee, jsongamedata, homeaway, gap, **kwargs)
 	elif gap == 'homeaway':
 		return homeaway
 	elif gap == 'city':
