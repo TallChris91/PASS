@@ -1,0 +1,3 @@
+__pycache__
+*.pyc
+JSONGameData/*20*.json
