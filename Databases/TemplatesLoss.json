@@ -1,0 +1,421 @@
+{
+    "Title (all purpose)": [
+        "<focus team> strijdend ten onder tegen <other team>: <final home goals>-<final away goals>",
+        "Strijdbaar <focus team> legt het af op <stadium>: <final home goals>-<final away goals>",
+        "<#focus team> laat <other team> ontsnappen: <final home goals>-<final away goals>",
+        "<#focus team manager> ziet <#focus team> onderuit gaan bij debuut",
+        "<focus team> onfortuinlijk onderuit bij <other team> ",
+        "<#focus team> legt het af tegen <other team>",
+        "<#other team> is <#focus team> de baas ",
+        "Het zit <#focus team> niet mee tegen <other team>: <final home goals>-<final away goals>",
+        "<#focus team> afgetroefd door <other team>: <final home goals>-<final away goals>",
+        "Ongelukkige nederlaag <focus team>: <final home goals>-<final away goals>",
+        "<focus team> ongelukkig tegen <other team>",
+        "<#focus team> kan geen vuist maken: <final home goals>-<final away goals>",
+        "<#focus team> lijdt zure nederlaag: <final home goals>-<final away goals>",
+        "<#focus team> verliest met <final home goals>-<final away goals> van <other team>",
+        "<#focus team> doet zichzelf tekort tegen <other team>: <final home goals>-<final away goals> verlies",
+        "<focus team> niet opgewassen tegen <other team>",
+        "<#focus team> kan <other team> niet verrassen",
+        "Pijnlijke nederlaag <focus team> bij <other team>",
+        "<#focus team> onderuit tegen <other team>",
+        "Teleurstellende nederlaag tegen <other team>",
+        "<#focus team> komt te kort tegen <other team>",
+        "<#focus team> vergeet resultaat te behalen tegen <other team>",
+        "<#focus team> pakt geen punten <in eigen huis tegen; home|op bezoek bij; away;; homeaway> <other team>",
+        "<#focus team> verliest in <stadium> van <other team>"
+    ],
+    "Title (deciding goal)": [
+        "<#deciding goal scorer> velt <focus team> in <stadium>"
+    ],
+    "Title (two+ goal difference)": [],
+    "Title (many goals)": [],
+    "Title (no goals)": [],
+    "Title (focus team player sent off)": [],
+    "Title (other team player sent off)": [
+        "<focus team> niet opgewassen tegen <final remaining players other team> spelers van <other team>",
+        "<#focus team> verliest <in eigen huis; home|op bezoek; away;; homeaway> van <final remaining players other team>tal <other team>"
+    ],
+    "Title (final goal focus team)": [],
+    "Title (focus team played home)": [
+        "<#other team> zegeviert in <city>",
+        "<#focus team> lijdt thuisnederlaag tegen <other team>",
+        "Thuisduel met <other team> de mist in",
+        "<focus team> thuis onderuit tegen <other team>"
+    ],
+    "Title (focus team played away)": [
+        "<focus team> puntloos in <city>: <final home goals>-<final away goals>",
+        "<#focus team> verliest in <stadium>",
+        "<#focus team> verliest in <city>",
+        "Onnodige nederlaag <focus team> in <city>"
+    ],
+    "Title (late equalizer focus team)": [],
+    "Title (late equalizer other team)": [],
+    "Title (late loss focus team)": [
+        "<#focus team> verliest in het slot van <other team>",
+        "<focus team> tegen <other team> in slot met lege handen",
+        "<#focus team> verliest in slotfase van <other team>"
+    ],
+    "Title (late win focus team)": [],
+    "Title (comeback but lost)": [
+        "Knappe comeback in Eindhoven blijft onbeloond "
+    ],
+    "Title (comeback focus team)": [],
+    "Title (comeback other team)": [
+        "<#focus team> geeft voorsprong tegen <other team> uit handen"
+    ],
+    "Title (close loss)": [
+        "<#focus team> leidt kleine nederlaag tegen <other team> ",
+        "<#focus team> laat punt glippen: <final home goals>-<final away goals>",
+        "<#focus team> maakt het <other team> heel lastig in <stadium>",
+        "<#focus team> lijdt nipte nederlaag op bezoek bij <other team>"
+    ],
+    "Title (big loss)": [
+        "<#focus team> lijdt grote nederlaag tegen <other team>",
+        "<focus team> hard onderuit tegen <other team>"
+    ],
+    "Title (close win)": [],
+    "General, opponent": [],
+    "General, attendees": [
+        "Om <time> bracht <#referee> de wedstrijd voor <attendees> toeschouwers op gang.",
+        "Zo\u2019n <attendees> toeschouwers waren aanwezig bij de wedstrijd tegen <other team>."
+    ],
+    "General, win/tie/loss (all purpose)": [
+        "<#focus team> leed een zure nederlaag <in eigen huis; home|uit; away;; homeaway> tegen <other team>.",
+        "De <attendees> toeschouwers zagen een beter spelend <#other team clubname> dat verdiend de punten mee naar huis nam.",
+        "In een met <attendees> toeschouwers goed gevuld <stadium> nam <#other team> de overwinning mee naar huis.",
+        "<focus team>-trainer <focus team manager> kon de haren wel uit zijn hoofd trekken.",
+        "De teleurstelling viel van de gezichten van de spelers van <focus team> af te lezen.",
+        "De wedstrijd van <focus team> is niet verlopen zoals <#focus team manager> vooraf had gehoopt.",
+        "<#focus team> leed afgelopen <day><ochtend; morning|middag; afternoon|avond; evening;; daytime> een <thuis; home|uit; away;; homeaway>nederlaag tegen <other team>.",
+        "Zichtbaar balend stapten de spelers van <focus team> <day><ochtend; morning|middag; afternoon|avond; evening;; daytime> van het veld in <stadium>.",
+        "<#focus team> is in het <thuis; home|uit; away;; homeaway>duel met <other team> tegen een flinke domper aangelopen.",
+        "<#focus team> is er niet in geslaagd om <thuis tegen; home|op bezoek bij; away;; homeaway> <other team> een goed resultaat neer te zetten.",
+        "Anders dan de einduitslag doet vermoeden, speelde <#focus team> een prima partij tegen <other team>.",
+        "In <city> kon <#focus team> dit keer geen vuist maken.",
+        "<#focus team> is er <day> niet in geslaagd <other team> op een nederlaag te trakteren.",
+        "Ondanks dat <focus team> vrijwel de gehele wedstrijd de bovenliggende partij was, is het <day><ochtend; morning|middag; afternoon|avond; evening;; daytime> toch tegen een onnodige nederlaag aangelopen.",
+        "<#focus team> heeft <day><ochtend; morning|middag; afternoon|avond; evening;; daytime> in <city> tegen <other team> zichzelf een slechte dienst bewezen.",
+        "<#focus team> heeft in <city> niet weten te winnen van <other team>.",
+        "<#focus team> kon <day><ochtend; morning|middag; afternoon|avond; evening;; daytime> <in eigen huis; home|op bezoek; away;; homeaway> niet afrekenen met <other team>.",
+        "<#focus team> wist geen enkele minuut in haar spel te komen en werd overklast door <other team>.",
+        "Het is <focus team> niet gelukt om tegen <other team> een goed resultaat te halen.",
+        "Tegen <other team> bezweek <#focus team> onder de druk van de thuisploeg."
+    ],
+    "General, win/tie/loss (red card other team)": [
+        "Ondanks het feit dat <#focus team> een tijd met een man meer speelde, heeft het <day> de <thuis; home|uit; away;; homeaway>wedstrijd tegen <other team> niet in winst om kunnen zetten."
+    ],
+    "General, win/tie/loss (red card focus team)": [],
+    "General, win/tie/loss (final score)": [
+        "<#other team> won in <city> met <final home goals>-<final away goals>.",
+        "<#focus team> was beter dan <other team>, maar <#other team> ging tegen de verhouding in met de punten naar huis: <final home goals>-<final away goals>.",
+        "Op bezoek bij <other team> stapte <#focus team> na een slechte start en enkele discutabele beslissingen van <referee> met een <final home goals>-<final away goals> nederlaag van het veld.",
+        "Tegen <other team> kwam <#focus team> niet tot winst: <final home goals>-<final away goals>.",
+        "<#focus team> verloor met <final home goals>-<final away goals> van <other team>.",
+        "<#focus team> verloor na een hoopvol begin met <final home goals>-<final away goals> van <other team>.",
+        "In <city> was het <#focus team> dat het spel domineerde, maar de ploeg ging geheel onnodig met <final home goals>-<final away goals> onderuit.",
+        "<#focus team> ging in <stadium> met <final home goals>-<final away goals> onderuit.",
+        "<#focus team> verloor uiteindelijk met <final home goals>-<final away goals>.",
+        "Voor <attendees> toeschouwers won <#other team> met <final home goals>-<final away goals>.",
+        "<#other team> zegevierde voor <attendees> toeschouwers in het <stadium> met <final home goals>-<final away goals>.",
+        "<#focus team> heeft zaterdagavond in <city> met <final home goals>-<final away goals> verloren van <other team>."
+    ],
+    "General, win/tie/loss (final score) (late equalizer other team)": [],
+    "General, win/tie/loss (final score) (final goal focus team)": [],
+    "General, win/tie/loss (final score) (focus team equalize after 2+ goals down)": [],
+    "General, win/tie/loss (final score) (focus team comeback after 2+ goals down)": [],
+    "Game course, regular goal focus team (all purpose)": [
+        "<#goal scorer> tekende voor de <home goals>-<away goals>.",
+        "<#goal scorer> zette <focus team> op een <home goals>-<away goals>.",
+        "Bij een uitbraak van <focus team> was het raak: <#goal scorer> vuurde prachtig in het doel: <home goals>-<away goals> (<minute>).",
+        "Het speeltuig kwam na <minute> minuten terecht bij <goal scorer>, die de bal binnenschoot: <home goals>-<away goals>.",
+        "Na <minute> minuten stond wie anders dan <goal scorer> klaar om zijn voet tegen de bal te zetten: <home goals>-<away goals>.",
+        "<#goal scorer> tikte na <minute> minuten van dichtbij binnen: <home goals>-<away goals>.",
+        "<#goalkeeper other team> had na <minute> minuten geen antwoord op een doelpoging van <goal scorer> na een mooie aanval: <home goals>-<away goals>."
+    ],
+    "Game course, regular goal focus team (with assist)": [
+        "<#goal scorer> schoot in de <minute>e minuut op aangeven van <assist giver> de <home goals>-<away goals> tegen de touwen.",
+        "Na <minute> minuten was het raak: <#assist giver> legde prima af op <goal scorer>, die genadeloos doel trof: <home goals>-<away goals>.",
+        "<#assist giver> legde de bal bij <goal scorer>, die binnenschoot: <home goals>-<away goals>.",
+        "<#goal scorer> schoot uit een combinatie met <assist giver> knap raak: <home goals>-<away goals>.",
+        "<#goal scorer> mikte na <minute> minuten raak na een mooie combinatie met <assist giver>."
+    ],
+    "Game course, regular goal focus team (two successive goals one team)": [],
+    "Game course, regular goal focus team (early goal)": [
+        "<#goal scorer> schoot al na <minute> minuten de <home goals>-<away goals> tegen de touwen."
+    ],
+    "Game course, regular goal focus team (lead goal)": [
+        "<#focus team> kwam na <minute> minuten spelen verdiend op <home goals>-<away goals>.",
+        "<#focus team> kwam op voorsprong, want na <minute> minuten schoot <goal scorer> de <home goals>-<away goals> binnen."
+    ],
+    "Game course, regular goal focus team (equalizer)": [
+        "<#goal scorer> schoot <focus team> in de <minute>e minuut weer naast <other team>.",
+        "Met een schot van <goal scorer> in de <minute>e minuut trok <#focus team> de stand gelijk: <home goals>-<away goals>."
+    ],
+    "Game course, regular goal focus team (late equalizer)": [
+        "<#goal scorer> leek de gasten in de <minute>e minuut alsnog in veilige haven te schieten."
+    ],
+    "Game course, regular goal focus team (aansluitingstreffer)": [
+        "<#goal scorer> schoot na <minute> minuten de aansluitingstreffer binnen: <home goals>-<away goals>.",
+        "Het doelpunt dat <#focus team> terug in de wedstrijd had kunnen helpen, viel in de <minute>e minuut, toen <#goal scorer> de bal binnenschoot: <home goals>-<away goals>.",
+        "Na <minute> minuten ging de storm liggen en scoorde <goal scorer> de aansluitingstreffer: <home goals>-<away goals>."
+    ],
+    "Game course, regular goal focus team (two+ goal difference)": [],
+    "Game course, regular goal focus team (eretreffer)": [
+        "<#goal scorer> maakte nog de <home goals>-<away goals>, maar daar bleef het bij.",
+        "<#goal scorer> deed met een rake doelpoging nog wat terug namens <focus team>.",
+        "Na <minute> minuten liet <#goal scorer> wel het net bollen, maar die treffer kwam te laat.",
+        "Meer dan een overigens fraaie eretreffer leverde het niet op: <home goals>-<away goals>.",
+        "In de <minute>e minuut zorgde <#goal scorer> voor de eretreffer: <home goals>-<away goals>."
+    ],
+    "Game course, regular goal focus team (winning goal)": [],
+    "Game course, regular goal focus team (winning goal with assist)": [],
+    "Game course, regular goal focus team (deciding goal)": [],
+    "Game course, regular goal focus team (deciding goal with assist)": [],
+    "Game course, regular goal focus team (second+ goal player)": [],
+    "Game course, regular goal focus team (final goal)": [],
+    "Game course, regular goal focus team (fast goal after substitution)": [],
+    "Game course, regular goal other team (all purpose)": [
+        "<#goal scorer> kon na <minute> minuten de <home goals>-<away goals> maken.",
+        "<#goal scorer> haalde doeltreffend uit: <home goals>-<away goals>.",
+        "<#goal scorer> schoot met scherp: <home goals>-<away goals>.",
+        "In de <minute>e minuut viel de <home goals>-<away goals> via <goal scorer>.",
+        "<#goal scorer> tekende voor de <home goals>-<away goals>.",
+        "<#goal scorer> schoot na <minute> minuten spelen snoeihard raak.",
+        "Na <minute> minuten kon <#goal scorer> de <home goals>-<away goals> binnen schieten.",
+        "<#goal scorer> tekende in de <minute>e minuut voor de <home goals>-<away goals>.",
+        "<#goal scorer> tekende de 0-2 aan in de <minute>e minuut.",
+        "In de <minute>e minuut verschalkte <#goal scorer> <goalkeeper focus team>: <home goals>-<away goals>.",
+        "<#goal scorer> scoorde de <home goals>-<away goals> (<minute>.).",
+        "<#goal scorer> tikte de <home goals>-<away goals> binnen (<minute>.).",
+        "<#goalkeeper focus team> had in de <minute>e minuut het nakijken op een schot van <goal scorer>: <home goals>-<away goals>.",
+        "In de <minute>e minuut ging het mis toen <#goal scorer> de keeper kon passeren: <home goals>-<away goals>."
+    ],
+    "Game course, regular goal other team (two goal difference)": [
+        "In de <minute>e minuut tekende <#goal scorer> voor de <home goals>-<away goals>, waarna het een heel moeilijke avond beloofde te worden voor <focus team>.",
+        "<#goal scorer> tekende na <minute> minuten voor de <home goals>-<away goals>, waardoor <#focus team manager> wist dat zijn ploeg een moeilijke avond tegemoet ging.",
+        "Na <minute> minuten spelen werd het ook nog <home goals>-<away goals>."
+    ],
+    "Game course, regular goal other team (two+ goal difference)": [
+        "<#goal scorer> tekende in de <minute>e minuut ook nog voor de <home goals>-<away goals>.",
+        "Toen <#goal scorer> koel de <home goals>-<away goals> aantekende was de wedstrijd natuurlijk beslist."
+    ],
+    "Game course, regular goal other team (two successive goals one team)": [
+        "Binnen <time between goals> minuten liep <#other team> via <goal scorer 1> en <goal scorer 2> uit naar <home goals>-<away goals>.",
+        "<#other team> kwam door twee gelukkige treffers van <goal scorer 1> en <goal scorer 2> op een <home goals>-<away goals> voorsprong."
+    ],
+    "Game course, regular goal other team (with assist)": [
+        "De vrijstaande <#goal scorer> schoot op aangeven van <assist giver> raak.",
+        "<#assist giver> stelde in de <minute>e minuut <goal scorer> in staat de <home goals>-<away goals> aan te tekenen (<minute>.)."
+    ],
+    "Game course, regular goal other team (early goal)": [
+        "De <eerste; first half|tweede; second half;; first/second half> helft was nog geen <minute> minuten oud toen <goal scorer> de bal tegen de touwen werkte."
+    ],
+    "Game course, regular goal other team (equalizer)": [],
+    "Game course, regular goal other team (eretreffer)": [],
+    "Game course, regular goal other team (aansluitingstreffer)": [
+        "Via een doelpunt van <goal scorer> kwam <#focus team> terug: <home goals>-<away goals>."
+    ],
+    "Game course, regular goal other team (lead goal)": [
+        "Na <minute> minuten kwam <#other team> op voorsprong toen <goal scorer> scoorde: <home goals>-<away goals>."
+    ],
+    "Game course, regular goal other team (winning goal)": [
+        "Het winnende doelpunt viel in de <minute>e minuut, toen <#goal scorer> scoorde."
+    ],
+    "Game course, regular goal other team (only goal)": [
+        "<#goal scorer> maakte in de <minute>e minuut de enige goal van de wedstrijd."
+    ],
+    "Game course, regular goal other team (second+ goal player)": [
+        "<#goal scorer> tekende ook voor de <home goals>-<away goals>.",
+        "In de <minute>e minuut maakte <#goal scorer> ook nog zijn <tweede; goal 2|derde; goal 3|vierde; goal 4|vijfde; goal 5|zesde; goal 6;; number of goals goal scorer> <home goals>-<away goals>."
+    ],
+    "Game course, regular goal other team (final goal)": [
+        "In de <minute>e minuut bepaalde <#goal scorer> de eindstand op <home goals>-<away goals>.",
+        "In de <minute>e schoot <#goal scorer> de <home goals>-<away goals> tegen de touwen en werden de drie punten veiliggesteld.",
+        "<#goal scorer> kon het vonnis voltrekken: <home goals>-<away goals> (<minute>.).",
+        "<#other team> kreeg in de <minute>e minuut de winst helemaal in de schoot geworpen: <#goalkeeper focus team> had het nakijken op een schot van <goal scorer>: <home goals>-<away goals>.",
+        "Na <minute> minuten scoorde <#goal scorer> nog: <home goals>-<away goals>."
+    ],
+    "Game course, own goal focus team (all purpose)": [
+        "In de <minute>e minuut trof <#own goal scorer> in het eigen doel: <home goals>-<away goals>.",
+        "Na <minute> minuten schoot <#own goal scorer> de bal per ongeluk in eigen doel.",
+        "Door een eigen doelpunt van <own goal scorer> werd het <home goals>-<away goals>."
+    ],
+    "Game course, own goal focus team (early goal)": [
+        "De wedstrijd was amper van start toen <#goal scorer> de bal in het eigen doel trof: <home goals>-<away goals>.",
+        "Al na <minute> minuten maakte <#focus team> <home goals>-<away goals> via een eigen doelpunt van <own goal scorer>.",
+        "Al na <minute> minuten nam <#focus team> de leiding toen <own goal scorer> de bal zijn eigen doelman <goalkeeper focus team> ongelukkig passeerde: <home goals>-<away goals>."
+    ],
+    "Game course, own goal focus team (equalizer)": [
+        "In de <minute>e minute werd het gelijk via een eigen doelpunt van <own goal scorer>."
+    ],
+    "Game course, own goal focus team (two goal difference)": [
+        "Daarna nam <#other team> via een eigen goal van <own goal scorer> afstand.",
+        "Na <minute> minuten was het<own goal scorer> die met een eigen doelpunt de marge verdubbelde."
+    ],
+    "Game course, own goal focus team (two+ goal difference)": [
+        "De kans om terug te komen in de wedstrijd werd kleiner voor <#focus team> en toen ook de bal via <own goal scorer> het doel in verdween, wist <#focus team> niet meer waar het de moed vandaan moest halen.",
+        "In de <minute>e minuut werd het nog erger, toen <#own goal scorer> de bal in eigen doel tikte."
+    ],
+    "Game course, own goal focus team (lead goal)": [
+        "<#other team> kwam op voorsprong door een ongelukkig eigen doelpunt van <own goal scorer>."
+    ],
+    "Game course, own goal focus team (final goal)": [
+        "Door een eigen doelpunt van <own goal scorer> werd het uiteindelijk <home goals>-<away goals>."
+    ],
+    "Game course, own goal focus team (winning goal)": [
+        "Een ongelukkig eigen doelpunt van <own goal scorer> was beslissend in <stadium>."
+    ],
+    "Game course, own goal other team (all purpose)": [
+        "<#own goal scorer> trof de bal in de <minute>e minuut in zijn eigen doel (<home goals>-<away goals>).",
+        "De <eerste; goal 1|tweede; goal 2|derde; goal 3|vierde; goal 4|vijfde; goal 5|zesde; goal 6|zevende; goal 7|achtste; goal 8|negende; goal 9|tiende; goal 10|elfde; goal 11|twaalfde; goal 12;; number of goals> goal van de wedstrijd was een treffer in eigen doel van een <other team>-speler.",
+        "<#own goal scorer> gaf na <minute> minuten de bal het laatste zetje waardoor het langs zijn eigen doelman in de goal verdween: <home goals>-<away goals>.",
+        "In de <minute>e minuut werd de bal in eigen doel gewerkt door <own goal scorer>.",
+        "<#own goal scorer> werkte de bal in de <minute>e minuut in eigen doel: <home goals>-<away goals>."
+    ],
+    "Game course, own goal other team (early goal)": [
+        "De ploeg van <focus team manager> kwam tegen <other team> vroeg op voorsprong via een eigen doelpunt van <own goal scorer>."
+    ],
+    "Game course, own goal other team (equalizer)": [
+        "Onverwacht maar niet geheel onverdiend viel in de <minute>e minuut de gelijkmaker, de bal werd door <own goal scorer> achter zijn eigen doelman gewerkt, <home goals>-<away goals>."
+    ],
+    "Game course, own goal other team (aansluitingstreffer)": [
+        "Na <minute> minuten viel dan de aansluitingstreffer toen de bal door <own goal scorer> langs zijn eigen doelman werd gewerkt: <home goals>-<away goals>.",
+        "Toch leek het nog spannend te worden toen <#own goal scorer> pardoes zijn eigen doelman verschalkte.",
+        "In de <minute>e minuut werd het toch nog spannend toen <#own goal scorer> in eigen doel trof."
+    ],
+    "Game course, goal from penalty focus team (all purpose)": [
+        "<#goal scorer> schoot raak vanaf elf meter: <home goals>-<away goals>.",
+        "<#focus team> kwam uit een strafschop van <goal scorer> op <home goals>-<away goals>.",
+        "In de <minute>e minuut scoorde <#goal scorer> uit een strafschop.",
+        "<#goal scorer> benutte in de <minute>e minuut een strafschop.",
+        "<#goal scorer> nam een penalty en schoot raak: <home goals>-<away goals>."
+    ],
+    "Game course, goal from penalty focus team (aansluitingstreffer)": [
+        "In de <minute>e minuut zette <#goal scorer> uit een strafschop de aansluitingstreffer op het scorebord.",
+        "<#focus team> kwam uit een strafschop van <goal scorer> nog wel op <home goals>-<away goals>.",
+        "<#goal scorer> bracht met zijn benutte strafschop in de <minute>e minuut toch weer wat hoop terug in het kamp van <focus team>.",
+        "<#goal scorer> ontfermde zich over penalty en schoot de aansluitingstreffer tegen de touwen: <home goals>-<away goals>."
+    ],
+    "Game course, goal from penalty focus team (eretreffer)": [
+        "<#goal scorer> scoorde een eretreffer uit een benutte strafschop."
+    ],
+    "Game course, goal from penalty focus team (final goal)": [
+        "In de <minute>e minuut scoorde <#goal scorer> nog uit een strafschop.",
+        "<#goal scorer> benutte in de <minute>e minuut een strafschop en bracht de eindstand op het scorebord.",
+        "Hoewel <#goal scorer> een pingel verzilvert (<home goals>-<away goals>), lukt het <#focus team> niet meer <other team> weer te laten wankelen."
+    ],
+    "Game course, goal from penalty other team (all purpose)": [
+        "<#goal scorer> passeerde vanaf de stip <other team>-doelman <goalkeeper other team>: <home goals>-<away goals>.",
+        "<#goal scorer> schoot na <minute> minuten raak vanaf de penaltystip.",
+        "Na <minute> minuten schoot <goal scorer> een toegekende penalty feilloos binnen: <home goals>-<away goals>.",
+        "<#focus team> veroorzaakte in de <minute>e minuut ongelukkig een penalty, die door <goal scorer> werd verzilverd: <home goals>-<away goals> (<minute>).",
+        "Een penalty van <goal scorer> zorgde voor <home goals>-<away goals>.",
+        "Na <minute> minuten werd een penalty door <goal scorer> benut: <home goals>-<away goals>.",
+        "Na <minute> minuten benutte <#goal scorer> een toegekende strafschop: <home goals>-<away goals>.",
+        "<#goal scorer> verzilverde een strafschop in de <minute>e minuut: <home goals>-<away goals>.",
+        "<#referee> legde in de <minute>e minuut de bal op de stip en de penalty werd benut door <goal scorer>.",
+        "<#goal scorer> benutte een strafschop en zorgde voor de <home goals>-<away goals>.",
+        "In de <minute>e minuut zorgde <#goal scorer> uit een strafschop voor de <home goals>-<away goals>.",
+        "<#goalkeeper focus team> kon een toegekende strafschop van <goal scorer> niet keren: <home goals>-<away goals>.",
+        "Na <minute> minuten kon <#goal scorer> vanaf de strafschopstip de <home goals>-<away goals> binnen schieten.",
+        "Uit een strafschop maakte <#goal scorer> de <home goals>-<away goals>.",
+        "In de <minute>e minuut besliste <#other team> het duel middels een strafschop: <home goals>-<away goals>.",
+        "In de <minute>e minuut scoorde <other team>-speler <#goal scorer> uit een gegeven strafschop."
+    ],
+    "Game course, goal from penalty other team (equalizer)": [
+        "<#goal scorer> wist een penalty feilloos te benutten en zette <focus team> weer naast <other team>."
+    ],
+    "Game course, goal from penalty other team (winning goal)": [
+        "In de <minute>e minuut besliste <#other team> het duel middels een strafschop: <home goals>-<away goals>."
+    ],
+    "Game course, goal from penalty other team (lead goal)": [
+        "<#goal scorer> opende vanaf elf meter de score voor <other team>."
+    ],
+    "Game course, goal from penalty other team (final goal)": [
+        "<#goal scorer> bepaalde in de <minute>e minuut vanaf de strafschopstip de eindstand op <home goals>-<away goals>.",
+        "In de <minute>e minuut zorgde <#goal scorer> uit een strafschop voor de <home goals>-<away goals> eindstand.",
+        "<#goal scorer> beslist het treffen tussen <focus team> en <other team> in de <minute> minuut vanaf elf meter (<home goals>-<away goals>)."
+    ],
+    "Game course, goal from penalty other team (two goal difference)": [
+        "In de <minute>e minuut verdubbelde <#goal scorer> de voorsprong van <other team> vanaf elf meter."
+    ],
+    "Game course, goal from penalty other team (two+ goal difference)": [
+        "Het duel ging definitief in het slot toen <#goal scorer> vanaf de stip het vonnis voltrok:<home goals>-<away goals> (<minute>.).",
+        "Na een kwartier spelen mocht <#goal scorer> via een penalty de <home goals>-<away goals> laten bijschrijven.",
+        "Na <minute> minuten ging de bal op de stip en <#goal scorer> voltrok het vonnis: <home goals>-<away goals>.",
+        "Toen in de <minute>e minuut een strafschop onberispelijk werd binnengeschoten door <goal scorer>, was het gedaan met <focus team>."
+    ],
+    "Game course, goal from penalty other team (second+ goal player)": [
+        "<#goal scorer> was er als de kippen bij om vanaf de stip zijn <tweede; goal 2|derde; goal 3|vierde; goal 4|vijfde; goal 5|zesde; goal 6;; number of goals goal scorer> doelpunt van de wedstrijd te maken: <home goals>-<away goals>."
+    ],
+    "Game course, penalty miss focus team": [
+        "Doelman <#goalkeeper other team> stopte in de <minute>e minuut een penalty van <penalty taker>.",
+        "In de <minute>e minuut kreeg <#focus team> een enorme kans op een goal, toen <#penalty taker> van elf meter mocht aanleggen. <#goalkeeper other team> lag echter in de goede hoek en keerde de penalty van <#penalty taker>."
+    ],
+    "Game course, penalty miss other team": [
+        "<#focus team> kreeg een penalty tegen, die knap door doelman <goalkeeper focus team> uit het doel werd gewerkt.",
+        "In de <minute>e minuut was <#goalkeeper focus team> de grote sta-in-de-weg; hij pakte de pingel.",
+        "Makkelie kende in de <minute>e minuut een penalty toe, maar <#penalty taker> zag zijn inzet gestopt worden door <goalkeeper focus team>.",
+        "In de <minute>e minuut werd een penalty gegeven. <#penalty taker> nam plaats achter de bal, maar <#goalkeeper focus team> zat in de goede hoek en keerde de penalty.",
+        "Na <minute> minuten kreeg <#other team> een pingel, maar de inzet van <penalty taker> werd door <goalkeeper focus team> fraai gekeerd."
+    ],
+    "Game statistics, referee": [],
+    "Game statistics, yellow cards (multiple)": [
+        "Er werden <number of yellow cards> gele kaarten uitgedeeld aan de zijde van <focus team> voor <focus team yellow card players> en aan de zijde van <other team> voor <other team yellow card players>.",
+        "Er werden gele kaarten getrokken voor <yellow card players>.",
+        "<#yellow card players> verdwenen met geel in het boekje van <referee>.",
+        "<other team yellow card players> van <other team> en <focus team yellow card players> van <focus team> kregen een gele prent.",
+        "<#referee> trok gele kaarten voor <yellow card players>.",
+        "<#yellow card players> liepen tegen een gele kaart aan."
+    ],
+    "Game statistics, yellow cards (one)": [
+        "<#yellow card player> kreeg geel.",
+        "<#yellow card player> kreeg in de <minute>e minuut een gele prent van <referee>.",
+        "In de <minute>e minuut kreeg <#yellow card player> een gele kaart.",
+        "<#referee> schreef alleen <yellow card player> in zijn boekje bij de afdeling gele kaarten."
+    ],
+    "Game statistics, yellow cards (none)": [
+        "Er werden geen kaarten uitgedeeld deze wedstrijd.",
+        "<#referee> hoefde geen kaarten te trekken.",
+        "<#referee> hield zijn kaarten de hele wedstrijd op zak."
+    ],
+    "Game statistics, twice yellow (one player)": [
+        "<#twice yellow player> kreeg tweemaal geel.",
+        "<#twice yellow player> pakte zijn tweede gele en dus rode kaart.",
+        "<#twice yellow player> kreeg in de <minute>e minuut een tweede gele kaart.",
+        "<#referee> toonde <twice yellow player> zijn tweede gele kaart in de <minute>e minuut.",
+        "In de <minute>e minuut kreeg <#twice yellow player> van <twice yellow team> zijn tweede gele kaart van de wedstrijd en mocht hij vroegtijdig gaan douchen.",
+        "Het laatste fluitsignaal werd niet meer op het veld meegemaakt door <twice yellow player>, die in de <minute>e minuut zijn tweede geel ontving van <referee>.",
+        "<#twice yellow player> werd in de <minute> minuut na zijn tweede gele kaart van het veld gestuurd door <referee>.",
+        "In de <minute>e minuut ontving <#twice yellow player> zijn tweede gele kaart en moest van het veld af.",
+        "Na <minute> minuten spelen moest <#twice yellow player> met zijn tweede gele kaart richting de douche.",
+        "<#twice yellow player> kreeg na <minute> minuten zijn tweede gele prent van <referee> en moest inrukken.",
+        "In de <minute>e minuut kreeg <#twice yellow player> zijn tweede gele kaart en moest daardoor het veld verlaten.",
+        "<#twice yellow player> werd in de <minute>e minuut na zijn tweede gele kaart uit het veld gestuurd.",
+        "In de <minute>e minuut kreeg <#twice yellow player> een tweede gele kaart."
+    ],
+    "Game statistics, twice yellow (focus team)": [
+        "Tot overmaat van ramp kreeg <#focus team> nog een domper te verwerken toen <#twice yellow player> met zijn tweede gele kaart en dus rood vroegtijdig mocht gaan douchen."
+    ],
+    "Game statistics, twice yellow (two+ players)": [
+        "<#twice yellow players> kregen na twee keer geel allebei ook nog een rode kaart."
+    ],
+    "Game statistics, red cards": [
+        "Na een overtreding kreeg <#red player> rood.",
+        "Na <minute> minuten kreeg <red player> rood.",
+        "In de <minute>e minuut kon <#red player> van het veld af met een rode kaart.",
+        "<#referee> gaf <red player> van <red team> een rode kaart.",
+        "<#referee> stuurde <red player> met rood naar de kant.",
+        "<#red player> kreeg een rode kaart van <referee>.",
+        "<#red team> kreeg in de <minute>e minuut een directe rode kaart van <referee>.",
+        "<#referee> trok een directe rode kaart voor <red player>.",
+        "In de <minute> minuut kreeg <#red player> de rode kaart.",
+        "<#red player> mocht na <minute> minuten met rood vertrekken.",
+        "<#referee> kende in de <minute> minuut geen pardon en toonde <red player> rood."
+    ],
+    "Game statistics, red cards (early)": [
+        "Voor <red team> kon de wedstrijd niet slechter beginnen: al na <minute> minuten spelen kreeg <#red player> een directe rode kaart van <referee>.",
+        "<#red player> van <red team> kreeg een vroege directe rode kaart."
+    ]
+}

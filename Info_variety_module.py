@@ -1,12 +1,14 @@
 import pickle
+from os import path
 
 def InfoVariety(homeaway, templates, previoustemplates=None):
     if previoustemplates == None:
         previoustemplates = []
-    if homeaway == 'home':
+    previousreporttemplates = []
+    if homeaway == 'home' and path.exists("templateshome.p"):
         with open('templateshome.p', 'rb') as f:
             previousreporttemplates = pickle.load(f)
-    elif homeaway == 'away':
+    elif homeaway == 'away' and path.exists("templatesaway.p"):
         with open('templatesaway.p', 'rb') as f:
             previousreporttemplates = pickle.load(f)
 

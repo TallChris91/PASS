@@ -7,7 +7,7 @@ import sys
 def ArrangeDatabase(jsongamedata):
     #Determine the database of which the system is going to use the templates.
     #The database is determined by whether the team won, tied or lost
-    windb, tiedb, lossdb, neutraldb = ('Databases/Templates GoalgetterWin.xlsx', 'Databases/Templates GoalgetterTie.xlsx', 'Databases/Templates GoalgetterLoss.xlsx', 'Databases/Templates GoalgetterNeutral.xlsx')
+    windb, tiedb, lossdb, neutraldb = ('Databases/TemplatesWin.json', 'Databases/TemplatesTie.json', 'Databases/TemplatesLoss.json', 'Databases/TemplatesNeutral.json')
     homegoals = jsongamedata['MatchInfo'][0]['n_HomeGoals']
     awaygoals = jsongamedata['MatchInfo'][0]['n_AwayGoals']
     #More homegoals means the home team has won
@@ -23,27 +23,11 @@ def ArrangeDatabase(jsongamedata):
         awaydb = tiedb
     return (homedb, 'home'), (awaydb, 'away'), (neutraldb, 'neutral')
 
-def ConvertWorkbook(db):
-    workbook = xlrd.open_workbook(db)
-    worksheets = workbook.sheet_names()[0]
-    legend = []
-    templates = []
-    # Open the excel file
-    worksheet = workbook.sheet_by_name(worksheets)
-    #Get all the columns
-    for col in range(worksheet.ncols):
-        #Append the first value to get the type of template
-        legend.append(worksheet.cell_value(0, col))
-        #Append the non-empty values after the first value to get the templates
-        newcol = worksheet.col_values(col)
-        temp = []
-        for idx, val in enumerate(newcol):
-            if (idx != 0) and (val != ''):
-                temp.append(val)
-        templates.append(temp)
-
-    return legend, templates
-
+def ReadTemplates(db):
+	with open(db, 'rb') as f:
+		templatedata = json.load(f)
+	return list(templatedata.keys()),list(templatedata.values())
+	
 def GeneralTemplates(type, legend, templates):
     #Collect all templates (and categories) for titles
     if type == 'title':

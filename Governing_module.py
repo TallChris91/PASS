@@ -1,5 +1,5 @@
 from Topic_collection_module import TopicCollection
-from Lookup_module import ArrangeDatabase, ConvertWorkbook, GeneralTemplates, GameCourseTemplates, GameStatisticsTemplates
+from Lookup_module import ArrangeDatabase, ReadTemplates, GeneralTemplates, GameCourseTemplates, GameStatisticsTemplates
 from Template_selection_module import GeneralTemplateSelection, GameCourseTemplateSelection, GameStatisticsTemplateSelection
 from Template_filler_module import TemplateReplacement, TemplateReplacementWithPronouns
 from Text_collection_module import TextCollection
@@ -33,7 +33,7 @@ def TopicWalk(file):
 	# (or whatever is contained in reporttargets)
 	for tuple in dbtuples:
 		reporttarget = tuple[1]
-		legends[reporttarget], templates[reporttarget] = ConvertWorkbook(tuple[0])
+		legends[reporttarget], templates[reporttarget] = ReadTemplates(tuple[0])
 	
 	
 	# Collect all the home, away and neutral templates
