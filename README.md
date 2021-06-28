@@ -21,3 +21,7 @@ To generate reports immediately, you can either do it via an IDE such as PyCharm
 Using PASS via command line is possible as well: delete or comment out lines 40 and 47 from PASS.py and then use the following command:
 
 python3 PASS.py main(link_to_data, save_state (y or n))
+
+# ReproGen
+
+For participants in the ReproGen shared task, an extra folder (Evaluation) was created, containing a Microsoft Word document with the texts and questionnaire as it was distributed to participants for the study described in the 2017 paper. Do note that this document is fully in Dutch. The database containing the results of this study is available at: https://figshare.com/articles/dataset/PASS_evaluation_results/14866692 .
